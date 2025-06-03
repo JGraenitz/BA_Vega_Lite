@@ -3,6 +3,6 @@ Eine Web App zur intuitiven und benutzerfreundlichen Erstellung von Graphen mit 
 
 Cloning und Dependencies:
 
-git clone https://github.com/JGraenitz/BA_Vega_Lite
-cd ba_vega_lite
-npm install
+git clone https://github.com/JGraenitz/BA_Vega_Lite    <br>
+cd ba_vega_lite    <br>
+npm install      <br>
