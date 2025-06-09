@@ -1,0 +1,64 @@
+.data-chart {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.data-chart p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.data-chart input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.data-chart select,
+.data-chart input[type="number"],
+.data-chart input[type="date"] {
+  margin: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.data-chart label {
+  margin-right: 10px;
+}
+
+.data-chart .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-chart .chart-settings {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+} 

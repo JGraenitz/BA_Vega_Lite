@@ -6,3 +6,6 @@ Cloning und Dependencies:
 `git clone https://github.com/JGraenitz/BA_Vega_Lite` <br>
 `cd ba_vega_lite` <br>
 `npm install` <br>
+`npm install react-vega vega vega-lite` <br> <br>
+React-vega unterstützt React nur bis Version 18 und es wird automatisch bei der Erstellung eines normalen React Projektes die Version 19 genommen, welches zu einem "Peer Dependency Conflict" führt: <br>
+`npm install react-vega vega vega-lite --legacy-peer-deps` oder `npm install react-vega vega vega-lite --force`<br>

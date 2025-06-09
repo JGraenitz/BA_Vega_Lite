@@ -1,0 +1,501 @@
+Company Name,Market Cap,Revenue
+Microsoft Corporation,"3,142.04B",227.58B
+Apple Inc,"2,638.25B",385.71B
+NVIDIA Corporation,"2,314.03B",60.92B
+Alphabet Inc.,"1,879.86B",307.39B
+"Amazon.com, Inc.","1,866.72B",574.79B
+"Meta Platforms, Inc.","1,282.40B",134.90B
+Berkshire Hathaway Inc.,891.67B,439.34B
+Eli Lilly and Company,735.08B,34.12B
+Taiwan Semiconductor Manufacturing Company Limited,723.02B,70.35B
+Broadcom Inc.,626.35B,38.87B
+Visa Inc.,581.20B,33.35B
+Novo Nordisk A/S,580.33B,34.41B
+JPMorgan Chase & Co.,563.77B,158.10B
+"Tesla, Inc.",549.79B,96.77B
+Walmart Inc.,488.08B,648.13B
+Exxon Mobil Corporation,454.91B,344.58B
+UnitedHealth Group Incorporated,450.93B,371.62B
+Mastercard Incorporated,444.09B,25.10B
+ASML Holding N.V.,386.81B,30.62B
+The Procter & Gamble Company,377.78B,83.93B
+"The Home Depot, Inc.",376.52B,152.67B
+Johnson & Johnson,374.05B,85.16B
+Oracle Corporation,347.60B,52.51B
+Toyota Motor Corporation,343.90B,308.27B
+Costco Wholesale Corporation,324.18B,248.83B
+"Merck & Co., Inc.",317.37B,60.12B
+AbbVie Inc.,317.35B,54.32B
+"Salesforce, Inc.",296.88B,34.86B
+Bank of America Corporation,292.66B,98.58B
+Chevron Corporation,288.38B,200.95B
+"Advanced Micro Devices, Inc.",285.43B,22.68B
+"Netflix, Inc.",269.74B,33.72B
+The Coca-Cola Company,261.00B,45.75B
+"PepsiCo, Inc.",237.24B,91.47B
+"Fomento Económico Mexicano, SAB de CV",233.84B,34.56B
+SAP SE,230.84B,33.78B
+Adobe Inc.,229.54B,19.41B
+Linde plc,224.85B,32.85B
+The Walt Disney Company,218.94B,88.94B
+Thermo Fisher Scientific Inc.,218.71B,42.86B
+Shell plc,216.04B,323.18B
+Accenture plc,211.50B,64.57B
+AstraZeneca PLC,207.09B,45.81B
+McDonald's Corporation,201.18B,25.49B
+Wells Fargo & Company,200.85B,82.60B
+"Cisco Systems, Inc.",200.64B,57.23B
+Novartis AG,196.01B,46.66B
+"T-Mobile US, Inc.",191.30B,78.56B
+Abbott Laboratories,190.89B,40.11B
+General Electric Company,188.94B,67.95B
+QUALCOMM Incorporated,187.00B,36.29B
+Danaher Corporation,183.52B,23.89B
+Alibaba Group Holding Limited,179.78B,130.82B
+Intuit Inc.,178.93B,15.09B
+Caterpillar Inc.,177.75B,67.06B
+Intel Corporation,177.53B,54.23B
+International Business Machines Corporation,173.07B,61.86B
+"Applied Materials, Inc.",171.72B,26.49B
+Verizon Communications Inc.,171.69B,133.97B
+Comcast Corporation,168.92B,121.57B
+"Uber Technologies, Inc.",164.89B,37.28B
+American Express Company,162.75B,55.59B
+"ServiceNow, Inc.",160.94B,8.97B
+PDD Holdings Inc.,159.26B,34.93B
+TotalEnergies SE,157.59B,218.95B
+Blackstone Inc.,156.20B,8.02B
+Pfizer Inc.,155.78B,58.50B
+Texas Instruments Incorporated,155.48B,17.52B
+HSBC Holdings plc,151.11B,66.06B
+Amgen Inc.,150.50B,28.19B
+Morgan Stanley,149.27B,54.14B
+Conoco Phillips,148.22B,58.57B
+Union Pacific Corporation,146.77B,24.12B
+"Lowe's Companies, Inc.",145.80B,86.38B
+BHP Group Limited,144.78B,55.34B
+"NIKE, Inc.",142.04B,51.54B
+Philip Morris International Inc.,141.51B,35.17B
+Royal Bank of Canada,140.19B,40.69B
+"Intuitive Surgical, Inc.",138.84B,7.12B
+HDFC Bank Limited,138.26B,13.76B
+S&P Global Inc.,134.34B,12.50B
+Stryker Corporation,133.99B,20.50B
+"United Parcel Service, Inc.",133.90B,90.96B
+"Micron Technology, Inc.",133.54B,18.31B
+"The Goldman Sachs Group, Inc.",131.82B,46.25B
+Honeywell International Inc.,131.09B,36.66B
+The Charles Schwab Corporation,130.13B,18.84B
+"NextEra Energy, Inc.",128.30B,28.11B
+RTX Corp,128.10B,68.92B
+Lam Research Corporation,127.36B,14.32B
+Unilever PLC,124.76B,66.23B
+Eaton Corporation plc,124.72B,23.20B
+Sanofi,124.14B,51.60B
+Booking Holdings Inc.,123.94B,21.37B
+"Mitsubishi UFJ Financial Group, Inc.",123.64B,30.79B
+AT&T Inc.,122.88B,122.43B
+"BlackRock, Inc.",121.57B,17.86B
+The Progressive Corporation,120.67B,62.11B
+Elevance Health Inc.,120.36B,171.34B
+Anheuser-Busch InBev SA/NV,119.11B,59.38B
+Citigroup Inc.,116.74B,78.46B
+"Prologis, Inc.",115.74B,8.02B
+The Boeing Company,114.40B,77.79B
+"The TJX Companies, Inc.",113.17B,52.33B
+Deere & Company,110.79B,60.79B
+Medtronic plc,110.53B,32.32B
+BP p.l.c.,107.78B,213.03B
+Vertex Pharmaceuticals Incorporated,107.62B,9.87B
+Lockheed Martin Corporation,107.34B,67.57B
+"Airbnb, Inc.",106.77B,9.92B
+Sony Group Corporation,106.57B,88.88B
+Bristol-Myers Squibb Company,106.27B,45.01B
+"Regeneron Pharmaceuticals, Inc.",105.47B,13.12B
+The Toronto-Dominion Bank,105.44B,36.86B
+Chubb Limited,103.91B,49.74B
+Starbucks Corporation,102.31B,36.69B
+UBS Group AG,101.33B,37.16B
+Cigna Corporation,101.29B,195.27B
+Rio Tinto Group,101.25B,54.04B
+Shopify Inc.,101.08B,7.06B
+"Automatic Data Processing, Inc.",100.67B,18.59B
+"Marsh & McLennan Companies, Inc.",100.50B,22.74B
+CVS Health Corporation,99.09B,357.78B
+Boston Scientific Corporation,98.91B,14.24B
+Petróleo Brasileiro S.A. - Petrobras,95.42B,124.47B
+"Mondelez International, Inc.",95.40B,36.02B
+"Analog Devices, Inc.",94.53B,11.57B
+Petróleo Brasileiro S.A. - Petrobras,94.45B,124.47B
+"Arista Networks, Inc.",94.12B,5.86B
+KLA Corporation,93.10B,9.67B
+"Palo Alto Networks, Inc.",92.63B,7.53B
+"Fiserv, Inc.",92.56B,19.09B
+ICICI Bank Limited,91.83B,22.65B
+American Tower Corporation,91.20B,11.14B
+KKR & Co. Inc.,90.05B,14.50B
+"Gilead Sciences, Inc.",89.94B,27.12B
+"Synopsys, Inc.",89.13B,6.13B
+GSK plc,87.42B,38.39B
+The Sherwin-Williams Company,86.90B,23.05B
+"HCA Healthcare, Inc.",86.57B,64.97B
+Stellantis N.V.,86.40B,210.60B
+"Cadence Design Systems, Inc.",86.20B,4.09B
+"Waste Management, Inc.",85.13B,20.43B
+Canadian National Railway Company,83.09B,12.65B
+Diageo plc,83.00B,21.66B
+RELX PLC,81.71B,11.60B
+Canadian Pacific Railway Limited,81.50B,9.44B
+"Chipotle Mexican Grill, Inc.",81.04B,9.87B
+Dell Technologies Inc.,80.98B,88.43B
+Canadian Natural Resources Limited,80.43B,27.04B
+Target Corporation,79.71B,107.41B
+Equinor ASA,79.65B,107.17B
+Illinois Tool Works Inc.,79.61B,16.11B
+Southern Copper Corporation,79.55B,9.90B
+Ferrari N.V.,78.91B,6.63B
+"Intercontinental Exchange, Inc.",78.84B,9.90B
+"CrowdStrike Holdings, Inc.",78.55B,3.06B
+"Sumitomo Mitsui Financial Group, Inc.",78.08B,28.63B
+"MercadoLibre, Inc.",78.06B,14.47B
+Arm Holdings plc,77.65B,2.96B
+Schlumberger Limited,77.45B,33.14B
+Zoetis Inc.,76.83B,8.54B
+CME Group Inc.,76.64B,5.58B
+General Dynamics Corporation,76.37B,42.27B
+"Altria Group, Inc.",76.29B,24.48B
+Enbridge Inc.,76.17B,32.82B
+The Southern Company,76.11B,25.25B
+"Banco Santander, S.A.",75.57B,62.35B
+Infosys Limited,75.42B,18.21B
+"Equinix, Inc.",74.99B,8.19B
+"Marriott International, Inc.",73.60B,23.71B
+"Workday, Inc.",73.28B,7.26B
+Colgate-Palmolive Company,73.18B,19.46B
+"EOG Resources, Inc.",72.95B,24.19B
+Duke Energy Corporation,72.26B,29.06B
+CSX Corporation,72.19B,14.66B
+Marathon Petroleum Corporation,72.01B,150.31B
+"PayPal Holdings, Inc.",71.86B,29.77B
+Moody's Corporation,71.37B,5.92B
+Parker-Hannifin Corporation,71.04B,19.83B
+FedEx Corporation,70.45B,87.51B
+Northrop Grumman Corporation,70.41B,39.29B
+Thomson Reuters Corporation,70.05B,6.79B
+McKesson Corporation,69.98B,301.51B
+"Becton, Dickinson and Company",69.88B,19.49B
+Bank of Montreal,69.62B,24.15B
+"Banco Bilbao Vizcaya Argentaria, S.A.",68.70B,35.47B
+Amphenol Corporation,68.52B,12.55B
+U.S. Bancorp,68.11B,25.74B
+Trane Technologies plc,68.04B,17.68B
+TransDigm Group Incorporated,68.03B,6.98B
+"NetEase, Inc.",67.88B,14.59B
+British American Tobacco p.l.c.,67.24B,34.54B
+Itaú Unibanco Holding S.A.,67.21B,21.85B
+"O'Reilly Automotive, Inc.",67.13B,15.81B
+Phillips 66,66.94B,149.89B
+Aon plc,65.42B,13.38B
+Freeport-McMoRan Inc.,65.05B,22.86B
+Ecolab Inc.,64.92B,15.32B
+"Apollo Global Management, Inc.",64.80B,32.64B
+PACCAR Inc,64.66B,35.13B
+"Coinbase Global, Inc.",64.64B,3.11B
+Cintas Corporation,64.46B,9.19B
+Emerson Electric Co.,63.88B,15.91B
+"Super Micro Computer, Inc.",63.13B,9.25B
+Brookfield Corporation,62.98B,95.92B
+Enterprise Products Partners L.P.,62.88B,49.72B
+Monster Beverage Corporation,61.73B,7.14B
+"The PNC Financial Services Group, Inc.",61.68B,21.49B
+NXP Semiconductors N.V.,61.64B,13.28B
+The Bank of Nova Scotia,61.60B,24.42B
+"Honda Motor Co., Ltd.",60.40B,136.70B
+Pioneer Natural Resources Company,60.32B,19.36B
+CRH plc,59.99B,34.95B
+"Republic Services, Inc.",59.69B,14.96B
+"Roper Technologies, Inc.",59.15B,6.18B
+Constellation Energy Corporation,59.01B,24.92B
+Nu Holdings Ltd.,58.00B,8.03B
+3M Company,57.95B,32.68B
+"Motorola Solutions, Inc.",57.75B,9.98B
+"Marvell Technology, Inc.",57.26B,5.51B
+Occidental Petroleum Corporation,57.22B,28.92B
+"América Móvil, SAB de CV",56.98B,36.96B
+"DoorDash, Inc.",56.67B,8.64B
+"Simon Property Group, Inc.",56.62B,5.66B
+Edwards Lifesciences Corporation,56.17B,6.00B
+Valero Energy Corporation,56.02B,144.77B
+"Autodesk, Inc.",55.95B,5.35B
+Norfolk Southern Corporation,55.85B,12.16B
+Palantir Technologies Inc.,55.58B,2.23B
+"Copart, Inc.",54.98B,4.06B
+"AutoZone, Inc.",54.86B,17.83B
+"DexCom, Inc.",54.00B,3.62B
+Arthur J. Gallagher & Co.,53.75B,10.07B
+Capital One Financial Corporation,53.46B,26.36B
+ING Groep N.V.,53.17B,24.41B
+"D.R. Horton, Inc.",53.02B,35.93B
+Hilton Worldwide Holdings Inc.,52.98B,10.24B
+"MetLife, Inc.",52.91B,66.91B
+"Air Products and Chemicals, Inc.",52.87B,12.42B
+Snowflake Inc.,52.44B,2.62B
+Energy Transfer LP,52.40B,78.59B
+"American International Group, Inc.",52.15B,46.80B
+"Block, Inc.",52.10B,21.92B
+"Fortinet, Inc.",52.02B,5.30B
+Spotify Technology S.A.,51.95B,14.72B
+Welltower Inc.,51.92B,6.64B
+Carrier Global Corporation,51.77B,22.10B
+"The Travelers Companies, Inc.",51.63B,41.36B
+Vale S.A.,51.58B,43.84B
+"Mizuho Financial Group, Inc.",51.33B,15.13B
+Ford Motor Company,51.26B,176.19B
+General Motors Company,50.39B,171.84B
+Truist Financial Corporation,50.18B,21.28B
+Eni S.p.A.,50.15B,142.22B
+National Grid plc,49.99B,26.10B
+The Estée Lauder Companies Inc.,49.94B,15.16B
+Atlassian Corporation,49.81B,3.89B
+"W.W. Grainger, Inc.",49.51B,16.48B
+"Constellation Brands, Inc.",49.51B,9.82B
+Aflac Incorporated,48.88B,18.70B
+"Ross Stores, Inc.",48.68B,19.57B
+Lululemon Athletica Inc.,48.66B,9.62B
+Public Storage,48.63B,4.52B
+"United Rentals, Inc.",47.33B,14.33B
+Suncor Energy Inc.,47.32B,38.15B
+Canadian Imperial Bank of Commerce,47.16B,17.63B
+"Old Dominion Freight Line, Inc.",47.16B,5.87B
+Microchip Technology Incorporated,47.07B,8.54B
+Nucor Corporation,46.91B,34.71B
+"The Williams Companies, Inc.",46.56B,10.91B
+Hess Corporation,46.50B,10.65B
+"ONEOK, Inc.",46.14B,17.68B
+"Interactive Brokers Group, Inc.",45.95B,4.34B
+Lennar Corporation,45.75B,34.23B
+IQVIA Holdings Inc.,45.30B,14.98B
+Takeda Pharmaceutical Company Limited,45.25B,29.40B
+Realty Income Corporation,45.14B,4.08B
+The Allstate Corporation,44.93B,57.09B
+Joint Stock Company Kaspi.kz,44.69B,4.24B
+Crown Castle Inc.,44.29B,6.98B
+The Kraft Heinz Company,44.21B,26.64B
+Ferguson plc,44.15B,29.36B
+Fastenal Company,44.07B,7.35B
+"IDEXX Laboratories, Inc.",44.01B,3.66B
+"Digital Realty Trust, Inc.",43.93B,5.48B
+"Waste Connections, Inc.",43.89B,8.02B
+Manulife Financial Corporation,43.83B,25.32B
+TE Connectivity Ltd.,43.74B,16.02B
+Sempra,43.73B,16.72B
+MSCI Inc.,43.71B,2.53B
+"American Electric Power Company, Inc.",43.64B,18.98B
+Johnson Controls International plc,43.45B,26.82B
+"Ameriprise Financial, Inc.",43.38B,15.54B
+PG&E Corporation,43.05B,24.43B
+"Paychex, Inc.",42.80B,5.15B
+The Bank of New York Mellon Corporation,42.67B,17.50B
+"The Trade Desk, Inc.",42.56B,1.95B
+Kimberly-Clark Corporation,42.48B,20.43B
+"Agilent Technologies, Inc.",42.32B,6.74B
+"Moderna, Inc.",42.26B,6.85B
+"AMETEK, Inc.",42.26B,6.60B
+Lloyds Banking Group plc,42.24B,61.65B
+Banco Santander (Brasil) S.A.,42.02B,65.86B
+Humana Inc.,42.00B,106.37B
+TC Energy Corporation,41.92B,11.98B
+Ares Management Corporation,41.80B,3.63B
+"Charter Communications, Inc.",41.79B,54.61B
+"Fidelity National Information Services, Inc.",41.68B,9.82B
+"Prudential Financial, Inc.",41.54B,53.98B
+Centene Corporation,41.48B,154.00B
+"JD.com, Inc.",41.48B,152.98B
+MPLX LP,41.31B,11.28B
+Keurig Dr Pepper Inc.,41.23B,14.81B
+Alcon Inc.,40.91B,9.46B
+"Datadog, Inc.",40.78B,2.13B
+Dow Inc.,40.58B,44.62B
+GE HealthCare Technologies Inc.,40.56B,19.55B
+Sysco Corporation,40.53B,77.51B
+The Kroger Co.,40.35B,147.80B
+"L3Harris Technologies, Inc.",40.34B,19.42B
+Otis Worldwide Corporation,40.25B,14.21B
+Kenvue Inc.,40.07B,15.44B
+"Kinder Morgan, Inc.",39.88B,15.33B
+"Dominion Energy, Inc.",39.76B,14.39B
+Cummins Inc.,39.64B,34.07B
+ST Microelectronics,39.33B,17.29B
+The Hershey Company,39.21B,11.16B
+Newmont Corporation,39.19B,11.81B
+"General Mills, Inc.",39.03B,20.17B
+"Corteva, Inc.",38.88B,17.23B
+"CoStar Group, Inc.",38.87B,2.46B
+Ambev S.A.,38.74B,16.37B
+Cencora,38.52B,271.58B
+Haleon plc,38.49B,14.31B
+Ingersoll Rand Inc.,38.26B,6.88B
+"Yum! Brands, Inc.",38.00B,7.08B
+Las Vegas Sands Corp.,37.92B,10.37B
+Flutter Entertainment plc,37.88B,9.28B
+"Martin Marietta Materials, Inc.",37.72B,6.78B
+"Cheniere Energy, Inc.",37.49B,20.39B
+Woodside Energy Group Ltd,37.41B,13.99B
+"Quanta Services, Inc.",37.24B,20.88B
+Cenovus Energy Inc.,37.14B,39.25B
+"Gartner, Inc.",37.07B,5.91B
+"Baidu, Inc.",37.05B,18.98B
+Imperial Oil Limited,36.98B,38.32B
+Veeva Systems Inc.,36.94B,2.36B
+Exelon Corporation,36.55B,21.73B
+Vulcan Materials Company,36.21B,7.78B
+Cognizant Technology Solutions Corporation,36.04B,19.35B
+"Nasdaq, Inc.",35.83B,6.06B
+"Diamondback Energy, Inc.",35.31B,8.41B
+Royal Caribbean Cruises Ltd.,35.13B,13.90B
+Restaurant Brands International Inc.,35.07B,7.02B
+Barclays PLC,35.03B,32.12B
+Electronic Arts Inc.,34.89B,7.66B
+Halliburton Company,34.55B,23.02B
+Global Payments Inc.,34.23B,9.65B
+CDW Corporation,34.07B,21.38B
+Arch Capital Group Ltd.,33.95B,13.63B
+Baker Hughes Company,33.55B,25.51B
+Ryanair Holdings plc,33.47B,11.71B
+"Verisk Analytics, Inc.",33.27B,2.68B
+"PPG Industries, Inc.",33.22B,18.25B
+Dollar General Corporation,33.10B,38.69B
+Vertiv Holdings Co,33.04B,6.86B
+"Cloudflare, Inc.",32.97B,1.30B
+Coca-Cola Europacific Partners PLC,32.87B,20.34B
+LyondellBasell Industries N.V.,32.61B,41.11B
+"Monolithic Power Systems, Inc.",32.57B,1.82B
+Public Service Enterprise Group Incorporated,32.57B,11.24B
+Equifax Inc.,32.43B,5.27B
+"Rockwell Automation, Inc.",32.37B,9.13B
+MicroStrategy Incorporated,32.15B,496.26M
+"HubSpot, Inc.",31.96B,2.17B
+Fair Isaac Corporation,31.87B,1.55B
+Archer-Daniels-Midland Company,31.87B,93.94B
+"DuPont de Nemours, Inc.",31.71B,12.07B
+Sun Life Financial Inc.,31.69B,23.18B
+"Coupang, Inc.",31.56B,24.38B
+Sea Limited,31.51B,13.06B
+Biogen Inc.,31.50B,9.84B
+Discover Financial Services,31.39B,9.84B
+ON Semiconductor Corporation,31.15B,8.25B
+Devon Energy Corporation,31.15B,15.26B
+Xylem Inc.,30.99B,7.36B
+Li Auto Inc.,30.94B,17.47B
+BCE Inc.,30.85B,18.55B
+"Chunghwa Telecom Co., Ltd.",30.75B,7.26B
+Extra Space Storage Inc.,30.74B,2.56B
+Deutsche Bank Aktiengesellschaft,30.61B,32.94B
+Orange S.A.,30.60B,46.25B
+"Consolidated Edison, Inc.",30.58B,14.66B
+Wipro Limited,30.49B,11.04B
+"ANSYS, Inc.",30.44B,2.27B
+Banco Bradesco S.A.,30.37B,15.48B
+VICI Properties Inc.,30.06B,3.61B
+"The Hartford Financial Services Group, Inc.",30.00B,24.53B
+Fortive Corporation,29.83B,6.07B
+HP Inc.,29.47B,53.11B
+NatWest Group plc,29.34B,18.67B
+"CBRE Group, Inc.",29.32B,31.95B
+Trip.com Group Limited,29.31B,6.28B
+"Delta Air Lines, Inc.",29.22B,58.05B
+Xcel Energy Inc.,29.13B,14.21B
+"Zscaler, Inc.",29.08B,1.90B
+Symbotic Inc.,29.00B,1.34B
+ResMed Inc.,28.56B,4.50B
+"West Pharmaceutical Services, Inc.",28.43B,2.95B
+Garmin Ltd.,28.13B,5.23B
+Mettler-Toledo International Inc.,28.13B,3.79B
+GLOBALFOUNDRIES Inc.,28.10B,7.39B
+Willis Towers Watson PLC,28.09B,9.48B
+Agnico Eagle Mines Limited,28.07B,6.63B
+Tractor Supply Company,27.92B,14.56B
+"Dollar Tree, Inc.",27.80B,30.60B
+Corning Incorporated,27.77B,12.59B
+Howmet Aerospace Inc.,27.64B,6.64B
+"Rocket Companies, Inc.",27.35B,3.80B
+Barrick Gold Corporation,27.33B,11.40B
+ICON PLC,27.21B,8.12B
+"Cardinal Health, Inc.",27.00B,216.15B
+"Keysight Technologies, Inc.",26.71B,5.34B
+eBay Inc.,26.64B,10.11B
+Edison International,26.63B,16.34B
+Prudential plc,26.62B,10.20B
+Blue Owl Capital Inc.,26.62B,1.73B
+"T. Rowe Price Group, Inc.",26.46B,6.46B
+"Raymond James Financial, Inc.",26.43B,11.85B
+Nutrien Ltd.,26.24B,29.06B
+"Zimmer Biomet Holdings, Inc.",26.22B,7.39B
+Weyerhaeuser Company,26.13B,7.67B
+"AvalonBay Communities, Inc.",25.85B,2.77B
+"MongoDB, Inc.",25.79B,1.68B
+ORIX Corporation,25.62B,19.11B
+CGI Inc.,25.45B,-
+"NVR, Inc.",25.42B,9.31B
+"Telefónica, S.A.",25.38B,45.17B
+Westinghouse Air Brake Technologies Corporation,25.37B,9.68B
+Mobileye Global Inc.,25.30B,2.08B
+"Builders FirstSource, Inc.",25.25B,17.10B
+"WEC Energy Group, Inc.",25.21B,8.89B
+"Church & Dwight Co., Inc.",25.08B,5.87B
+"Take-Two Interactive Software, Inc.",24.97B,5.40B
+Targa Resources Corp.,24.84B,16.06B
+Fifth Third Bancorp,24.78B,8.19B
+"Brown & Brown, Inc.",24.70B,4.26B
+"Ulta Beauty, Inc.",24.55B,11.21B
+"Molina Healthcare, Inc.",24.51B,34.07B
+"PulteGroup, Inc.",24.47B,16.06B
+"Live Nation Entertainment, Inc.",24.46B,22.75B
+Brown-Forman Corporation,24.28B,4.26B
+POSCO Holdings Inc.,24.21B,59.55B
+Dover Corporation,24.21B,8.44B
+"Axon Enterprise, Inc.",24.03B,1.56B
+"Cheniere Energy Partners, L.P.",23.98B,9.66B
+"Align Technology, Inc.",23.98B,3.86B
+Deckers Outdoor Corporation,23.94B,4.12B
+"Broadridge Financial Solutions, Inc.",23.81B,6.32B
+"ASE Technology Holding Co., Ltd.",23.81B,18.94B
+argenx SE,23.78B,39.48M
+"Pinterest, Inc.",23.74B,3.06B
+M&T Bank Corporation,23.71B,9.00B
+Telkom Indonesia (Persero) Tbk PT,23.70B,9.48B
+Vistra Corp.,23.63B,14.78B
+SBA Communications Corporation,23.61B,2.71B
+AppLovin Corporation,23.57B,3.28B
+Roblox Corporation,23.55B,2.80B
+Vodafone Group PLC,23.46B,47.57B
+TELUS Corporation,23.36B,15.12B
+Tradeweb Markets Inc.,23.34B,1.34B
+HEICO Corporation,23.29B,3.24B
+Equity Residential,23.25B,2.87B
+HEICO Corporation,23.24B,3.24B
+DraftKings Inc.,23.24B,3.67B
+"First Citizens BancShares, Inc.",23.19B,17.41B
+Hewlett Packard Enterprise Company,22.99B,28.08B
+State Street Corporation,22.99B,11.95B
+"First Citizens BancShares, Inc.",22.89B,17.41B
+Tenaris S.A.,22.88B,14.87B
+Iron Mountain Incorporated,22.85B,5.48B
+"American Water Works Company, Inc.",22.81B,4.23B
+"Steel Dynamics, Inc.",22.80B,18.80B
+Ecopetrol S.A.,22.63B,32.91B
+PTC Inc.,22.55B,2.18B
+DTE Energy Company,22.40B,12.75B
+Carnival Corporation & plc,22.35B,21.59B
+Teck Resources Limited,22.26B,11.29B
+"Rollins, Inc.",22.21B,3.07B
+W. R. Berkley Corporation,22.20B,12.14B
+Hubbell Incorporated,22.17B,5.37B
+"Alexandria Real Estate Equities, Inc.",22.12B,2.89B
+ArcelorMittal S.A.,22.07B,68.28B
+FirstEnergy Corp.,22.04B,12.87B
+Entergy Corporation,21.98B,12.15B
+BioNTech SE,21.98B,4.24B
+STERIS plc,21.89B,5.41B
+Rogers Communications Inc.,21.88B,14.52B
+Franco-Nevada Corporation,21.87B,1.22B
