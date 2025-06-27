@@ -12,51 +12,28 @@ import './DataChart.css';
  */
 function DataChart() {
 
-  /**
-   * @state {Array<Object>} data - Die geladenen und geparsten Daten aus der CSV-Datei.
-   */
   const [data, setData] = useState([]);
 
-  /**
-   * @state {string} xField - Das aktuell ausgewählte Feld für die X-Achse.
-   */
   const [xField, setXField] = useState('');
 
-  /**
-   * @state {string} yField - Das aktuell ausgewählte Feld für die Y-Achse.
-   */
   const [yField, setYField] = useState('');
+
+  const [vField, setVField] = useState('');
+
+  const [kField, setKField] = useState('');
 
   //const [xAggregation, setXAggregation] = useState('');
 
-  /**
-   * @state {string} yAggregation - Die gewählte Aggregationsfunktion für die Y-Achse (mean, min, max, count).
-   */
   const [yAggregation, setYAggregation] = useState('');
 
-  /**
-   * @state {string} markType - Der Diagrammtyp ("bar" für Balken, "line" für Linie).
-   */
   const [markType, setMarkType] = useState('bar');
 
-  /**
-   * @state {number} chartWidth - Die Breite des Diagramms in Pixel.
-   */
   const [chartWidth, setChartWidth] = useState(800);
 
-  /**
-   * @state {number} chartHeight - Die Höhe des Diagramms in Pixel.
-   */
   const [chartHeight, setChartHeight] = useState(450);
-
-  /**
-   * @state {string} startDate - Das Startdatum für die Filterung (im Format YYYY-MM-DD).
-   */
+ 
   const [startDate, setStartDate] = useState('');
 
-  /**
-   * @state {string} endDate - Das Enddatum für die Filterung (im Format YYYY-MM-DD).
-   */
   const [endDate, setEndDate] = useState('');
 
   /**
@@ -143,13 +120,53 @@ function DataChart() {
           <>
             <div className="controls">
 
-              <label>X:</label>
-              <select onChange={(e) => setXField(e.target.value)} className="small-select">
-                <option value="">Wähle X-Achse</option>
-                {Object.keys(data[0]).map((key) => (
-                  <option key={key} value={key}>{key}</option>
-                ))}
+              <select onChange={(e) => setMarkType(e.target.value)} className="small-select">
+                <option value="bar">Balken</option>
+                <option value="line">Linie</option>
+                <option value="arc">Kuchen</option>
               </select>
+
+            {markType !== 'arc' && (
+              <>
+                <label>X:</label>
+                <select onChange={(e) => setXField(e.target.value)} className="small-select">
+                  <option value="">Wähle X-Achse</option>
+                  {Object.keys(data[0]).map((key) => (
+                    <option key={key} value={key}>{key}</option>
+                  ))}
+                </select>
+
+                <label>Y:</label>
+                <select onChange={(e) => setYField(e.target.value)} className="small-select">
+                  <option value="">Wähle Y-Achse</option>
+                  {Object.keys(data[0]).map((key) => (
+                    <option key={key} value={key}>{key}</option>
+                  ))}
+                </select>
+              </>
+            )}
+
+            {markType === 'arc' && (
+              <>
+                <label>Value:</label>
+                <select onChange={(e) => setVField(e.target.value)} className="small-select">
+                    <option value="">Wähle Wert</option>
+                    {Object.keys(data[0]).map((key) => (
+                      <option key={key} value={key}>{key}</option>
+                    ))}
+                </select> 
+
+                <label>Kategorie:</label>
+                <select onChange={(e) => setKField(e.target.value)} className="small-select">
+                    <option value="">Wähle Kategorie</option>
+                    {Object.keys(data[0]).map((key) => (
+                      <option key={key} value={key}>{key}</option>
+                    ))}
+                </select>   
+
+              </>
+            )}
+
               {/* Dropdown für Y-Achsen Aggregation 
               <label>Aggregation X:</label>
               <select onChange={(e) => setXAggregation(e.target.value)} className="small-select">
@@ -160,15 +177,7 @@ function DataChart() {
               </select>
               */}
 
-              <label>Y:</label>
-              <select onChange={(e) => setYField(e.target.value)} className="small-select">
-                <option value="">Wähle Y-Achse</option>
-                {Object.keys(data[0]).map((key) => (
-                  <option key={key} value={key}>{key}</option>
-                ))}
-              </select>
-
-              
+              {/*
               <label>Aggregation Y:</label>
               <select onChange={(e) => setYAggregation(e.target.value)} className="small-select">
                 <option value="mean">Mittelwert</option>
@@ -176,12 +185,8 @@ function DataChart() {
                 <option value="max">Maximum</option>
                 <option value="count">Anzahl</option>
               </select>
+              */}
               
-
-              <select onChange={(e) => setMarkType(e.target.value)} className="small-select">
-                <option value="bar">Balken</option>
-                <option value="line">Linie</option>
-              </select>
 
             </div>
             <div className="chart-settings">
@@ -210,9 +215,11 @@ function DataChart() {
               data={filteredData} 
               xField={xField} 
               yField={yField} 
+              vField={vField}
+              kField={kField}
               markType={markType} 
               //xAggregation={xAggregation}
-              yAggregation={yAggregation}
+              //yAggregation={yAggregation}
               width={chartWidth} 
               height={chartHeight} 
             />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Vega } from 'react-vega';
 import './Chart.css'; 
+import { field } from 'vega';
 
 /**
  * Chart-Komponente
@@ -29,29 +30,47 @@ import './Chart.css';
  *   height={450}
  * />
  */
-const Chart = ({ data, xField, yField, markType, yAggregation, width, height }) => {
-  const spec = {
-    width: width,
-    height: height,
-    mark: markType,
-    encoding: {
-      x: {
-        field: xField,
-        type: xField === 'date' ? 'temporal' : 'ordinal',
-        title: xField,
-        
+const Chart = ({ data, xField, yField, vField, kField, markType, yAggregation, width, height }) => {
+let spec;
+  if(markType == 'arc'){
+    spec = {
+      width: width,
+      height: height,
+      mark: markType,
+      encoding: {
+        theta: {
+          field: vField,
+          type: 'quantitative',
+          title: vField,
+        },
+        color: {
+          field: kField,
+          type: 'nominal',
+          title: kField,
+        },
       },
-      y: {
-        field: yField,
-        type: 'quantitative',
-        title: yField,
-        aggregate: yAggregation, 
+      data: { name: 'table' },
+    };
+  }else{
+    spec = {
+      width: width,
+      height: height,
+      mark: markType,
+      encoding: {
+        x: {
+          field: xField,
+          type: xField === 'date' ? 'temporal' : 'ordinal',
+          title: xField,    
+        },
+        y: {
+          field: yField,
+          type: 'quantitative',
+          title: yField,
+        }
       },
-
-    },
-    data: { name: 'table' },
-  };
-
+      data: { name: 'table' },
+    };
+  }
   return <div className="chart"><Vega spec={spec} data={{ table: data }} /></div>;
 };
 
