@@ -2,6 +2,154 @@
   width: 100%;
   background-color: #282c34;
   color: white;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.darkmode-toggle {
+  margin-right: 30px;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.2s, background 0.2s;
+  outline: none;
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+
+.darkmode-toggle:hover {
+  color: #ffd700;
+  background: #1e2127;
+}
+
+.App.dark-mode .navbar {
+  background-color: #282c34;
+  color: #f1f1f1;
+}
+
+.App.dark-mode .darkmode-toggle {
+  background: #282c34;
+  color: #ffd700;
+}
+
+.App.dark-mode .darkmode-toggle:hover {
+  background: #1e2127;
+  color: #ffd700;
+}
+
+.hamburger {
+  background: #fff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin-right: 18px;
+  margin-left: 0;
+  z-index: 1101;
+  border-radius: 4px;
+}
+
+.hamburger .bar {
+  width: 26px;
+  height: 3px;
+  background: #1976d2;
+  margin: 3px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.App.dark-mode .hamburger .bar {
+  background: #ffd700;
+}
+
+.App.dark-mode .hamburger {
+  background: #282c34;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1100;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu {
+  background: #fff;
+  color: #222;
+  min-width: 220px;
+  height: 100vh;
+  padding: 40px 24px 24px 24px;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 1102;
+  animation: slideIn 0.25s cubic-bezier(.4,1.6,.6,1) 1;
+}
+
+.menu-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 6px 0;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu-link:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.App.dark-mode .menu {
+  background: #282c34;
+  color: #ffd700;
+}
+
+.App.dark-mode .menu-link {
+  color: #ffd700;
+}
+
+.App.dark-mode .menu-link:hover {
+  background: #282c34;
+  color: #fff;
+}
+
+.menu-link:first-child {
+  margin-top: 32px;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 } 

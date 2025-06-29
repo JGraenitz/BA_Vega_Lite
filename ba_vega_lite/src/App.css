@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #f7f7f7;
+  transition: background 0.3s, color 0.3s;
+}
+
+.App.dark-mode {
+  background: #181a1b;
+  color: #f1f1f1;
 }
 
 .App-logo {
@@ -38,4 +45,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button, .data-chart button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin: 0 5px;
+}
+
+button:hover, .data-chart button:hover {
+  background: #1565c0;
+}
+
+.App.dark-mode button, .App.dark-mode .data-chart button {
+  background: #333b4a;
+  color: #ffd700;
+  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.15);
+}
+
+.App.dark-mode button:hover, .App.dark-mode .data-chart button:hover {
+  background: #22262e;
+}
+
+select, .data-chart select, input[type="number"], input[type="date"] {
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 1rem;
+  margin: 0 5px;
+  background: #fff;
+  color: #222;
+  transition: border 0.2s, background 0.2s, color 0.2s;
+}
+
+select:focus, input[type="number"]:focus, input[type="date"]:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.App.dark-mode select, .App.dark-mode .data-chart select, .App.dark-mode input[type="number"], .App.dark-mode input[type="date"] {
+  background: #23272b;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+.App.dark-mode select:focus, .App.dark-mode input[type="number"]:focus, .App.dark-mode input[type="date"]:focus {
+  border-color: #ffd700;
 }

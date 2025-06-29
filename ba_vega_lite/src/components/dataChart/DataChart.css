@@ -4,24 +4,6 @@
   flex: 1;
 }
 
-.navbar {
-  width: 100%;
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.footer {
-  width: 100%;
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-}
-
 .chart-container {
   flex: 1;
   display: flex;
@@ -61,4 +43,69 @@
   display: flex;
   justify-content: center;
   margin: 20px 0;
+}
+
+.dropzone {
+  border: 2px dashed #1976d2;
+  border-radius: 8px;
+  padding: 32px 20px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  color: #1976d2;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.dropzone-label {
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+}
+
+.dropzone.active {
+  background: #e3f2fd;
+  border-color: #1565c0;
+  color: #1565c0;
+}
+
+.App.dark-mode .dropzone {
+  background: #23272b;
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+.App.dark-mode .dropzone.active {
+  background: #333b4a;
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+.file-info {
+  margin-bottom: 16px;
+  color: #1976d2;
+  font-size: 1em;
+  text-align: center;
+}
+
+.App.dark-mode .file-info {
+  color: #ffd700;
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #ffebee;
+  border: 1px solid #d32f2f;
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.App.dark-mode .error-message {
+  color: #ff5252;
+  background: #2d1a1a;
+  border-color: #ff5252;
 } 

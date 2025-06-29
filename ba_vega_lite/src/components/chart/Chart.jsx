@@ -30,6 +30,8 @@ import { field } from 'vega';
  *   height={450}
  * />
  */
+
+
 const Chart = ({ data, xField, yField, vField, kField, markType, yAggregation, width, height }) => {
 let spec;
   if(markType == 'arc'){

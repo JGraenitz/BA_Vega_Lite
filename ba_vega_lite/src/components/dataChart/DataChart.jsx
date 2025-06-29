@@ -13,6 +13,9 @@ import './DataChart.css';
 function DataChart() {
 
   const [data, setData] = useState([]);
+  const [dragActive, setDragActive] = useState(false);
+  const [fileName, setFileName] = useState("");
+  const [error, setError] = useState("");
 
   const [xField, setXField] = useState('');
 
@@ -38,18 +41,61 @@ function DataChart() {
 
   /**
    * Wird aufgerufen, wenn der Nutzer eine Datei auswählt. Liest die Datei ein und parst sie als CSV.
-   * @param {React.ChangeEvent<HTMLInputElement>} event - Das Change-Event des Datei-Inputs.
+   * @param {File} file - Die ausgewählte Datei.
    */
+  const handleFile = (file) => {
+    if (!file) return;
+    setError("");
+    // Dateiendung prüfen
+    if (!file.name.toLowerCase().endsWith('.csv')) {
+      setFileName("");
+      setData([]);
+      setError("Bitte lade eine Datei mit der Endung .csv hoch.");
+      return;
+    }
+    setFileName(file.name);
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const text = e.target.result;
+      try {
+        const parsedData = parseCSV(text);
+        // Prüfe, ob die CSV valide ist (mind. 1 Zeile, Header, keine leeren Header)
+        if (!Array.isArray(parsedData) || parsedData.length === 0 || Object.keys(parsedData[0]).length === 0) {
+          throw new Error("Die CSV-Datei ist leer oder nicht korrekt formatiert.");
+        }
+        setData(parsedData);
+        setError("");
+      } catch (err) {
+        setData([]);
+        setFileName("");
+        setError("Die CSV-Datei konnte nicht gelesen werden. Bitte prüfe das Format. (" + err.message + ")");
+      }
+    };
+    reader.readAsText(file);
+  };
+
   const handleFileChange = (event) => {
     const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const text = e.target.result;
-        const parsedData = parseCSV(text);
-        setData(parsedData);
-      };
-      reader.readAsText(file);
+    handleFile(file);
+  };
+
+  // Drag & Drop Events
+  const handleDrag = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.type === 'dragenter' || e.type === 'dragover') {
+      setDragActive(true);
+    } else if (e.type === 'dragleave') {
+      setDragActive(false);
+    }
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+      handleFile(e.dataTransfer.files[0]);
     }
   };
 
@@ -81,6 +127,7 @@ function DataChart() {
    * 4. Werte in der "date"-Spalte werden in Date-Objekte umgewandelt.
    * 5. Zahlenwerte werden als float gespeichert, alle anderen Werte als String.
    */
+ /*
   const parseCSV = (text) => {
     const rows = text.split('\n').map(row => row.split(','));
     const headers = rows[0];
@@ -96,6 +143,27 @@ function DataChart() {
     });
     return data;
   };
+   */
+
+  const parseCSV = (text) => {
+    const lines = text.split('\n').filter(line => line.trim() !== '');
+    if (lines.length === 0) return [];
+    const headers = lines[0].split(',');
+    return lines.slice(1)
+      .map(line => line.split(','))
+      .filter(row => row.length === headers.length)
+      .map(row => {
+        return headers.reduce((acc, header, index) => {
+          if (header === 'date') {
+            acc[header] = new Date(row[index]);
+          } else {
+            acc[header] = isNaN(row[index]) ? row[index] : parseFloat(row[index]);
+          }
+          return acc;
+        }, {});
+      });
+  };
+ 
 
   /**
    * Filtert die Daten nach dem ausgewählten Zeitraum (Start- und Enddatum) basierend auf dem xField.
@@ -113,9 +181,26 @@ function DataChart() {
       
       <div className="chart-container">
         <p>
-          Lade eine CSV-Datei hoch und wähle die Achsen und Diagrammart aus.
+          Lade eine CSV-Datei hoch (per Klick oder Drag & Drop) und wähle die Achsen und Diagrammart aus.
         </p>
-        <input type="file" accept=".csv" onChange={handleFileChange} />
+        <div
+          className={`dropzone${dragActive ? ' active' : ''}`}
+          onDragEnter={handleDrag}
+          onDragOver={handleDrag}
+          onDragLeave={handleDrag}
+          onDrop={handleDrop}
+        >
+          <input type="file" accept=".csv" onChange={handleFileChange} style={{ display: 'none' }} id="csv-upload" />
+          <label htmlFor="csv-upload" className="dropzone-label">
+            {dragActive ? 'CSV-Datei hier ablegen...' : 'CSV-Datei auswählen...'}
+          </label>
+        </div>
+        {error && (
+          <div className="error-message">{error}</div>
+        )}
+        {fileName && !error && (
+          <div className="file-info">Hochgeladene Datei: <strong>{fileName}</strong></div>
+        )}
         {data.length > 0 && (
           <>
             <div className="controls">
@@ -167,26 +252,26 @@ function DataChart() {
               </>
             )}
 
-              {/* Dropdown für Y-Achsen Aggregation 
-              <label>Aggregation X:</label>
-              <select onChange={(e) => setXAggregation(e.target.value)} className="small-select">
-                <option value="mean">Mittelwert</option>
-                <option value="min">Minimum</option>
-                <option value="max">Maximum</option>
-                <option value="count">Anzahl</option>
-              </select>
-              */}
+            {/* Dropdown für Y-Achsen Aggregation 
+            <label>Aggregation X:</label>
+            <select onChange={(e) => setXAggregation(e.target.value)} className="small-select">
+              <option value="mean">Mittelwert</option>
+              <option value="min">Minimum</option>
+              <option value="max">Maximum</option>
+              <option value="count">Anzahl</option>
+            </select>
+            */}
 
-              {/*
-              <label>Aggregation Y:</label>
-              <select onChange={(e) => setYAggregation(e.target.value)} className="small-select">
-                <option value="mean">Mittelwert</option>
-                <option value="min">Minimum</option>
-                <option value="max">Maximum</option>
-                <option value="count">Anzahl</option>
-              </select>
-              */}
-              
+            {/*
+            <label>Aggregation Y:</label>
+            <select onChange={(e) => setYAggregation(e.target.value)} className="small-select">
+              <option value="mean">Mittelwert</option>
+              <option value="min">Minimum</option>
+              <option value="max">Maximum</option>
+              <option value="count">Anzahl</option>
+            </select>
+            */}
+            
 
             </div>
             <div className="chart-settings">

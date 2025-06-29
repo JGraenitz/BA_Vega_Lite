@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background: #181a1b;
 }
 
 code {
