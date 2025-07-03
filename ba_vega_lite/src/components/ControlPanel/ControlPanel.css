@@ -1,0 +1,332 @@
+.controlpanel-root {
+  background: var(--color-bg-panel);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 24px 28px 20px 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 28px;
+  transition: background 0.3s, color 0.3s;
+}
+.controlpanel-root.dark-mode {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-text-dark);
+}
+
+.controlpanel-section {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.controlpanel-section.dark-mode {
+  border-bottom: 1px solid #2a3a4a;
+}
+.controlpanel-section-title {
+  margin: 0 0 16px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.dark-mode .controlpanel-section-title {
+  color: var(--color-primary-dark);
+}
+
+.controlpanel-layers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.controlpanel-layer-row {
+  background: #f5f8fa;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 16px 14px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.controlpanel-root.dark-mode .controlpanel-layer-row {
+  background: #25313b;
+}
+
+.controlpanel-layer-row.moving-up {
+  animation: moveUp 0.3s;
+}
+.controlpanel-layer-row.moving-down {
+  animation: moveDown 0.3s;
+}
+@keyframes moveUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+@keyframes moveDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+
+.controlpanel-layer-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px 18px;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.controlpanel-layer-remove-btn {
+  align-self: center;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+}
+
+.controlpanel-layer-separator {
+  border: none;
+  border-top: 1.5px solid #e0e4ea;
+  margin: 18px 0 0 0;
+}
+.controlpanel-root.dark-mode .controlpanel-layer-separator {
+  border-top: 1.5px solid #34495e;
+}
+
+.controlpanel-layer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 18px;
+  align-items: center;
+}
+
+/* Neue Gruppe für die vertikalen Move-Buttons */
+.controlpanel-layer-move-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 10px;
+  align-self: center;
+  justify-content: center;
+}
+
+.controlpanel-label {
+  font-size: 0.97rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+  display: block;
+  color: var(--color-text);
+}
+.dark-mode .controlpanel-label {
+  color: var(--color-text-dark);
+}
+
+.controlpanel-select, .controlpanel-input, .controlpanel-datefilter-input {
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #bfc7d1;
+  background: #fff;
+  color: var(--color-text);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  min-width: 90px;
+}
+.controlpanel-select:focus, .controlpanel-input:focus, .controlpanel-datefilter-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px #1976d22a;
+}
+.controlpanel-root.dark-mode .controlpanel-select,
+.controlpanel-root.dark-mode .controlpanel-input,
+.controlpanel-root.dark-mode .controlpanel-datefilter-input {
+  background: #1a232b;
+  color: var(--color-text-dark);
+  border: 1px solid #3a4a5a;
+}
+.controlpanel-root.dark-mode .controlpanel-select:focus,
+.controlpanel-root.dark-mode .controlpanel-input:focus,
+.controlpanel-root.dark-mode .controlpanel-datefilter-input:focus {
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 0 2px #ffd70033;
+}
+
+.controlpanel-color-input {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.controlpanel-range {
+  width: 90px;
+  accent-color: var(--color-primary);
+}
+
+.controlpanel-layer-move-btn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.controlpanel-layer-move-btn:disabled {
+  background: #bfc7d1;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.controlpanel-btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.controlpanel-btn:hover, .controlpanel-btn:focus {
+  background: var(--color-primary-dark);
+  color: #222;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.13);
+}
+
+/* Datefilter */
+.controlpanel-datefilter-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+.controlpanel-datefilter-input {
+  min-width: 130px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .controlpanel-root {
+    padding: 12px 4vw 12px 4vw;
+    max-width: 100vw;
+  }
+  .controlpanel-layer-controls {
+    flex-direction: column;
+    gap: 10px 0;
+    align-items: stretch;
+  }
+  .controlpanel-layer-move-group {
+    flex-direction: row;
+    gap: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .controlpanel-section {
+    padding-bottom: 10px;
+  }
+}
+
+/* Chart Settings: X/Y Label linksbündig */
+#x-label, #y-label, .controlpanel-label[for="x-label"], .controlpanel-label[for="y-label"] {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.controlpanel-input {
+  text-align: left;
+}
+.controlpanel-section .controlpanel-label,
+.controlpanel-section input[type="text"] {
+  text-align: left;
+  margin: 0;
+  display: block;
+}
+/* Entferne oder überschreibe die vertikale Ausrichtung für Chart-Settings */
+.controlpanel-section > div > div {
+  /* entfernt, da es das horizontale Layout überschreibt */
+}
+.controlpanel-chart-settings-row {
+  display: flex;
+  flex-direction: row !important;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.controlpanel-chart-size-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+.controlpanel-chart-size-row > div {
+  flex: 1 1 0;
+  min-width: 100px;
+}
+.controlpanel-apply-btn-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0px;
+}
+@media (max-width: 700px) {
+  .controlpanel-chart-settings-row,
+  .controlpanel-chart-size-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .controlpanel-apply-btn-row {
+    justify-content: stretch;
+  }
+}
+
+.controlpanel-add-layer-btn {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.controlpanel-add-layer-btn:hover {
+  background: var(--color-primary-dark);
+  color: #222;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.13);
+}
+.controlpanel-add-layer-btn:active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.controlpanel-point-settings {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

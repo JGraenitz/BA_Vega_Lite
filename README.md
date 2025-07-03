@@ -9,3 +9,7 @@ Cloning und Dependencies:
 `npm install react-vega vega vega-lite` <br> <br>
 React-vega unterstützt React nur bis Version 18 und es wird automatisch bei der Erstellung eines normalen React Projektes die Version 19 genommen, welches zu einem "Peer Dependency Conflict" führt: <br>
 `npm install react-vega vega vega-lite --legacy-peer-deps` oder `npm install react-vega vega vega-lite --force`<br>
+
+`npm install react-router-dom --legacy-peer-deps` <br>
+
+`npm install papaparse --legacy-peer-deps` <br>

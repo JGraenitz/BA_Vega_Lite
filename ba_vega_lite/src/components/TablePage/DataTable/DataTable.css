@@ -1,0 +1,136 @@
+/* Data Table */
+.data-table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  background: var(--color-bg-panel);
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.98rem;
+  background: var(--color-bg-panel);
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #e0e7ef;
+  padding: 0.5vw 1vw;
+  text-align: left;
+}
+
+.data-table th {
+  background: #f4f7fb;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.data-table tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.data-table-scroll {
+  overflow: auto;
+  max-width: 100%;
+  border-radius: 0.5vw;
+  box-shadow: var(--box-shadow);
+  height: 60vh;
+  max-height: 600px;
+  min-height: 300px;
+  background: var(--color-bg-panel);
+}
+
+/* Scrollbar Styling für die Box */
+.data-table-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.data-table-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.data-table-scroll::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.data-table-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Mobile responsive table */
+@media (max-width: 900px) {
+  .data-table-scroll {
+    height: 50vh;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .data-table-container {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .data-table-scroll {
+    height: 45vh;
+    max-height: 400px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .data-table-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .data-table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .data-table-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+  }
+  
+  .data-table-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}
+
+/* Darkmode Styles */
+body.dark-mode .data-table-container {
+  background: var(--color-bg-panel-dark);
+}
+body.dark-mode .data-table {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-text-dark);
+}
+body.dark-mode .data-table th {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-accent-dark);
+}
+body.dark-mode .data-table td {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-text-dark);
+  border-color: #374151;
+}
+body.dark-mode .data-table tr:nth-child(even) {
+  background: #263040;
+}
+body.dark-mode .data-table-scroll {
+  background: var(--color-bg-panel-dark);
+  box-shadow: 0 2px 8px rgba(100,255,218,0.04);
+}
+body.dark-mode .data-table-scroll::-webkit-scrollbar-track {
+  background: #23272b;
+}
+body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+} 

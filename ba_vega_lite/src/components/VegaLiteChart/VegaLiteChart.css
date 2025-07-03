@@ -1,0 +1,20 @@
+/* Vega-Lite Chart */
+.vega-lite-chart-container {
+  min-width: 0;
+  max-width: 75vw;
+  overflow-x: auto;
+  background: var(--color-bg-light);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Ensure Vega-Lite charts are responsive */
+.vega-lite-chart-container .vega-embed {
+  height: 100%;
+}
+
+/* Darkmode Styles */
+body.dark-mode .vega-lite-chart-container {
+  background: var(--color-bg-dark);
+  color: var(--color-text-dark);
+} 

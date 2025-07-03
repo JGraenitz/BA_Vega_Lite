@@ -1,5 +1,5 @@
-// jest-dom adds custom jest matchers for asserting on DOM nodes.
-// allows you to do things like:
+// jest-dom fügt benutzerdefinierte Jest-Matcher für DOM-Knoten hinzu.
+// Damit kannst du z.B. folgendes machen:
 // expect(element).toHaveTextContent(/react/i)
-// learn more: https://github.com/testing-library/jest-dom
+// Mehr Infos: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';

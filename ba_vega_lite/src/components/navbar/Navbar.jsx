@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // CSS für die Navbar
+import { Link } from 'react-router-dom';
+import './Navbar.css'; 
 
 /**
  * Navbar-Komponente
@@ -29,7 +30,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       </button>
       
       
-      <h1 style={{margin:0}}>Vega-Lite Diagramm</h1>
+      <h1 className="navbar-title">Vega-Lite Diagramm</h1>
       <button
         className="darkmode-toggle"
         onClick={() => setDarkMode((prev) => !prev)}
@@ -42,10 +43,18 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       {menuOpen && (
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu" onClick={e => e.stopPropagation()}>
-            <a href="#" className="menu-link">Start</a>
-            <a href="#" className="menu-link">----</a>
-            <a href="#" className="menu-link">----</a>
-            <a href="#" className="menu-link">----</a>
+            <Link to="/start" className="menu-link">
+              Start
+            </Link>
+            <Link to="/analysis" className="menu-link">
+              Analysis
+            </Link>
+            <Link to="/table" className="menu-link">
+              Table
+            </Link>
+            <Link to="/vega-json" className="menu-link">
+              Vega-JSON
+            </Link>
           </div>
         </div>
       )}

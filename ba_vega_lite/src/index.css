@@ -1,3 +1,23 @@
+/* ========== Globale Variablen ========== */
+:root {
+  --color-bg-light: #f7f7f7;
+  --color-bg-dark: #181a1b;
+  --color-bg-panel: #ffffff;
+  --color-bg-panel-dark: #233139;
+  --color-primary: #1976d2;
+  --color-primary-dark: #ffd700;
+  --color-accent: #4f6d9a;
+  --color-accent-dark: #3fc2bb;
+  --color-text: #2d3a4b;
+  --color-text-dark: #f4f7fb;
+  --color-error: #d32f2f;
+  --color-error-bg: #ffebee;
+  --color-error-dark: #ff5252;
+  --color-error-bg-dark: #2d1a1a;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,15 +25,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f7f7f7;
+  background: var(--color-bg-light);
   min-height: 100vh;
 }
 
 body.dark-mode {
-  background: #181a1b;
+  background: var(--color-bg-dark);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ========== Utility-Klassen ========== */
+.flex-col-gap-2 { display: flex; flex-direction: column; gap: 2px; }
+.flex-col-gap-4 { display: flex; flex-direction: column; gap: 4px; }
+.flex-row-gap-8 { display: flex; align-items: center; gap: 8px; }
+.flex-row-gap-12 { display: flex; gap: 12px; }
+.mt-8 { margin-top: 8px; }
+.align-end { align-self: flex-end; }
+.align-right { margin-left: auto; }
+.grid-span-all { grid-column: 1 / -1; }
+.minw-100 { min-width: 100px; }
+.minw-80 { min-width: 80px; }
+.w-60 { width: 60px; }
+.w-80 { width: 80px; }
+.minw-120 { min-width: 120px; }
+.gap-12 { gap: 12px; }
+.size-display { font-size: 0.75rem; color: #6c757d; text-align: center; min-width: 30px; }
+
+/* ========== Darkmode Utilities ========== */
+.dark-mode-bg { background: var(--color-bg-dark) !important; color: var(--color-text-dark) !important; }
+.dark-mode-panel { background: var(--color-bg-panel-dark) !important; color: var(--color-text-dark) !important; }
+.dark-mode-accent { color: var(--color-accent-dark) !important; }
+
+/* ========== Einheitliche Scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+body.dark-mode ::-webkit-scrollbar-track {
+  background: var(--color-bg-panel-dark);
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dark);
 }

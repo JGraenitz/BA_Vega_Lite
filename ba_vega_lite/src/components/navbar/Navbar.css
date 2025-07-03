@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
-  background-color: #282c34;
-  color: white;
+  background-color: var(--color-bg-panel-dark);
+  color: var(--color-text-dark);
   padding: 10px 20px;
   text-align: left;
   display: flex;
@@ -30,23 +30,8 @@
 }
 
 .darkmode-toggle:hover {
-  color: #ffd700;
+  color: var(--color-primary-dark);
   background: #1e2127;
-}
-
-.App.dark-mode .navbar {
-  background-color: #282c34;
-  color: #f1f1f1;
-}
-
-.App.dark-mode .darkmode-toggle {
-  background: #282c34;
-  color: #ffd700;
-}
-
-.App.dark-mode .darkmode-toggle:hover {
-  background: #1e2127;
-  color: #ffd700;
 }
 
 .hamburger {
@@ -67,28 +52,37 @@
 .hamburger .bar {
   width: 26px;
   height: 3px;
-  background: #1976d2;
+  background: var(--color-primary);
   margin: 3px 0;
   border-radius: 2px;
   transition: all 0.3s;
 }
 
-.App.dark-mode .hamburger .bar {
-  background: #ffd700;
+body.dark-mode .navbar {
+  background-color: var(--color-bg-panel-dark);
+  color: var(--color-primary-dark);
 }
-
-.App.dark-mode .hamburger {
-  background: #282c34;
+body.dark-mode .darkmode-toggle {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-primary-dark);
+}
+body.dark-mode .darkmode-toggle:hover {
+  background: #1e2127;
+  color: var(--color-primary-dark);
+}
+body.dark-mode .hamburger .bar {
+  background: var(--color-primary-dark);
+}
+body.dark-mode .hamburger {
+  background: var(--color-bg-panel-dark);
 }
 
 .hamburger.open .bar:nth-child(1) {
   transform: translateY(8.5px) rotate(45deg);
 }
-
 .hamburger.open .bar:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.open .bar:nth-child(3) {
   transform: translateY(-8.5px) rotate(-45deg);
 }
@@ -117,7 +111,7 @@
 }
 
 .menu-link {
-  color: #1976d2;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
@@ -125,31 +119,29 @@
   border-radius: 4px;
   transition: background 0.2s, color 0.2s;
 }
-
 .menu-link:hover {
   background: #e3f2fd;
   color: #1565c0;
 }
-
-.App.dark-mode .menu {
-  background: #282c34;
-  color: #ffd700;
+body.dark-mode .menu {
+  background: var(--color-bg-panel-dark);
+  color: var(--color-primary-dark);
 }
-
-.App.dark-mode .menu-link {
-  color: #ffd700;
+body.dark-mode .menu-link {
+  color: var(--color-primary-dark);
 }
-
-.App.dark-mode .menu-link:hover {
-  background: #282c34;
+body.dark-mode .menu-link:hover {
+  background: var(--color-bg-panel-dark);
   color: #fff;
 }
-
 .menu-link:first-child {
   margin-top: 32px;
 }
-
 @keyframes slideIn {
   from { transform: translateX(-100%); }
   to { transform: translateX(0); }
+}
+
+.navbar-title {
+  margin: 0;
 } 
