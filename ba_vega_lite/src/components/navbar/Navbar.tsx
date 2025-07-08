@@ -35,7 +35,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       </button>
       
       
-      <h1 className="navbar-title">Vega-Lite Diagramm</h1>
+      <h1 className="navbar-title">VegaViz</h1>
       <button
         className="darkmode-toggle"
         onClick={() => setDarkMode((prev: boolean) => !prev)}

@@ -5,6 +5,7 @@
   overflow-x: auto;
   background: var(--color-bg-light);
   margin: 0 auto;
+  display: block;
   padding: 1rem;
 }
 
