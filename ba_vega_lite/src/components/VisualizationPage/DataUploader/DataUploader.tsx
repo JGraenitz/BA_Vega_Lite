@@ -2,23 +2,28 @@ import React, { useState, useRef } from 'react';
 import Papa from 'papaparse';
 import './DataUploader.css';
 
+interface DataUploaderProps {
+  onData: (data: any, columns: any) => void;
+  onError: (error: string) => void;
+}
+
 /**
  * DataUploader Komponente
  * Ermöglicht Drag-and-Drop und Dateiauswahl für CSV-Upload.
  * Ruft onData(data, columns) bei Erfolg, onError(message) bei Fehler auf.
  */
-function DataUploader({ onData, onError }) {
+function DataUploader({ onData, onError }: DataUploaderProps) {
   const [dragOver, setDragOver] = useState(false);
-  const fileInputRef = useRef();
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Datei-Handling
-  const handleFile = (file) => {
+  const handleFile = (file: File) => {
     if (!file) return;
     if (!file.name.match(/\.csv$/i)) {
       onError('Bitte lade eine gültige CSV-Datei hoch.');
       return;
     }
-    Papa.parse(file, {
+    Papa.parse(file as any, {
       header: true,
       skipEmptyLines: true,
       dynamicTyping: false,
@@ -41,22 +46,22 @@ function DataUploader({ onData, onError }) {
   };
 
   // Drag & Drop
-  const handleDrop = (e) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setDragOver(false);
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       handleFile(e.dataTransfer.files[0]);
     }
   };
-  const handleDragOver = (e) => {
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setDragOver(true);
   };
-  const handleDragLeave = (e) => {
+  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setDragOver(false);
   };
-  const handleFileInput = (e) => {
+  const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       handleFile(e.target.files[0]);
     }

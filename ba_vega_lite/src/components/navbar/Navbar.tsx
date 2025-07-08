@@ -9,7 +9,12 @@ import './Navbar.css';
  * Sie zeigt den Titel der Anwendung an.
  *
  */
-const Navbar = ({ darkMode, setDarkMode }) => {
+interface NavbarProps {
+  darkMode: boolean;
+  setDarkMode: (val: boolean | ((prev: boolean) => boolean)) => void;
+}
+
+const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +38,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <h1 className="navbar-title">Vega-Lite Diagramm</h1>
       <button
         className="darkmode-toggle"
-        onClick={() => setDarkMode((prev) => !prev)}
+        onClick={() => setDarkMode((prev: boolean) => !prev)}
         aria-label="Dark Mode umschalten"
       >
         {darkMode ? '🌙' : '☀️'}
@@ -43,7 +48,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       {menuOpen && (
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu" onClick={e => e.stopPropagation()}>
-            <Link to="/start" className="menu-link">
+            <Link to="/" className="menu-link">
               Start
             </Link>
             <Link to="/analysis" className="menu-link">
@@ -52,7 +57,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <Link to="/table" className="menu-link">
               Table
             </Link>
-            <Link to="/vega-json" className="menu-link">
+            <Link to="/json" className="menu-link">
               Vega-JSON
             </Link>
           </div>

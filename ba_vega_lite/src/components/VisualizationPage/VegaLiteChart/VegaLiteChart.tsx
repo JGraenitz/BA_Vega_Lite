@@ -2,6 +2,15 @@ import React from 'react';
 import { VegaLite } from 'react-vega';
 import './VegaLiteChart.css';
 
+interface VegaLiteChartProps {
+  spec: any;
+  data: any[];
+  columns: any[];
+  columnInfo: any;
+  width: any;
+  height: any;
+}
+
 /**
  * VegaLiteChart Komponente
  * Stellt das Diagramm mit react-vega dar.
@@ -14,7 +23,7 @@ import './VegaLiteChart.css';
  *   - width: Breite (Zahl)
  *   - height: Höhe (Zahl)
  */
-function VegaLiteChart({ spec, data, columns, columnInfo, width, height }) {
+function VegaLiteChart({ spec, data, columns, columnInfo, width, height }: VegaLiteChartProps) {
   // Passe die Spezifikation an, um Tooltip mit dem ausgewählten Y-Achsenwert anzuzeigen
   const patchedSpec = React.useMemo(() => {
     if (!spec) return spec;
@@ -24,7 +33,7 @@ function VegaLiteChart({ spec, data, columns, columnInfo, width, height }) {
     if (spec.layer && Array.isArray(spec.layer)) {
       patched = {
         ...spec,
-        layer: spec.layer.map((layer) => {
+        layer: spec.layer.map((layer: any) => {
           const encL = { ...(layer.encoding || {}) };
           // Falls Tooltip noch nicht gesetzt ist, füge ihn basierend auf der Y-Achse hinzu
           if (!encL.tooltip && layer.encoding && layer.encoding.y && layer.encoding.y.field) {

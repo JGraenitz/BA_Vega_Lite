@@ -1,0 +1,62 @@
+/* Vega-Lite Editor */
+.vega-lite-editor {
+  width: 100%;
+  min-height: 300px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border: 1px solid #000000;
+  border-radius: 0.3vw;
+  padding: 1vw;
+  resize: vertical;
+  background: #000000;
+}
+
+.vega-lite-editor-card {
+  min-width: 0;
+}
+
+.vega-lite-editor-label {
+  font-weight: 600;
+}
+
+.vega-lite-editor-readonly {
+  background: #ffffff;
+  color: #000000;
+  cursor: not-allowed;
+  width: 100%;
+  min-width: 75vw;
+  max-width: 100%;
+  min-height: 30vw;
+  max-height: 60vh;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+  transition: width 0.2s;
+}
+
+@media (max-width: 500px) {
+  .vega-lite-editor-readonly {
+    min-width: 0;
+    font-size: 0.95rem;
+    padding: 0.5em 0.5em;
+  }
+}
+
+body.dark-mode .vega-lite-editor-readonly {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid rgb(62, 62, 62);
+}
+
+.vega-lite-editor-error {
+  color: #b91c1c;
+  margin-top: 8px;
+  font-size: 0.98rem;
+} 

@@ -1,9 +1,14 @@
 import React from 'react';
-import DataTable from './DataTable/DataTable.jsx';
+import DataTable from './DataTable/DataTable';
 
-// TablePage-Komponente
+// TablePage Komponente
 // Stellt die Tabelle mit den gefilterten Daten dar
-function TablePage({ filteredData, columns }) {
+interface TablePageProps {
+  filteredData: any[];
+  columns: any[];
+}
+
+function TablePage({ filteredData, columns }: TablePageProps) {
   return (
     <div className="card tablepage-card">
       <h2>Tabelle</h2>

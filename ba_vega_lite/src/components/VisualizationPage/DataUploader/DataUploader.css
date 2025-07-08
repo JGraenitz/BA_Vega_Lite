@@ -47,7 +47,7 @@
 }
 
 .datauploader-outer {
-  margin-top: 32px; /* Gap zur Navbar */
+  margin-top: 32px; 
   display: flex;
   justify-content: center;
 }
@@ -57,10 +57,10 @@
   max-width: 480px;
   width: 100%;
   background: #f9f9f9;
-  border: 2px dashed var(--color-primary, #1976d2);
+  border: 2px dashed var(--color-primary);
   border-radius: 18px;
   padding: 40px 28px 32px 28px;
-  color: var(--color-primary, #1976d2);
+  color: var(--color-primary);
   text-align: center;
   cursor: pointer;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -84,22 +84,22 @@
 }
 
 .datauploader-link {
-  color: var(--color-primary, #1976d2);
+  color: var(--color-primary);
   text-decoration: underline;
   cursor: pointer;
   font-weight: 600;
 }
 
 body.dark-mode .datauploader-dropzone {
-  background: var(--color-bg-panel-dark, #23272f);
-  border-color: var(--color-primary-dark, #90caf9);
-  color: var(--color-primary-dark, #90caf9);
+  background: var(--color-bg-panel-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 body.dark-mode .datauploader-dropzone.active {
   background: #333b4a;
-  border-color: var(--color-primary-dark, #90caf9);
-  color: var(--color-primary-dark, #90caf9);
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 .file-info {
@@ -114,9 +114,9 @@ body.dark-mode .file-info {
 }
 
 .error-message {
-  color: var(--color-error, #d32f2f);
-  background: var(--color-error-bg, #fff0f0);
-  border: 1px solid var(--color-error, #d32f2f);
+  color: var(--color-error);
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
   border-radius: 6px;
   padding: 10px 16px;
   margin-bottom: 16px;
@@ -125,9 +125,9 @@ body.dark-mode .file-info {
 }
 
 body.dark-mode .error-message {
-  color: var(--color-error-dark, #ff8a80);
-  background: var(--color-error-bg-dark, #2d2323);
-  border-color: var(--color-error-dark, #ff8a80);
+  color: var(--color-error-dark);
+  background: var(--color-error-bg-dark);
+  border-color: var(--color-error-dark);
 }
 
 .datauploader-icon-emoji {
@@ -137,3 +137,7 @@ body.dark-mode .error-message {
 .datauploader-fileinput {
   display: none;
 } 
+
+body.dark-mode .datauploader-outer {
+  border-color: #333b4a;
+}

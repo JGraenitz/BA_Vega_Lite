@@ -4,8 +4,8 @@ import './Footer.css';
 /**
  * Footer-Komponente
  *
- * Diese Komponente stellt den Footer der Anwendung dar.
- * Sie zeigt einen Copyright-Hinweis an.
+ * Diese Komponente stellt den Footer dar.
+ * Sie zeigt Copyright-Hinweise an oder weitere Informationen.
  *
  */
 const Footer = () => {

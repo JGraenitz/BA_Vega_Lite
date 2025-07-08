@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './ControlPanel.css';
 
+interface ControlPanelProps {
+  columns: any[];
+  columnInfo: any;
+  layers?: any[];
+  markSize?: number;
+  markShape?: string;
+  xLabel?: string;
+  yLabel?: string;
+  width?: number;
+  height?: number;
+  dateFilter?: any;
+  onApply: (controls: any) => void;
+  darkMode?: boolean;
+}
+
 /**
  * ControlPanel Komponente
  * Stellt die Steuerung für die Visualisierung mit Layern, Achsen, Diagrammtypen, Aggregationen usw. bereit.
@@ -11,7 +26,8 @@ import './ControlPanel.css';
  *   - onApply: Funktion({ layers, markSize, markShape, xLabel, yLabel, width, height, dateFilter })
  */
 function ControlPanel({
-  columns, columnInfo,
+  columns,
+  columnInfo,
   layers: initialLayers = [],
   markSize: initialMarkSize = 30,
   markShape: initialMarkShape = 'circle',
@@ -22,7 +38,7 @@ function ControlPanel({
   dateFilter: initialDateFilter,
   onApply,
   darkMode = false
-}) {
+}: ControlPanelProps) {
   // Lokaler State für alle Steuerelemente
   const [layers, setLayers] = useState(initialLayers);
   const [markSize, setMarkSize] = useState(initialMarkSize);
@@ -32,7 +48,7 @@ function ControlPanel({
   const [width, setWidth] = useState(initialWidth);
   const [height, setHeight] = useState(initialHeight);
   const [dateFilter, setDateFilter] = useState(initialDateFilter);
-  const [animatingLayer, setAnimatingLayer] = useState(null);
+  const [animatingLayer, setAnimatingLayer] = useState<{id: any, direction: string} | null>(null);
 
   // Verfügbare Aggregationen
   const aggregations = [
@@ -112,62 +128,44 @@ function ControlPanel({
   };
 
   // Layer entfernen
-  const handleRemoveLayer = (layerId) => {
-    setLayers(layers.filter(layer => layer.id !== layerId));
+  const handleRemoveLayer = (layerId: any) => {
+    setLayers(layers.filter((layer: any) => layer.id !== layerId));
   };
 
   // Layer aktualisieren
-  const handleUpdateLayer = (layerId, field, value) => {
-    setLayers(layers.map(layer => 
+  const handleUpdateLayer = (layerId: any, field: any, value: any) => {
+    setLayers(layers.map((layer: any) => 
       layer.id === layerId ? { ...layer, [field]: value } : layer
     ));
   };
 
   // Layer verschieben mit Animation
-  const handleMoveLayerUp = (layerId) => {
-    const currentIndex = layers.findIndex(l => l.id === layerId);
+  const handleMoveLayerUp = (layerId: any) => {
+    const currentIndex = layers.findIndex((l: any) => l.id === layerId);
     if (currentIndex > 0) {
       setAnimatingLayer({ id: layerId, direction: 'up' });
-      
       const newLayers = [...layers];
       [newLayers[currentIndex], newLayers[currentIndex - 1]] = [newLayers[currentIndex - 1], newLayers[currentIndex]];
-      onApply({
-        layers: newLayers,
-        markSize,
-        markShape,
-        xLabel,
-        yLabel,
-        width,
-        height,
-        dateFilter
-      });
-      
-      // Resetet die Animation nachdem sie durchgeführt wurde
-      setTimeout(() => setAnimatingLayer(null), 300);
+      setLayers(newLayers);
     }
   };
 
-  const handleMoveLayerDown = (layerId) => {
-    const currentIndex = layers.findIndex(l => l.id === layerId);
+  const handleMoveLayerDown = (layerId: any) => {
+    const currentIndex = layers.findIndex((l: any) => l.id === layerId);
     if (currentIndex < layers.length - 1) {
       setAnimatingLayer({ id: layerId, direction: 'down' });
-      
       const newLayers = [...layers];
       [newLayers[currentIndex], newLayers[currentIndex + 1]] = [newLayers[currentIndex + 1], newLayers[currentIndex]];
-      onApply({
-        layers: newLayers,
-        markSize,
-        markShape,
-        xLabel,
-        yLabel,
-        width,
-        height,
-        dateFilter
-      });
-      
-      // Resetet die Animation nachdem sie durchgeführt wurde
-      setTimeout(() => setAnimatingLayer(null), 300);
+      setLayers(newLayers);
     }
+  };
+
+  // DateFilter-Handler
+  const handleDateFilterStart = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDateFilter((df: any) => ({ ...df, start: e.target.value }));
+  };
+  const handleDateFilterEnd = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDateFilter((df: any) => ({ ...df, end: e.target.value }));
   };
 
   return (
@@ -180,7 +178,7 @@ function ControlPanel({
           {layers.map((layer, idx) => (
             <div 
               key={layer.id} 
-              className={`controlpanel-layer-row${animatingLayer?.id === layer.id ? (animatingLayer.direction === 'up' ? ' moving-up' : ' moving-down') : ''}`}
+              className={`controlpanel-layer-row${animatingLayer && animatingLayer.id === layer.id ? (animatingLayer.direction === 'up' ? ' moving-up' : ' moving-down') : ''}`}
             >
               <div className="controlpanel-layer-controls"> 
                 <div className="controlpanel-layer-move-group">
@@ -366,7 +364,7 @@ function ControlPanel({
               type="date"
               className="controlpanel-datefilter-input"
               value={dateFilter.start || ''}
-              onChange={e => setDateFilter(df => ({ ...df, start: e.target.value }))}
+              onChange={handleDateFilterStart}
               aria-label="Start date"
             />
             <label htmlFor="date-end" className="controlpanel-label">Bis:</label>
@@ -375,7 +373,7 @@ function ControlPanel({
               type="date"
               className="controlpanel-datefilter-input"
               value={dateFilter.end || ''}
-              onChange={e => setDateFilter(df => ({ ...df, end: e.target.value }))}
+              onChange={handleDateFilterEnd}
               aria-label="End date"
             />
           </div>

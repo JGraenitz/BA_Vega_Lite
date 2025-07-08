@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TablePage from './components/TablePage/TablePage.jsx';
-import VisualizationPage from './components/VisualizationPage/VisualizationPage.jsx';
+import TablePage from './components/TablePage/TablePage';
+import JSONPage from './components/JSONPage/JSONPage';
+import AnalysisPage from './components/AnalysisPage/AnalysisPage';
+import ModalErrorHandler from './components/ModalErrorHandler/ModalErrorHandler';
+import VisualizationPage from './components/VisualizationPage/VisualizationPage';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import { generateVegaLiteSpec, handleCsvData, analyzeColumns } from './components/VegaLiteChart/VegaLiteUtils.js';
+import { generateVegaLiteSpec, handleCsvData, analyzeColumns } from './components/VisualizationPage/VegaLiteChart/VegaLiteUtils';
 import './App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const [columns, setColumns] = useState([]);
+  const [columns, setColumns] = useState<any[]>([]);
 
-  const [csvData, setCsvData] = useState(null); // Array von Objekten aus der eingespielten CSV
+  const [csvData, setCsvData] = useState<any>(null); // Array von Objekten aus der eingespielten CSV
 
-  const [columnInfo, setColumnInfo] = useState({}); // { col: { type, missingCount } }
+  const [columnInfo, setColumnInfo] = useState<any>({}); // { col: { type, missingCount } }
 
-  const [error, setError] = useState(null); // Fehlermeldung
+  const [error, setError] = useState<any>(null); // Fehlermeldung
 
-  const [controls, setControls] = useState({ // Steuerungs-Status: alle Visualisierungseinstellungen
+  const [controls, setControls] = useState<any>({ // Steuerungs-Status: alle Visualisierungseinstellungen
     layers: [],
     markSize: 30,
     markShape: 'circle',
@@ -30,13 +32,13 @@ function App() {
     dateFilter: { start: '', end: '' },
   });
 
-  const [vegaSpec, setVegaSpec] = useState('');   // Vega-Lite-Spezifikation (als JSON-String)
+  const [vegaSpec, setVegaSpec] = useState<string>('');   // Vega-Lite-Spezifikation (als JSON-String)
 
-  const [vegaSpecError, setVegaSpecError] = useState(null);
+  const [vegaSpecError, setVegaSpecError] = useState<any>(null);
 
-  const [filteredData, setFilteredData] = useState([]);   // Gefilterte Daten für das Diagramm (Datumsfilter)
+  const [filteredData, setFilteredData] = useState<any[]>([]);   // Gefilterte Daten für das Diagramm (Datumsfilter)
 
-  const handleControlsApply = newControls => {     // Übernehmen-Handler aus dem ControlPanel
+  const handleControlsApply = (newControls: any) => {     // Übernehmen-Handler aus dem ControlPanel
     setControls(newControls);
   };
 
@@ -47,13 +49,13 @@ function App() {
     }
     let data = csvData;
     // Prüfe, ob ein Layer temporale Daten hat und ein Datumsfilter gesetzt ist
-    const hasTemporalData = controls.layers.some(layer => {
+    const hasTemporalData = controls.layers.some((layer: any) => {
       const xType = columnInfo[layer.xAxis]?.type;
       const yType = columnInfo[layer.yAxis]?.type;
       return xType === 'temporal' || yType === 'temporal';
     });
     if (hasTemporalData && (controls.dateFilter.start || controls.dateFilter.end)) {
-      data = data.filter(row => {
+      data = data.filter((row: any) => {
         for (const layer of controls.layers) {
           const xType = columnInfo[layer.xAxis]?.type;
           const yType = columnInfo[layer.yAxis]?.type;
@@ -103,7 +105,7 @@ function App() {
     try {
       parsedSpec = JSON.parse(vegaSpec);
       setVegaSpecError(null);
-    } catch (e) {
+    } catch (e: any) {
       setVegaSpecError('Invalid JSON: ' + e.message);
     }
   }, [vegaSpec]);
@@ -114,7 +116,7 @@ function App() {
   }
 
   
-  const handleCsvDataWrapper = (data, cols) => {
+  const handleCsvDataWrapper = (data: any, cols: any) => {
     handleCsvData(
       data,
       cols,
@@ -122,11 +124,23 @@ function App() {
       setColumns,
       setColumnInfo,
       setControls,
-      setVegaSpecError,
-      analyzeColumns
+      setVegaSpecError
     );
   };
 
+  const handleTypeChange = (updatedTypes: any) => {
+    setColumnInfo((prev: any) => {
+      const newInfo = { ...prev };
+      for (const col in updatedTypes) {
+        if (newInfo[col]) {
+          newInfo[col] = { ...newInfo[col], type: updatedTypes[col] };
+        }
+      }
+      return newInfo;
+    });
+  };
+
+  const closeModal = () => setError(null);
 
   return (
     <BrowserRouter>
@@ -134,7 +148,7 @@ function App() {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="main-content">
           <Routes>
-            <Route path="/start" element={
+            <Route path="/" element={
               <VisualizationPage
                 csvData={csvData}
                 columns={columns}
@@ -149,9 +163,12 @@ function App() {
                 />} 
             />
             <Route path="/table" element={<TablePage filteredData={filteredData} columns={columns}/>} />
+            <Route path="/json" element={<JSONPage vegaSpec={vegaSpec} setVegaSpec={setVegaSpec} vegaSpecError={vegaSpecError} />} />
+            <Route path="/analysis" element={<AnalysisPage columnInfo={columnInfo} onTypeChange={handleTypeChange} />} />
           </Routes>
         </div>
         {/* <Footer /> */}
+        {error && <ModalErrorHandler title="Error" message={error} onClose={closeModal} />}
       </div>
     </BrowserRouter>
   );

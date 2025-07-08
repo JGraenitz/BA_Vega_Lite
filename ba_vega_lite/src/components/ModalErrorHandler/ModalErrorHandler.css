@@ -1,0 +1,47 @@
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 1vw;
+  padding: 2vw;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.modal .modal-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+
+.modal .modal-message {
+  margin-bottom: 1.5vw;
+}
+
+.modal .modal-btn {
+  background: #4f6d9a;
+  color: #fff;
+  border: none;
+  border-radius: 0.3vw;
+  padding: 0.7vw 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal .modal-btn:hover {
+  background: #2d3a4b;
+} 

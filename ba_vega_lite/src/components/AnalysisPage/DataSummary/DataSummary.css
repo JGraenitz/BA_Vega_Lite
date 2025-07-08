@@ -1,0 +1,31 @@
+/* Data Summary */
+.data-summary {
+  font-size: 1rem;
+  margin-bottom: 1vw;
+}
+
+.data-summary ul {
+  margin: 0.5vw 0 0 1.5vw;
+  padding: 0;
+}
+
+.data-summary li {
+  margin-bottom: 0.3vw;
+}
+
+.data-summary-list-item {
+  margin-bottom: 8px;
+}
+
+.data-summary-col-name {
+  font-weight: 600;
+}
+
+.data-summary-type-select {
+  margin-left: 8px;
+}
+
+.data-summary-missing {
+  color: #b91c1c;
+  margin-left: 8px;
+} 

@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900;
+    margin: '2vw auto';
+    padding: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .card {
+    border: 1px solid rgb(62, 62, 62);
+}
+
+.analysis-page-card {
+  max-width: 900px;
+  margin: 2vw auto;
+}

@@ -11,18 +11,18 @@ const knownOrdinals = [
 
 
 
-function isKnownOrdinal(values) {
+function isKnownOrdinal(values: any): boolean {
   for (const scale of knownOrdinals) {
     // Prüfe, ob alle Werte in der Skala enthalten sind (Reihenfolge egal)
-    if (values.every(v => scale.includes(v))) {
+    if (values.every((v: any) => scale.includes(v))) {
       return true;
     }
   }
   return false;
 }
 
-export function analyzeColumns(data, columns) {
-  const result = {};
+export function analyzeColumns(data: any, columns: any): any {
+  const result: any = {};
   for (const col of columns) {
     let missing = 0;
     let unique = new Set();
@@ -54,8 +54,8 @@ export function analyzeColumns(data, columns) {
 
 
 
-export function buildEncoding(field, type, title, aggregation = null) {
-  let encoding = {
+export function buildEncoding(field: any, type: any, title: any, aggregation: any = null): any {
+  let encoding: any = {
     field: field,
     type: type,
     axis: { title: title }
@@ -66,8 +66,8 @@ export function buildEncoding(field, type, title, aggregation = null) {
   return encoding;
 }
 
-export function buildMark(plotType, opacity = 1, markSize = 30, markShape = 'circle') {
-  let mark = { type: plotType, opacity };
+export function buildMark(plotType: any, opacity: any = 1, markSize: any = 30, markShape: any = 'circle'): any {
+  let mark: any = { type: plotType, opacity };
   if (['point', 'circle', 'square'].includes(plotType)) {
     mark.size = markSize;
   }
@@ -77,11 +77,11 @@ export function buildMark(plotType, opacity = 1, markSize = 30, markShape = 'cir
   return mark;
 }
 
-export function generateVegaLiteSpec(controls, columnInfo) {
+export function generateVegaLiteSpec(controls: any, columnInfo: any): any {
 
   if (!controls.layers || controls.layers.length === 0) return null; 
 
-  let spec = {
+  const spec: any = {
     $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
     description: 'Auto-generated chart with layers',
     width: controls.width,
@@ -93,7 +93,7 @@ export function generateVegaLiteSpec(controls, columnInfo) {
     },
   };
   
-  spec.layer = controls.layers.map((layer) => {
+  spec.layer = controls.layers.map((layer: any) => {
     const xType = columnInfo[layer.xAxis]?.type || 'nominal';
     const yType = columnInfo[layer.yAxis]?.type || 'quantitative';
 
@@ -154,7 +154,15 @@ export function generateVegaLiteSpec(controls, columnInfo) {
  * @param {Function} setControls
  * @param {Function} setVegaSpecError
  */
-export function handleCsvData(data, cols, setCsvData, setColumns, setColumnInfo, setControls, setVegaSpecError) {
+export function handleCsvData(
+  data: any,
+  cols: any,
+  setCsvData: any,
+  setColumns: any,
+  setColumnInfo: any,
+  setControls: any,
+  setVegaSpecError: any
+): void {
   setCsvData(data);
   setColumns(cols);
   const info = analyzeColumns(data, cols);
@@ -172,15 +180,6 @@ export function handleCsvData(data, cols, setCsvData, setColumns, setColumnInfo,
     markShape: 'circle'
   };
   // Setze Standard-Steuerung
-  setControls({
-    layers: [defaultLayer],
-    markSize: 30,
-    markShape: 'circle',
-    xLabel: cols[0] || '',
-    yLabel: cols[1] || '',
-    width: 1500,
-    height: 350,
-    dateFilter: { start: '', end: '' },
-  });
+  setControls((prev: any) => ({ ...prev, layers: [defaultLayer] }));
   setVegaSpecError(null);
 } 
