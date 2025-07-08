@@ -1,20 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { ControlPanelProps } from '../../../utils/interfaces/VisualizationProps';
 import './ControlPanel.css';
 
-interface ControlPanelProps {
-  columns: any[];
-  columnInfo: any;
-  layers?: any[];
-  markSize?: number;
-  markShape?: string;
-  xLabel?: string;
-  yLabel?: string;
-  width?: number;
-  height?: number;
-  dateFilter?: any;
-  onApply: (controls: any) => void;
-  darkMode?: boolean;
-}
 
 /**
  * ControlPanel Komponente

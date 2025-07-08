@@ -1,11 +1,7 @@
 import React from 'react';
+import { ModalErrorHandlerProps } from '../../utils/interfaces/ModalErrorProps';
 import './ModalErrorHandler.css';
 
-interface ModalErrorHandlerProps {
-  title: any;
-  message: any;
-  onClose: () => void;
-}
 
 /**
  * ModalErrorHandler Komponente

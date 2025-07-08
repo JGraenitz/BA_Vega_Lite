@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TablePage from './components/TablePage/TablePage';
-import JSONPage from './components/JSONPage/JSONPage';
+import JsonPage from './components/JsonPage/JsonPage';
 import AnalysisPage from './components/AnalysisPage/AnalysisPage';
 import ModalErrorHandler from './components/ModalErrorHandler/ModalErrorHandler';
 import VisualizationPage from './components/VisualizationPage/VisualizationPage';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import { generateVegaLiteSpec, handleCsvData, analyzeColumns } from './components/VisualizationPage/VegaLiteChart/VegaLiteUtils';
+import { generateVegaLiteSpec, handleCsvData } from './components/VisualizationPage/VegaLiteChart/VegaLiteUtils';
 import './App.css';
 
 function App() {
@@ -163,7 +163,7 @@ function App() {
                 />} 
             />
             <Route path="/table" element={<TablePage filteredData={filteredData} columns={columns}/>} />
-            <Route path="/json" element={<JSONPage vegaSpec={vegaSpec} setVegaSpec={setVegaSpec} vegaSpecError={vegaSpecError} />} />
+            <Route path="/json" element={<JsonPage vegaSpec={vegaSpec} setVegaSpec={setVegaSpec} vegaSpecError={vegaSpecError} />} />
             <Route path="/analysis" element={<AnalysisPage columnInfo={columnInfo} onTypeChange={handleTypeChange} />} />
           </Routes>
         </div>

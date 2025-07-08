@@ -1,11 +1,9 @@
 import React from 'react';
+import { AnalysisPageProps } from '../../utils/interfaces/AnalysisProps';
 import './AnalysisPage.css';
 import DataSummary from './DataSummary/DataSummary';
 
-interface AnalysisPageProps {
-  columnInfo: any;
-  onTypeChange: (types: any) => void;
-}
+
 
 // AnalysisPage Komponente
 // Stellt die Spaltenanalyse dar

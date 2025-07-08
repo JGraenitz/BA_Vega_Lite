@@ -1,10 +1,7 @@
 import React from 'react';
+import { DataTableProps } from '../../../utils/interfaces/TableProps';
 import './DataTable.css';
 
-interface DataTableProps {
-  data: any[];
-  columns: any[];
-}
 
 /**
  * DataTable Komponente 

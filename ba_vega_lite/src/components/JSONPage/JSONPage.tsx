@@ -1,16 +1,11 @@
 import React from 'react';
+import { JsonPageProps } from '../../utils/interfaces/JsonProps';
 import VegaLiteEditor from './VegaLiteEditor/VegaLiteEditor';
-import './JSONPage.css';
-
-interface JSONPageProps {
-  vegaSpec: any;
-  setVegaSpec: (spec: any) => void;
-  vegaSpecError: any;
-}
+import './JsonPage.css';
 
 // Funktion: JSONPage
 // Stellt die Vega-Lite JSON-Spezifikation dar (nur lesen)
-function JSONPage({ vegaSpec, setVegaSpec, vegaSpecError }: JSONPageProps) {
+function JsonPage({ vegaSpec, setVegaSpec, vegaSpecError }: JsonPageProps) {
   return (
     <div className="card vega-jsonpage-card">
       <h2>Vega-Lite JSON</h2>
@@ -19,4 +14,4 @@ function JSONPage({ vegaSpec, setVegaSpec, vegaSpecError }: JSONPageProps) {
   );
 }
 
-export default JSONPage; 
+export default JsonPage; 

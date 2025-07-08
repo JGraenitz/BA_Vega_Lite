@@ -1,4 +1,5 @@
 import React from 'react';
+import { VisualizationPageProps } from '../../utils/interfaces/VisualizationProps';
 import DataUploader from './DataUploader/DataUploader';
 import ControlPanel from './ControlPanel/ControlPanel';
 import VegaLiteChart from './VegaLiteChart/VegaLiteChart';
@@ -34,18 +35,6 @@ import './VisualizationPage.css';
  * 3. Konfiguration: Benutzer konfiguriert Visualisierung über ControlPanel
  * 4. Visualisierung: VegaLiteChart zeigt das Diagramm basierend auf den Einstellungen an
  */
-interface VisualizationPageProps {
-  csvData: any;
-  handleCsvData: (data: any, columns: any) => void;
-  columns: any[];
-  columnInfo: any;
-  controls: any;
-  filteredData: any[];
-  setError: (error: any) => void;
-  handleControlsApply: (controls: any) => void;
-  parsedSpec: any;
-  darkMode: boolean;
-}
 
 function VisualizationPage({
   csvData, handleCsvData, columns, columnInfo, controls, filteredData,

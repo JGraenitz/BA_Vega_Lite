@@ -1,15 +1,8 @@
 import React from 'react';
+import { VegaLiteChartProps } from '../../../utils/interfaces/VisualizationProps';
 import { VegaLite } from 'react-vega';
 import './VegaLiteChart.css';
 
-interface VegaLiteChartProps {
-  spec: any;
-  data: any[];
-  columns: any[];
-  columnInfo: any;
-  width: any;
-  height: any;
-}
 
 /**
  * VegaLiteChart Komponente

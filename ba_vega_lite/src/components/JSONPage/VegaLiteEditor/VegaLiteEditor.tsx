@@ -1,11 +1,7 @@
 import React from 'react';
+import { VegaLiteEditorProps } from '../../../utils/interfaces/JsonProps';
 import './VegaLiteEditor.css';
 
-interface VegaLiteEditorProps {
-  spec: any;
-  setSpec: (spec: any) => void;
-  error: any;
-}
 
 /**
  * VegaLiteEditor Komponente

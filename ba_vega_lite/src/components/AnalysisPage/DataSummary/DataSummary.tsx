@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import { } from '../../VisualizationPage/VegaLiteChart/VegaLiteUtils'
+/* import { } from '../../VisualizationPage/VegaLiteChart/VegaLiteUtils' */
+import { DataSummaryProps } from '../../../utils/interfaces/AnalysisProps';
 import './DataSummary.css';
-
-interface DataSummaryProps {
-  columnInfo: any;
-  onTypeChange?: (types: any) => void;
-}
 
 /**
  * DataSummary Komponente
