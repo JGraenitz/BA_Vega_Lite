@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
-  background-color: var(--color-bg-panel-dark);
-  color: var(--color-text-dark);
+  background-color: white;
+  color: #2d3748;
   padding: 10px 20px;
   text-align: left;
   display: flex;
@@ -10,6 +10,8 @@
   position: sticky;
   top: 0;
   z-index: 1200;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar h1 {

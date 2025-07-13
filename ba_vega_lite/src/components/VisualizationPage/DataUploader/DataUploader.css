@@ -1,4 +1,3 @@
-/* DataUploader Styles */
 .data-chart {
   display: flex;
   flex-direction: column;
@@ -58,7 +57,7 @@
   width: 100%;
   background: #f9f9f9;
   border: 2px dashed var(--color-primary);
-  border-radius: 18px;
+  border-radius: 0;
   padding: 40px 28px 32px 28px;
   color: var(--color-primary);
   text-align: center;
@@ -91,13 +90,13 @@
 }
 
 body.dark-mode .datauploader-dropzone {
-  background: var(--color-bg-panel-dark);
+  background: #1a202c;
   border-color: var(--color-primary-dark);
   color: var(--color-primary-dark);
 }
 
 body.dark-mode .datauploader-dropzone.active {
-  background: #333b4a;
+  background: #22262e;
   border-color: var(--color-primary-dark);
   color: var(--color-primary-dark);
 }
@@ -140,4 +139,133 @@ body.dark-mode .error-message {
 
 body.dark-mode .datauploader-outer {
   border-color: #333b4a;
+}
+
+/* Neue Styles für Collapse-Funktionalität */
+.datauploader-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.datauploader-outer.dark-mode .datauploader-header {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.datauploader-file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.datauploader-file-icon {
+  font-size: 1.2rem;
+}
+
+.datauploader-file-name {
+  font-weight: 500;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.datauploader-outer.dark-mode .datauploader-file-name {
+  color: #e2e8f0;
+}
+
+.datauploader-collapsed .datauploader-file-name {
+  color: #2d3748;
+}
+
+.datauploader-collapsed.dark-mode .datauploader-file-name {
+  color: #e2e8f0;
+}
+
+.datauploader-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: #6c757d;
+  transition: all 0.2s ease;
+}
+
+.datauploader-toggle-btn:hover {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.datauploader-toggle-btn.dark-mode {
+  color: #a0aec0;
+}
+
+.datauploader-toggle-btn.dark-mode:hover {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.datauploader-toggle-icon {
+  font-size: 1rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.datauploader-collapsed.dark-mode .datauploader-toggle-icon {
+  color: #a0aec0;
+}
+
+.datauploader-collapsed {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.datauploader-collapsed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0;
+  min-width: 340px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.datauploader-collapsed-header:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.datauploader-collapsed.dark-mode .datauploader-collapsed-header {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.datauploader-collapsed.dark-mode .datauploader-collapsed-header:hover {
+  background: #1a202c;
+}
+
+/* Anpassung für Dropzone wenn Header vorhanden */
+.datauploader-outer .datauploader-dropzone {
+  border-radius: 0;
+  margin-top: 0;
+}
+
+.datauploader-outer.dark-mode .datauploader-dropzone {
+  border-radius: 0;
 }

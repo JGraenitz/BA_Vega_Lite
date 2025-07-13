@@ -1,6 +1,6 @@
 export interface VisualizationPageProps {
     csvData: any;
-    handleCsvData: (data: any, columns: any) => void;
+    handleUploadedCsvData: (data: any, columns: any) => void;
     columns: any[];
     columnInfo: any;
     controls: any;
@@ -11,10 +11,23 @@ export interface VisualizationPageProps {
     darkMode: boolean;
   }
 
+export interface LayerConfig {
+  id: any;
+  xAxis: string;
+  yAxis: string;
+  aggregation?: string;
+  plotType: string;
+  color: string;
+  opacity: number;
+  markSize?: number;
+  markShape?: string;
+  colorField?: string;
+}  
+
 export interface ControlPanelProps {
     columns: any[];
     columnInfo: any;
-    layers?: any[];
+    layers?: LayerConfig[];
     markSize?: number;
     markShape?: string;
     xLabel?: string;
@@ -24,11 +37,16 @@ export interface ControlPanelProps {
     dateFilter?: any;
     onApply: (controls: any) => void;
     darkMode?: boolean;
+    showLegend?: boolean;
   }
   
 export interface DataUploaderProps {
-    onData: (data: any, columns: any) => void;
-    onError: (error: string) => void;
+  onData: (data: any, columns: any, fileName?: string) => void;
+  onError: (error: string) => void;
+  fileName?: string;
+  isCollapsed?: boolean;
+  onToggleCollapse?: () => void;
+  darkMode?: boolean;
   } 
 
 export interface VegaLiteChartProps {

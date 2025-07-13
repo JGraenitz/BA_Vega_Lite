@@ -1,0 +1,149 @@
+.testdata-selector {
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  width: 75%;
+  max-width: 1200px;
+}
+
+.testdata-selector.dark-mode {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.testdata-selector-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.testdata-selector.dark-mode .testdata-selector-title {
+  color: #e2e8f0;
+}
+
+.testdata-selector-description {
+  margin: 0 0 1.5rem 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.testdata-selector.dark-mode .testdata-selector-description {
+  color: #a0aec0;
+}
+
+.testdata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.testdata-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testdata-card:hover {
+  border-color: #4f6d9a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.testdata-card:focus {
+  outline: none;
+  border-color: #4f6d9a;
+  box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
+}
+
+.testdata-card.dark-mode {
+  background: #1a202c;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.testdata-card.dark-mode:hover {
+  border-color: #4f6d9a;
+  background: #2d3748;
+}
+
+.testdata-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.testdata-content {
+  flex: 1;
+}
+
+.testdata-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.testdata-card.dark-mode .testdata-name {
+  color: #e2e8f0;
+}
+
+.testdata-description {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+.testdata-card.dark-mode .testdata-description {
+  color: #a0aec0;
+}
+
+.testdata-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #4f6d9a;
+  font-weight: 500;
+}
+
+.testdata-card.dark-mode .testdata-info {
+  color: #90cdf4;
+}
+
+.testdata-rows,
+.testdata-columns {
+  background: rgba(79, 109, 154, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.testdata-card.dark-mode .testdata-rows,
+.testdata-card.dark-mode .testdata-columns {
+  background: rgba(144, 205, 244, 0.2);
+}
+
+@media (max-width: 768px) {
+  .testdata-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testdata-card {
+    padding: 0.75rem;
+  }
+  
+  .testdata-icon {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+  }
+} 

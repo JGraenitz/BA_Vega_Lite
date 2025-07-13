@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ControlPanelProps } from '../../../utils/interfaces/VisualizationProps';
 import './ControlPanel.css';
+import { Tooltip } from 'react-tooltip';
 
 
 /**
@@ -24,7 +25,8 @@ function ControlPanel({
   height: initialHeight,
   dateFilter: initialDateFilter,
   onApply,
-  darkMode = false
+  darkMode = false,
+  showLegend: initialShowLegend = false
 }: ControlPanelProps) {
   // Lokaler State für alle Steuerelemente
   const [layers, setLayers] = useState(initialLayers);
@@ -35,6 +37,11 @@ function ControlPanel({
   const [width, setWidth] = useState(initialWidth);
   const [height, setHeight] = useState(initialHeight);
   const [dateFilter, setDateFilter] = useState(initialDateFilter);
+  const [dateField, setDateField] = useState(() => {
+    const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
+    return temporalFields[0] || '';
+  });
+  const [showLegend, setShowLegend] = useState(initialShowLegend);
   const [animatingLayer, setAnimatingLayer] = useState<{id: any, direction: string} | null>(null);
 
   // Verfügbare Aggregationen
@@ -76,13 +83,17 @@ function ControlPanel({
   useEffect(() => { setWidth(initialWidth); }, [initialWidth]);
   useEffect(() => { setHeight(initialHeight); }, [initialHeight]);
   useEffect(() => { setDateFilter(initialDateFilter); }, [initialDateFilter]);
+  useEffect(() => { setShowLegend(initialShowLegend); }, [initialShowLegend]);
+  useEffect(() => {
+    const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
+    if (temporalFields.length > 0 && !temporalFields.includes(dateField)) {
+      setDateField(temporalFields[0]);
+    }
+  }, [columns, columnInfo]);
 
-  // Prüfen, ob ein Layer temporale Daten hat, um den Datumsfilter anzuzeigen
-  const showDateFilter = layers.some(layer => {
-    const xType = columnInfo[layer.xAxis]?.type;
-    const yType = columnInfo[layer.yAxis]?.type;
-    return xType === 'temporal' || yType === 'temporal';
-  });
+  // Alle temporalen Felder für das Dropdown bestimmen
+  const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
+  const showDateFilter = temporalFields.length > 0;
 
   // Übernehmen-Handler
   const handleApply = () => {
@@ -94,7 +105,9 @@ function ControlPanel({
       yLabel, 
       width, 
       height, 
-      dateFilter 
+      dateFilter,
+      dateField,
+      showLegend
     });
   };
 
@@ -126,7 +139,7 @@ function ControlPanel({
     ));
   };
 
-  // Layer verschieben mit Animation
+  // Layer verschieben 
   const handleMoveLayerUp = (layerId: any) => {
     const currentIndex = layers.findIndex((l: any) => l.id === layerId);
     if (currentIndex > 0) {
@@ -174,19 +187,23 @@ function ControlPanel({
                     onClick={() => handleMoveLayerUp(layer.id)}
                     disabled={idx === 0}
                     className="controlpanel-layer-move-btn"
-                    title="Layer nach oben"
+                    data-tooltip-id={`move-up-tooltip-${layer.id}`}
+                    data-tooltip-content="Layer eine Position nach oben verschieben"
                   >
                     ▲
                   </button>
+                  <Tooltip id={`move-up-tooltip-${layer.id}`} place="top" />
                   <button
                     type="button"
                     onClick={() => handleMoveLayerDown(layer.id)}
                     disabled={idx === layers.length - 1}
                     className="controlpanel-layer-move-btn"
-                    title="Layer nach unten"
+                    data-tooltip-id={`move-down-tooltip-${layer.id}`}
+                    data-tooltip-content="Layer eine Position nach unten verschieben"
                   >
                     ▼
                   </button>
+                  <Tooltip id={`move-down-tooltip-${layer.id}`} place="top" />
                 </div>
                 <div className="controlpanel-layer-fields">
                   <div>
@@ -195,12 +212,14 @@ function ControlPanel({
                       className="controlpanel-select"
                       value={layer.xAxis}
                       onChange={e => handleUpdateLayer(layer.id, 'xAxis', e.target.value)}
-                      title="Layer X-Achse"
+                      data-tooltip-id={`xaxis-tooltip-${layer.id}`}
+                      data-tooltip-content="Spalte für die X-Achse dieses Layers wählen"
                     >
                       {columns.map(col => (
                         <option key={col} value={col}>{col}</option>
                       ))}
                     </select>
+                    <Tooltip id={`xaxis-tooltip-${layer.id}`} place="top" />
                   </div>
                   <div>
                     <label className="controlpanel-label">Y-Achse</label>
@@ -208,12 +227,14 @@ function ControlPanel({
                       className="controlpanel-select"
                       value={layer.yAxis}
                       onChange={e => handleUpdateLayer(layer.id, 'yAxis', e.target.value)}
-                      title="Layer Y-Achse"
+                      data-tooltip-id={`yaxis-tooltip-${layer.id}`}
+                      data-tooltip-content="Spalte für die Y-Achse dieses Layers wählen"
                     >
                       {columns.filter(col => col !== layer.xAxis).map(col => (
                         <option key={col} value={col}>{col}</option>
                       ))}
                     </select>
+                    <Tooltip id={`yaxis-tooltip-${layer.id}`} place="top" />
                   </div>
                   <div>
                     <label className="controlpanel-label">Aggregation</label>
@@ -221,12 +242,14 @@ function ControlPanel({
                       className="controlpanel-select"
                       value={layer.aggregation}
                       onChange={e => handleUpdateLayer(layer.id, 'aggregation', e.target.value)}
-                      title="Layer Aggregation"
+                      data-tooltip-id={`aggregation-tooltip-${layer.id}`}
+                      data-tooltip-content="Aggregation für diesen Layer wählen (z.B. Summe, Durchschnitt)"
                     >
                       {aggregations.map(agg => (
                         <option key={agg.value} value={agg.value}>{agg.label}</option>
                       ))}
                     </select>
+                    <Tooltip id={`aggregation-tooltip-${layer.id}`} place="top" />
                   </div>
                   <div>
                     <label className="controlpanel-label">Typ</label>
@@ -234,12 +257,14 @@ function ControlPanel({
                       className="controlpanel-select"
                       value={layer.plotType}
                       onChange={e => handleUpdateLayer(layer.id, 'plotType', e.target.value)}
-                      title="Layer Plot-Typ"
+                      data-tooltip-id={`plottype-tooltip-${layer.id}`}
+                      data-tooltip-content="Diagrammtyp für diesen Layer wählen (z.B. Balken, Linie)"
                     >
                       {plotTypes.map(type => (
                         <option key={type.value} value={type.value}>{type.label}</option>
                       ))}
                     </select>
+                    <Tooltip id={`plottype-tooltip-${layer.id}`} place="top" />
                   </div>
                   <div>
                     <label className="controlpanel-label">Farbe</label>
@@ -248,11 +273,13 @@ function ControlPanel({
                       className="controlpanel-color-input"
                       value={layer.color}
                       onChange={e => handleUpdateLayer(layer.id, 'color', e.target.value)}
-                      title="Layer Farbe"
+                      data-tooltip-id={`color-tooltip-${layer.id}`}
+                      data-tooltip-content="Farbe für diesen Layer wählen"
                     />
+                    <Tooltip id={`color-tooltip-${layer.id}`} place="top" />
                   </div>
                   <div>
-                    <label className="controlpanel-label">Opazität</label>
+                    <label className="controlpanel-label">Durchsichtigkeit</label>
                     <input
                       type="range"
                       className="controlpanel-range"
@@ -261,18 +288,22 @@ function ControlPanel({
                       step={0.01}
                       value={layer.opacity}
                       onChange={e => handleUpdateLayer(layer.id, 'opacity', parseFloat(e.target.value))}
-                      title="Layer Opazität"
+                      data-tooltip-id={`opacity-tooltip-${layer.id}`}
+                      data-tooltip-content="Transparenz (Opazität) für diesen Layer einstellen"
                     />
+                    <Tooltip id={`opacity-tooltip-${layer.id}`} place="top" />
                     <span>{Math.round(layer.opacity * 100)}%</span>
                   </div>
                   <button
                     type="button"
                     onClick={() => handleRemoveLayer(layer.id)}
                     className="controlpanel-layer-remove-btn"
-                    title="Layer entfernen"
+                    data-tooltip-id={`remove-layer-tooltip-${layer.id}`}
+                    data-tooltip-content="Diesen Layer entfernen"
                   >
                     ✕
                   </button>
+                  <Tooltip id={`remove-layer-tooltip-${layer.id}`} place="top" />
                 </div>
               </div>
               {(layer.plotType === 'point') && (
@@ -306,10 +337,12 @@ function ControlPanel({
             type="button"
             onClick={handleAddLayer}
             className="controlpanel-add-layer-btn"
-            title="Layer hinzufügen"
+            data-tooltip-id="add-layer-tooltip"
+            data-tooltip-content="Neuen Layer hinzufügen"
           >
             + Layer hinzufügen
           </button>
+          <Tooltip id="add-layer-tooltip" place="top" />
         </div>
       </div>
 
@@ -320,21 +353,32 @@ function ControlPanel({
         <div>
           <div className="controlpanel-chart-settings-row">
             <div>
-              <label htmlFor="width" className="controlpanel-label">Width</label>
-              <input id="width" type="number" min={200} max={1600} value={width} onChange={e => setWidth(Number(e.target.value))} className="controlpanel-input" />
+              <label htmlFor="width" className="controlpanel-label">Breite</label>
+              <input id="width" type="number" min={200} max={5000} value={width} onChange={e => setWidth(Math.max(0, Math.min(5000, Number(e.target.value))))} className="controlpanel-input" />
             </div>
             <div>
-              <label htmlFor="height" className="controlpanel-label">Height</label>
-              <input id="height" type="number" min={150} max={1200} value={height} onChange={e => setHeight(Number(e.target.value))} className="controlpanel-input" />
+              <label htmlFor="height" className="controlpanel-label">Höhe</label>
+              <input id="height" type="number" min={150} max={5000} value={height} onChange={e => setHeight(Math.max(0, Math.min(5000, Number(e.target.value))))} className="controlpanel-input" />
             </div>
             <div>
-              <label htmlFor="y-label" className="controlpanel-label">Y Label</label>
+              <label htmlFor="y-label" className="controlpanel-label">Y-Achse</label>
               <input id="y-label" type="text" className="controlpanel-input" value={yLabel} onChange={e => setYLabel(e.target.value)} placeholder="Y Axis Label" />
             </div>
             <div>
-              <label htmlFor="x-label" className="controlpanel-label">X Label</label>
+              <label htmlFor="x-label" className="controlpanel-label">X-Achse</label>
               <input id="x-label" type="text" className="controlpanel-input" value={xLabel} onChange={e => setXLabel(e.target.value)} placeholder="X Axis Label" />
             </div>
+          </div>
+          <div style={{ marginTop: '10px' }}>
+            <label className="controlpanel-label">
+              <input
+                type="checkbox"
+                checked={showLegend}
+                onChange={e => setShowLegend(e.target.checked)}
+                style={{ marginRight: '8px' }}
+              />
+              Legende anzeigen
+            </label>
           </div>
         </div>
       </div>
@@ -345,6 +389,7 @@ function ControlPanel({
              >
           <h4 className="controlpanel-section-title">Datumsfilter</h4>
           <div className="controlpanel-datefilter-row">
+            <span className="controlpanel-label">Datumsfeld: <b>{dateField}</b></span>
             <label htmlFor="date-start" className="controlpanel-label">Von:</label>
             <input
               id="date-start"
@@ -368,9 +413,10 @@ function ControlPanel({
       )}
 
       <div className="controlpanel-apply-btn-row">
-        <button className="controlpanel-btn" onClick={handleApply}>
+        <button className="controlpanel-btn" onClick={handleApply} data-tooltip-id="apply-tooltip" data-tooltip-content="Einstellungen übernehmen und Diagramm aktualisieren">
           Übernehmen
         </button>
+        <Tooltip id="apply-tooltip" place="top" />
       </div>
     </div>
   );

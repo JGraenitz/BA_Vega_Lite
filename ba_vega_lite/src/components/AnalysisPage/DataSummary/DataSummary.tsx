@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-/* import { } from '../../VisualizationPage/VegaLiteChart/VegaLiteUtils' */
 import { DataSummaryProps } from '../../../utils/interfaces/AnalysisProps';
 import './DataSummary.css';
+import { Tooltip } from 'react-tooltip';
 
 /**
  * DataSummary Komponente
@@ -44,7 +44,7 @@ function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
 
   return (
     <div className="data-summary">
-      <strong>Column Analysis:</strong>
+      <strong>Spaltenanalyse:</strong>
       <ul>
         {Object.entries(columnInfo).map(([col, info]) => (
           <li key={col} className="data-summary-list-item">
@@ -53,11 +53,14 @@ function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
               value={editedTypes[col]}
               onChange={e => handleTypeChange(col, e.target.value)}
               className="data-summary-type-select"
+              data-tooltip-id={`coltype-tooltip-${col}`}
+              data-tooltip-content="Typ für diese Spalte festlegen (z.B. quantitativ, temporal)"
             >
               {typeOptions.map(opt => (
                 <option key={opt} value={opt}>{opt}</option>
               ))}
             </select>
+            <Tooltip id={`coltype-tooltip-${col}`} place="top" />
             { (info as any).missingCount > 0 && (
               <span className="data-summary-missing">
                 ({(info as any).missingCount} missing)
@@ -66,9 +69,14 @@ function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
           </li>
         ))}
       </ul>
-      <button onClick={handleSave} style={{ marginTop: 8 }}>
+      <button onClick={handleSave} style={{ marginTop: 8 }}
+        data-tooltip-id="analysis-apply-tooltip"
+        data-tooltip-content="Spaltentypen übernehmen und speichern"
+        className="template-toggle-btn"
+      >
         Übernehmen
       </button>
+      <Tooltip id="analysis-apply-tooltip" place="top" />
       {showSaved && (
         <span style={{ color: 'green', marginLeft: 12 }}>Gespeichert!</span>
       )}

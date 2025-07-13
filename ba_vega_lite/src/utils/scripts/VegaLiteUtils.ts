@@ -6,7 +6,6 @@ const knownOrdinals = [
   ["niedrig", "mittel", "hoch"],
   ["unzufrieden", "neutral", "zufrieden"],
   ["stark", "mittel", "schwach"],
-  // Weitere Skalen können hier ergänzt werden
 ];
 
 
@@ -81,6 +80,65 @@ export function generateVegaLiteSpec(controls: any, columnInfo: any): any {
 
   if (!controls.layers || controls.layers.length === 0) return null; 
 
+  // Wenn Legende aktiv, kombiniere alle Layer zu einer Serie mit 'Legend'-Feld
+  if (controls.showLegend) {
+    const legendDomain: string[] = controls.layers.map((layer: any) => layer.yAxis);
+    const legendRange: string[] = controls.layers.map((layer: any) => layer.color);
+    // Nutze das x-Feld des ersten Layers als Standard
+    const xField = controls.layers[0]?.xAxis || '';
+    const xType = columnInfo[xField]?.type || 'nominal';
+    return {
+      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+      description: 'Auto-generated chart with legend',
+      width: controls.width,
+      height: controls.height,
+      data: { name: 'table' },
+      config: {
+        axis: { labelFontSize: 13, titleFontSize: 15 },
+        view: { stroke: 'transparent' },
+      },
+      layer: controls.layers.map((layer: any) => {
+        // Hole Typen für Achsen
+        const yType = 'quantitative'; // Im Legend-Modus ist value immer quantitativ
+        // Aggregation berücksichtigen
+        const yEncoding: any = {
+          field: 'value',
+          type: yType,
+          axis: { title: controls.yLabel || 'Wert' }
+        };
+        if (layer.aggregation) {
+          yEncoding.aggregate = layer.aggregation;
+        }
+        return {
+          mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
+          encoding: {
+            x: { field: xField, type: xType, axis: { title: controls.xLabel } },
+            y: yEncoding,
+            color: {
+              field: 'Legend',
+              type: 'nominal',
+              scale: { domain: legendDomain, range: legendRange },
+              legend: { title: 'Layer' }
+            },
+            tooltip: [
+              { field: xField, type: xType },
+              { field: 'Legend', type: 'nominal' },
+              {
+                field: 'value',
+                type: yType,
+                ...(layer.aggregation ? { aggregate: layer.aggregation, title: `${layer.aggregation}(value)` } : {})
+              }
+            ]
+          },
+          transform: [
+            { filter: `datum.Legend === '${layer.yAxis}'` }
+          ]
+        };
+      })
+    };
+  }
+
+  // Standardfall ohne Legende (Layering wie bisher)
   const spec: any = {
     $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
     description: 'Auto-generated chart with layers',
@@ -96,30 +154,6 @@ export function generateVegaLiteSpec(controls: any, columnInfo: any): any {
   spec.layer = controls.layers.map((layer: any) => {
     const xType = columnInfo[layer.xAxis]?.type || 'nominal';
     const yType = columnInfo[layer.yAxis]?.type || 'quantitative';
-
-/*
-    if (layer.plotType === 'pie') {
-      return {
-        mark: { type: 'arc', outerRadius: layer.markSize || 100, tooltip: true },
-        encoding: {
-          theta: { field: layer.yAxis, type: yType, aggregate: layer.aggregation || undefined },
-          color: { field: layer.xAxis, type: xType },
-          tooltip: [
-            { field: layer.xAxis, type: xType },
-            {
-              field: layer.yAxis,
-              type: yType,
-              ...(layer.aggregation && yType === 'quantitative' && {
-                aggregate: layer.aggregation,
-                title: `${layer.aggregation}(${layer.yAxis})`
-              })
-            }
-          ]
-        }
-      };
-    }
-      */
-
     return {
       mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
       encoding: {
@@ -139,7 +173,6 @@ export function generateVegaLiteSpec(controls: any, columnInfo: any): any {
         ],
       },
     };
-
   });
   return spec;
 }
@@ -180,6 +213,11 @@ export function handleCsvData(
     markShape: 'circle'
   };
   // Setze Standard-Steuerung
-  setControls((prev: any) => ({ ...prev, layers: [defaultLayer] }));
+  setControls((prev: any) => ({
+    ...prev,
+    layers: [defaultLayer],
+    width: prev.width && prev.width > 0 ? prev.width : 900,
+    height: prev.height && prev.height > 0 ? prev.height : 500
+  }));
   setVegaSpecError(null);
 } 

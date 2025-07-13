@@ -1,0 +1,29 @@
+.tutorials-page {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 32px 24px;
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.tutorials-page h1 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+.tutorials-page ul {
+  margin: 16px 0 24px 24px;
+  padding-left: 16px;
+}
+.tutorials-page a {
+  color: #3366cc;
+  text-decoration: underline;
+}
+.tutorials-media-placeholder {
+  margin-top: 24px;
+  padding: 24px;
+  background: #f5f7fa;
+  border: 1px dashed #b3b3b3;
+  border-radius: 8px;
+  text-align: center;
+  color: #888;
+} 

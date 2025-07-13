@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { VisualizationPageProps } from '../../utils/interfaces/VisualizationProps';
 import DataUploader from './DataUploader/DataUploader';
 import ControlPanel from './ControlPanel/ControlPanel';
 import VegaLiteChart from './VegaLiteChart/VegaLiteChart';
+import TemplateSelector from './TemplateSelector/TemplateSelector';
+import TestDataSelector from './TestDataSelector/TestDataSelector';
+import { applyTemplateToControls } from '../../utils/interfaces/templates';
+import { useNavigate } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
 import './VisualizationPage.css';
 
 /**
@@ -37,21 +42,101 @@ import './VisualizationPage.css';
  */
 
 function VisualizationPage({
-  csvData, handleCsvData, columns, columnInfo, controls, filteredData,
+  csvData, handleUploadedCsvData, columns, columnInfo, controls, filteredData,
   setError, handleControlsApply, parsedSpec, darkMode
 }: VisualizationPageProps) {
+
+  const [showTemplates, setShowTemplates] = useState(false);
+
+  const [showTestData, setShowTestData] = useState(true);
+
+  const [uploadPanelCollapsed, setUploadPanelCollapsed] = useState(false);
+
+  const [uploadedFileName, setUploadedFileName] = useState<string>('');
+
+  const navigate = useNavigate();
+
+  const handleTemplateSelect = (template: any) => {
+    const appliedTemplate = applyTemplateToControls(template, columns);
+    handleControlsApply(appliedTemplate);
+    setShowTemplates(false);
+  };
+
+  const handleTestDataSelect = (dataset: any) => {
+    handleCsvDataWithFileName(dataset.data, dataset.columns, 'Testdaten: ' + dataset.name);
+    setShowTestData(false);
+    setUploadPanelCollapsed(true); // Automatisch Panel einklappen nach Testdaten-Auswahl
+  };
+
+  const handleCsvDataWithFileName = (data: any, columns: any, fileName?: string) => {
+    handleUploadedCsvData(data, columns);
+    if (fileName) {
+      setUploadedFileName(fileName);
+      setUploadPanelCollapsed(true);
+    }
+  };
+
+  const handleToggleUploadPanel = () => {
+    setUploadPanelCollapsed(!uploadPanelCollapsed);
+  };
+
+
+
+
   return (
     <>
+      {!csvData && showTestData && (
+        <div className={`card${darkMode ? ' dark-mode' : ''}`} id="testdata-panel">
+          <TestDataSelector onDatasetSelect={handleTestDataSelect} darkMode={darkMode} />
+        </div>
+      )}
 
         <div className={`card${darkMode ? ' dark-mode' : ''}`} id="dataupload-panel">
-          <DataUploader onData={handleCsvData} onError={setError} />
-          <div id="visualizationpage-info" className={darkMode ? 'dark-mode' : ''}>
-            <span role="img" aria-label="info">ℹ️</span> Supports drag-and-drop or file selection. CSV must have headers.
-          </div>
+          <DataUploader 
+            onData={handleCsvDataWithFileName} 
+            onError={setError}
+            fileName={uploadedFileName}
+            isCollapsed={uploadPanelCollapsed}
+            onToggleCollapse={handleToggleUploadPanel}
+            darkMode={darkMode} 
+          />
+          {!uploadPanelCollapsed && (
+            <div id="visualizationpage-info" className={darkMode ? 'dark-mode' : ''}>
+              <span role="img" aria-label="info">ℹ️</span> Unterstützt Drag-and-Drop oder Dateiauswahl. Die CSV-Datei muss Kopfzeilen (Spaltenüberschriften) enthalten.
+            </div>
+          )}
         </div>
 
       {csvData && (
         <>
+          <div className={`template-section${darkMode ? ' dark-mode' : ''}`}>
+            <button
+              className={`template-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+              onClick={() => setShowTemplates(!showTemplates)}
+              style={{ marginRight: 12 }}
+              data-tooltip-id="show-templates-tooltip"
+              data-tooltip-content="Vorlagen für Diagramme anzeigen oder ausblenden"
+            >
+              {showTemplates ? 'Vorlagen ausblenden' : 'Vorlagen anzeigen'}
+            </button>
+            <Tooltip id="show-templates-tooltip" place="top" />
+            <button
+              className={`template-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+              onClick={() => navigate('/table')}
+              data-tooltip-id="show-table-tooltip"
+              data-tooltip-content="Tabellarische Datenansicht anzeigen"
+            >
+              Daten anzeigen
+            </button>
+            <Tooltip id="show-table-tooltip" place="top" />
+            
+            {showTemplates && (
+              <div className={`template-panel${darkMode ? ' dark-mode' : ''}`}>
+                <TemplateSelector onTemplateSelect={handleTemplateSelect} darkMode={darkMode} />
+              </div>
+            )}
+          </div>
+
           <div className={`controls-panel-rect${darkMode ? ' dark-mode' : ''}`} id="visualizationpage-controls-panel-rect">
             <ControlPanel
               columns={columns}
@@ -64,6 +149,7 @@ function VisualizationPage({
               width={controls.width}
               height={controls.height}
               dateFilter={controls.dateFilter}
+              showLegend={controls.showLegend}
               onApply={handleControlsApply}
               darkMode={darkMode}
             />

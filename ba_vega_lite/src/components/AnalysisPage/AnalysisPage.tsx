@@ -10,7 +10,7 @@ import DataSummary from './DataSummary/DataSummary';
 function AnalysisPage({ columnInfo, onTypeChange }: AnalysisPageProps) {
   return (
     <div className="card analysis-page-card">
-      <h2>Column Analysis</h2>
+      <h2>Spaltenanalyse</h2>
       <DataSummary columnInfo={columnInfo} onTypeChange={onTypeChange} />
     </div>
   );

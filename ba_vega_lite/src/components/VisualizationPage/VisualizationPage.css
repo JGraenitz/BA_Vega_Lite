@@ -1,4 +1,69 @@
+.template-section {
+  margin-bottom: 1rem;
+}
 
+.template-toggle-btn {
+  background: #4f6d9a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+  margin-top: 24px;
+}
+
+.template-toggle-btn:hover {
+  background: #3d5a7a;
+}
+
+.template-toggle-btn.dark-mode {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+.template-toggle-btn.dark-mode:hover {
+  background: #4a5568;
+}
+
+.template-panel {
+  margin-top: 1rem;
+}
+
+.testdata-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.testdata-info p {
+  margin: 0 0 1rem 0;
+  color: #6c757d;
+}
+
+.testdata-hide-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.testdata-hide-btn:hover {
+  background: #5a6268;
+}
+
+.testdata-hide-btn.dark-mode {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.testdata-hide-btn.dark-mode:hover {
+  background: #2d3748;
+}
 
 #visualizationpage-info {
   margin-top: 1vw;

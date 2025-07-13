@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { NavbarProps } from '../../utils/interfaces/NavbarProps';
 import './Navbar.css'; 
 
 /**
@@ -9,10 +10,6 @@ import './Navbar.css';
  * Sie zeigt den Titel der Anwendung an.
  *
  */
-interface NavbarProps {
-  darkMode: boolean;
-  setDarkMode: (val: boolean | ((prev: boolean) => boolean)) => void;
-}
 
 const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
@@ -49,16 +46,19 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu" onClick={e => e.stopPropagation()}>
             <Link to="/" className="menu-link">
-              Start
-            </Link>
-            <Link to="/analysis" className="menu-link">
-              Analysis
+              Visualisierung
             </Link>
             <Link to="/table" className="menu-link">
-              Table
+              Tabelle
+            </Link>
+            <Link to="/analysis" className="menu-link">
+              Spaltenanalyse
             </Link>
             <Link to="/json" className="menu-link">
               Vega-JSON
+            </Link>
+            <Link to="/tutorials" className="menu-link">
+              Tutorials
             </Link>
           </div>
         </div>

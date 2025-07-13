@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { DataUploaderProps } from '../../../utils/interfaces/VisualizationProps';
+import { Tooltip } from 'react-tooltip';
 import Papa from 'papaparse';
 import './DataUploader.css';
 
@@ -9,7 +10,14 @@ import './DataUploader.css';
  * Ermöglicht Drag-and-Drop und Dateiauswahl für CSV-Upload.
  * Ruft onData(data, columns) bei Erfolg, onError(message) bei Fehler auf.
  */
-function DataUploader({ onData, onError }: DataUploaderProps) {
+function DataUploader({
+  onData, 
+  onError, 
+  fileName, 
+  isCollapsed = false,
+  onToggleCollapse,
+  darkMode = false,
+}: DataUploaderProps) {
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -17,7 +25,7 @@ function DataUploader({ onData, onError }: DataUploaderProps) {
   const handleFile = (file: File) => {
     if (!file) return;
     if (!file.name.match(/\.csv$/i)) {
-      onError('Bitte lade eine gültige CSV-Datei hoch.');
+      onError('Bitte lade eine gueltige CSV-Datei hoch.');
       return;
     }
     // Datei als Text einlesen, um auf Leerheit zu prüfen
@@ -38,11 +46,11 @@ function DataUploader({ onData, onError }: DataUploaderProps) {
             return;
           }
           if (!results.data || results.data.length === 0) {
-            onError('CSV-Datei ist leer oder ungültig.');
+            onError('CSV-Datei ist leer oder ungueltig.');
             return;
           }
           const columns = results.meta.fields;
-          onData(results.data, columns);
+          onData(results.data, columns, file.name); // <-- Dateiname wird übergeben
         },
         error: (err) => {
           onError('CSV-Parsing-Fehler: ' + err.message);
@@ -77,11 +85,58 @@ function DataUploader({ onData, onError }: DataUploaderProps) {
     }
   };
 
+  if (isCollapsed) {
+    return (
+      <div className={`datauploader-collapsed${darkMode ? ' dark-mode' : ''}`}>
+        <div 
+          className="datauploader-collapsed-header"
+          onClick={onToggleCollapse}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              onToggleCollapse && onToggleCollapse();
+            }
+          }}
+          data-tooltip-id="expand-upload-tooltip"
+          data-tooltip-content="Upload-Panel erweitern"
+        >
+          <div className="datauploader-file-info">
+            <span className="datauploader-file-icon">📄</span>
+            <span className="datauploader-file-name">
+              {fileName || 'CSV-Upload'}
+            </span>
+          </div>
+          <span className="datauploader-toggle-icon">▼</span>
+        </div>
+        <Tooltip id="expand-upload-tooltip" place="top" />
+      </div>
+    );
+  }
+
   return (
-    <div className="datauploader-outer">
+    <div className={`datauploader-outer${darkMode ? ' dark-mode' : ''}`}>
+      <div className="datauploader-header">
+        <div className="datauploader-file-info">
+          <span className="datauploader-file-icon">📄</span>
+          <span className="datauploader-file-name">
+            {fileName || 'CSV-Datei hochladen'}
+          </span>
+        </div>
+        <button
+          className={`datauploader-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+          onClick={onToggleCollapse}
+          aria-label="Upload-Panel einklappen"
+          data-tooltip-id="collapse-upload-tooltip"
+          data-tooltip-content="Upload-Panel einklappen"
+        >
+          ▲
+        </button>
+        <Tooltip id="collapse-upload-tooltip" place="top" />
+      </div>
       <div
-        className={`datauploader-dropzone${dragOver ? ' active' : ''}`}
-        tabIndex={0}
+        className={`datauploader-dropzone${dragOver ? ' active' : ''}${darkMode ? ' dark-mode' : ''}`}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
@@ -92,14 +147,14 @@ function DataUploader({ onData, onError }: DataUploaderProps) {
           <span role="img" aria-label="Upload" className="datauploader-icon-emoji">📄</span>
         </div>
         <div className="datauploader-infotext">
-          Ziehe deine CSV-Datei hierher oder <span className="datauploader-link">Datei auswählen</span>
+          {fileName ? 'Neue CSV-Datei hochladen' : 'Ziehe deine CSV-Datei hierher oder'} 
+          {!fileName && <span className="datauploader-link">Datei auswählen</span>}
         </div>
         <input
           ref={fileInputRef}
           type="file"
           accept=".csv"
           onChange={handleFileInput}
-          tabIndex={-1}
           className="datauploader-fileinput"
         />
       </div>

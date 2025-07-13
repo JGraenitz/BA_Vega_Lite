@@ -13,35 +13,54 @@
 }
 
 .modal {
-  background: #fff;
-  border-radius: 1vw;
-  padding: 2vw;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
   max-width: 500px;
   width: 90%;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  border: 1px solid #e9ecef;
 }
 
 .modal .modal-title {
   font-size: 1.3rem;
   font-weight: 600;
-  margin-bottom: 1vw;
+  margin-bottom: 1rem;
+  color: #2d3748;
 }
 
 .modal .modal-message {
-  margin-bottom: 1.5vw;
+  margin-bottom: 1.5rem;
+  color: #6c757d;
 }
 
 .modal .modal-btn {
   background: #4f6d9a;
   color: #fff;
   border: none;
-  border-radius: 0.3vw;
-  padding: 0.7vw 2vw;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .modal .modal-btn:hover {
-  background: #2d3a4b;
+  background: #3d5a7a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Dark Mode Support */
+body.dark-mode .modal {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+body.dark-mode .modal .modal-title {
+  color: #e2e8f0;
+}
+
+body.dark-mode .modal .modal-message {
+  color: #a0aec0;
 } 

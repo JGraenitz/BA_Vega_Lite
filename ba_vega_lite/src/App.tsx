@@ -7,7 +7,8 @@ import ModalErrorHandler from './components/ModalErrorHandler/ModalErrorHandler'
 import VisualizationPage from './components/VisualizationPage/VisualizationPage';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import { generateVegaLiteSpec, handleCsvData } from './components/VisualizationPage/VegaLiteChart/VegaLiteUtils';
+import TutorialsPage from './components/TutorialsPage/TutorialsPage';
+import { generateVegaLiteSpec, handleCsvData } from './utils/scripts/VegaLiteUtils';
 import './App.css';
 
 function App() {
@@ -27,8 +28,8 @@ function App() {
     markShape: 'circle',
     xLabel: '',
     yLabel: '',
-    width: 0,
-    height: 0,
+    width: 1000,
+    height: 400,
     dateFilter: { start: '', end: '' },
   });
 
@@ -48,39 +49,40 @@ function App() {
       return;
     }
     let data = csvData;
-    // Prüfe, ob ein Layer temporale Daten hat und ein Datumsfilter gesetzt ist
-    const hasTemporalData = controls.layers.some((layer: any) => {
-      const xType = columnInfo[layer.xAxis]?.type;
-      const yType = columnInfo[layer.yAxis]?.type;
-      return xType === 'temporal' || yType === 'temporal';
-    });
-    if (hasTemporalData && (controls.dateFilter.start || controls.dateFilter.end)) {
+    // Datumsfilter nach gewähltem Feld
+    if (controls.dateField && (controls.dateFilter.start || controls.dateFilter.end)) {
       data = data.filter((row: any) => {
-        for (const layer of controls.layers) {
-          const xType = columnInfo[layer.xAxis]?.type;
-          const yType = columnInfo[layer.yAxis]?.type;
-          if (xType === 'temporal') {
-            const val = row[layer.xAxis];
-            if (val) {
-              const d = new Date(val);
-              if (controls.dateFilter.start && d < new Date(controls.dateFilter.start)) return false;
-              if (controls.dateFilter.end && d > new Date(controls.dateFilter.end)) return false;
-            }
-          }
-          if (yType === 'temporal') {
-            const val = row[layer.yAxis];
-            if (val) {
-              const d = new Date(val);
-              if (controls.dateFilter.start && d < new Date(controls.dateFilter.start)) return false;
-              if (controls.dateFilter.end && d > new Date(controls.dateFilter.end)) return false;
-            }
-          }
+        const val = row[controls.dateField];
+        if (val) {
+          const d = new Date(val);
+          if (controls.dateFilter.start && d < new Date(controls.dateFilter.start)) return false;
+          if (controls.dateFilter.end && d > new Date(controls.dateFilter.end)) return false;
         }
         return true;
       });
     }
+    // Legendenansicht: Daten transformieren 
+    if (controls.showLegend) {
+      let legendData: any[] = [];
+      controls.layers.forEach((layer: any) => {
+        const xField = layer.xAxis;
+        const yField = layer.yAxis;
+        data.forEach((row: any) => {
+          if (row[yField] !== undefined && row[yField] !== null && row[yField] !== '') {
+            legendData.push({
+              ...row,
+              Legend: yField,
+              value: row[yField],
+              _color: layer.color // optional, falls für Tooltip/Farbe gebraucht
+            });
+          }
+        });
+      });
+      setFilteredData(legendData);
+      return;
+    }
     setFilteredData(data);
-  }, [csvData, controls.layers, controls.dateFilter, columnInfo]);
+  }, [csvData, controls.layers, controls.dateFilter, columnInfo, controls.showLegend]);
 
 
   useEffect(() => {
@@ -155,7 +157,7 @@ function App() {
                 columnInfo={columnInfo}
                 controls={controls}
                 filteredData={filteredData}
-                handleCsvData={handleCsvDataWrapper}
+                handleUploadedCsvData={handleCsvDataWrapper}
                 setError={setError}
                 handleControlsApply={handleControlsApply}
                 parsedSpec={parsedSpec}
@@ -165,6 +167,7 @@ function App() {
             <Route path="/table" element={<TablePage filteredData={filteredData} columns={columns}/>} />
             <Route path="/json" element={<JsonPage vegaSpec={vegaSpec} setVegaSpec={setVegaSpec} vegaSpecError={vegaSpecError} />} />
             <Route path="/analysis" element={<AnalysisPage columnInfo={columnInfo} onTypeChange={handleTypeChange} />} />
+            <Route path="/tutorials" element={<TutorialsPage />} />
           </Routes>
         </div>
         {/* <Footer /> */}
