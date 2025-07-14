@@ -13,3 +13,9 @@ React-vega unterstützt React nur bis Version 18 und es wird automatisch bei der
 `npm install react-router-dom --legacy-peer-deps` <br>
 
 `npm install papaparse --legacy-peer-deps` <br>
+
+
+Einfaches Setup:
+`git clone https://github.com/JGraenitz/BA_Vega_Lite` <br>
+`cd ba_vega_lite` <br>
+` npm install react-vega vega  vega-lite react-router-dom papaparse react-tooltip --force` <br>
