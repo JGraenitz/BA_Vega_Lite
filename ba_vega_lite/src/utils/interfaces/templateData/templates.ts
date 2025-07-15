@@ -13,6 +13,10 @@ export interface VisualizationTemplate {
   dateFilter: { start: string; end: string };
 }
 
+export interface TemplateSelectorProps {
+  onTemplateSelect: (template: VisualizationTemplate) => void;
+}
+
 export const visualizationTemplates: VisualizationTemplate[] = [
   {
     id: 'bar-chart',

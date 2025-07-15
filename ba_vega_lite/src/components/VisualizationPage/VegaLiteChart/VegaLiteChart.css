@@ -15,7 +15,7 @@
 }
 
 /* Darkmode Styles */
-body.dark-mode .vega-lite-chart-container {
+.App.dark-mode .vega-lite-chart-container {
   background: var(--color-bg-dark);
   color: var(--color-text-dark);
 } 

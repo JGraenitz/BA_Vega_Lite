@@ -333,3 +333,51 @@
   align-items: center;
   gap: 8px;
 }
+
+.controlpanel-checkbox-row {
+  margin-top: 10px;
+}
+
+.controlpanel-checkbox-input {
+  margin-right: 8px;
+}
+
+.App.dark-mode .controlpanel-root {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+.App.dark-mode .controlpanel-section {
+  border-bottom: 1px solid #4a5568;
+}
+
+.App.dark-mode .controlpanel-section-title {
+  color: #e2e8f0;
+}
+
+.App.dark-mode .controlpanel-layer-row {
+  background: #1a202c;
+}
+
+.App.dark-mode .controlpanel-label {
+  color: #e2e8f0;
+}
+
+.App.dark-mode .controlpanel-select,
+.App.dark-mode .controlpanel-input,
+.App.dark-mode .controlpanel-datefilter-input {
+  background: #1a202c;
+  color: #e2e8f0;
+  border: 1px solid #4a5568;
+}
+
+.App.dark-mode .controlpanel-select:focus,
+.App.dark-mode .controlpanel-input:focus,
+.App.dark-mode .controlpanel-datefilter-input:focus {
+  border-color: #4f6d9a;
+  box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
+}
+
+.App.dark-mode .controlpanel-layer-separator {
+  border-top: 1.5px solid #4a5568;
+}

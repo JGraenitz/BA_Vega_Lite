@@ -8,7 +8,6 @@ export interface VisualizationPageProps {
     setError: (error: any) => void;
     handleControlsApply: (controls: any) => void;
     parsedSpec: any;
-    darkMode: boolean;
   }
 
 export interface LayerConfig {

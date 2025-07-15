@@ -52,15 +52,15 @@
 }
 
 /* Dark Mode Support */
-body.dark-mode .modal {
+.App.dark-mode .modal {
   background: #2d3748;
   border-color: #4a5568;
 }
 
-body.dark-mode .modal .modal-title {
+.App.dark-mode .modal .modal-title {
   color: #e2e8f0;
 }
 
-body.dark-mode .modal .modal-message {
+.App.dark-mode .modal .modal-message {
   color: #a0aec0;
 } 

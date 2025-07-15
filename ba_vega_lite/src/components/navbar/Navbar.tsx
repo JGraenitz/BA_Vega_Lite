@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { NavbarProps } from '../../utils/interfaces/NavbarProps';
 import './Navbar.css'; 
 
@@ -15,6 +15,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
 
   return (
@@ -33,13 +34,22 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       
       
       <h1 className="navbar-title">VegaViz</h1>
-      <button
-        className="darkmode-toggle"
-        onClick={() => setDarkMode((prev: boolean) => !prev)}
-        aria-label="Dark Mode umschalten"
-      >
-        {darkMode ? '🌙' : '☀️'}
-      </button>
+      <div className="navbar-actions">
+        <button
+          className="tutorials-btn"
+          onClick={() => navigate('/tutorials')}
+          aria-label="Tutorials anzeigen"
+        >
+          ?
+        </button>
+        <button
+          className="darkmode-toggle"
+          onClick={() => setDarkMode((prev: boolean) => !prev)}
+          aria-label="Dark Mode umschalten"
+        >
+          {darkMode ? '🌙' : '☀️'}
+        </button>
+      </div>
 
 
       {menuOpen && (
@@ -56,9 +66,6 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
             </Link>
             <Link to="/json" className="menu-link">
               Vega-JSON
-            </Link>
-            <Link to="/tutorials" className="menu-link">
-              Tutorials
             </Link>
           </div>
         </div>

@@ -1,15 +1,11 @@
 import React from 'react';
-import { visualizationTemplates, VisualizationTemplate } from '../../../utils/interfaces/templateData/templates';
+import { visualizationTemplates, TemplateSelectorProps } from '../../../utils/interfaces/templateData/templates';
 import './TemplateSelector.css';
 
-interface TemplateSelectorProps {
-  onTemplateSelect: (template: VisualizationTemplate) => void;
-  darkMode: boolean;
-}
 
-function TemplateSelector({ onTemplateSelect, darkMode }: TemplateSelectorProps) {
+function TemplateSelector({ onTemplateSelect }: TemplateSelectorProps) {
   return (
-    <div className={`template-selector${darkMode ? ' dark-mode' : ''}`}>
+    <div className="template-selector">
       <h3 className="template-selector-title">Visualisierungsvorlagen</h3>
       <p className="template-selector-description">
         Wähle eine Vorlage aus, um schnell mit der Visualisierung zu beginnen:
@@ -19,7 +15,7 @@ function TemplateSelector({ onTemplateSelect, darkMode }: TemplateSelectorProps)
         {visualizationTemplates.map((template) => (
           <div
             key={template.id}
-            className={`template-card${darkMode ? ' dark-mode' : ''}`}
+            className="template-card"
             onClick={() => onTemplateSelect(template)}
             role="button"
             tabIndex={0}

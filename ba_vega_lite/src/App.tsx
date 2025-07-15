@@ -161,7 +161,6 @@ function App() {
                 setError={setError}
                 handleControlsApply={handleControlsApply}
                 parsedSpec={parsedSpec}
-                darkMode={darkMode}
                 />} 
             />
             <Route path="/table" element={<TablePage filteredData={filteredData} columns={columns}/>} />

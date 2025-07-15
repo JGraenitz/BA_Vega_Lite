@@ -36,6 +36,29 @@
   background: #1e2127;
 }
 
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tutorials-btn {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.2s, background 0.2s;
+  outline: none;
+  border-radius: 50%;
+  padding: 6px 10px;
+}
+
+.tutorials-btn:hover {
+  color: var(--color-primary-dark);
+  background: #e3f2fd;
+}
+
 .hamburger {
   background: #fff;
   border: none;

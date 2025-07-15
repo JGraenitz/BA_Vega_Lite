@@ -26,4 +26,29 @@
   border-radius: 8px;
   text-align: center;
   color: #888;
+}
+.tutorials-back-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  margin-bottom: 18px;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.tutorials-back-btn:hover {
+  background: #1565c0;
+}
+
+.App.dark-mode .tutorials-back-btn {
+  background: #333b4a;
+  color: #ffd700;
+  box-shadow: 0 2px 8px rgba(30, 30, 30, 0.15);
+}
+.App.dark-mode .tutorials-back-btn:hover {
+  background: #22262e;
 } 

@@ -269,3 +269,48 @@ body.dark-mode .datauploader-outer {
 .datauploader-outer.dark-mode .datauploader-dropzone {
   border-radius: 0;
 }
+
+.App.dark-mode .datauploader-outer {
+  border-color: #333b4a;
+}
+
+.App.dark-mode .datauploader-header {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.App.dark-mode .datauploader-file-name {
+  color: #e2e8f0;
+}
+
+.App.dark-mode .datauploader-collapsed .datauploader-file-name {
+  color: #e2e8f0;
+}
+
+.App.dark-mode .datauploader-toggle-btn {
+  color: #a0aec0;
+}
+
+.App.dark-mode .datauploader-toggle-btn:hover {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.App.dark-mode .datauploader-collapsed .datauploader-toggle-icon {
+  color: #a0aec0;
+}
+
+.App.dark-mode .datauploader-collapsed-header {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.App.dark-mode .datauploader-collapsed-header:hover {
+  background: #1a202c;
+}
+
+.App.dark-mode .datauploader-dropzone {
+  border-radius: 0;
+}

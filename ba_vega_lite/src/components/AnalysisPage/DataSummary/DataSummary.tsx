@@ -69,16 +69,16 @@ function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
           </li>
         ))}
       </ul>
-      <button onClick={handleSave} style={{ marginTop: 8 }}
+      <button onClick={handleSave}
         data-tooltip-id="analysis-apply-tooltip"
         data-tooltip-content="Spaltentypen übernehmen und speichern"
-        className="template-toggle-btn"
+        className="template-toggle-btn data-summary-apply-btn"
       >
         Übernehmen
       </button>
       <Tooltip id="analysis-apply-tooltip" place="top" />
       {showSaved && (
-        <span style={{ color: 'green', marginLeft: 12 }}>Gespeichert!</span>
+        <span className="data-summary-saved">Gespeichert!</span>
       )}
     </div>
   );

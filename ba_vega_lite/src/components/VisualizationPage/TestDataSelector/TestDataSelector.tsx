@@ -1,15 +1,11 @@
 import React from 'react';
-import { testDatasets, TestDataset } from '../../../utils/interfaces/templateData/testData';
+import { testDatasets, TestDataSelectorProps } from '../../../utils/interfaces/templateData/testData';
 import './TestDataSelector.css';
 
-interface TestDataSelectorProps {
-  onDatasetSelect: (dataset: TestDataset) => void;
-  darkMode: boolean;
-}
 
-function TestDataSelector({ onDatasetSelect, darkMode }: TestDataSelectorProps) {
+function TestDataSelector({ onDatasetSelect }: TestDataSelectorProps) {
   return (
-    <div className={`testdata-selector${darkMode ? ' dark-mode' : ''}`}>
+    <div className="testdata-selector">
       <h3 className="testdata-selector-title">Testdaten auswählen</h3>
       <p className="testdata-selector-description">
         Wähle Testdaten aus, um die App zu erkunden. Du kannst später deine eigenen CSV-Daten hochladen:
@@ -19,7 +15,7 @@ function TestDataSelector({ onDatasetSelect, darkMode }: TestDataSelectorProps) 
         {testDatasets.map((dataset) => (
           <div
             key={dataset.id}
-            className={`testdata-card${darkMode ? ' dark-mode' : ''}`}
+            className="testdata-card"
             onClick={() => onDatasetSelect(dataset)}
             role="button"
             tabIndex={0}

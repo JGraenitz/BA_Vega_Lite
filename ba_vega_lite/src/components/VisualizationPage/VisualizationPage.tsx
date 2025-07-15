@@ -43,7 +43,7 @@ import './VisualizationPage.css';
 
 function VisualizationPage({
   csvData, handleUploadedCsvData, columns, columnInfo, controls, filteredData,
-  setError, handleControlsApply, parsedSpec, darkMode
+  setError, handleControlsApply, parsedSpec
 }: VisualizationPageProps) {
 
   const [showTemplates, setShowTemplates] = useState(false);
@@ -86,22 +86,21 @@ function VisualizationPage({
   return (
     <>
       {!csvData && showTestData && (
-        <div className={`card${darkMode ? ' dark-mode' : ''}`} id="testdata-panel">
-          <TestDataSelector onDatasetSelect={handleTestDataSelect} darkMode={darkMode} />
+        <div className="card" id="testdata-panel">
+          <TestDataSelector onDatasetSelect={handleTestDataSelect} />
         </div>
       )}
 
-        <div className={`card${darkMode ? ' dark-mode' : ''}`} id="dataupload-panel">
+        <div className="card" id="dataupload-panel">
           <DataUploader 
             onData={handleCsvDataWithFileName} 
             onError={setError}
             fileName={uploadedFileName}
             isCollapsed={uploadPanelCollapsed}
             onToggleCollapse={handleToggleUploadPanel}
-            darkMode={darkMode} 
           />
           {!uploadPanelCollapsed && (
-            <div id="visualizationpage-info" className={darkMode ? 'dark-mode' : ''}>
+            <div id="visualizationpage-info">
               <span role="img" aria-label="info">ℹ️</span> Unterstützt Drag-and-Drop oder Dateiauswahl. Die CSV-Datei muss Kopfzeilen (Spaltenüberschriften) enthalten.
             </div>
           )}
@@ -109,11 +108,10 @@ function VisualizationPage({
 
       {csvData && (
         <>
-          <div className={`template-section${darkMode ? ' dark-mode' : ''}`}>
+          <div className="template-section">
             <button
-              className={`template-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+              className="template-toggle-btn template-toggle-btn-margin"
               onClick={() => setShowTemplates(!showTemplates)}
-              style={{ marginRight: 12 }}
               data-tooltip-id="show-templates-tooltip"
               data-tooltip-content="Vorlagen für Diagramme anzeigen oder ausblenden"
             >
@@ -121,7 +119,7 @@ function VisualizationPage({
             </button>
             <Tooltip id="show-templates-tooltip" place="top" />
             <button
-              className={`template-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+              className="template-toggle-btn"
               onClick={() => navigate('/table')}
               data-tooltip-id="show-table-tooltip"
               data-tooltip-content="Tabellarische Datenansicht anzeigen"
@@ -131,13 +129,13 @@ function VisualizationPage({
             <Tooltip id="show-table-tooltip" place="top" />
             
             {showTemplates && (
-              <div className={`template-panel${darkMode ? ' dark-mode' : ''}`}>
-                <TemplateSelector onTemplateSelect={handleTemplateSelect} darkMode={darkMode} />
+              <div className="template-panel">
+                <TemplateSelector onTemplateSelect={handleTemplateSelect} />
               </div>
             )}
           </div>
 
-          <div className={`controls-panel-rect${darkMode ? ' dark-mode' : ''}`} id="visualizationpage-controls-panel-rect">
+          <div className="controls-panel-rect" id="visualizationpage-controls-panel-rect">
             <ControlPanel
               columns={columns}
               columnInfo={columnInfo}
@@ -151,11 +149,10 @@ function VisualizationPage({
               dateFilter={controls.dateFilter}
               showLegend={controls.showLegend}
               onApply={handleControlsApply}
-              darkMode={darkMode}
             />
           </div>
-          <div className={`flex-row${darkMode ? ' dark-mode' : ''}`} id="visualizationpage-flex-row">
-            <div className={`viz-edit-col${darkMode ? ' dark-mode' : ''}`} id="visualizationpage-viz-edit-col">
+          <div className="flex-row" id="visualizationpage-flex-row">
+            <div className="viz-edit-col" id="visualizationpage-viz-edit-col">
               <VegaLiteChart
                 spec={parsedSpec}
                 data={filteredData}

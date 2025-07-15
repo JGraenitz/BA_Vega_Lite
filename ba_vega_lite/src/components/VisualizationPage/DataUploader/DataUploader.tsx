@@ -15,8 +15,7 @@ function DataUploader({
   onError, 
   fileName, 
   isCollapsed = false,
-  onToggleCollapse,
-  darkMode = false,
+  onToggleCollapse
 }: DataUploaderProps) {
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -28,7 +27,7 @@ function DataUploader({
       onError('Bitte lade eine gueltige CSV-Datei hoch.');
       return;
     }
-    // Datei als Text einlesen, um auf Leerheit zu prüfen
+    
     const reader = new FileReader();
     reader.onload = (e) => {
       const text = (e.target?.result as string) || '';
@@ -50,7 +49,7 @@ function DataUploader({
             return;
           }
           const columns = results.meta.fields;
-          onData(results.data, columns, file.name); // <-- Dateiname wird übergeben
+          onData(results.data, columns, file.name); 
         },
         error: (err) => {
           onError('CSV-Parsing-Fehler: ' + err.message);
@@ -87,7 +86,7 @@ function DataUploader({
 
   if (isCollapsed) {
     return (
-      <div className={`datauploader-collapsed${darkMode ? ' dark-mode' : ''}`}>
+      <div className="datauploader-collapsed">
         <div 
           className="datauploader-collapsed-header"
           onClick={onToggleCollapse}
@@ -116,7 +115,7 @@ function DataUploader({
   }
 
   return (
-    <div className={`datauploader-outer${darkMode ? ' dark-mode' : ''}`}>
+    <div className="datauploader-outer">
       <div className="datauploader-header">
         <div className="datauploader-file-info">
           <span className="datauploader-file-icon">📄</span>
@@ -125,7 +124,7 @@ function DataUploader({
           </span>
         </div>
         <button
-          className={`datauploader-toggle-btn${darkMode ? ' dark-mode' : ''}`}
+          className="datauploader-toggle-btn"
           onClick={onToggleCollapse}
           aria-label="Upload-Panel einklappen"
           data-tooltip-id="collapse-upload-tooltip"
@@ -136,7 +135,7 @@ function DataUploader({
         <Tooltip id="collapse-upload-tooltip" place="top" />
       </div>
       <div
-        className={`datauploader-dropzone${dragOver ? ' active' : ''}${darkMode ? ' dark-mode' : ''}`}
+        className={`datauploader-dropzone${dragOver ? ' active' : ''}`}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}

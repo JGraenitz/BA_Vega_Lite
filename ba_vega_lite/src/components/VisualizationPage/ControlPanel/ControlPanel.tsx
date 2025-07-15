@@ -369,13 +369,13 @@ function ControlPanel({
               <input id="x-label" type="text" className="controlpanel-input" value={xLabel} onChange={e => setXLabel(e.target.value)} placeholder="X Axis Label" />
             </div>
           </div>
-          <div style={{ marginTop: '10px' }}>
+          <div className="controlpanel-checkbox-row">
             <label className="controlpanel-label">
               <input
                 type="checkbox"
                 checked={showLegend}
                 onChange={e => setShowLegend(e.target.checked)}
-                style={{ marginRight: '8px' }}
+                className="controlpanel-checkbox-input"
               />
               Legende anzeigen
             </label>

@@ -17,38 +17,12 @@ import './VegaLiteChart.css';
  *   - height: Höhe (Zahl)
  */
 function VegaLiteChart({ spec, data, columns, columnInfo, width, height }: VegaLiteChartProps) {
-  // Passe die Spezifikation an, um Tooltip mit dem ausgewählten Y-Achsenwert anzuzeigen
-  const patchedSpec = React.useMemo(() => {
-    if (!spec) return spec;
-    
-    // Für Layer-Encoding: Tooltip für jeden Layer ergänzen, falls nötig
-    let patched = { ...spec };
-    if (spec.layer && Array.isArray(spec.layer)) {
-      patched = {
-        ...spec,
-        layer: spec.layer.map((layer: any) => {
-          const encL = { ...(layer.encoding || {}) };
-          // Falls Tooltip noch nicht gesetzt ist, füge ihn basierend auf der Y-Achse hinzu
-          if (!encL.tooltip && layer.encoding && layer.encoding.y && layer.encoding.y.field) {
-            const yField = layer.encoding.y.field;
-            encL.tooltip = [{ 
-              field: yField, 
-              type: columnInfo?.[yField]?.type || 'quantitative' 
-            }];
-          }
-          return { ...layer, encoding: encL };
-        })
-      };
-    }
-    return patched;
-  }, [spec, columnInfo]);
 
-  if (!patchedSpec || !data) return null;
 
   return (
     <div className="card vega-lite-chart-container">
       <VegaLite
-        spec={patchedSpec}
+        spec={spec}
         data={{ table: data }}
         actions={true}
         width={width}

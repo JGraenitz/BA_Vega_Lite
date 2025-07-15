@@ -10,6 +10,10 @@ export interface TestDataset {
   recommendedTemplate: string;
 }
 
+export interface TestDataSelectorProps {
+  onDatasetSelect: (dataset: TestDataset) => void;
+}
+
 export const testDatasets: TestDataset[] = [
   {
     id: 'weather-data',

@@ -7,7 +7,7 @@
   background: var(--color-bg-panel);
   color: var(--color-text);
 }
-body.dark-mode .footer {
+.App.dark-mode .footer {
   background: var(--color-bg-panel-dark);
   color: var(--color-text-dark);
 } 

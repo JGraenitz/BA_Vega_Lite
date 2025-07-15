@@ -11,8 +11,10 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-body.dark-mode .card {
+.App.dark-mode .card {
     border: 1px solid rgb(62, 62, 62);
+    background: #23272b;
+    color: #f4f7fb;
 }
 
 .analysis-page-card {

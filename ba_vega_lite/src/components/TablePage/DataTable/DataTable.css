@@ -102,35 +102,35 @@
 }
 
 /* Darkmode Styles */
-body.dark-mode .data-table-container {
+.App.dark-mode .data-table-container {
   background: var(--color-bg-panel-dark);
 }
-body.dark-mode .data-table {
+.App.dark-mode .data-table {
   background: var(--color-bg-panel-dark);
   color: var(--color-text-dark);
 }
-body.dark-mode .data-table th {
+.App.dark-mode .data-table th {
   background: var(--color-bg-panel-dark);
   color: var(--color-accent-dark);
 }
-body.dark-mode .data-table td {
+.App.dark-mode .data-table td {
   background: var(--color-bg-panel-dark);
   color: var(--color-text-dark);
   border-color: #374151;
 }
-body.dark-mode .data-table tr:nth-child(even) {
+.App.dark-mode .data-table tr:nth-child(even) {
   background: #263040;
 }
-body.dark-mode .data-table-scroll {
+.App.dark-mode .data-table-scroll {
   background: var(--color-bg-panel-dark);
   box-shadow: 0 2px 8px rgba(100,255,218,0.04);
 }
-body.dark-mode .data-table-scroll::-webkit-scrollbar-track {
+.App.dark-mode .data-table-scroll::-webkit-scrollbar-track {
   background: #23272b;
 }
-body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb {
+.App.dark-mode .data-table-scroll::-webkit-scrollbar-thumb {
   background: #374151;
 }
-body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb:hover {
+.App.dark-mode .data-table-scroll::-webkit-scrollbar-thumb:hover {
   background: #64ffda;
 } 
