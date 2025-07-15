@@ -1,3 +1,5 @@
+import { companyData2023 } from "./companyData2023";
+
 export interface TestDataset {
   id: string;
   name: string;
@@ -50,49 +52,25 @@ export const testDatasets: TestDataset[] = [
     columns: ['date', 'precipitation', 'temp_max', 'temp_min', 'wind', 'weather'],
     recommendedTemplate: 'line-chart'
   },
-  {
-    id: 'company-data',
-    name: 'Unternehmensdaten',
-    description: 'Marktkapitalisierung und Umsatz der größten Unternehmen',
-    icon: '🏢',
-    data: [
-      { company: 'Microsoft', market_cap: 3142.04, revenue: 227.58 },
-      { company: 'Apple', market_cap: 2638.25, revenue: 385.71 },
-      { company: 'NVIDIA', market_cap: 2314.03, revenue: 60.92 },
-      { company: 'Alphabet', market_cap: 1879.86, revenue: 307.39 },
-      { company: 'Amazon', market_cap: 1866.72, revenue: 574.79 },
-      { company: 'Meta', market_cap: 1282.40, revenue: 134.90 },
-      { company: 'Berkshire Hathaway', market_cap: 891.67, revenue: 439.34 },
-      { company: 'Eli Lilly', market_cap: 735.08, revenue: 34.12 },
-      { company: 'TSMC', market_cap: 723.02, revenue: 70.35 },
-      { company: 'Broadcom', market_cap: 626.35, revenue: 38.87 },
-      { company: 'Visa', market_cap: 581.20, revenue: 33.35 },
-      { company: 'Novo Nordisk', market_cap: 580.33, revenue: 34.41 },
-      { company: 'JPMorgan Chase', market_cap: 563.77, revenue: 158.10 },
-      { company: 'Tesla', market_cap: 549.79, revenue: 96.77 },
-      { company: 'Walmart', market_cap: 488.08, revenue: 648.13 }
-    ],
-    columns: ['company', 'market_cap', 'revenue'],
-    recommendedTemplate: 'bar-chart'
-  },
+  companyData2023,
   {
     id: 'sales-data',
     name: 'Verkaufsdaten',
     description: 'Monatliche Verkaufszahlen verschiedener Produkte',
     icon: '📈',
     data: [
-      { month: 'Jan', product_a: 120, product_b: 85, product_c: 95 },
-      { month: 'Feb', product_a: 135, product_b: 92, product_c: 88 },
-      { month: 'Mar', product_a: 145, product_b: 78, product_c: 102 },
-      { month: 'Apr', product_a: 160, product_b: 105, product_c: 115 },
-      { month: 'May', product_a: 175, product_b: 118, product_c: 125 },
-      { month: 'Jun', product_a: 190, product_b: 125, product_c: 135 },
-      { month: 'Jul', product_a: 185, product_b: 132, product_c: 128 },
-      { month: 'Aug', product_a: 200, product_b: 140, product_c: 145 },
-      { month: 'Sep', product_a: 210, product_b: 148, product_c: 155 },
-      { month: 'Oct', product_a: 225, product_b: 155, product_c: 165 },
-      { month: 'Nov', product_a: 240, product_b: 162, product_c: 175 },
-      { month: 'Dec', product_a: 255, product_b: 170, product_c: 185 }
+      { month: '2025-01-01', product_a: 120, product_b: 85, product_c: 95 },
+      { month: '2025-02-01', product_a: 135, product_b: 92, product_c: 88 },
+      { month: '2025-03-01', product_a: 145, product_b: 78, product_c: 102 },
+      { month: '2025-04-01', product_a: 160, product_b: 105, product_c: 115 },
+      { month: '2025-05-01', product_a: 175, product_b: 118, product_c: 125 },
+      { month: '2025-06-01', product_a: 190, product_b: 125, product_c: 135 },
+      { month: '2025-07-01', product_a: 185, product_b: 132, product_c: 128 },
+      { month: '2025-08-01', product_a: 200, product_b: 140, product_c: 145 },
+      { month: '2025-09-01', product_a: 210, product_b: 148, product_c: 155 },
+      { month: '2025-10-01', product_a: 225, product_b: 155, product_c: 165 },
+      { month: '2025-11-01', product_a: 240, product_b: 162, product_c: 175 },
+      { month: '2025-12-01', product_a: 255, product_b: 170, product_c: 185 }
     ],
     columns: ['month', 'product_a', 'product_b', 'product_c'],
     recommendedTemplate: 'multi-line'

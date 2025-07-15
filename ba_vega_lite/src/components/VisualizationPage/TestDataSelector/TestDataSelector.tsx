@@ -1,5 +1,5 @@
 import React from 'react';
-import { testDatasets, TestDataset } from '../../../utils/interfaces/testData';
+import { testDatasets, TestDataset } from '../../../utils/interfaces/templateData/testData';
 import './TestDataSelector.css';
 
 interface TestDataSelectorProps {

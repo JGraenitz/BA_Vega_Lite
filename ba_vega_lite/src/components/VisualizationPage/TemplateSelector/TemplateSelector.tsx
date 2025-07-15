@@ -1,5 +1,5 @@
 import React from 'react';
-import { visualizationTemplates, VisualizationTemplate } from '../../../utils/interfaces/templates';
+import { visualizationTemplates, VisualizationTemplate } from '../../../utils/interfaces/templateData/templates';
 import './TemplateSelector.css';
 
 interface TemplateSelectorProps {

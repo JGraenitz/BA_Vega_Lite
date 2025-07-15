@@ -5,7 +5,7 @@ import ControlPanel from './ControlPanel/ControlPanel';
 import VegaLiteChart from './VegaLiteChart/VegaLiteChart';
 import TemplateSelector from './TemplateSelector/TemplateSelector';
 import TestDataSelector from './TestDataSelector/TestDataSelector';
-import { applyTemplateToControls } from '../../utils/interfaces/templates';
+import { applyTemplateToControls } from '../../utils/interfaces/templateData/templates';
 import { useNavigate } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import './VisualizationPage.css';
