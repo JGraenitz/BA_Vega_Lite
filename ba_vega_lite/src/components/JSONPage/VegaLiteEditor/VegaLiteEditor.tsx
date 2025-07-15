@@ -1,5 +1,5 @@
 import React from 'react';
-import { VegaLiteEditorProps } from '../../../utils/interfaces/JsonProps';
+import { VegaLiteEditorProps } from '../../../utils/interfaces/JSONProps';
 import './VegaLiteEditor.css';
 
 
