@@ -50,7 +50,6 @@
   margin-top: 8px;
 }
 
-/* Dark Mode Support */
 .App.dark-mode .data-summary {
   color: #e2e8f0;
 }

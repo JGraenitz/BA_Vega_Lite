@@ -1,4 +1,3 @@
-/* Modal */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -51,7 +50,6 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Dark Mode Support */
 .App.dark-mode .modal {
   background: #2d3748;
   border-color: #4a5568;

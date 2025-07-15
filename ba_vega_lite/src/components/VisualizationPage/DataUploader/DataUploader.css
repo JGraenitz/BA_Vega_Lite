@@ -141,7 +141,6 @@ body.dark-mode .datauploader-outer {
   border-color: #333b4a;
 }
 
-/* Neue Styles für Collapse-Funktionalität */
 .datauploader-header {
   display: flex;
   justify-content: space-between;
@@ -260,7 +259,6 @@ body.dark-mode .datauploader-outer {
   background: #1a202c;
 }
 
-/* Anpassung für Dropzone wenn Header vorhanden */
 .datauploader-outer .datauploader-dropzone {
   border-radius: 0;
   margin-top: 0;
@@ -313,4 +311,56 @@ body.dark-mode .datauploader-outer {
 
 .App.dark-mode .datauploader-dropzone {
   border-radius: 0;
+}
+
+@media (max-width: 600px) {
+  .datauploader-outer,
+  .datauploader-collapsed {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-top: 16px;
+    justify-content: stretch;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .datauploader-dropzone,
+  .datauploader-collapsed-header {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 2vw 12px 2vw;
+    font-size: 0.98em;
+    border-radius: 0;
+    word-break: break-word;
+  }
+  .datauploader-collapsed-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .datauploader-header {
+    padding: 0.5rem 2vw;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+  .datauploader-file-info {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .datauploader-infotext {
+    font-size: 0.98em;
+    word-break: break-word;
+  }
+  .datauploader-icon-emoji {
+    font-size: 1.7rem;
+  }
+  .datauploader-toggle-btn {
+    align-self: flex-end;
+    margin-top: 4px;
+  }
 }

@@ -50,8 +50,6 @@ export function analyzeColumns(data: any, columns: any): any {
 } 
 
 
-
-
 export function buildEncoding(field: any, type: any, title: any, aggregation: any = null): any {
   let encoding: any = {
     field: field,

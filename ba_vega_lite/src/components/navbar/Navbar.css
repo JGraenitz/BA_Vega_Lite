@@ -10,7 +10,6 @@
   position: sticky;
   top: 0;
   z-index: 1200;
-  border-bottom: 1px solid #e9ecef;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -33,7 +32,7 @@
 
 .darkmode-toggle:hover {
   color: var(--color-primary-dark);
-  background: #1e2127;
+  background: #dcdee2;
 }
 
 .navbar-actions {
@@ -55,8 +54,7 @@
 }
 
 .tutorials-btn:hover {
-  color: var(--color-primary-dark);
-  background: #e3f2fd;
+  background: #dcdee2;
 }
 
 .hamburger {
@@ -72,6 +70,10 @@
   margin-left: 0;
   z-index: 1101;
   border-radius: 4px;
+}
+
+.hamburger:hover {
+  background: #dcdee2;
 }
 
 .hamburger .bar {
@@ -156,7 +158,7 @@ body.dark-mode .menu-link {
   color: var(--color-primary-dark);
 }
 body.dark-mode .menu-link:hover {
-  background: var(--color-bg-panel-dark);
+  background: #353c40;
   color: #fff;
 }
 .menu-link:first-child {

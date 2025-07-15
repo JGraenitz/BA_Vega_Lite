@@ -9,12 +9,10 @@
   padding: 1rem;
 }
 
-/* Ensure Vega-Lite charts are responsive */
 .vega-lite-chart-container .vega-embed {
   height: 100%;
 }
 
-/* Darkmode Styles */
 .App.dark-mode .vega-lite-chart-container {
   background: var(--color-bg-dark);
   color: var(--color-text-dark);

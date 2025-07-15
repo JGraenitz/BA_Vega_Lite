@@ -51,16 +51,16 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       {menuOpen && (
         <div className="menu-overlay" onClick={() => setMenuOpen(false)}>
           <div className="menu" onClick={e => e.stopPropagation()}>
-            <Link to="/" className="menu-link">
+            <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>
               Visualisierung
             </Link>
-            <Link to="/table" className="menu-link">
+            <Link to="/table" className="menu-link" onClick={() => setMenuOpen(false)}>
               Tabelle
             </Link>
-            <Link to="/analysis" className="menu-link">
+            <Link to="/analysis" className="menu-link" onClick={() => setMenuOpen(false)}>
               Spaltenanalyse
             </Link>
-            <Link to="/json" className="menu-link">
+            <Link to="/json" className="menu-link" onClick={() => setMenuOpen(false)}>
               Vega-JSON
             </Link>
           </div>

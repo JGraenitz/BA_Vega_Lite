@@ -41,7 +41,6 @@
   background: var(--color-bg-panel);
 }
 
-/* Scrollbar Styling für die Box */
 .data-table-scroll::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -61,7 +60,6 @@
   background: #a8a8a8;
 }
 
-/* Mobile responsive table */
 @media (max-width: 900px) {
   .data-table-scroll {
     height: 50vh;
@@ -101,7 +99,6 @@
   }
 }
 
-/* Darkmode Styles */
 .App.dark-mode .data-table-container {
   background: var(--color-bg-panel-dark);
 }

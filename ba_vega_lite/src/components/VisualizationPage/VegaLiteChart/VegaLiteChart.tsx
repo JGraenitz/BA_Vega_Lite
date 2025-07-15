@@ -2,7 +2,6 @@ import { VegaLiteChartProps } from '../../../utils/interfaces/VisualizationPage/
 import { VegaLite } from 'react-vega';
 import './VegaLiteChart.css';
 
-
 /**
  * VegaLiteChart Komponente
  * Stellt das Diagramm mit react-vega dar.
@@ -16,7 +15,6 @@ import './VegaLiteChart.css';
  *   - height: Höhe (Zahl)
  */
 function VegaLiteChart({ spec, data, columns, columnInfo, width, height }: VegaLiteChartProps) {
-
 
   return (
     <div className="card vega-lite-chart-container">

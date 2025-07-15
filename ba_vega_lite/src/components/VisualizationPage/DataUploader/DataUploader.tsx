@@ -141,7 +141,7 @@ function DataUploader({onData, onError, fileName, isCollapsed = false, onToggleC
           <span role="img" aria-label="Upload" className="datauploader-icon-emoji">📄</span>
         </div>
         <div className="datauploader-infotext">
-          {fileName ? 'Neue CSV-Datei hochladen' : 'Ziehe deine CSV-Datei hierher oder'} 
+          {fileName ? 'Neue CSV-Datei hochladen' : 'Ziehe deine CSV-Datei hierher oder '} 
           {!fileName && <span className="datauploader-link">Datei auswählen</span>}
         </div>
         <input

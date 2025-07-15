@@ -99,3 +99,22 @@ select:focus, input[type="number"]:focus, input[type="date"]:focus {
 .App.dark-mode select:focus, .App.dark-mode input[type="number"]:focus, .App.dark-mode input[type="date"]:focus {
   border-color: #ffd700;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900;
+  margin: '2vw auto';
+  padding: 2vw;
+  /*border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
+}
+
+.App.dark-mode .card {
+  border: none;
+  background: #181a1b;
+  color: #f4f7fb;
+}

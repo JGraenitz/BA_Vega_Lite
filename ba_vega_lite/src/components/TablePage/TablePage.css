@@ -1,3 +1,7 @@
+body.dark-mode .tablepage-card {
+  background: #181a1b !important;
+}
+
 .tablepage-card {
   max-width: 1200px;
   margin: 2vw auto;
