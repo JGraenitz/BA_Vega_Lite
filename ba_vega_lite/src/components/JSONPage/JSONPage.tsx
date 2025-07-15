@@ -1,5 +1,4 @@
-import React from 'react';
-import { JSONPageProps } from '../../utils/interfaces/JSONProps';
+import { JSONPageProps } from '../../utils/interfaces/JSONPage/JSONProps';
 import VegaLiteEditor from './VegaLiteEditor/VegaLiteEditor';
 import './JSONPage.css';
 

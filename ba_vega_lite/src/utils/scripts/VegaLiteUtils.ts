@@ -9,7 +9,6 @@ const knownOrdinals = [
 ];
 
 
-
 function isKnownOrdinal(values: any): boolean {
   for (const scale of knownOrdinals) {
     // Prüfe, ob alle Werte in der Skala enthalten sind (Reihenfolge egal)

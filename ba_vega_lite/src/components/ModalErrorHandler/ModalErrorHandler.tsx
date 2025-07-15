@@ -1,5 +1,4 @@
-import React from 'react';
-import { ModalErrorHandlerProps } from '../../utils/interfaces/ModalErrorProps';
+import { ModalErrorHandlerProps } from '../../utils/interfaces/ModalErrorPage/ModalErrorProps';
 import './ModalErrorHandler.css';
 
 

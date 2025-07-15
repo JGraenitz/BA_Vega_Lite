@@ -1,5 +1,5 @@
-import React from 'react';
-import { visualizationTemplates, TemplateSelectorProps } from '../../../utils/interfaces/templateData/templates';
+import { TemplateSelectorProps } from '../../../utils/interfaces/VisualizationPage/TemplateSelector/TemplateSelectorProps';
+import { visualizationTemplates } from '../../../utils/constants/VisualizationPage/TemplateSelector/TemplateSelectorConst';
 import './TemplateSelector.css';
 
 

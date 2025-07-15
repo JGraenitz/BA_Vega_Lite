@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { NavbarProps } from '../../utils/interfaces/NavbarProps';
+import { NavbarProps } from '../../utils/interfaces/Navbar/NavbarProps';
 import './Navbar.css'; 
 
 /**
@@ -13,14 +13,11 @@ import './Navbar.css';
 
 const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
-
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-
   return (
     <nav className="navbar">
-
 
       <button
         className={`hamburger${menuOpen ? ' open' : ''}`}
@@ -31,7 +28,6 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
         <span className="bar"></span>
         <span className="bar"></span>
       </button>
-      
       
       <h1 className="navbar-title">VegaViz</h1>
       <div className="navbar-actions">

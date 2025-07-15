@@ -1,7 +1,6 @@
-import React from 'react';
-import { AnalysisPageProps } from '../../utils/interfaces/AnalysisProps';
-import './AnalysisPage.css';
+import { AnalysisPageProps } from '../../utils/interfaces/AnalysisPage/AnalysisPageProps';
 import DataSummary from './DataSummary/DataSummary';
+import './AnalysisPage.css';
 
 
 

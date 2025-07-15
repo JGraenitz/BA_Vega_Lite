@@ -1,5 +1,4 @@
-import React from 'react';
-import { TablePageProps } from '../../utils/interfaces/TableProps';
+import { TablePageProps } from '../../utils/interfaces/TablePage/TablePageProps';
 import DataTable from './DataTable/DataTable';
 import { useNavigate } from 'react-router-dom';
 

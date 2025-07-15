@@ -1,21 +1,4 @@
-export interface VisualizationTemplate {
-  id: string;
-  name: string;
-  description: string;
-  icon: string;
-  layers: any[];
-  markSize: number;
-  markShape: string;
-  xLabel: string;
-  yLabel: string;
-  width: number;
-  height: number;
-  dateFilter: { start: string; end: string };
-}
-
-export interface TemplateSelectorProps {
-  onTemplateSelect: (template: VisualizationTemplate) => void;
-}
+import { VisualizationTemplate } from '../../../interfaces/VisualizationPage/TemplateSelector/TemplateSelectorProps';
 
 export const visualizationTemplates: VisualizationTemplate[] = [
   {
@@ -160,4 +143,4 @@ export const applyTemplateToControls = (template: VisualizationTemplate, columns
   }
   
   return controls;
-}; 
+};

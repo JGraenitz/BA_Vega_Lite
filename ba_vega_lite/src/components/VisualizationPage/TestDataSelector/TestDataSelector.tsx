@@ -1,5 +1,4 @@
-import React from 'react';
-import { testDatasets, TestDataSelectorProps } from '../../../utils/interfaces/templateData/testData';
+import { testDatasets, TestDataSelectorProps } from '../../../utils/interfaces/VisualizationPage/TestDataSelector/TestDataSelectorProps';
 import './TestDataSelector.css';
 
 

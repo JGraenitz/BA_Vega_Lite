@@ -1,18 +1,5 @@
-import { companyData2023 } from "./companyData2023";
-
-export interface TestDataset {
-  id: string;
-  name: string;
-  description: string;
-  icon: string;
-  data: any[];
-  columns: string[];
-  recommendedTemplate: string;
-}
-
-export interface TestDataSelectorProps {
-  onDatasetSelect: (dataset: TestDataset) => void;
-}
+import { companyData2023 } from './companyData2023';
+import { TestDataset } from "../../../interfaces/VisualizationPage/TestDataSelector/TestDataSelectorProps";
 
 export const testDatasets: TestDataset[] = [
   {

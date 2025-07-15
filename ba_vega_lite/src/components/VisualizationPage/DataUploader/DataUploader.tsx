@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { DataUploaderProps } from '../../../utils/interfaces/VisualizationProps';
+import { DataUploaderProps } from '../../../utils/interfaces/VisualizationPage/DataUploader/DataUploaderProps';
 import { Tooltip } from 'react-tooltip';
 import Papa from 'papaparse';
 import './DataUploader.css';
@@ -10,13 +10,8 @@ import './DataUploader.css';
  * Ermöglicht Drag-and-Drop und Dateiauswahl für CSV-Upload.
  * Ruft onData(data, columns) bei Erfolg, onError(message) bei Fehler auf.
  */
-function DataUploader({
-  onData, 
-  onError, 
-  fileName, 
-  isCollapsed = false,
-  onToggleCollapse
-}: DataUploaderProps) {
+function DataUploader({onData, onError, fileName, isCollapsed = false, onToggleCollapse}: DataUploaderProps) {
+
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 

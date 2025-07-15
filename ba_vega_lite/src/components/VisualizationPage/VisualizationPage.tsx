@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { VisualizationPageProps } from '../../utils/interfaces/VisualizationProps';
+import { VisualizationPageProps } from '../../utils/interfaces/VisualizationPage/VisualizationProps';
 import DataUploader from './DataUploader/DataUploader';
 import ControlPanel from './ControlPanel/ControlPanel';
 import VegaLiteChart from './VegaLiteChart/VegaLiteChart';
 import TemplateSelector from './TemplateSelector/TemplateSelector';
 import TestDataSelector from './TestDataSelector/TestDataSelector';
-import { applyTemplateToControls } from '../../utils/interfaces/templateData/templates';
+import { applyTemplateToControls } from '../../utils/constants/VisualizationPage/TemplateSelector/TemplateSelectorConst';
 import { useNavigate } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import './VisualizationPage.css';
@@ -47,7 +47,7 @@ function VisualizationPage({
 }: VisualizationPageProps) {
 
   const [showTemplates, setShowTemplates] = useState(false);
-
+  
   const [showTestData, setShowTestData] = useState(true);
 
   const [uploadPanelCollapsed, setUploadPanelCollapsed] = useState(false);

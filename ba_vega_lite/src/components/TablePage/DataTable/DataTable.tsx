@@ -1,5 +1,4 @@
-import React from 'react';
-import { DataTableProps } from '../../../utils/interfaces/TableProps';
+import { DataTableProps } from '../../../utils/interfaces/TablePage/DataTable/DataTableProps';
 import './DataTable.css';
 
 

@@ -1,5 +1,4 @@
-import React from 'react';
-import { VegaLiteChartProps } from '../../../utils/interfaces/VisualizationProps';
+import { VegaLiteChartProps } from '../../../utils/interfaces/VisualizationPage/VegaLiteChart/VegaLiteChartProps';
 import { VegaLite } from 'react-vega';
 import './VegaLiteChart.css';
 

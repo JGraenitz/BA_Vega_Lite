@@ -1,6 +1,6 @@
 import React from 'react';
-import './TutorialsPage.css';
 import { useNavigate } from 'react-router-dom';
+import './TutorialsPage.css';
 
 const TutorialsPage: React.FC = () => {
   const navigate = useNavigate();

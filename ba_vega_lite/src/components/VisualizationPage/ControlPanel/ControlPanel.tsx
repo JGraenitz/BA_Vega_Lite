@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ControlPanelProps } from '../../../utils/interfaces/VisualizationProps';
-import './ControlPanel.css';
+import { ControlPanelProps } from '../../../utils/interfaces/VisualizationPage/ControlPanel/ControlPanelProps';
+import { aggregations, plotTypes, markShapes } from '../../../utils/constants/VisualizationPage/ControlPanel/ControlPanelConst';
 import { Tooltip } from 'react-tooltip';
+import './ControlPanel.css';
+
 
 
 /**
@@ -43,36 +45,6 @@ function ControlPanel({
   });
   const [showLegend, setShowLegend] = useState(initialShowLegend);
   const [animatingLayer, setAnimatingLayer] = useState<{id: any, direction: string} | null>(null);
-
-  // Verfügbare Aggregationen
-  const aggregations = [
-    { value: '', label: 'Keine Aggregation' },
-    { value: 'sum', label: 'Summe' },
-    { value: 'mean', label: 'Durchschnitt' },
-    { value: 'median', label: 'Median' },
-    { value: 'count', label: 'Anzahl' },
-    { value: 'min', label: 'Minimum' },
-    { value: 'max', label: 'Maximum' },
-  ];
-
-  // Verfügbare Diagrammtypen
-  const plotTypes = [
-    { value: 'bar', label: 'Balkendiagramm' },
-    { value: 'line', label: 'Liniendiagramm' },
-    { value: 'point', label: 'Streudiagramm' },
-    { value: 'area', label: 'Flächendiagramm' },
-    { value: 'tick', label: 'Ticks' },
-    /*{ value: 'pie', label: 'Kuchendiagramm' },*/
-  ];
-
-  // Verfügbare Markierungsformen
-  const markShapes = [
-    { value: 'circle', label: 'Kreis' },
-    { value: 'square', label: 'Quadrat' },
-    { value: 'diamond', label: 'Diamant' },
-    { value: 'triangle', label: 'Dreieck' },
-    { value: 'cross', label: 'Kreuz' },
-  ];
 
   // Lokalen State aktualisieren, wenn Initialwerte sich ändern
   useEffect(() => { setLayers(initialLayers); }, [initialLayers]);

@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { DataSummaryProps } from '../../../utils/interfaces/AnalysisProps';
-import './DataSummary.css';
+import { useState } from 'react';
+import { DataSummaryProps } from '../../../utils/interfaces/AnalysisPage/DataSummary/DataSummaryProps';
+import { typeOptions } from '../../../utils/constants/AnalysisPage/DataSummary/DataSummaryConst';
 import { Tooltip } from 'react-tooltip';
+import './DataSummary.css';
 
 /**
  * DataSummary Komponente
@@ -22,13 +23,6 @@ function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
   const [showSaved, setShowSaved] = useState(false);
 
   if (!columnInfo) return null;
-
-  const typeOptions = [
-    'quantitative',
-    'temporal',
-    'ordinal',
-    'nominal',
-  ];
 
   const handleTypeChange = (col: any, newType: any) => {
     setEditedTypes((prev: any) => ({ ...prev, [col]: newType }));
