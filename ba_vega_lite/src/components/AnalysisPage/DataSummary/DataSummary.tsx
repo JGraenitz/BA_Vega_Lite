@@ -7,9 +7,9 @@ import './DataSummary.css';
 /**
  * DataSummary Komponente
  * Zeigt Spaltentypen und Informationen zu fehlenden Werten an.
- * Props:
- *   - columnInfo: { [col]: { type, missingCount } }
- *   - onTypeChange?: Funktion(updatedTypes) // optionaler Callback
+ *
+ * @param {Object} columnInfo - Objekt mit Spaltennamen als Schlüssel und Typ-/MissingCount-Infos als Wert
+ * @param {Function} onTypeChange - Optionaler Callback, der beim Speichern der Typenänderungen aufgerufen wird
  */
 function DataSummary({ columnInfo, onTypeChange }: DataSummaryProps) {
   const [editedTypes, setEditedTypes] = useState<any>(() => {

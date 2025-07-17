@@ -5,12 +5,11 @@ import './Navbar.css';
 
 /**
  * Navbar-Komponente
+ * Stellt die Navigationsleiste der Anwendung dar und bietet Buttons für Tutorials und Dark Mode.
  *
- * Diese Komponente stellt die Navigationsleiste der Anwendung dar.
- * Sie zeigt den Titel der Anwendung an.
- *
+ * @param {boolean} darkMode - Ob der Dark Mode aktiviert ist
+ * @param {Function} setDarkMode - Callback zum Umschalten des Dark Mode
  */
-
 const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
   const [menuOpen, setMenuOpen] = useState(false);

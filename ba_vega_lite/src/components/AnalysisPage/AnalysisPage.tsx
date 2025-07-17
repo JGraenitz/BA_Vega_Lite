@@ -4,8 +4,13 @@ import './AnalysisPage.css';
 
 
 
-// AnalysisPage Komponente
-// Stellt die Spaltenanalyse dar
+/**
+ * AnalysisPage Komponente
+ * Stellt die Spaltenanalyse dar und gibt die Möglichkeit, Typen zu ändern.
+ *
+ * @param {Object} columnInfo - Informationen zu den Spalten (Typen, etc.)
+ * @param {Function} onTypeChange - Callback zum Ändern der Spaltentypen
+ */
 function AnalysisPage({ columnInfo, onTypeChange }: AnalysisPageProps) {
   return (
     <div className="card analysis-page-card">

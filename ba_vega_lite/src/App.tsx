@@ -11,6 +11,14 @@ import TutorialsPage from './components/TutorialsPage/TutorialsPage';
 import { generateVegaLiteSpec, handleCsvData } from './utils/scripts/VegaLiteUtils';
 import './App.css';
 
+/**
+ * App Komponente
+ * Einstiegspunkt der Anwendung, verwaltet den globalen State und das Routing.
+ *
+ * - Hält zentrale States wie csvData, columns, controls, columnInfo, darkMode etc.
+ * - Steuert das Routing zwischen Visualisierung, Tabelle, Analyse, JSON-Ansicht und Tutorials.
+ * - Kümmert sich um das weiterleiten der Daten an die richtigen Komponenten.
+ */
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -64,14 +72,16 @@ function App() {
     // Legendenansicht: Daten transformieren 
     if (controls.showLegend) {
       let legendData: any[] = [];
-      controls.layers.forEach((layer: any) => {
+      controls.layers.forEach((layer: any, i: number) => {
         const xField = layer.xAxis;
         const yField = layer.yAxis;
+        // Eindeutigen Legend-Namen wie in der Spec erzeugen
+        const legendName = `${yField} (Layer ${i + 1})`;
         data.forEach((row: any) => {
           if (row[yField] !== undefined && row[yField] !== null && row[yField] !== '') {
             legendData.push({
               ...row,
-              Legend: yField,
+              Legend: legendName,
               value: row[yField],
               _color: layer.color // optional, falls für Tooltip/Farbe gebraucht
             });

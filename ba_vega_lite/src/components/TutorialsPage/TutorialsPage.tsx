@@ -2,6 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './TutorialsPage.css';
 
+/**
+ * TutorialsPage Komponente
+ * Zeigt eine Übersichtsseite mit Hinweisen, Links und (zukünftig) Tutorials zur Nutzung der App.
+ * Bietet einen Link zur Vega-Lite-Dokumentation und einen Button zur Rückkehr zur Visualisierung.
+ *
+ */
 const TutorialsPage: React.FC = () => {
   const navigate = useNavigate();
   return (

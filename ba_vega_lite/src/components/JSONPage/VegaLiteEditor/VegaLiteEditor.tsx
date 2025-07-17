@@ -5,10 +5,10 @@ import './VegaLiteEditor.css';
 /**
  * VegaLiteEditor Komponente
  * Zeigt die Vega-Lite JSON-Spezifikation (nur lesen) an.
- * Props:
- *   - spec: string (Vega-Lite JSON)
- *   - setSpec: Funktion (zum Aktualisieren der Spezifikation)
- *   - error: string (Fehlermeldung)
+ *
+ * @param {string} spec - Die Vega-Lite JSON-Spezifikation als String
+ * @param {Function} setSpec - Callback zum Aktualisieren der Spezifikation
+ * @param {string} error - Fehlermeldung (falls vorhanden)
  */
 function VegaLiteEditor({ spec, setSpec, error }: VegaLiteEditorProps) {
   return (

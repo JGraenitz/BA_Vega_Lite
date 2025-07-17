@@ -9,6 +9,12 @@ import './DataUploader.css';
  * DataUploader Komponente
  * Ermöglicht Drag-and-Drop und Dateiauswahl für CSV-Upload.
  * Ruft onData(data, columns) bei Erfolg, onError(message) bei Fehler auf.
+ *
+ * @param {Function} onData - Callback, das bei erfolgreichem Upload aufgerufen wird (data, columns, fileName)
+ * @param {Function} onError - Callback, das bei Fehlern aufgerufen wird (Fehlermeldung)
+ * @param {string} fileName - Name der aktuell hochgeladenen Datei
+ * @param {boolean} isCollapsed - Ob das Upload-Panel eingeklappt ist
+ * @param {Function} onToggleCollapse - Callback zum Ein-/Ausklappen des Panels
  */
 function DataUploader({onData, onError, fileName, isCollapsed = false, onToggleCollapse}: DataUploaderProps) {
 

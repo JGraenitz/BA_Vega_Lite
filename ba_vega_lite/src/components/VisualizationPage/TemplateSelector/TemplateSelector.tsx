@@ -3,6 +3,12 @@ import { visualizationTemplates } from '../../../utils/constants/VisualizationPa
 import './TemplateSelector.css';
 
 
+/**
+ * TemplateSelector Komponente
+ * Zeigt eine Auswahl von Visualisierungsvorlagen an, die der Nutzer auswählen kann.
+ *
+ * @param {Function} onTemplateSelect - Callback, der beim Auswählen einer Vorlage aufgerufen wird
+ */
 function TemplateSelector({ onTemplateSelect }: TemplateSelectorProps) {
   return (
     <div className="template-selector">

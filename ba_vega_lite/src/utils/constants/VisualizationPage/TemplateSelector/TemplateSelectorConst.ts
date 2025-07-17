@@ -119,10 +119,22 @@ export const visualizationTemplates: VisualizationTemplate[] = [
   }
 ];
 
+/**
+ * Sucht eine Visualisierungsvorlage anhand ihrer ID.
+ * @param id Die ID der gewünschten Vorlage
+ * @returns Die gefundene VisualizationTemplate oder undefined, falls nicht gefunden
+ */
 export const getTemplateById = (id: string): VisualizationTemplate | undefined => {
   return visualizationTemplates.find(template => template.id === id);
 };
 
+/**
+ * Wendet eine Visualisierungsvorlage auf die aktuellen Spalten an und erzeugt daraus ein Controls-Objekt.
+ * Dabei werden die Layer der Vorlage mit den übergebenen Spaltennamen befüllt und erhalten neue IDs.
+ * @param template Die ausgewählte Visualisierungsvorlage
+ * @param columns Die aktuellen Spaltennamen aus den Daten
+ * @returns Ein Controls-Objekt, das für die Steuerung der Visualisierung genutzt werden kann
+ */
 export const applyTemplateToControls = (template: VisualizationTemplate, columns: string[]): any => {
   const controls = { ...template };
   

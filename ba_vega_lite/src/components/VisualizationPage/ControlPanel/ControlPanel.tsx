@@ -10,26 +10,25 @@ import './ControlPanel.css';
  * ControlPanel Komponente
  * Stellt die Steuerung für die Visualisierung mit Layern, Achsen, Diagrammtypen, Aggregationen usw. bereit.
  * Nutzt lokalen State und einen 'Übernehmen'-Button, um Änderungen anzuwenden.
- * Props:
- *   - columns, columnInfo
- *   - Initialwerte für alle Steuerelemente
- *   - onApply: Funktion({ layers, markSize, markShape, xLabel, yLabel, width, height, dateFilter })
+ *
+ * @param {Array} columns - Die Spaltennamen der Daten
+ * @param {Object} columnInfo - Typinformationen zu den Spalten
+ * @param {Array} layers - Die Layer-Konfigurationen
+ * @param {number} markSize - Standardgröße für Markierungen
+ * @param {string} markShape - Standardform für Markierungen
+ * @param {string} xLabel - Label für die X-Achse
+ * @param {string} yLabel - Label für die Y-Achse
+ * @param {number} width - Breite des Diagramms
+ * @param {number} height - Höhe des Diagramms
+ * @param {Object} dateFilter - Datumsfilter (start, end)
+ * @param {Function} onApply - Callback, das beim Übernehmen der Einstellungen aufgerufen wird
+ * @param {boolean} darkMode - Ob Dark Mode aktiviert ist
+ * @param {boolean} showLegend - Ob die Legende angezeigt werden soll
  */
-function ControlPanel({
-  columns,
-  columnInfo,
-  layers: initialLayers = [],
-  markSize: initialMarkSize = 30,
-  markShape: initialMarkShape = 'circle',
-  xLabel: initialXLabel,
-  yLabel: initialYLabel,
-  width: initialWidth,
-  height: initialHeight,
-  dateFilter: initialDateFilter,
-  onApply,
-  darkMode = false,
-  showLegend: initialShowLegend = false
-}: ControlPanelProps) {
+function ControlPanel({columns, columnInfo, layers: initialLayers = [], markSize: initialMarkSize = 30, markShape: initialMarkShape = 'circle',
+  xLabel: initialXLabel, yLabel: initialYLabel, width: initialWidth, height: initialHeight, dateFilter: initialDateFilter, onApply,
+  darkMode = false, showLegend: initialShowLegend = false}: ControlPanelProps) {
+
   // Lokaler State für alle Steuerelemente
   const [layers, setLayers] = useState(initialLayers);
   const [markSize, setMarkSize] = useState(initialMarkSize);
@@ -63,11 +62,9 @@ function ControlPanel({
     }
   }, [columns, columnInfo]);
 
-  // Alle temporalen Felder für das Dropdown bestimmen
   const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
   const showDateFilter = temporalFields.length > 0;
 
-  // Übernehmen-Handler
   const handleApply = () => {
     onApply && onApply({ 
       layers,
@@ -83,7 +80,6 @@ function ControlPanel({
     });
   };
 
-  // Neuen Layer hinzufügen
   const handleAddLayer = () => {
     const newLayer = {
       id: Date.now(),
@@ -132,7 +128,6 @@ function ControlPanel({
     }
   };
 
-  // DateFilter-Handler
   const handleDateFilterStart = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDateFilter((df: any) => ({ ...df, start: e.target.value }));
   };

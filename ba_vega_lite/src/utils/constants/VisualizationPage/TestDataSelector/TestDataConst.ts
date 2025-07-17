@@ -9,6 +9,11 @@ export const testDatasets: TestDataset[] = [
   salesData
 ];
 
+/**
+ * Sucht ein Testdatenset anhand seiner ID.
+ * @param id Die ID des gewünschten Testdatensatzes
+ * @returns Das gefundene TestDataset oder undefined, falls nicht gefunden
+ */
 export const getTestDatasetById = (id: string): TestDataset | undefined => {
   return testDatasets.find(dataset => dataset.id === id);
 };

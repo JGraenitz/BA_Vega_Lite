@@ -12,35 +12,22 @@ import './VisualizationPage.css';
 
 /**
  * VisualizationPage Komponente
- * 
+ *
  * Hauptseite der Vega-Lite Visualisierungsanwendung. Stellt die zentrale Benutzeroberfläche bereit,
  * über die Benutzer CSV-Daten hochladen, Visualisierungseinstellungen konfigurieren und 
- * interaktive Diagramme erstellen können.
- * 
- * Komponentenstruktur:
- * - DataUploader: CSV-Datei-Upload per Drag-and-Drop oder Dateiauswahl
- * - ControlPanel: Konfiguration der Visualisierungseinstellungen (Layer, Diagrammtypen, Filter)
- * - VegaLiteChart: Anzeige der interaktiven Vega-Lite Diagramme
- * 
- * Props:
- *   - csvData: Array - Die eingelesenen CSV-Daten als Array von Objekten
- *   - handleCsvData: Function - Callback-Funktion für CSV-Daten-Upload
- *   - columns: Array - Array der Spaltennamen aus der CSV-Datei
- *   - columnInfo: Object - Metadaten zu den Spalten (Typ, fehlende Werte)
- *   - controls: Object - Visualisierungseinstellungen (Layer, Markierungen, Filter)
- *   - filteredData: Array - Gefilterte Daten für die Visualisierung
- *   - setError: Function - Callback für Fehlerbehandlung
- *   - handleControlsApply: Function - Callback für Anwendung der Steuerungseinstellungen
- *   - parsedSpec: Object - Parsed Vega-Lite Spezifikation
- *   - darkMode: Boolean - Dark Mode Status
- * 
- * Datenfluss:
- * 1. Upload: Benutzer lädt CSV-Datei über DataUploader hoch
- * 2. Verarbeitung: CSV-Daten werden geparst und Spalteninformationen extrahiert
- * 3. Konfiguration: Benutzer konfiguriert Visualisierung über ControlPanel
- * 4. Visualisierung: VegaLiteChart zeigt das Diagramm basierend auf den Einstellungen an
+ * interaktiv Diagramme erstellen können.
+ *
+ * @param {Array} csvData - Die eingelesenen CSV-Daten als Array von Objekten
+ * @param {Function} handleUploadedCsvData - Callback-Funktion für CSV-Daten-Upload
+ * @param {Array} columns - Array der Spaltennamen aus der CSV-Datei
+ * @param {Object} columnInfo - Metadaten zu den Spalten (Typ, fehlende Werte)
+ * @param {Object} controls - Visualisierungseinstellungen (Layer, Markierungen, Filter)
+ * @param {Array} filteredData - Gefilterte Daten für die Visualisierung
+ * @param {Function} setError - Callback für Fehlerbehandlung
+ * @param {Function} handleControlsApply - Callback für Anwendung der Steuerungseinstellungen
+ * @param {Object} parsedSpec - Parsed Vega-Lite Spezifikation
+ * @param {boolean} darkMode - Dark Mode Status
  */
-
 function VisualizationPage({
   csvData, handleUploadedCsvData, columns, columnInfo, controls, filteredData,
   setError, handleControlsApply, parsedSpec
@@ -56,18 +43,30 @@ function VisualizationPage({
 
   const navigate = useNavigate();
 
+  /**
+   * Wird aufgerufen, wenn eine Vorlage ausgewählt wird.
+   * Wendet die Vorlage auf die aktuellen Spalten an und übernimmt die Einstellungen.
+   */
   const handleTemplateSelect = (template: any) => {
     const appliedTemplate = applyTemplateToControls(template, columns);
     handleControlsApply(appliedTemplate);
     setShowTemplates(false);
   };
 
+  /**
+   * Wird aufgerufen, wenn ein Testdatensatz ausgewählt wird.
+   * Lädt die Testdaten und blendet das Testdaten-Panel aus.
+   */
   const handleTestDataSelect = (dataset: any) => {
     handleCsvDataWithFileName(dataset.data, dataset.columns, 'Testdaten: ' + dataset.name);
     setShowTestData(false);
     setUploadPanelCollapsed(true); // Automatisch Panel einklappen nach Testdaten-Auswahl
   };
 
+  /**
+   * Hilfsfunktion, um CSV-Daten zusammen mit dem Dateinamen zu verarbeiten.
+   * Setzt den Dateinamen und klappt das Upload-Panel ein.
+   */
   const handleCsvDataWithFileName = (data: any, columns: any, fileName?: string) => {
     handleUploadedCsvData(data, columns);
     if (fileName) {
@@ -76,6 +75,9 @@ function VisualizationPage({
     }
   };
 
+  /**
+   * Klappt das Upload-Panel ein oder aus.
+   */
   const handleToggleUploadPanel = () => {
     setUploadPanelCollapsed(!uploadPanelCollapsed);
   };

@@ -6,13 +6,13 @@ import './VegaLiteChart.css';
  * VegaLiteChart Komponente
  * Stellt das Diagramm mit react-vega dar.
  * Zeigt einen Tooltip mit dem ausgewählten Y-Achsenwert an.
- * Props:
- *   - spec: Vega-Lite Spezifikationsobjekt
- *   - data: Array von Datenobjekten
- *   - columns: Array von Spaltennamen
- *   - columnInfo: Objekt mit Typinformationen zu jeder Spalte
- *   - width: Breite (Zahl)
- *   - height: Höhe (Zahl)
+ *
+ * @param {Object} spec - Vega-Lite Spezifikationsobjekt
+ * @param {Array} data - Array von Datenobjekten
+ * @param {Array} columns - Array von Spaltennamen
+ * @param {Object} columnInfo - Objekt mit Typinformationen zu jeder Spalte
+ * @param {number} width - Breite des Diagramms
+ * @param {number} height - Höhe des Diagramms
  */
 function VegaLiteChart({ spec, data, columns, columnInfo, width, height }: VegaLiteChartProps) {
 

@@ -5,10 +5,10 @@ import './ModalErrorHandler.css';
 /**
  * ModalErrorHandler Komponente
  * Stellt ein benutzerdefiniertes Modal für Fehler/Rückmeldungen bereit.
- * Props:
- *   - title: string
- *   - message: string
- *   - onClose: Funktion
+ *
+ * @param {string} title - Titel des Modals
+ * @param {string} message - Fehlermeldung oder Rückmeldung
+ * @param {Function} onClose - Callback zum Schließen des Modals
  */
 function ModalErrorHandler({ title, message, onClose }: ModalErrorHandlerProps) {
   return (

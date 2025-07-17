@@ -3,6 +3,12 @@ import { testDatasets } from '../../../utils/constants/VisualizationPage/TestDat
 import './TestDataSelector.css';
 
 
+/**
+ * TestDataSelector Komponente
+ * Zeigt eine Auswahl von Testdatensätzen an, die der Nutzer laden kann.
+ *
+ * @param {Function} onDatasetSelect - Callback, der beim Auswählen eines Testdatensatzes aufgerufen wird
+ */
 function TestDataSelector({ onDatasetSelect }: TestDataSelectorProps) {
   return (
     <div className="testdata-selector">

@@ -5,4 +5,4 @@ export interface DataUploaderProps {
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
   darkMode?: boolean;
-  } 
+} 

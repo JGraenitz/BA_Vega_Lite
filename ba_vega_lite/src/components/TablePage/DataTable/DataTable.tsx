@@ -3,11 +3,11 @@ import './DataTable.css';
 
 
 /**
- * DataTable Komponente 
- * Stell die CSV Datei als Tabelle dar 
- * Props:
- *   - data: Ein Array der Rohdaten
- *   - columns: Ein Array von Spaltennamen
+ * DataTable Komponente
+ * Stellt die CSV-Daten als Tabelle dar.
+ *
+ * @param {Array} data - Ein Array der Rohdaten
+ * @param {Array} columns - Ein Array von Spaltennamen
  */
 function DataTable({ data, columns }: DataTableProps) {
   if (!data || !columns) return null;
