@@ -224,11 +224,31 @@
   gap: 14px;
   margin-top: 8px;
 }
+
+
+
 .controlpanel-datefilter-input {
   min-width: 130px;
 }
 
 @media (max-width: 700px) {
+
+  .controlpanel-datefilter-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 8px;
+  }
+
+  .controlpanel-datefilter-start {
+    display: flex;
+  }
+
+  .controlpanel-datefilter-end{
+    display: flex;
+  }
+  
   .controlpanel-root {
     padding: min(4vw, 16px);
     max-width: 96vw;

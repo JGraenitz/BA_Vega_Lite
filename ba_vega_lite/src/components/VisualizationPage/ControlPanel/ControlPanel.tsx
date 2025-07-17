@@ -357,29 +357,32 @@ function ControlPanel({
 
       {/* Date Filter Sektion - Nur wenn in der x-Achse ein temporaler Wert erkannt wird */}
       {showDateFilter && (
-        <div className={`controlpanel-section${darkMode ? ' dark-mode' : ''}`}
-             >
+        <div className={`controlpanel-section${darkMode ? ' dark-mode' : ''}`}>
           <h4 className="controlpanel-section-title">Datumsfilter</h4>
           <div className="controlpanel-datefilter-row">
             <span className="controlpanel-label">Datumsfeld: <b>{dateField}</b></span>
-            <label htmlFor="date-start" className="controlpanel-label">Von:</label>
-            <input
-              id="date-start"
-              type="date"
-              className="controlpanel-datefilter-input"
-              value={dateFilter.start || ''}
-              onChange={handleDateFilterStart}
-              aria-label="Start date"
-            />
-            <label htmlFor="date-end" className="controlpanel-label">Bis:</label>
-            <input
-              id="date-end"
-              type="date"
-              className="controlpanel-datefilter-input"
-              value={dateFilter.end || ''}
-              onChange={handleDateFilterEnd}
-              aria-label="End date"
-            />
+            <div className='controlpanel-datefilter-start'>
+              <label htmlFor="date-start" className="controlpanel-label">Von:</label>
+              <input
+                id="date-start"
+                type="date"
+                className="controlpanel-datefilter-input"
+                value={dateFilter.start || ''}
+                onChange={handleDateFilterStart}
+                aria-label="Start date"
+              />
+            </div>
+            <div className='controlpanel-datefilter-end'>
+              <label htmlFor="date-end" className="controlpanel-label">Bis:</label>
+              <input
+                id="date-end"
+                type="date"
+                className="controlpanel-datefilter-input"
+                value={dateFilter.end || ''}
+                onChange={handleDateFilterEnd}
+                aria-label="End date"
+              />
+            </div>  
           </div>
         </div>
       )}
