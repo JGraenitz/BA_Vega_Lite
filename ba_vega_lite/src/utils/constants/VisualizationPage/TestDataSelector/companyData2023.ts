@@ -1,7515 +1,1267 @@
 export const companyData2023 = {
-  "id": "company-data-2023",
-  "name": "Unternehmensdaten",
-  "description": "Marktkapitalisierung 2023 (Close-Werte pro Tag, mit Datum)",
-  "icon": "🏢",
-  "data": [
-    {
-      "date": "2023-01-03",
-      "company": "Microsoft",
-      "market_cap": 235.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-03",
-      "company": "Apple",
-      "market_cap": 123.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-03",
-      "company": "NVIDIA",
-      "market_cap": 14.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-03",
-      "company": "Alphabet",
-      "market_cap": 88.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-03",
-      "company": "Amazon",
-      "market_cap": 85.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-04",
-      "company": "Microsoft",
-      "market_cap": 224.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-04",
-      "company": "Apple",
-      "market_cap": 124.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-04",
-      "company": "NVIDIA",
-      "market_cap": 14.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-04",
-      "company": "Alphabet",
-      "market_cap": 87.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-04",
-      "company": "Amazon",
-      "market_cap": 85.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-05",
-      "company": "Microsoft",
-      "market_cap": 218.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-05",
-      "company": "Apple",
-      "market_cap": 123.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-05",
-      "company": "NVIDIA",
-      "market_cap": 14.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-05",
-      "company": "Alphabet",
-      "market_cap": 85.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-05",
-      "company": "Amazon",
-      "market_cap": 83.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-06",
-      "company": "Microsoft",
-      "market_cap": 220.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-06",
-      "company": "Apple",
-      "market_cap": 128.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-06",
-      "company": "NVIDIA",
-      "market_cap": 14.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-06",
-      "company": "Alphabet",
-      "market_cap": 86.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-06",
-      "company": "Amazon",
-      "market_cap": 86.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-09",
-      "company": "Microsoft",
-      "market_cap": 223.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-09",
-      "company": "Apple",
-      "market_cap": 128.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-09",
-      "company": "NVIDIA",
-      "market_cap": 15.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-09",
-      "company": "Alphabet",
-      "market_cap": 87.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-09",
-      "company": "Amazon",
-      "market_cap": 87.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-10",
-      "company": "Microsoft",
-      "market_cap": 224.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-10",
-      "company": "Apple",
-      "market_cap": 129.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-10",
-      "company": "NVIDIA",
-      "market_cap": 15.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-10",
-      "company": "Alphabet",
-      "market_cap": 88.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-10",
-      "company": "Amazon",
-      "market_cap": 89.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-11",
-      "company": "Microsoft",
-      "market_cap": 231.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-11",
-      "company": "Apple",
-      "market_cap": 131.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-11",
-      "company": "NVIDIA",
-      "market_cap": 15.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-11",
-      "company": "Alphabet",
-      "market_cap": 91.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-11",
-      "company": "Amazon",
-      "market_cap": 95.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-12",
-      "company": "Microsoft",
-      "market_cap": 234.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-12",
-      "company": "Apple",
-      "market_cap": 131.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-12",
-      "company": "NVIDIA",
-      "market_cap": 16.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-12",
-      "company": "Alphabet",
-      "market_cap": 90.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-12",
-      "company": "Amazon",
-      "market_cap": 95.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-13",
-      "company": "Microsoft",
-      "market_cap": 234.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-13",
-      "company": "Apple",
-      "market_cap": 133.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-13",
-      "company": "NVIDIA",
-      "market_cap": 16.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-13",
-      "company": "Alphabet",
-      "market_cap": 91.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-13",
-      "company": "Amazon",
-      "market_cap": 98.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-17",
-      "company": "Microsoft",
-      "market_cap": 236.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-17",
-      "company": "Apple",
-      "market_cap": 134.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-17",
-      "company": "NVIDIA",
-      "market_cap": 17.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-17",
-      "company": "Alphabet",
-      "market_cap": 90.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-17",
-      "company": "Amazon",
-      "market_cap": 96.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-18",
-      "company": "Microsoft",
-      "market_cap": 231.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-18",
-      "company": "Apple",
-      "market_cap": 133.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-18",
-      "company": "NVIDIA",
-      "market_cap": 17.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-18",
-      "company": "Alphabet",
-      "market_cap": 90.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-18",
-      "company": "Amazon",
-      "market_cap": 95.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-19",
-      "company": "Microsoft",
-      "market_cap": 227.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-19",
-      "company": "Apple",
-      "market_cap": 133.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-19",
-      "company": "NVIDIA",
-      "market_cap": 16.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-19",
-      "company": "Alphabet",
-      "market_cap": 92.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-19",
-      "company": "Amazon",
-      "market_cap": 93.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-20",
-      "company": "Microsoft",
-      "market_cap": 235.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-20",
-      "company": "Apple",
-      "market_cap": 136.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-20",
-      "company": "NVIDIA",
-      "market_cap": 17.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-20",
-      "company": "Alphabet",
-      "market_cap": 97.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-20",
-      "company": "Amazon",
-      "market_cap": 97.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-23",
-      "company": "Microsoft",
-      "market_cap": 238.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-23",
-      "company": "Apple",
-      "market_cap": 139.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-23",
-      "company": "NVIDIA",
-      "market_cap": 19.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-23",
-      "company": "Alphabet",
-      "market_cap": 99.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-23",
-      "company": "Amazon",
-      "market_cap": 97.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-24",
-      "company": "Microsoft",
-      "market_cap": 237.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-24",
-      "company": "Apple",
-      "market_cap": 140.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-24",
-      "company": "NVIDIA",
-      "market_cap": 19.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-24",
-      "company": "Alphabet",
-      "market_cap": 97.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-24",
-      "company": "Amazon",
-      "market_cap": 96.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-25",
-      "company": "Microsoft",
-      "market_cap": 236.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-25",
-      "company": "Apple",
-      "market_cap": 140.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-25",
-      "company": "NVIDIA",
-      "market_cap": 19.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-25",
-      "company": "Alphabet",
-      "market_cap": 94.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-25",
-      "company": "Amazon",
-      "market_cap": 97.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-26",
-      "company": "Microsoft",
-      "market_cap": 243.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-26",
-      "company": "Apple",
-      "market_cap": 142.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-26",
-      "company": "NVIDIA",
-      "market_cap": 19.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-26",
-      "company": "Alphabet",
-      "market_cap": 97.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-26",
-      "company": "Amazon",
-      "market_cap": 99.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-27",
-      "company": "Microsoft",
-      "market_cap": 243.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-27",
-      "company": "Apple",
-      "market_cap": 144.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-27",
-      "company": "NVIDIA",
-      "market_cap": 20.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-27",
-      "company": "Alphabet",
-      "market_cap": 98.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-27",
-      "company": "Amazon",
-      "market_cap": 102.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-30",
-      "company": "Microsoft",
-      "market_cap": 238.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-30",
-      "company": "Apple",
-      "market_cap": 141.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-30",
-      "company": "NVIDIA",
-      "market_cap": 19.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-30",
-      "company": "Alphabet",
-      "market_cap": 96.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-30",
-      "company": "Amazon",
-      "market_cap": 100.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-31",
-      "company": "Microsoft",
-      "market_cap": 243.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-31",
-      "company": "Apple",
-      "market_cap": 142.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-31",
-      "company": "NVIDIA",
-      "market_cap": 19.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-31",
-      "company": "Alphabet",
-      "market_cap": 98.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-01-31",
-      "company": "Amazon",
-      "market_cap": 103.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-01",
-      "company": "Microsoft",
-      "market_cap": 248.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-01",
-      "company": "Apple",
-      "market_cap": 143.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-01",
-      "company": "NVIDIA",
-      "market_cap": 20.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-01",
-      "company": "Alphabet",
-      "market_cap": 99.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-01",
-      "company": "Amazon",
-      "market_cap": 105.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-02",
-      "company": "Microsoft",
-      "market_cap": 259.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-02",
-      "company": "Apple",
-      "market_cap": 149.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-02",
-      "company": "NVIDIA",
-      "market_cap": 21.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-02",
-      "company": "Alphabet",
-      "market_cap": 107.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-02",
-      "company": "Amazon",
-      "market_cap": 112.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-03",
-      "company": "Microsoft",
-      "market_cap": 253.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-03",
-      "company": "Apple",
-      "market_cap": 152.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-03",
-      "company": "NVIDIA",
-      "market_cap": 21.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-03",
-      "company": "Alphabet",
-      "market_cap": 104.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-03",
-      "company": "Amazon",
-      "market_cap": 103.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-06",
-      "company": "Microsoft",
-      "market_cap": 252.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-06",
-      "company": "Apple",
-      "market_cap": 149.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-06",
-      "company": "NVIDIA",
-      "market_cap": 21.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-06",
-      "company": "Alphabet",
-      "market_cap": 102.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-06",
-      "company": "Amazon",
-      "market_cap": 102.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-07",
-      "company": "Microsoft",
-      "market_cap": 262.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-07",
-      "company": "Apple",
-      "market_cap": 152.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-07",
-      "company": "NVIDIA",
-      "market_cap": 22.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-07",
-      "company": "Alphabet",
-      "market_cap": 107.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-07",
-      "company": "Amazon",
-      "market_cap": 102.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-08",
-      "company": "Microsoft",
-      "market_cap": 261.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-08",
-      "company": "Apple",
-      "market_cap": 150.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-08",
-      "company": "NVIDIA",
-      "market_cap": 22.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-08",
-      "company": "Alphabet",
-      "market_cap": 98.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-08",
-      "company": "Amazon",
-      "market_cap": 100.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-09",
-      "company": "Microsoft",
-      "market_cap": 258.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-09",
-      "company": "Apple",
-      "market_cap": 149.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-09",
-      "company": "NVIDIA",
-      "market_cap": 22.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-09",
-      "company": "Alphabet",
-      "market_cap": 94.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-09",
-      "company": "Amazon",
-      "market_cap": 98.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-10",
-      "company": "Microsoft",
-      "market_cap": 258.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-10",
-      "company": "Apple",
-      "market_cap": 149.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-10",
-      "company": "NVIDIA",
-      "market_cap": 21.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-10",
-      "company": "Alphabet",
-      "market_cap": 94.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-10",
-      "company": "Amazon",
-      "market_cap": 97.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-13",
-      "company": "Microsoft",
-      "market_cap": 266.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-13",
-      "company": "Apple",
-      "market_cap": 152.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-13",
-      "company": "NVIDIA",
-      "market_cap": 21.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-13",
-      "company": "Alphabet",
-      "market_cap": 94.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-13",
-      "company": "Amazon",
-      "market_cap": 99.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-14",
-      "company": "Microsoft",
-      "market_cap": 267.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-14",
-      "company": "Apple",
-      "market_cap": 151.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-14",
-      "company": "NVIDIA",
-      "market_cap": 22.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-14",
-      "company": "Alphabet",
-      "market_cap": 94.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-14",
-      "company": "Amazon",
-      "market_cap": 99.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-15",
-      "company": "Microsoft",
-      "market_cap": 265.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-15",
-      "company": "Apple",
-      "market_cap": 153.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-15",
-      "company": "NVIDIA",
-      "market_cap": 22.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-15",
-      "company": "Alphabet",
-      "market_cap": 96.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-15",
-      "company": "Amazon",
-      "market_cap": 101.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-16",
-      "company": "Microsoft",
-      "market_cap": 258.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-16",
-      "company": "Apple",
-      "market_cap": 152.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-16",
-      "company": "NVIDIA",
-      "market_cap": 21.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-16",
-      "company": "Alphabet",
-      "market_cap": 95.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-16",
-      "company": "Amazon",
-      "market_cap": 98.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-17",
-      "company": "Microsoft",
-      "market_cap": 254.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-17",
-      "company": "Apple",
-      "market_cap": 151.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-17",
-      "company": "NVIDIA",
-      "market_cap": 21.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-17",
-      "company": "Alphabet",
-      "market_cap": 93.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-17",
-      "company": "Amazon",
-      "market_cap": 97.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-21",
-      "company": "Microsoft",
-      "market_cap": 248.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-21",
-      "company": "Apple",
-      "market_cap": 147.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-21",
-      "company": "NVIDIA",
-      "market_cap": 20.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-21",
-      "company": "Alphabet",
-      "market_cap": 91.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-21",
-      "company": "Amazon",
-      "market_cap": 94.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-22",
-      "company": "Microsoft",
-      "market_cap": 247.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-22",
-      "company": "Apple",
-      "market_cap": 147.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-22",
-      "company": "NVIDIA",
-      "market_cap": 20.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-22",
-      "company": "Alphabet",
-      "market_cap": 91.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-22",
-      "company": "Amazon",
-      "market_cap": 95.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-23",
-      "company": "Microsoft",
-      "market_cap": 250.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-23",
-      "company": "Apple",
-      "market_cap": 147.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-23",
-      "company": "NVIDIA",
-      "market_cap": 23.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-23",
-      "company": "Alphabet",
-      "market_cap": 90.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-23",
-      "company": "Amazon",
-      "market_cap": 95.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-24",
-      "company": "Microsoft",
-      "market_cap": 245.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-24",
-      "company": "Apple",
-      "market_cap": 145.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-24",
-      "company": "NVIDIA",
-      "market_cap": 23.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-24",
-      "company": "Alphabet",
-      "market_cap": 88.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-24",
-      "company": "Amazon",
-      "market_cap": 93.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-27",
-      "company": "Microsoft",
-      "market_cap": 246.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-27",
-      "company": "Apple",
-      "market_cap": 146.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-27",
-      "company": "NVIDIA",
-      "market_cap": 23.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-27",
-      "company": "Alphabet",
-      "market_cap": 89.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-27",
-      "company": "Amazon",
-      "market_cap": 93.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-28",
-      "company": "Microsoft",
-      "market_cap": 245.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-28",
-      "company": "Apple",
-      "market_cap": 145.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-28",
-      "company": "NVIDIA",
-      "market_cap": 23.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-28",
-      "company": "Alphabet",
-      "market_cap": 89.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-02-28",
-      "company": "Amazon",
-      "market_cap": 94.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-01",
-      "company": "Microsoft",
-      "market_cap": 242.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-01",
-      "company": "Apple",
-      "market_cap": 143.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-01",
-      "company": "NVIDIA",
-      "market_cap": 22.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-01",
-      "company": "Alphabet",
-      "market_cap": 89.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-01",
-      "company": "Amazon",
-      "market_cap": 92.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-02",
-      "company": "Microsoft",
-      "market_cap": 247.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-02",
-      "company": "Apple",
-      "market_cap": 144.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-02",
-      "company": "NVIDIA",
-      "market_cap": 23.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-02",
-      "company": "Alphabet",
-      "market_cap": 91.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-02",
-      "company": "Amazon",
-      "market_cap": 92.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-03",
-      "company": "Microsoft",
-      "market_cap": 251.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-03",
-      "company": "Apple",
-      "market_cap": 149.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-03",
-      "company": "NVIDIA",
-      "market_cap": 23.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-03",
-      "company": "Alphabet",
-      "market_cap": 93.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-03",
-      "company": "Amazon",
-      "market_cap": 94.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-06",
-      "company": "Microsoft",
-      "market_cap": 252.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-06",
-      "company": "Apple",
-      "market_cap": 152.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-06",
-      "company": "NVIDIA",
-      "market_cap": 23.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-06",
-      "company": "Alphabet",
-      "market_cap": 94.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-06",
-      "company": "Amazon",
-      "market_cap": 93.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-07",
-      "company": "Microsoft",
-      "market_cap": 250.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-07",
-      "company": "Apple",
-      "market_cap": 150.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-07",
-      "company": "NVIDIA",
-      "market_cap": 23.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-07",
-      "company": "Alphabet",
-      "market_cap": 93.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-07",
-      "company": "Amazon",
-      "market_cap": 93.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-08",
-      "company": "Microsoft",
-      "market_cap": 249.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-08",
-      "company": "Apple",
-      "market_cap": 151.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-08",
-      "company": "NVIDIA",
-      "market_cap": 24.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-08",
-      "company": "Alphabet",
-      "market_cap": 93.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-08",
-      "company": "Amazon",
-      "market_cap": 93.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-09",
-      "company": "Microsoft",
-      "market_cap": 248.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-09",
-      "company": "Apple",
-      "market_cap": 149.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-09",
-      "company": "NVIDIA",
-      "market_cap": 23.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-09",
-      "company": "Alphabet",
-      "market_cap": 91.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-09",
-      "company": "Amazon",
-      "market_cap": 92.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-10",
-      "company": "Microsoft",
-      "market_cap": 244.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-10",
-      "company": "Apple",
-      "market_cap": 147.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-10",
-      "company": "NVIDIA",
-      "market_cap": 22.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-10",
-      "company": "Alphabet",
-      "market_cap": 90.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-10",
-      "company": "Amazon",
-      "market_cap": 90.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-13",
-      "company": "Microsoft",
-      "market_cap": 249.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-13",
-      "company": "Apple",
-      "market_cap": 148.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-13",
-      "company": "NVIDIA",
-      "market_cap": 22.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-13",
-      "company": "Alphabet",
-      "market_cap": 90.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-13",
-      "company": "Amazon",
-      "market_cap": 92.43,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-14",
-      "company": "Microsoft",
-      "market_cap": 256.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-14",
-      "company": "Apple",
-      "market_cap": 151.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-14",
-      "company": "NVIDIA",
-      "market_cap": 24.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-14",
-      "company": "Alphabet",
-      "market_cap": 93.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-14",
-      "company": "Amazon",
-      "market_cap": 94.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-15",
-      "company": "Microsoft",
-      "market_cap": 261.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-15",
-      "company": "Apple",
-      "market_cap": 151.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-15",
-      "company": "NVIDIA",
-      "market_cap": 24.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-15",
-      "company": "Alphabet",
-      "market_cap": 95.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-15",
-      "company": "Amazon",
-      "market_cap": 96.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-16",
-      "company": "Microsoft",
-      "market_cap": 271.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-16",
-      "company": "Apple",
-      "market_cap": 154.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-16",
-      "company": "NVIDIA",
-      "market_cap": 25.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-16",
-      "company": "Alphabet",
-      "market_cap": 99.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-16",
-      "company": "Amazon",
-      "market_cap": 100.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-17",
-      "company": "Microsoft",
-      "market_cap": 275.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-17",
-      "company": "Apple",
-      "market_cap": 153.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-17",
-      "company": "NVIDIA",
-      "market_cap": 25.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-17",
-      "company": "Alphabet",
-      "market_cap": 101.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-17",
-      "company": "Amazon",
-      "market_cap": 98.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-20",
-      "company": "Microsoft",
-      "market_cap": 267.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-20",
-      "company": "Apple",
-      "market_cap": 155.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-20",
-      "company": "NVIDIA",
-      "market_cap": 25.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-20",
-      "company": "Alphabet",
-      "market_cap": 100.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-20",
-      "company": "Amazon",
-      "market_cap": 97.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-21",
-      "company": "Microsoft",
-      "market_cap": 269.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-21",
-      "company": "Apple",
-      "market_cap": 157.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-21",
-      "company": "NVIDIA",
-      "market_cap": 26.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-21",
-      "company": "Alphabet",
-      "market_cap": 104.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-21",
-      "company": "Amazon",
-      "market_cap": 100.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-22",
-      "company": "Microsoft",
-      "market_cap": 268.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-22",
-      "company": "Apple",
-      "market_cap": 156.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-22",
-      "company": "NVIDIA",
-      "market_cap": 26.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-22",
-      "company": "Alphabet",
-      "market_cap": 102.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-22",
-      "company": "Amazon",
-      "market_cap": 98.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-23",
-      "company": "Microsoft",
-      "market_cap": 273.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-23",
-      "company": "Apple",
-      "market_cap": 157.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-23",
-      "company": "NVIDIA",
-      "market_cap": 27.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-23",
-      "company": "Alphabet",
-      "market_cap": 105.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-23",
-      "company": "Amazon",
-      "market_cap": 98.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-24",
-      "company": "Microsoft",
-      "market_cap": 276.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-24",
-      "company": "Apple",
-      "market_cap": 158.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-24",
-      "company": "NVIDIA",
-      "market_cap": 26.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-24",
-      "company": "Alphabet",
-      "market_cap": 104.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-24",
-      "company": "Amazon",
-      "market_cap": 98.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-27",
-      "company": "Microsoft",
-      "market_cap": 272.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-27",
-      "company": "Apple",
-      "market_cap": 156.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-27",
-      "company": "NVIDIA",
-      "market_cap": 26.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-27",
-      "company": "Alphabet",
-      "market_cap": 101.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-27",
-      "company": "Amazon",
-      "market_cap": 98.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-28",
-      "company": "Microsoft",
-      "market_cap": 270.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-28",
-      "company": "Apple",
-      "market_cap": 156.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-28",
-      "company": "NVIDIA",
-      "market_cap": 26.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-28",
-      "company": "Alphabet",
-      "market_cap": 100.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-28",
-      "company": "Amazon",
-      "market_cap": 97.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-29",
-      "company": "Microsoft",
-      "market_cap": 276.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-29",
-      "company": "Apple",
-      "market_cap": 159.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-29",
-      "company": "NVIDIA",
-      "market_cap": 26.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-29",
-      "company": "Alphabet",
-      "market_cap": 100.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-29",
-      "company": "Amazon",
-      "market_cap": 100.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-30",
-      "company": "Microsoft",
-      "market_cap": 279.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-30",
-      "company": "Apple",
-      "market_cap": 160.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-30",
-      "company": "NVIDIA",
-      "market_cap": 27.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-30",
-      "company": "Alphabet",
-      "market_cap": 100.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-30",
-      "company": "Amazon",
-      "market_cap": 102.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-31",
-      "company": "Microsoft",
-      "market_cap": 283.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-31",
-      "company": "Apple",
-      "market_cap": 163.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-31",
-      "company": "NVIDIA",
-      "market_cap": 27.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-31",
-      "company": "Alphabet",
-      "market_cap": 103.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-03-31",
-      "company": "Amazon",
-      "market_cap": 103.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-03",
-      "company": "Microsoft",
-      "market_cap": 282.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-03",
-      "company": "Apple",
-      "market_cap": 164.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-03",
-      "company": "NVIDIA",
-      "market_cap": 27.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-03",
-      "company": "Alphabet",
-      "market_cap": 103.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-03",
-      "company": "Amazon",
-      "market_cap": 102.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-04",
-      "company": "Microsoft",
-      "market_cap": 282.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-04",
-      "company": "Apple",
-      "market_cap": 163.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-04",
-      "company": "NVIDIA",
-      "market_cap": 27.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-04",
-      "company": "Alphabet",
-      "market_cap": 104.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-04",
-      "company": "Amazon",
-      "market_cap": 103.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-05",
-      "company": "Microsoft",
-      "market_cap": 279.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-05",
-      "company": "Apple",
-      "market_cap": 162.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-05",
-      "company": "NVIDIA",
-      "market_cap": 26.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-05",
-      "company": "Alphabet",
-      "market_cap": 103.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-05",
-      "company": "Amazon",
-      "market_cap": 101.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-06",
-      "company": "Microsoft",
-      "market_cap": 287.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-06",
-      "company": "Apple",
-      "market_cap": 163.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-06",
-      "company": "NVIDIA",
-      "market_cap": 27.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-06",
-      "company": "Alphabet",
-      "market_cap": 107.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-06",
-      "company": "Amazon",
-      "market_cap": 102.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-10",
-      "company": "Microsoft",
-      "market_cap": 284.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-10",
-      "company": "Apple",
-      "market_cap": 160.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-10",
-      "company": "NVIDIA",
-      "market_cap": 27.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-10",
-      "company": "Alphabet",
-      "market_cap": 105.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-10",
-      "company": "Amazon",
-      "market_cap": 102.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-11",
-      "company": "Microsoft",
-      "market_cap": 278.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-11",
-      "company": "Apple",
-      "market_cap": 159.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-11",
-      "company": "NVIDIA",
-      "market_cap": 27.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-11",
-      "company": "Alphabet",
-      "market_cap": 104.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-11",
-      "company": "Amazon",
-      "market_cap": 99.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-12",
-      "company": "Microsoft",
-      "market_cap": 279.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-12",
-      "company": "Apple",
-      "market_cap": 158.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-12",
-      "company": "NVIDIA",
-      "market_cap": 26.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-12",
-      "company": "Alphabet",
-      "market_cap": 104.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-12",
-      "company": "Amazon",
-      "market_cap": 97.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-13",
-      "company": "Microsoft",
-      "market_cap": 285.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-13",
-      "company": "Apple",
-      "market_cap": 163.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-13",
-      "company": "NVIDIA",
-      "market_cap": 26.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-13",
-      "company": "Alphabet",
-      "market_cap": 106.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-13",
-      "company": "Amazon",
-      "market_cap": 102.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-14",
-      "company": "Microsoft",
-      "market_cap": 281.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-14",
-      "company": "Apple",
-      "market_cap": 163.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-14",
-      "company": "NVIDIA",
-      "market_cap": 26.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-14",
-      "company": "Alphabet",
-      "market_cap": 108.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-14",
-      "company": "Amazon",
-      "market_cap": 102.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-17",
-      "company": "Microsoft",
-      "market_cap": 284.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-17",
-      "company": "Apple",
-      "market_cap": 163.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-17",
-      "company": "NVIDIA",
-      "market_cap": 26.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-17",
-      "company": "Alphabet",
-      "market_cap": 105.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-17",
-      "company": "Amazon",
-      "market_cap": 102.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-18",
-      "company": "Microsoft",
-      "market_cap": 283.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-18",
-      "company": "Apple",
-      "market_cap": 164.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-18",
-      "company": "NVIDIA",
-      "market_cap": 27.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-18",
-      "company": "Alphabet",
-      "market_cap": 104.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-18",
-      "company": "Amazon",
-      "market_cap": 102.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-19",
-      "company": "Microsoft",
-      "market_cap": 283.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-19",
-      "company": "Apple",
-      "market_cap": 165.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-19",
-      "company": "NVIDIA",
-      "market_cap": 27.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-19",
-      "company": "Alphabet",
-      "market_cap": 103.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-19",
-      "company": "Amazon",
-      "market_cap": 104.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-20",
-      "company": "Microsoft",
-      "market_cap": 281.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-20",
-      "company": "Apple",
-      "market_cap": 164.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-20",
-      "company": "NVIDIA",
-      "market_cap": 27.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-20",
-      "company": "Alphabet",
-      "market_cap": 104.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-20",
-      "company": "Amazon",
-      "market_cap": 103.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-21",
-      "company": "Microsoft",
-      "market_cap": 281.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-21",
-      "company": "Apple",
-      "market_cap": 163.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-21",
-      "company": "NVIDIA",
-      "market_cap": 27.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-21",
-      "company": "Alphabet",
-      "market_cap": 104.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-21",
-      "company": "Amazon",
-      "market_cap": 106.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-24",
-      "company": "Microsoft",
-      "market_cap": 277.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-24",
-      "company": "Apple",
-      "market_cap": 163.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-24",
-      "company": "NVIDIA",
-      "market_cap": 27.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-24",
-      "company": "Alphabet",
-      "market_cap": 105.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-24",
-      "company": "Amazon",
-      "market_cap": 106.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-25",
-      "company": "Microsoft",
-      "market_cap": 271.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-25",
-      "company": "Apple",
-      "market_cap": 162.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-25",
-      "company": "NVIDIA",
-      "market_cap": 26.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-25",
-      "company": "Alphabet",
-      "market_cap": 103.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-25",
-      "company": "Amazon",
-      "market_cap": 102.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-26",
-      "company": "Microsoft",
-      "market_cap": 290.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-26",
-      "company": "Apple",
-      "market_cap": 162.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-26",
-      "company": "NVIDIA",
-      "market_cap": 26.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-26",
-      "company": "Alphabet",
-      "market_cap": 103.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-26",
-      "company": "Amazon",
-      "market_cap": 104.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-27",
-      "company": "Microsoft",
-      "market_cap": 300.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-27",
-      "company": "Apple",
-      "market_cap": 166.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-27",
-      "company": "NVIDIA",
-      "market_cap": 27.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-27",
-      "company": "Alphabet",
-      "market_cap": 107.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-27",
-      "company": "Amazon",
-      "market_cap": 109.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-28",
-      "company": "Microsoft",
-      "market_cap": 302.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-28",
-      "company": "Apple",
-      "market_cap": 167.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-28",
-      "company": "NVIDIA",
-      "market_cap": 27.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-28",
-      "company": "Alphabet",
-      "market_cap": 106.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-04-28",
-      "company": "Amazon",
-      "market_cap": 105.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-01",
-      "company": "Microsoft",
-      "market_cap": 300.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-01",
-      "company": "Apple",
-      "market_cap": 167.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-01",
-      "company": "NVIDIA",
-      "market_cap": 28.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-01",
-      "company": "Alphabet",
-      "market_cap": 106.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-01",
-      "company": "Amazon",
-      "market_cap": 102.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-02",
-      "company": "Microsoft",
-      "market_cap": 300.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-02",
-      "company": "Apple",
-      "market_cap": 166.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-02",
-      "company": "NVIDIA",
-      "market_cap": 28.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-02",
-      "company": "Alphabet",
-      "market_cap": 104.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-02",
-      "company": "Amazon",
-      "market_cap": 103.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-03",
-      "company": "Microsoft",
-      "market_cap": 299.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-03",
-      "company": "Apple",
-      "market_cap": 165.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-03",
-      "company": "NVIDIA",
-      "market_cap": 27.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-03",
-      "company": "Alphabet",
-      "market_cap": 104.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-03",
-      "company": "Amazon",
-      "market_cap": 103.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-04",
-      "company": "Microsoft",
-      "market_cap": 300.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-04",
-      "company": "Apple",
-      "market_cap": 164.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-04",
-      "company": "NVIDIA",
-      "market_cap": 27.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-04",
-      "company": "Alphabet",
-      "market_cap": 104.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-04",
-      "company": "Amazon",
-      "market_cap": 104.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-05",
-      "company": "Microsoft",
-      "market_cap": 305.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-05",
-      "company": "Apple",
-      "market_cap": 171.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-05",
-      "company": "NVIDIA",
-      "market_cap": 28.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-05",
-      "company": "Alphabet",
-      "market_cap": 105.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-05",
-      "company": "Amazon",
-      "market_cap": 105.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-08",
-      "company": "Microsoft",
-      "market_cap": 303.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-08",
-      "company": "Apple",
-      "market_cap": 171.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-08",
-      "company": "NVIDIA",
-      "market_cap": 29.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-08",
-      "company": "Alphabet",
-      "market_cap": 107.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-08",
-      "company": "Amazon",
-      "market_cap": 105.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-09",
-      "company": "Microsoft",
-      "market_cap": 302.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-09",
-      "company": "Apple",
-      "market_cap": 170.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-09",
-      "company": "NVIDIA",
-      "market_cap": 28.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-09",
-      "company": "Alphabet",
-      "market_cap": 106.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-09",
-      "company": "Amazon",
-      "market_cap": 106.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-10",
-      "company": "Microsoft",
-      "market_cap": 307.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-10",
-      "company": "Apple",
-      "market_cap": 171.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-10",
-      "company": "NVIDIA",
-      "market_cap": 28.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-10",
-      "company": "Alphabet",
-      "market_cap": 111.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-10",
-      "company": "Amazon",
-      "market_cap": 110.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-11",
-      "company": "Microsoft",
-      "market_cap": 305.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-11",
-      "company": "Apple",
-      "market_cap": 172.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-11",
-      "company": "NVIDIA",
-      "market_cap": 28.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-11",
-      "company": "Alphabet",
-      "market_cap": 116.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-11",
-      "company": "Amazon",
-      "market_cap": 112.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-12",
-      "company": "Microsoft",
-      "market_cap": 304.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-12",
-      "company": "Apple",
-      "market_cap": 171.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-12",
-      "company": "NVIDIA",
-      "market_cap": 28.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-12",
-      "company": "Alphabet",
-      "market_cap": 116.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-12",
-      "company": "Amazon",
-      "market_cap": 110.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-15",
-      "company": "Microsoft",
-      "market_cap": 304.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-15",
-      "company": "Apple",
-      "market_cap": 170.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-15",
-      "company": "NVIDIA",
-      "market_cap": 28.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-15",
-      "company": "Alphabet",
-      "market_cap": 115.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-15",
-      "company": "Amazon",
-      "market_cap": 111.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-16",
-      "company": "Microsoft",
-      "market_cap": 306.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-16",
-      "company": "Apple",
-      "market_cap": 170.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-16",
-      "company": "NVIDIA",
-      "market_cap": 29.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-16",
-      "company": "Alphabet",
-      "market_cap": 118.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-16",
-      "company": "Amazon",
-      "market_cap": 113.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-17",
-      "company": "Microsoft",
-      "market_cap": 309.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-17",
-      "company": "Apple",
-      "market_cap": 171.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-17",
-      "company": "NVIDIA",
-      "market_cap": 30.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-17",
-      "company": "Alphabet",
-      "market_cap": 120.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-17",
-      "company": "Amazon",
-      "market_cap": 115.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-18",
-      "company": "Microsoft",
-      "market_cap": 314.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-18",
-      "company": "Apple",
-      "market_cap": 173.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-18",
-      "company": "NVIDIA",
-      "market_cap": 31.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-18",
-      "company": "Alphabet",
-      "market_cap": 122.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-18",
-      "company": "Amazon",
-      "market_cap": 118.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-19",
-      "company": "Microsoft",
-      "market_cap": 314.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-19",
-      "company": "Apple",
-      "market_cap": 173.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-19",
-      "company": "NVIDIA",
-      "market_cap": 31.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-19",
-      "company": "Alphabet",
-      "market_cap": 122.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-19",
-      "company": "Amazon",
-      "market_cap": 116.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-22",
-      "company": "Microsoft",
-      "market_cap": 316.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-22",
-      "company": "Apple",
-      "market_cap": 172.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-22",
-      "company": "NVIDIA",
-      "market_cap": 31.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-22",
-      "company": "Alphabet",
-      "market_cap": 124.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-22",
-      "company": "Amazon",
-      "market_cap": 115.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-23",
-      "company": "Microsoft",
-      "market_cap": 311.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-23",
-      "company": "Apple",
-      "market_cap": 170.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-23",
-      "company": "NVIDIA",
-      "market_cap": 30.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-23",
-      "company": "Alphabet",
-      "market_cap": 121.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-23",
-      "company": "Amazon",
-      "market_cap": 114.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-24",
-      "company": "Microsoft",
-      "market_cap": 309.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-24",
-      "company": "Apple",
-      "market_cap": 170.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-24",
-      "company": "NVIDIA",
-      "market_cap": 30.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-24",
-      "company": "Alphabet",
-      "market_cap": 120.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-24",
-      "company": "Amazon",
-      "market_cap": 116.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-25",
-      "company": "Microsoft",
-      "market_cap": 321.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-25",
-      "company": "Apple",
-      "market_cap": 171.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-25",
-      "company": "NVIDIA",
-      "market_cap": 37.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-25",
-      "company": "Alphabet",
-      "market_cap": 122.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-25",
-      "company": "Amazon",
-      "market_cap": 115.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-26",
-      "company": "Microsoft",
-      "market_cap": 328.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-26",
-      "company": "Apple",
-      "market_cap": 173.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-26",
-      "company": "NVIDIA",
-      "market_cap": 38.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-26",
-      "company": "Alphabet",
-      "market_cap": 124.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-26",
-      "company": "Amazon",
-      "market_cap": 120.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-30",
-      "company": "Microsoft",
-      "market_cap": 326.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-30",
-      "company": "Apple",
-      "market_cap": 175.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-30",
-      "company": "NVIDIA",
-      "market_cap": 40.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-30",
-      "company": "Alphabet",
-      "market_cap": 123.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-30",
-      "company": "Amazon",
-      "market_cap": 121.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-31",
-      "company": "Microsoft",
-      "market_cap": 323.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-31",
-      "company": "Apple",
-      "market_cap": 175.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-31",
-      "company": "NVIDIA",
-      "market_cap": 37.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-31",
-      "company": "Alphabet",
-      "market_cap": 122.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-05-31",
-      "company": "Amazon",
-      "market_cap": 120.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-01",
-      "company": "Microsoft",
-      "market_cap": 328.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-01",
-      "company": "Apple",
-      "market_cap": 178.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-01",
-      "company": "NVIDIA",
-      "market_cap": 39.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-01",
-      "company": "Alphabet",
-      "market_cap": 123.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-01",
-      "company": "Amazon",
-      "market_cap": 122.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-02",
-      "company": "Microsoft",
-      "market_cap": 330.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-02",
-      "company": "Apple",
-      "market_cap": 179.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-02",
-      "company": "NVIDIA",
-      "market_cap": 39.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-02",
-      "company": "Alphabet",
-      "market_cap": 124.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-02",
-      "company": "Amazon",
-      "market_cap": 124.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-05",
-      "company": "Microsoft",
-      "market_cap": 331.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-05",
-      "company": "Apple",
-      "market_cap": 178.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-05",
-      "company": "NVIDIA",
-      "market_cap": 39.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-05",
-      "company": "Alphabet",
-      "market_cap": 125.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-05",
-      "company": "Amazon",
-      "market_cap": 125.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-06",
-      "company": "Microsoft",
-      "market_cap": 329.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-06",
-      "company": "Apple",
-      "market_cap": 177.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-06",
-      "company": "NVIDIA",
-      "market_cap": 38.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-06",
-      "company": "Alphabet",
-      "market_cap": 126.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-06",
-      "company": "Amazon",
-      "market_cap": 126.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-07",
-      "company": "Microsoft",
-      "market_cap": 319.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-07",
-      "company": "Apple",
-      "market_cap": 176.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-07",
-      "company": "NVIDIA",
-      "market_cap": 37.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-07",
-      "company": "Alphabet",
-      "market_cap": 121.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-07",
-      "company": "Amazon",
-      "market_cap": 121.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-08",
-      "company": "Microsoft",
-      "market_cap": 320.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-08",
-      "company": "Apple",
-      "market_cap": 179.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-08",
-      "company": "NVIDIA",
-      "market_cap": 38.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-08",
-      "company": "Alphabet",
-      "market_cap": 121.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-08",
-      "company": "Amazon",
-      "market_cap": 124.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-09",
-      "company": "Microsoft",
-      "market_cap": 322.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-09",
-      "company": "Apple",
-      "market_cap": 179.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-09",
-      "company": "NVIDIA",
-      "market_cap": 38.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-09",
-      "company": "Alphabet",
-      "market_cap": 121.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-09",
-      "company": "Amazon",
-      "market_cap": 123.43,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-12",
-      "company": "Microsoft",
-      "market_cap": 327.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-12",
-      "company": "Apple",
-      "market_cap": 182.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-12",
-      "company": "NVIDIA",
-      "market_cap": 39.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-12",
-      "company": "Alphabet",
-      "market_cap": 123.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-12",
-      "company": "Amazon",
-      "market_cap": 126.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-13",
-      "company": "Microsoft",
-      "market_cap": 329.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-13",
-      "company": "Apple",
-      "market_cap": 181.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-13",
-      "company": "NVIDIA",
-      "market_cap": 41.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-13",
-      "company": "Alphabet",
-      "market_cap": 123.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-13",
-      "company": "Amazon",
-      "market_cap": 126.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-14",
-      "company": "Microsoft",
-      "market_cap": 332.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-14",
-      "company": "Apple",
-      "market_cap": 182.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-14",
-      "company": "NVIDIA",
-      "market_cap": 42.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-14",
-      "company": "Alphabet",
-      "market_cap": 123.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-14",
-      "company": "Amazon",
-      "market_cap": 126.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-15",
-      "company": "Microsoft",
-      "market_cap": 343.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-15",
-      "company": "Apple",
-      "market_cap": 184.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-15",
-      "company": "NVIDIA",
-      "market_cap": 42.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-15",
-      "company": "Alphabet",
-      "market_cap": 124.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-15",
-      "company": "Amazon",
-      "market_cap": 127.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-16",
-      "company": "Microsoft",
-      "market_cap": 337.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-16",
-      "company": "Apple",
-      "market_cap": 183.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-16",
-      "company": "NVIDIA",
-      "market_cap": 42.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-16",
-      "company": "Alphabet",
-      "market_cap": 122.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-16",
-      "company": "Amazon",
-      "market_cap": 125.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-20",
-      "company": "Microsoft",
-      "market_cap": 333.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-20",
-      "company": "Apple",
-      "market_cap": 183.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-20",
-      "company": "NVIDIA",
-      "market_cap": 43.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-20",
-      "company": "Alphabet",
-      "market_cap": 122.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-20",
-      "company": "Amazon",
-      "market_cap": 125.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-21",
-      "company": "Microsoft",
-      "market_cap": 329.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-21",
-      "company": "Apple",
-      "market_cap": 182.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-21",
-      "company": "NVIDIA",
-      "market_cap": 43.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-21",
-      "company": "Alphabet",
-      "market_cap": 119.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-21",
-      "company": "Amazon",
-      "market_cap": 124.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-22",
-      "company": "Microsoft",
-      "market_cap": 335.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-22",
-      "company": "Apple",
-      "market_cap": 185.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-22",
-      "company": "NVIDIA",
-      "market_cap": 43.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-22",
-      "company": "Alphabet",
-      "market_cap": 122.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-22",
-      "company": "Amazon",
-      "market_cap": 130.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-23",
-      "company": "Microsoft",
-      "market_cap": 330.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-23",
-      "company": "Apple",
-      "market_cap": 185.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-23",
-      "company": "NVIDIA",
-      "market_cap": 42.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-23",
-      "company": "Alphabet",
-      "market_cap": 121.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-23",
-      "company": "Amazon",
-      "market_cap": 129.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-26",
-      "company": "Microsoft",
-      "market_cap": 324.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-26",
-      "company": "Apple",
-      "market_cap": 183.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-26",
-      "company": "NVIDIA",
-      "market_cap": 40.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-26",
-      "company": "Alphabet",
-      "market_cap": 117.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-26",
-      "company": "Amazon",
-      "market_cap": 127.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-27",
-      "company": "Microsoft",
-      "market_cap": 330.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-27",
-      "company": "Apple",
-      "market_cap": 186.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-27",
-      "company": "NVIDIA",
-      "market_cap": 41.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-27",
-      "company": "Alphabet",
-      "market_cap": 117.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-27",
-      "company": "Amazon",
-      "market_cap": 129.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-28",
-      "company": "Microsoft",
-      "market_cap": 331.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-28",
-      "company": "Apple",
-      "market_cap": 187.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-28",
-      "company": "NVIDIA",
-      "market_cap": 41.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-28",
-      "company": "Alphabet",
-      "market_cap": 119.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-28",
-      "company": "Amazon",
-      "market_cap": 129.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-29",
-      "company": "Microsoft",
-      "market_cap": 330.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-29",
-      "company": "Apple",
-      "market_cap": 187.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-29",
-      "company": "NVIDIA",
-      "market_cap": 40.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-29",
-      "company": "Alphabet",
-      "market_cap": 118.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-29",
-      "company": "Amazon",
-      "market_cap": 127.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-30",
-      "company": "Microsoft",
-      "market_cap": 335.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-30",
-      "company": "Apple",
-      "market_cap": 192.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-30",
-      "company": "NVIDIA",
-      "market_cap": 42.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-30",
-      "company": "Alphabet",
-      "market_cap": 119.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-06-30",
-      "company": "Amazon",
-      "market_cap": 130.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-03",
-      "company": "Microsoft",
-      "market_cap": 333.43,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-03",
-      "company": "Apple",
-      "market_cap": 190.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-03",
-      "company": "NVIDIA",
-      "market_cap": 42.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-03",
-      "company": "Alphabet",
-      "market_cap": 119.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-03",
-      "company": "Amazon",
-      "market_cap": 130.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-05",
-      "company": "Microsoft",
-      "market_cap": 333.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-05",
-      "company": "Apple",
-      "market_cap": 189.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-05",
-      "company": "NVIDIA",
-      "market_cap": 42.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-05",
-      "company": "Alphabet",
-      "market_cap": 121.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-05",
-      "company": "Amazon",
-      "market_cap": 130.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-06",
-      "company": "Microsoft",
-      "market_cap": 336.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-06",
-      "company": "Apple",
-      "market_cap": 190.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-06",
-      "company": "NVIDIA",
-      "market_cap": 42.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-06",
-      "company": "Alphabet",
-      "market_cap": 119.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-06",
-      "company": "Amazon",
-      "market_cap": 128.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-07",
-      "company": "Microsoft",
-      "market_cap": 332.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-07",
-      "company": "Apple",
-      "market_cap": 189.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-07",
-      "company": "NVIDIA",
-      "market_cap": 42.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-07",
-      "company": "Alphabet",
-      "market_cap": 118.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-07",
-      "company": "Amazon",
-      "market_cap": 129.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-10",
-      "company": "Microsoft",
-      "market_cap": 327.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-10",
-      "company": "Apple",
-      "market_cap": 186.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-10",
-      "company": "NVIDIA",
-      "market_cap": 42.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-10",
-      "company": "Alphabet",
-      "market_cap": 115.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-10",
-      "company": "Amazon",
-      "market_cap": 127.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-11",
-      "company": "Microsoft",
-      "market_cap": 327.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-11",
-      "company": "Apple",
-      "market_cap": 186.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-11",
-      "company": "NVIDIA",
-      "market_cap": 42.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-11",
-      "company": "Alphabet",
-      "market_cap": 116.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-11",
-      "company": "Amazon",
-      "market_cap": 128.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-12",
-      "company": "Microsoft",
-      "market_cap": 332.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-12",
-      "company": "Apple",
-      "market_cap": 188.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-12",
-      "company": "NVIDIA",
-      "market_cap": 43.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-12",
-      "company": "Alphabet",
-      "market_cap": 118.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-12",
-      "company": "Amazon",
-      "market_cap": 130.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-13",
-      "company": "Microsoft",
-      "market_cap": 338.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-13",
-      "company": "Apple",
-      "market_cap": 188.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-13",
-      "company": "NVIDIA",
-      "market_cap": 45.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-13",
-      "company": "Alphabet",
-      "market_cap": 123.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-13",
-      "company": "Amazon",
-      "market_cap": 134.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-14",
-      "company": "Microsoft",
-      "market_cap": 340.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-14",
-      "company": "Apple",
-      "market_cap": 189.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-14",
-      "company": "NVIDIA",
-      "market_cap": 45.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-14",
-      "company": "Alphabet",
-      "market_cap": 124.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-14",
-      "company": "Amazon",
-      "market_cap": 134.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-17",
-      "company": "Microsoft",
-      "market_cap": 341.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-17",
-      "company": "Apple",
-      "market_cap": 192.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-17",
-      "company": "NVIDIA",
-      "market_cap": 46.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-17",
-      "company": "Alphabet",
-      "market_cap": 124.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-17",
-      "company": "Amazon",
-      "market_cap": 133.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-18",
-      "company": "Microsoft",
-      "market_cap": 354.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-18",
-      "company": "Apple",
-      "market_cap": 192.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-18",
-      "company": "NVIDIA",
-      "market_cap": 47.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-18",
-      "company": "Alphabet",
-      "market_cap": 123.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-18",
-      "company": "Amazon",
-      "market_cap": 132.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-19",
-      "company": "Microsoft",
-      "market_cap": 350.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-19",
-      "company": "Apple",
-      "market_cap": 193.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-19",
-      "company": "NVIDIA",
-      "market_cap": 47.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-19",
-      "company": "Alphabet",
-      "market_cap": 121.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-19",
-      "company": "Amazon",
-      "market_cap": 135.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-20",
-      "company": "Microsoft",
-      "market_cap": 342.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-20",
-      "company": "Apple",
-      "market_cap": 191.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-20",
-      "company": "NVIDIA",
-      "market_cap": 45.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-20",
-      "company": "Alphabet",
-      "market_cap": 118.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-20",
-      "company": "Amazon",
-      "market_cap": 129.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-21",
-      "company": "Microsoft",
-      "market_cap": 339.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-21",
-      "company": "Apple",
-      "market_cap": 190.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-21",
-      "company": "NVIDIA",
-      "market_cap": 44.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-21",
-      "company": "Alphabet",
-      "market_cap": 119.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-21",
-      "company": "Amazon",
-      "market_cap": 130.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-24",
-      "company": "Microsoft",
-      "market_cap": 340.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-24",
-      "company": "Apple",
-      "market_cap": 191.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-24",
-      "company": "NVIDIA",
-      "market_cap": 44.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-24",
-      "company": "Alphabet",
-      "market_cap": 120.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-24",
-      "company": "Amazon",
-      "market_cap": 128.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-25",
-      "company": "Microsoft",
-      "market_cap": 346.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-25",
-      "company": "Apple",
-      "market_cap": 191.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-25",
-      "company": "NVIDIA",
-      "market_cap": 45.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-25",
-      "company": "Alphabet",
-      "market_cap": 121.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-25",
-      "company": "Amazon",
-      "market_cap": 129.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-26",
-      "company": "Microsoft",
-      "market_cap": 333.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-26",
-      "company": "Apple",
-      "market_cap": 192.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-26",
-      "company": "NVIDIA",
-      "market_cap": 45.43,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-26",
-      "company": "Alphabet",
-      "market_cap": 128.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-26",
-      "company": "Amazon",
-      "market_cap": 128.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-27",
-      "company": "Microsoft",
-      "market_cap": 326.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-27",
-      "company": "Apple",
-      "market_cap": 191.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-27",
-      "company": "NVIDIA",
-      "market_cap": 45.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-27",
-      "company": "Alphabet",
-      "market_cap": 128.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-27",
-      "company": "Amazon",
-      "market_cap": 128.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-28",
-      "company": "Microsoft",
-      "market_cap": 333.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-28",
-      "company": "Apple",
-      "market_cap": 194.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-28",
-      "company": "NVIDIA",
-      "market_cap": 46.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-28",
-      "company": "Alphabet",
-      "market_cap": 131.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-28",
-      "company": "Amazon",
-      "market_cap": 132.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-31",
-      "company": "Microsoft",
-      "market_cap": 331.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-31",
-      "company": "Apple",
-      "market_cap": 194.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-31",
-      "company": "NVIDIA",
-      "market_cap": 46.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-31",
-      "company": "Alphabet",
-      "market_cap": 132.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-07-31",
-      "company": "Amazon",
-      "market_cap": 133.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-01",
-      "company": "Microsoft",
-      "market_cap": 331.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-01",
-      "company": "Apple",
-      "market_cap": 193.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-01",
-      "company": "NVIDIA",
-      "market_cap": 46.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-01",
-      "company": "Alphabet",
-      "market_cap": 130.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-01",
-      "company": "Amazon",
-      "market_cap": 131.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-02",
-      "company": "Microsoft",
-      "market_cap": 323.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-02",
-      "company": "Apple",
-      "market_cap": 190.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-02",
-      "company": "NVIDIA",
-      "market_cap": 44.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-02",
-      "company": "Alphabet",
-      "market_cap": 127.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-02",
-      "company": "Amazon",
-      "market_cap": 128.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-03",
-      "company": "Microsoft",
-      "market_cap": 322.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-03",
-      "company": "Apple",
-      "market_cap": 189.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-03",
-      "company": "NVIDIA",
-      "market_cap": 44.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-03",
-      "company": "Alphabet",
-      "market_cap": 127.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-03",
-      "company": "Amazon",
-      "market_cap": 128.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-04",
-      "company": "Microsoft",
-      "market_cap": 323.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-04",
-      "company": "Apple",
-      "market_cap": 180.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-04",
-      "company": "NVIDIA",
-      "market_cap": 44.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-04",
-      "company": "Alphabet",
-      "market_cap": 127.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-04",
-      "company": "Amazon",
-      "market_cap": 139.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-07",
-      "company": "Microsoft",
-      "market_cap": 325.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-07",
-      "company": "Apple",
-      "market_cap": 177.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-07",
-      "company": "NVIDIA",
-      "market_cap": 45.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-07",
-      "company": "Alphabet",
-      "market_cap": 130.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-07",
-      "company": "Amazon",
-      "market_cap": 142.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-08",
-      "company": "Microsoft",
-      "market_cap": 321.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-08",
-      "company": "Apple",
-      "market_cap": 178.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-08",
-      "company": "NVIDIA",
-      "market_cap": 44.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-08",
-      "company": "Alphabet",
-      "market_cap": 130.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-08",
-      "company": "Amazon",
-      "market_cap": 139.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-09",
-      "company": "Microsoft",
-      "market_cap": 317.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-09",
-      "company": "Apple",
-      "market_cap": 176.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-09",
-      "company": "NVIDIA",
-      "market_cap": 42.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-09",
-      "company": "Alphabet",
-      "market_cap": 129.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-09",
-      "company": "Amazon",
-      "market_cap": 137.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-10",
-      "company": "Microsoft",
-      "market_cap": 318.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-10",
-      "company": "Apple",
-      "market_cap": 176.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-10",
-      "company": "NVIDIA",
-      "market_cap": 42.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-10",
-      "company": "Alphabet",
-      "market_cap": 129.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-10",
-      "company": "Amazon",
-      "market_cap": 138.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-11",
-      "company": "Microsoft",
-      "market_cap": 316.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-11",
-      "company": "Apple",
-      "market_cap": 176.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-11",
-      "company": "NVIDIA",
-      "market_cap": 40.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-11",
-      "company": "Alphabet",
-      "market_cap": 128.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-11",
-      "company": "Amazon",
-      "market_cap": 138.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-14",
-      "company": "Microsoft",
-      "market_cap": 319.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-14",
-      "company": "Apple",
-      "market_cap": 178.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-14",
-      "company": "NVIDIA",
-      "market_cap": 43.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-14",
-      "company": "Alphabet",
-      "market_cap": 130.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-14",
-      "company": "Amazon",
-      "market_cap": 140.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-15",
-      "company": "Microsoft",
-      "market_cap": 317.51,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-15",
-      "company": "Apple",
-      "market_cap": 176.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-15",
-      "company": "NVIDIA",
-      "market_cap": 43.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-15",
-      "company": "Alphabet",
-      "market_cap": 129.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-15",
-      "company": "Amazon",
-      "market_cap": 137.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-16",
-      "company": "Microsoft",
-      "market_cap": 316.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-16",
-      "company": "Apple",
-      "market_cap": 175.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-16",
-      "company": "NVIDIA",
-      "market_cap": 43.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-16",
-      "company": "Alphabet",
-      "market_cap": 128.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-16",
-      "company": "Amazon",
-      "market_cap": 135.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-17",
-      "company": "Microsoft",
-      "market_cap": 313.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-17",
-      "company": "Apple",
-      "market_cap": 172.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-17",
-      "company": "NVIDIA",
-      "market_cap": 43.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-17",
-      "company": "Alphabet",
-      "market_cap": 129.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-17",
-      "company": "Amazon",
-      "market_cap": 133.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-18",
-      "company": "Microsoft",
-      "market_cap": 312.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-18",
-      "company": "Apple",
-      "market_cap": 173.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-18",
-      "company": "NVIDIA",
-      "market_cap": 43.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-18",
-      "company": "Alphabet",
-      "market_cap": 126.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-18",
-      "company": "Amazon",
-      "market_cap": 133.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-21",
-      "company": "Microsoft",
-      "market_cap": 318.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-21",
-      "company": "Apple",
-      "market_cap": 174.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-21",
-      "company": "NVIDIA",
-      "market_cap": 46.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-21",
-      "company": "Alphabet",
-      "market_cap": 127.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-21",
-      "company": "Amazon",
-      "market_cap": 134.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-22",
-      "company": "Microsoft",
-      "market_cap": 318.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-22",
-      "company": "Apple",
-      "market_cap": 175.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-22",
-      "company": "NVIDIA",
-      "market_cap": 45.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-22",
-      "company": "Alphabet",
-      "market_cap": 128.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-22",
-      "company": "Amazon",
-      "market_cap": 134.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-23",
-      "company": "Microsoft",
-      "market_cap": 323.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-23",
-      "company": "Apple",
-      "market_cap": 179.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-23",
-      "company": "NVIDIA",
-      "market_cap": 47.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-23",
-      "company": "Alphabet",
-      "market_cap": 131.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-23",
-      "company": "Amazon",
-      "market_cap": 135.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-24",
-      "company": "Microsoft",
-      "market_cap": 316.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-24",
-      "company": "Apple",
-      "market_cap": 175.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-24",
-      "company": "NVIDIA",
-      "market_cap": 47.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-24",
-      "company": "Alphabet",
-      "market_cap": 129.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-24",
-      "company": "Amazon",
-      "market_cap": 131.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-25",
-      "company": "Microsoft",
-      "market_cap": 319.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-25",
-      "company": "Apple",
-      "market_cap": 177.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-25",
-      "company": "NVIDIA",
-      "market_cap": 45.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-25",
-      "company": "Alphabet",
-      "market_cap": 129.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-25",
-      "company": "Amazon",
-      "market_cap": 133.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-28",
-      "company": "Microsoft",
-      "market_cap": 320.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-28",
-      "company": "Apple",
-      "market_cap": 178.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-28",
-      "company": "NVIDIA",
-      "market_cap": 46.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-28",
-      "company": "Alphabet",
-      "market_cap": 130.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-28",
-      "company": "Amazon",
-      "market_cap": 133.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-29",
-      "company": "Microsoft",
-      "market_cap": 324.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-29",
-      "company": "Apple",
-      "market_cap": 182.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-29",
-      "company": "NVIDIA",
-      "market_cap": 48.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-29",
-      "company": "Alphabet",
-      "market_cap": 133.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-29",
-      "company": "Amazon",
-      "market_cap": 134.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-30",
-      "company": "Microsoft",
-      "market_cap": 325.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-30",
-      "company": "Apple",
-      "market_cap": 186.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-30",
-      "company": "NVIDIA",
-      "market_cap": 49.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-30",
-      "company": "Alphabet",
-      "market_cap": 135.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-30",
-      "company": "Amazon",
-      "market_cap": 135.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-31",
-      "company": "Microsoft",
-      "market_cap": 324.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-31",
-      "company": "Apple",
-      "market_cap": 186.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-31",
-      "company": "NVIDIA",
-      "market_cap": 49.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-31",
-      "company": "Alphabet",
-      "market_cap": 135.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-08-31",
-      "company": "Amazon",
-      "market_cap": 138.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-01",
-      "company": "Microsoft",
-      "market_cap": 324.91,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-01",
-      "company": "Apple",
-      "market_cap": 188.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-01",
-      "company": "NVIDIA",
-      "market_cap": 48.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-01",
-      "company": "Alphabet",
-      "market_cap": 135.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-01",
-      "company": "Amazon",
-      "market_cap": 138.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-05",
-      "company": "Microsoft",
-      "market_cap": 329.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-05",
-      "company": "Apple",
-      "market_cap": 188.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-05",
-      "company": "NVIDIA",
-      "market_cap": 48.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-05",
-      "company": "Alphabet",
-      "market_cap": 135.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-05",
-      "company": "Amazon",
-      "market_cap": 137.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-06",
-      "company": "Microsoft",
-      "market_cap": 329.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-06",
-      "company": "Apple",
-      "market_cap": 181.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-06",
-      "company": "NVIDIA",
-      "market_cap": 47.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-06",
-      "company": "Alphabet",
-      "market_cap": 133.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-06",
-      "company": "Amazon",
-      "market_cap": 135.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-07",
-      "company": "Microsoft",
-      "market_cap": 326.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-07",
-      "company": "Apple",
-      "market_cap": 176.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-07",
-      "company": "NVIDIA",
-      "market_cap": 46.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-07",
-      "company": "Alphabet",
-      "market_cap": 134.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-07",
-      "company": "Amazon",
-      "market_cap": 137.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-08",
-      "company": "Microsoft",
-      "market_cap": 330.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-08",
-      "company": "Apple",
-      "market_cap": 176.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-08",
-      "company": "NVIDIA",
-      "market_cap": 45.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-08",
-      "company": "Alphabet",
-      "market_cap": 135.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-08",
-      "company": "Amazon",
-      "market_cap": 138.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-11",
-      "company": "Microsoft",
-      "market_cap": 334.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-11",
-      "company": "Apple",
-      "market_cap": 178.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-11",
-      "company": "NVIDIA",
-      "market_cap": 45.16,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-11",
-      "company": "Alphabet",
-      "market_cap": 136.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-11",
-      "company": "Amazon",
-      "market_cap": 143.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-12",
-      "company": "Microsoft",
-      "market_cap": 327.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-12",
-      "company": "Apple",
-      "market_cap": 175.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-12",
-      "company": "NVIDIA",
-      "market_cap": 44.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-12",
-      "company": "Alphabet",
-      "market_cap": 134.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-12",
-      "company": "Amazon",
-      "market_cap": 141.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-13",
-      "company": "Microsoft",
-      "market_cap": 332.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-13",
-      "company": "Apple",
-      "market_cap": 172.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-13",
-      "company": "NVIDIA",
-      "market_cap": 45.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-13",
-      "company": "Alphabet",
-      "market_cap": 136.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-13",
-      "company": "Amazon",
-      "market_cap": 144.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-14",
-      "company": "Microsoft",
-      "market_cap": 334.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-14",
-      "company": "Apple",
-      "market_cap": 174.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-14",
-      "company": "NVIDIA",
-      "market_cap": 45.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-14",
-      "company": "Alphabet",
-      "market_cap": 137.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-14",
-      "company": "Amazon",
-      "market_cap": 144.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-15",
-      "company": "Microsoft",
-      "market_cap": 326.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-15",
-      "company": "Apple",
-      "market_cap": 173.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-15",
-      "company": "NVIDIA",
-      "market_cap": 43.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-15",
-      "company": "Alphabet",
-      "market_cap": 136.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-15",
-      "company": "Amazon",
-      "market_cap": 140.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-18",
-      "company": "Microsoft",
-      "market_cap": 325.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-18",
-      "company": "Apple",
-      "market_cap": 176.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-18",
-      "company": "NVIDIA",
-      "market_cap": 43.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-18",
-      "company": "Alphabet",
-      "market_cap": 137.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-18",
-      "company": "Amazon",
-      "market_cap": 139.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-19",
-      "company": "Microsoft",
-      "market_cap": 324.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-19",
-      "company": "Apple",
-      "market_cap": 177.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-19",
-      "company": "NVIDIA",
-      "market_cap": 43.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-19",
-      "company": "Alphabet",
-      "market_cap": 137.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-19",
-      "company": "Amazon",
-      "market_cap": 137.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-20",
-      "company": "Microsoft",
-      "market_cap": 317.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-20",
-      "company": "Apple",
-      "market_cap": 174.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-20",
-      "company": "NVIDIA",
-      "market_cap": 42.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-20",
-      "company": "Alphabet",
-      "market_cap": 133.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-20",
-      "company": "Amazon",
-      "market_cap": 135.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-21",
-      "company": "Microsoft",
-      "market_cap": 315.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-21",
-      "company": "Apple",
-      "market_cap": 172.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-21",
-      "company": "NVIDIA",
-      "market_cap": 41.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-21",
-      "company": "Alphabet",
-      "market_cap": 129.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-21",
-      "company": "Amazon",
-      "market_cap": 129.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-22",
-      "company": "Microsoft",
-      "market_cap": 313.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-22",
-      "company": "Apple",
-      "market_cap": 173.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-22",
-      "company": "NVIDIA",
-      "market_cap": 41.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-22",
-      "company": "Alphabet",
-      "market_cap": 129.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-22",
-      "company": "Amazon",
-      "market_cap": 129.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-25",
-      "company": "Microsoft",
-      "market_cap": 313.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-25",
-      "company": "Apple",
-      "market_cap": 174.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-25",
-      "company": "NVIDIA",
-      "market_cap": 42.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-25",
-      "company": "Alphabet",
-      "market_cap": 130.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-25",
-      "company": "Amazon",
-      "market_cap": 131.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-26",
-      "company": "Microsoft",
-      "market_cap": 308.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-26",
-      "company": "Apple",
-      "market_cap": 170.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-26",
-      "company": "NVIDIA",
-      "market_cap": 41.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-26",
-      "company": "Alphabet",
-      "market_cap": 127.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-26",
-      "company": "Amazon",
-      "market_cap": 125.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-27",
-      "company": "Microsoft",
-      "market_cap": 309.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-27",
-      "company": "Apple",
-      "market_cap": 169.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-27",
-      "company": "NVIDIA",
-      "market_cap": 42.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-27",
-      "company": "Alphabet",
-      "market_cap": 129.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-27",
-      "company": "Amazon",
-      "market_cap": 125.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-28",
-      "company": "Microsoft",
-      "market_cap": 310.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-28",
-      "company": "Apple",
-      "market_cap": 169.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-28",
-      "company": "NVIDIA",
-      "market_cap": 43.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-28",
-      "company": "Alphabet",
-      "market_cap": 131.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-28",
-      "company": "Amazon",
-      "market_cap": 125.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-29",
-      "company": "Microsoft",
-      "market_cap": 312.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-29",
-      "company": "Apple",
-      "market_cap": 169.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-29",
-      "company": "NVIDIA",
-      "market_cap": 43.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-29",
-      "company": "Alphabet",
-      "market_cap": 130.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-09-29",
-      "company": "Amazon",
-      "market_cap": 127.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-02",
-      "company": "Microsoft",
-      "market_cap": 318.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-02",
-      "company": "Apple",
-      "market_cap": 172.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-02",
-      "company": "NVIDIA",
-      "market_cap": 44.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-02",
-      "company": "Alphabet",
-      "market_cap": 133.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-02",
-      "company": "Amazon",
-      "market_cap": 129.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-03",
-      "company": "Microsoft",
-      "market_cap": 309.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-03",
-      "company": "Apple",
-      "market_cap": 171.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-03",
-      "company": "NVIDIA",
-      "market_cap": 43.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-03",
-      "company": "Alphabet",
-      "market_cap": 131.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-03",
-      "company": "Amazon",
-      "market_cap": 124.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-04",
-      "company": "Microsoft",
-      "market_cap": 315.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-04",
-      "company": "Apple",
-      "market_cap": 172.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-04",
-      "company": "NVIDIA",
-      "market_cap": 44.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-04",
-      "company": "Alphabet",
-      "market_cap": 134.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-04",
-      "company": "Amazon",
-      "market_cap": 127.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-05",
-      "company": "Microsoft",
-      "market_cap": 315.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-05",
-      "company": "Apple",
-      "market_cap": 173.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-05",
-      "company": "NVIDIA",
-      "market_cap": 44.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-05",
-      "company": "Alphabet",
-      "market_cap": 134.43,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-05",
-      "company": "Amazon",
-      "market_cap": 125.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-06",
-      "company": "Microsoft",
-      "market_cap": 323.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-06",
-      "company": "Apple",
-      "market_cap": 176.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-06",
-      "company": "NVIDIA",
-      "market_cap": 45.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-06",
-      "company": "Alphabet",
-      "market_cap": 136.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-06",
-      "company": "Amazon",
-      "market_cap": 127.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-09",
-      "company": "Microsoft",
-      "market_cap": 326.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-09",
-      "company": "Apple",
-      "market_cap": 177.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-09",
-      "company": "NVIDIA",
-      "market_cap": 45.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-09",
-      "company": "Alphabet",
-      "market_cap": 137.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-09",
-      "company": "Amazon",
-      "market_cap": 128.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-10",
-      "company": "Microsoft",
-      "market_cap": 324.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-10",
-      "company": "Apple",
-      "market_cap": 177.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-10",
-      "company": "NVIDIA",
-      "market_cap": 45.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-10",
-      "company": "Alphabet",
-      "market_cap": 137.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-10",
-      "company": "Amazon",
-      "market_cap": 129.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-11",
-      "company": "Microsoft",
-      "market_cap": 328.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-11",
-      "company": "Apple",
-      "market_cap": 178.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-11",
-      "company": "NVIDIA",
-      "market_cap": 46.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-11",
-      "company": "Alphabet",
-      "market_cap": 139.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-11",
-      "company": "Amazon",
-      "market_cap": 131.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-12",
-      "company": "Microsoft",
-      "market_cap": 327.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-12",
-      "company": "Apple",
-      "market_cap": 179.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-12",
-      "company": "NVIDIA",
-      "market_cap": 46.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-12",
-      "company": "Alphabet",
-      "market_cap": 138.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-12",
-      "company": "Amazon",
-      "market_cap": 132.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-13",
-      "company": "Microsoft",
-      "market_cap": 323.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-13",
-      "company": "Apple",
-      "market_cap": 177.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-13",
-      "company": "NVIDIA",
-      "market_cap": 45.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-13",
-      "company": "Alphabet",
-      "market_cap": 136.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-13",
-      "company": "Amazon",
-      "market_cap": 129.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-16",
-      "company": "Microsoft",
-      "market_cap": 328.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-16",
-      "company": "Apple",
-      "market_cap": 177.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-16",
-      "company": "NVIDIA",
-      "market_cap": 46.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-16",
-      "company": "Alphabet",
-      "market_cap": 138.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-16",
-      "company": "Amazon",
-      "market_cap": 132.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-17",
-      "company": "Microsoft",
-      "market_cap": 328.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-17",
-      "company": "Apple",
-      "market_cap": 175.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-17",
-      "company": "NVIDIA",
-      "market_cap": 43.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-17",
-      "company": "Alphabet",
-      "market_cap": 139.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-17",
-      "company": "Amazon",
-      "market_cap": 131.47,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-18",
-      "company": "Microsoft",
-      "market_cap": 326.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-18",
-      "company": "Apple",
-      "market_cap": 174.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-18",
-      "company": "NVIDIA",
-      "market_cap": 42.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-18",
-      "company": "Alphabet",
-      "market_cap": 137.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-18",
-      "company": "Amazon",
-      "market_cap": 128.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-19",
-      "company": "Microsoft",
-      "market_cap": 327.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-19",
-      "company": "Apple",
-      "market_cap": 174.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-19",
-      "company": "NVIDIA",
-      "market_cap": 42.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-19",
-      "company": "Alphabet",
-      "market_cap": 137.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-19",
-      "company": "Amazon",
-      "market_cap": 128.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-20",
-      "company": "Microsoft",
-      "market_cap": 322.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-20",
-      "company": "Apple",
-      "market_cap": 171.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-20",
-      "company": "NVIDIA",
-      "market_cap": 41.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-20",
-      "company": "Alphabet",
-      "market_cap": 134.95,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-20",
-      "company": "Amazon",
-      "market_cap": 125.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-23",
-      "company": "Microsoft",
-      "market_cap": 325.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-23",
-      "company": "Apple",
-      "market_cap": 171.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-23",
-      "company": "NVIDIA",
-      "market_cap": 42.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-23",
-      "company": "Alphabet",
-      "market_cap": 135.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-23",
-      "company": "Amazon",
-      "market_cap": 126.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-24",
-      "company": "Microsoft",
-      "market_cap": 326.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-24",
-      "company": "Apple",
-      "market_cap": 172.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-24",
-      "company": "NVIDIA",
-      "market_cap": 43.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-24",
-      "company": "Alphabet",
-      "market_cap": 138.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-24",
-      "company": "Amazon",
-      "market_cap": 128.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-25",
-      "company": "Microsoft",
-      "market_cap": 336.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-25",
-      "company": "Apple",
-      "market_cap": 169.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-25",
-      "company": "NVIDIA",
-      "market_cap": 41.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-25",
-      "company": "Alphabet",
-      "market_cap": 125.01,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-25",
-      "company": "Amazon",
-      "market_cap": 121.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-26",
-      "company": "Microsoft",
-      "market_cap": 324.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-26",
-      "company": "Apple",
-      "market_cap": 165.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-26",
-      "company": "NVIDIA",
-      "market_cap": 40.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-26",
-      "company": "Alphabet",
-      "market_cap": 121.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-26",
-      "company": "Amazon",
-      "market_cap": 119.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-27", 
-      "company": "Microsoft",
-      "market_cap": 326.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-27",
-      "company": "Apple",
-      "market_cap": 167.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-27",
-      "company": "NVIDIA",
-      "market_cap": 40.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-27",
-      "company": "Alphabet",
-      "market_cap": 121.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-27",
-      "company": "Amazon",
-      "market_cap": 127.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-30",
-      "company": "Microsoft",
-      "market_cap": 333.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-30",
-      "company": "Apple",
-      "market_cap": 169.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-30",
-      "company": "NVIDIA",
-      "market_cap": 41.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-30",
-      "company": "Alphabet",
-      "market_cap": 123.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-30",
-      "company": "Amazon",
-      "market_cap": 132.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-31",
-      "company": "Microsoft",
-      "market_cap": 334.25,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-31",
-      "company": "Apple",
-      "market_cap": 169.53,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-31",
-      "company": "NVIDIA",
-      "market_cap": 40.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-31",
-      "company": "Alphabet",
-      "market_cap": 123.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-10-31",
-      "company": "Amazon",
-      "market_cap": 133.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-01",
-      "company": "Microsoft",
-      "market_cap": 342.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-01",
-      "company": "Apple",
-      "market_cap": 172.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-01",
-      "company": "NVIDIA",
-      "market_cap": 42.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-01",
-      "company": "Alphabet",
-      "market_cap": 125.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-01",
-      "company": "Amazon",
-      "market_cap": 137.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-02",
-      "company": "Microsoft",
-      "market_cap": 344.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-02",
-      "company": "Apple",
-      "market_cap": 176.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-02",
-      "company": "NVIDIA",
-      "market_cap": 43.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-02",
-      "company": "Alphabet",
-      "market_cap": 126.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-02",
-      "company": "Amazon",
-      "market_cap": 138.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-03",
-      "company": "Microsoft",
-      "market_cap": 348.77,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-03",
-      "company": "Apple",
-      "market_cap": 175.36,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-03",
-      "company": "NVIDIA",
-      "market_cap": 44.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-03",
-      "company": "Alphabet",
-      "market_cap": 128.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-03",
-      "company": "Amazon",
-      "market_cap": 138.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-06",
-      "company": "Microsoft",
-      "market_cap": 352.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-06",
-      "company": "Apple",
-      "market_cap": 177.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-06",
-      "company": "NVIDIA",
-      "market_cap": 45.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-06",
-      "company": "Alphabet",
-      "market_cap": 129.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-06",
-      "company": "Amazon",
-      "market_cap": 139.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-07",
-      "company": "Microsoft",
-      "market_cap": 356.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-07",
-      "company": "Apple",
-      "market_cap": 180.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-07",
-      "company": "NVIDIA",
-      "market_cap": 45.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-07",
-      "company": "Alphabet",
-      "market_cap": 130.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-07",
-      "company": "Amazon",
-      "market_cap": 142.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-08",
-      "company": "Microsoft",
-      "market_cap": 359.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-08",
-      "company": "Apple",
-      "market_cap": 181.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-08",
-      "company": "NVIDIA",
-      "market_cap": 46.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-08",
-      "company": "Alphabet",
-      "market_cap": 131.21,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-08",
-      "company": "Amazon",
-      "market_cap": 142.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-09",
-      "company": "Microsoft",
-      "market_cap": 356.57,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-09",
-      "company": "Apple",
-      "market_cap": 181.08,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-09",
-      "company": "NVIDIA",
-      "market_cap": 46.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-09",
-      "company": "Alphabet",
-      "market_cap": 129.62,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-09",
-      "company": "Amazon",
-      "market_cap": 140.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-10",
-      "company": "Microsoft",
-      "market_cap": 365.45,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-10",
-      "company": "Apple",
-      "market_cap": 185.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-10",
-      "company": "NVIDIA",
-      "market_cap": 48.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-10",
-      "company": "Alphabet",
-      "market_cap": 131.96,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-10",
-      "company": "Amazon",
-      "market_cap": 143.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-13",
-      "company": "Microsoft",
-      "market_cap": 362.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-13",
-      "company": "Apple",
-      "market_cap": 183.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-13",
-      "company": "NVIDIA",
-      "market_cap": 48.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-13",
-      "company": "Alphabet",
-      "market_cap": 131.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-13",
-      "company": "Amazon",
-      "market_cap": 142.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-14",
-      "company": "Microsoft",
-      "market_cap": 366.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-14",
-      "company": "Apple",
-      "market_cap": 186.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-14",
-      "company": "NVIDIA",
-      "market_cap": 49.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-14",
-      "company": "Alphabet",
-      "market_cap": 132.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-14",
-      "company": "Amazon",
-      "market_cap": 145.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-15",
-      "company": "Microsoft",
-      "market_cap": 366.19,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-15",
-      "company": "Apple",
-      "market_cap": 186.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-15",
-      "company": "NVIDIA",
-      "market_cap": 48.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-15",
-      "company": "Alphabet",
-      "market_cap": 133.98,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-15",
-      "company": "Amazon",
-      "market_cap": 143.2,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-16",
-      "company": "Microsoft",
-      "market_cap": 372.63,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-16",
-      "company": "Apple",
-      "market_cap": 188.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-16",
-      "company": "NVIDIA",
-      "market_cap": 49.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-16",
-      "company": "Alphabet",
-      "market_cap": 136.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-16",
-      "company": "Amazon",
-      "market_cap": 142.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-17",
-      "company": "Microsoft",
-      "market_cap": 366.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-17",
-      "company": "Apple",
-      "market_cap": 188.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-17",
-      "company": "NVIDIA",
-      "market_cap": 49.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-17",
-      "company": "Alphabet",
-      "market_cap": 134.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-17",
-      "company": "Amazon",
-      "market_cap": 145.18,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-20",
-      "company": "Microsoft",
-      "market_cap": 373.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-20",
-      "company": "Apple",
-      "market_cap": 190.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-20",
-      "company": "NVIDIA",
-      "market_cap": 50.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-20",
-      "company": "Alphabet",
-      "market_cap": 135.6,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-20",
-      "company": "Amazon",
-      "market_cap": 146.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-21",
-      "company": "Microsoft",
-      "market_cap": 369.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-21",
-      "company": "Apple",
-      "market_cap": 189.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-21",
-      "company": "NVIDIA",
-      "market_cap": 49.92,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-21",
-      "company": "Alphabet",
-      "market_cap": 136.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-21",
-      "company": "Amazon",
-      "market_cap": 143.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-22",
-      "company": "Microsoft",
-      "market_cap": 374.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-22",
-      "company": "Apple",
-      "market_cap": 190.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-22",
-      "company": "NVIDIA",
-      "market_cap": 48.69,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-22",
-      "company": "Alphabet",
-      "market_cap": 137.83,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-22",
-      "company": "Amazon",
-      "market_cap": 146.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-24",
-      "company": "Microsoft",
-      "market_cap": 373.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-24",
-      "company": "Apple",
-      "market_cap": 188.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-24",
-      "company": "NVIDIA",
-      "market_cap": 47.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-24",
-      "company": "Alphabet",
-      "market_cap": 136.04,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-24",
-      "company": "Amazon",
-      "market_cap": 146.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-27",
-      "company": "Microsoft",
-      "market_cap": 375.05,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-27",
-      "company": "Apple",
-      "market_cap": 188.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-27",
-      "company": "NVIDIA",
-      "market_cap": 48.22,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-27",
-      "company": "Alphabet",
-      "market_cap": 135.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-27",
-      "company": "Amazon",
-      "market_cap": 147.73,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-28",
-      "company": "Microsoft",
-      "market_cap": 379.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-28",
-      "company": "Apple",
-      "market_cap": 189.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-28",
-      "company": "NVIDIA",
-      "market_cap": 47.8,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-28",
-      "company": "Alphabet",
-      "market_cap": 136.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-28",
-      "company": "Amazon",
-      "market_cap": 147.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-29",
-      "company": "Microsoft",
-      "market_cap": 375.29,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-29",
-      "company": "Apple",
-      "market_cap": 188.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-29",
-      "company": "NVIDIA",
-      "market_cap": 48.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-29",
-      "company": "Alphabet",
-      "market_cap": 134.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-29",
-      "company": "Amazon",
-      "market_cap": 146.32,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-30",
-      "company": "Microsoft",
-      "market_cap": 375.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-30",
-      "company": "Apple",
-      "market_cap": 188.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-30",
-      "company": "NVIDIA",
-      "market_cap": 46.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-30",
-      "company": "Alphabet",
-      "market_cap": 131.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-11-30",
-      "company": "Amazon",
-      "market_cap": 146.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-01",
-      "company": "Microsoft",
-      "market_cap": 370.99,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-01",
-      "company": "Apple",
-      "market_cap": 190.1,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-01",
-      "company": "NVIDIA",
-      "market_cap": 46.74,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-01",
-      "company": "Alphabet",
-      "market_cap": 131.23,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-01",
-      "company": "Amazon",
-      "market_cap": 147.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-04",
-      "company": "Microsoft",
-      "market_cap": 365.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-04",
-      "company": "Apple",
-      "market_cap": 188.3,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-04",
-      "company": "NVIDIA",
-      "market_cap": 45.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-04",
-      "company": "Alphabet",
-      "market_cap": 128.65,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-04",
-      "company": "Amazon",
-      "market_cap": 144.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-05",
-      "company": "Microsoft",
-      "market_cap": 369.02,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-05",
-      "company": "Apple",
-      "market_cap": 192.27,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-05",
-      "company": "NVIDIA",
-      "market_cap": 46.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-05",
-      "company": "Alphabet",
-      "market_cap": 130.37,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-05",
-      "company": "Amazon",
-      "market_cap": 146.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-06",
-      "company": "Microsoft",
-      "market_cap": 365.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-06",
-      "company": "Apple",
-      "market_cap": 191.17,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-06",
-      "company": "NVIDIA",
-      "market_cap": 45.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-06",
-      "company": "Alphabet",
-      "market_cap": 129.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-06",
-      "company": "Amazon",
-      "market_cap": 144.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-07",
-      "company": "Microsoft",
-      "market_cap": 367.46,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-07",
-      "company": "Apple",
-      "market_cap": 193.11,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-07",
-      "company": "NVIDIA",
-      "market_cap": 46.58,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-07",
-      "company": "Alphabet",
-      "market_cap": 136.28,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-07",
-      "company": "Amazon",
-      "market_cap": 146.88,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-08",
-      "company": "Microsoft",
-      "market_cap": 370.71,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-08",
-      "company": "Apple",
-      "market_cap": 194.54,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-08",
-      "company": "NVIDIA",
-      "market_cap": 47.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-08",
-      "company": "Alphabet",
-      "market_cap": 134.35,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-08",
-      "company": "Amazon",
-      "market_cap": 147.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-11",
-      "company": "Microsoft",
-      "market_cap": 367.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-11",
-      "company": "Apple",
-      "market_cap": 192.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-11",
-      "company": "NVIDIA",
-      "market_cap": 46.61,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-11",
-      "company": "Alphabet",
-      "market_cap": 132.66,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-11",
-      "company": "Amazon",
-      "market_cap": 145.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-12",
-      "company": "Microsoft",
-      "market_cap": 370.86,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-12",
-      "company": "Apple",
-      "market_cap": 193.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-12",
-      "company": "NVIDIA",
-      "market_cap": 47.64,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-12",
-      "company": "Alphabet",
-      "market_cap": 131.89,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-12",
-      "company": "Amazon",
-      "market_cap": 147.48,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-13",
-      "company": "Microsoft",
-      "market_cap": 370.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-13",
-      "company": "Apple",
-      "market_cap": 196.78,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-13",
-      "company": "NVIDIA",
-      "market_cap": 48.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-13",
-      "company": "Alphabet",
-      "market_cap": 131.94,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-13",
-      "company": "Amazon",
-      "market_cap": 148.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-14",
-      "company": "Microsoft",
-      "market_cap": 362.49,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-14",
-      "company": "Apple",
-      "market_cap": 196.93,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-14",
-      "company": "NVIDIA",
-      "market_cap": 48.33,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-14",
-      "company": "Alphabet",
-      "market_cap": 131.31,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-14",
-      "company": "Amazon",
-      "market_cap": 147.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-15",
-      "company": "Microsoft",
-      "market_cap": 367.24,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-15",
-      "company": "Apple",
-      "market_cap": 196.39,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-15",
-      "company": "NVIDIA",
-      "market_cap": 48.87,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-15",
-      "company": "Alphabet",
-      "market_cap": 131.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-15",
-      "company": "Amazon",
-      "market_cap": 149.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-18",
-      "company": "Microsoft",
-      "market_cap": 369.14,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-18",
-      "company": "Apple",
-      "market_cap": 194.72,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-18",
-      "company": "NVIDIA",
-      "market_cap": 50.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-18",
-      "company": "Alphabet",
-      "market_cap": 135.15,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-18",
-      "company": "Amazon",
-      "market_cap": 154.07,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-19",
-      "company": "Microsoft",
-      "market_cap": 369.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-19",
-      "company": "Apple",
-      "market_cap": 195.76,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-19",
-      "company": "NVIDIA",
-      "market_cap": 49.59,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-19",
-      "company": "Alphabet",
-      "market_cap": 136.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-19",
-      "company": "Amazon",
-      "market_cap": 153.79,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-20",
-      "company": "Microsoft",
-      "market_cap": 367.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-20",
-      "company": "Apple",
-      "market_cap": 193.67,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-20",
-      "company": "NVIDIA",
-      "market_cap": 48.09,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-20",
-      "company": "Alphabet",
-      "market_cap": 137.68,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-20",
-      "company": "Amazon",
-      "market_cap": 152.12,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-21",
-      "company": "Microsoft",
-      "market_cap": 370.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-21",
-      "company": "Apple",
-      "market_cap": 193.52,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-21",
-      "company": "NVIDIA",
-      "market_cap": 48.97,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-21",
-      "company": "Alphabet",
-      "market_cap": 139.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-21",
-      "company": "Amazon",
-      "market_cap": 153.84,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-22",
-      "company": "Microsoft",
-      "market_cap": 371.06,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-22",
-      "company": "Apple",
-      "market_cap": 192.44,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-22",
-      "company": "NVIDIA",
-      "market_cap": 48.81,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-22",
-      "company": "Alphabet",
-      "market_cap": 140.82,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-22",
-      "company": "Amazon",
-      "market_cap": 153.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-26",
-      "company": "Microsoft",
-      "market_cap": 371.13,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-26",
-      "company": "Apple",
-      "market_cap": 191.9,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-26",
-      "company": "NVIDIA",
-      "market_cap": 49.26,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-26",
-      "company": "Alphabet",
-      "market_cap": 140.85,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-26",
-      "company": "Amazon",
-      "market_cap": 153.41,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-27",
-      "company": "Microsoft",
-      "market_cap": 370.55,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-27",
-      "company": "Apple",
-      "market_cap": 192.0,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-27",
-      "company": "NVIDIA",
-      "market_cap": 49.4,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-27",
-      "company": "Alphabet",
-      "market_cap": 139.7,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-27",
-      "company": "Amazon",
-      "market_cap": 153.34,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-28",
-      "company": "Microsoft",
-      "market_cap": 371.75,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-28",
-      "company": "Apple",
-      "market_cap": 192.42,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-28",
-      "company": "NVIDIA",
-      "market_cap": 49.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-28",
-      "company": "Alphabet",
-      "market_cap": 139.56,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-28",
-      "company": "Amazon",
-      "market_cap": 153.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-29",
-      "company": "Microsoft",
-      "market_cap": 372.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-29",
-      "company": "Apple",
-      "market_cap": 191.38,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-29",
-      "company": "NVIDIA",
-      "market_cap": 49.5,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-29",
-      "company": "Alphabet",
-      "market_cap": 139.03,
-      "revenue": null
-    },
-    {
-      "date": "2023-12-29",
-      "company": "Amazon",
-      "market_cap": 151.94,
-      "revenue": null
-    }
+  id: 'company-data-2020-2024',
+  name: 'Unternehmensdaten',
+  description: 'Aktienmarkt 2020-2024 (Close-Werte pro Tag, mit Datum)',
+  icon: '🏢',
+  data: [
+    { date: "2020-01-02", Close_AAPL: 72.716064453125, Close_AMZN: 94.90049743652344, Close_GOOGL: 68.1083755493164, Close_MSFT: 153.32321166992188, Close_NVDA: 5.972161293029785 },
+    { date: "2020-01-03", Close_AAPL: 72.0091323852539, Close_AMZN: 93.74849700927734, Close_GOOGL: 67.7520751953125, Close_MSFT: 151.4141387939453, Close_NVDA: 5.8765716552734375 },
+    { date: "2020-01-06", Close_AAPL: 72.58291625976562, Close_AMZN: 95.14399719238281, Close_GOOGL: 69.55794525146484, Close_MSFT: 151.80552673339844, Close_NVDA: 5.901215076446533 },
+    { date: "2020-01-07", Close_AAPL: 72.24156188964844, Close_AMZN: 95.34300231933594, Close_GOOGL: 69.42359161376953, Close_MSFT: 150.42138671875, Close_NVDA: 5.972659587860107 },
+    { date: "2020-01-08", Close_AAPL: 73.40364837646484, Close_AMZN: 94.59850311279297, Close_GOOGL: 69.917724609375, Close_MSFT: 152.8173370361328, Close_NVDA: 5.983860969543457 },
+    { date: "2020-01-09", Close_AAPL: 74.96279907226562, Close_AMZN: 95.05249786376953, Close_GOOGL: 70.65172576904297, Close_MSFT: 154.72647094726562, Close_NVDA: 6.049580097198486 },
+    { date: "2020-01-10", Close_AAPL: 75.13225555419922, Close_AMZN: 94.15799713134766, Close_GOOGL: 71.1080322265625, Close_MSFT: 154.01052856445312, Close_NVDA: 6.081940174102783 },
+    { date: "2020-01-13", Close_AAPL: 76.7374267578125, Close_AMZN: 94.56500244140625, Close_GOOGL: 71.65890502929688, Close_MSFT: 155.86244201660156, Close_NVDA: 6.272624969482422 },
+    { date: "2020-01-14", Close_AAPL: 75.70122528076172, Close_AMZN: 93.47200012207031, Close_GOOGL: 71.18914794921875, Close_MSFT: 154.76467895507812, Close_NVDA: 6.15562629699707 },
+    { date: "2020-01-15", Close_AAPL: 75.37680053710938, Close_AMZN: 93.10099792480469, Close_GOOGL: 71.61760711669922, Close_MSFT: 155.7669677734375, Close_NVDA: 6.113057613372803 },
+    { date: "2020-01-16", Close_AAPL: 76.32098388671875, Close_AMZN: 93.89700317382812, Close_GOOGL: 72.16300201416016, Close_MSFT: 158.6211395263672, Close_NVDA: 6.196698188781738 },
+    { date: "2020-01-17", Close_AAPL: 77.16593933105469, Close_AMZN: 93.23600006103516, Close_GOOGL: 73.6240005493164, Close_MSFT: 159.50888061523438, Close_NVDA: 6.205411911010742 },
+    { date: "2020-01-21", Close_AAPL: 76.64301300048828, Close_AMZN: 94.5999984741211, Close_GOOGL: 73.7598648071289, Close_MSFT: 158.93618774414062, Close_NVDA: 6.172055721282959 },
+    { date: "2020-01-22", Close_AAPL: 76.91658020019531, Close_AMZN: 94.37300109863281, Close_GOOGL: 73.8404769897461, Close_MSFT: 158.17247009277344, Close_NVDA: 6.22607421875 },
+    { date: "2020-01-23", Close_AAPL: 77.28700256347656, Close_AMZN: 94.22899627685547, Close_GOOGL: 73.88127899169922, Close_MSFT: 159.14614868164062, Close_NVDA: 6.294529914855957 },
+    { date: "2020-01-24", Close_AAPL: 77.06424713134766, Close_AMZN: 93.08200073242188, Close_GOOGL: 72.95967864990234, Close_MSFT: 157.54246520996094, Close_NVDA: 6.235283374786377 },
+    { date: "2020-01-27", Close_AAPL: 74.79817962646484, Close_AMZN: 91.41699981689453, Close_GOOGL: 71.24588012695312, Close_MSFT: 154.9078826904297, Close_NVDA: 5.9793806076049805 },
+    { date: "2020-01-28", Close_AAPL: 76.91416931152344, Close_AMZN: 92.6624984741211, Close_GOOGL: 72.17991638183594, Close_MSFT: 157.94338989257812, Close_NVDA: 6.172802925109863 },
+    { date: "2020-01-29", Close_AAPL: 78.5241470336914, Close_AMZN: 92.9000015258789, Close_GOOGL: 72.48844146728516, Close_MSFT: 160.4061737060547, Close_NVDA: 6.112310886383057 },
+    { date: "2020-01-30", Close_AAPL: 78.41038513183594, Close_AMZN: 93.53399658203125, Close_GOOGL: 72.36651611328125, Close_MSFT: 164.93084716796875, Close_NVDA: 6.119032382965088 },
+    { date: "2020-01-31", Close_AAPL: 74.93374633789062, Close_AMZN: 100.43599700927734, Close_GOOGL: 71.29812622070312, Close_MSFT: 162.4967041015625, Close_NVDA: 5.885533332824707 },
+    { date: "2020-02-03", Close_AAPL: 74.72796630859375, Close_AMZN: 100.20999908447266, Close_GOOGL: 73.77727508544922, Close_MSFT: 166.4581756591797, Close_NVDA: 5.9826154708862305 },
+    { date: "2020-02-04", Close_AAPL: 77.19500732421875, Close_AMZN: 102.4834976196289, Close_GOOGL: 71.92662048339844, Close_MSFT: 171.93739318847656, Close_NVDA: 6.151891231536865 },
+    { date: "2020-02-05", Close_AAPL: 77.8244857788086, Close_AMZN: 101.99349975585938, Close_GOOGL: 71.95845794677734, Close_MSFT: 171.72740173339844, Close_NVDA: 6.242255210876465 },
+    { date: "2020-02-06", Close_AAPL: 78.73477935791016, Close_AMZN: 102.5114974975586, Close_GOOGL: 73.44735717773438, Close_MSFT: 175.28797912597656, Close_NVDA: 6.329132080078125 },
+    { date: "2020-02-07", Close_AAPL: 77.66458129882812, Close_AMZN: 103.96399688720703, Close_GOOGL: 73.60359954833984, Close_MSFT: 175.5361328125, Close_NVDA: 6.26291561126709 },
+    { date: "2020-02-10", Close_AAPL: 78.033447265625, Close_AMZN: 106.69550323486328, Close_GOOGL: 75.0740737915039, Close_MSFT: 180.1276397705078, Close_NVDA: 6.546202182769775 },
+    { date: "2020-02-11", Close_AAPL: 77.56265258789062, Close_AMZN: 107.54000091552734, Close_GOOGL: 75.14374542236328, Close_MSFT: 176.0611572265625, Close_NVDA: 6.668677806854248 },
+    { date: "2020-02-12", Close_AAPL: 79.40458679199219, Close_AMZN: 108.0, Close_GOOGL: 75.57020568847656, Close_MSFT: 176.3188934326172, Close_NVDA: 6.7844319343566895 },
+    { date: "2020-02-13", Close_AAPL: 78.83912658691406, Close_AMZN: 107.49349975585938, Close_GOOGL: 75.3094482421875, Close_MSFT: 175.3643341064453, Close_NVDA: 6.74061918258667 },
+    { date: "2020-02-14", Close_AAPL: 78.85855102539062, Close_AMZN: 106.74349975585938, Close_GOOGL: 75.5751724243164, Close_MSFT: 176.92982482910156, Close_NVDA: 7.213840961456299 },
+    { date: "2020-02-18", Close_AAPL: 77.41461181640625, Close_AMZN: 107.78350067138672, Close_GOOGL: 75.61051177978516, Close_MSFT: 178.72439575195312, Close_NVDA: 7.382617473602295 },
+    { date: "2020-02-19", Close_AAPL: 78.53578186035156, Close_AMZN: 108.51100158691406, Close_GOOGL: 75.8807144165039, Close_MSFT: 179.26043701171875, Close_NVDA: 7.833934307098389 },
+    { date: "2020-02-20", Close_AAPL: 77.73008728027344, Close_AMZN: 107.65499877929688, Close_GOOGL: 75.48859405517578, Close_MSFT: 176.52288818359375, Close_NVDA: 7.684573650360107 },
+    { date: "2020-02-21", Close_AAPL: 75.97067260742188, Close_AMZN: 104.79850006103516, Close_GOOGL: 73.820068359375, Close_MSFT: 170.94253540039062, Close_NVDA: 7.320384502410889 },
+    { date: "2020-02-24", Close_AAPL: 72.3620376586914, Close_AMZN: 100.4645004272461, Close_GOOGL: 70.65519714355469, Close_MSFT: 163.57225036621094, Close_NVDA: 6.802852153778076 },
+    { date: "2020-02-25", Close_AAPL: 69.91097259521484, Close_AMZN: 98.63700103759766, Close_GOOGL: 68.9861831665039, Close_MSFT: 160.873046875, Close_NVDA: 6.5233001708984375 },
+    { date: "2020-02-26", Close_AAPL: 71.02001953125, Close_AMZN: 98.97949981689453, Close_GOOGL: 69.19269561767578, Close_MSFT: 162.88308715820312, Close_NVDA: 6.662703037261963 },
+    { date: "2020-02-27", Close_AAPL: 66.37757110595703, Close_AMZN: 94.21499633789062, Close_GOOGL: 65.43465423583984, Close_MSFT: 151.40655517578125, Close_NVDA: 6.2918195724487305 },
+    { date: "2020-02-28", Close_AAPL: 66.33875274658203, Close_AMZN: 94.1875, Close_GOOGL: 66.64388275146484, Close_MSFT: 155.072509765625, Close_NVDA: 6.726966857910156 },
+    { date: "2020-03-02", Close_AAPL: 72.51493072509766, Close_AMZN: 97.69750213623047, Close_GOOGL: 68.9861831665039, Close_MSFT: 165.3909149169922, Close_NVDA: 6.885382175445557 },
+    { date: "2020-03-03", Close_AAPL: 70.2119140625, Close_AMZN: 95.44950103759766, Close_GOOGL: 66.56774139404297, Close_MSFT: 157.46546936035156, Close_NVDA: 6.62285041809082 },
+    { date: "2020-03-04", Close_AAPL: 73.46863555908203, Close_AMZN: 98.79149627685547, Close_GOOGL: 68.75130462646484, Close_MSFT: 163.24684143066406, Close_NVDA: 7.086640357971191 },
+    { date: "2020-03-05", Close_AAPL: 71.0855484008789, Close_AMZN: 96.20149993896484, Close_GOOGL: 65.42520904541016, Close_MSFT: 159.1501007080078, Close_NVDA: 6.807170867919922 },
+    { date: "2020-03-06", Close_AAPL: 70.14152526855469, Close_AMZN: 95.05449676513672, Close_GOOGL: 64.47872924804688, Close_MSFT: 154.65138244628906, Close_NVDA: 6.626585960388184 },
+    { date: "2020-03-09", Close_AAPL: 64.59387969970703, Close_AMZN: 90.03050231933594, Close_GOOGL: 60.50025177001953, Close_MSFT: 144.17025756835938, Close_NVDA: 6.113476753234863 },
+    { date: "2020-03-10", Close_AAPL: 69.24601745605469, Close_AMZN: 94.59100341796875, Close_GOOGL: 63.45512771606445, Close_MSFT: 154.02920532226562, Close_NVDA: 6.503040790557861 },
+    { date: "2020-03-11", Close_AAPL: 66.84107971191406, Close_AMZN: 91.04299926757812, Close_GOOGL: 60.25691604614258, Close_MSFT: 147.05136108398438, Close_NVDA: 6.139132976531982 },
+    { date: "2020-03-12", Close_AAPL: 60.24020767211914, Close_AMZN: 83.83049774169922, Close_GOOGL: 55.31304931640625, Close_MSFT: 133.1052703857422, Close_NVDA: 5.387900352478027 },
+    { date: "2020-03-13", Close_AAPL: 67.45748138427734, Close_AMZN: 89.25, Close_GOOGL: 60.42461395263672, Close_MSFT: 152.02870178222656, Close_NVDA: 5.998899459838867 },
+    { date: "2020-03-16", Close_AAPL: 58.779293060302734, Close_AMZN: 84.4574966430664, Close_GOOGL: 53.39472198486328, Close_MSFT: 129.62112426757812, Close_NVDA: 4.891976833343506 },
+    { date: "2020-03-17", Close_AAPL: 61.36381530761719, Close_AMZN: 90.39199829101562, Close_GOOGL: 55.63700485229492, Close_MSFT: 140.2936553955078, Close_NVDA: 5.411810398101807 },
+    { date: "2020-03-18", Close_AAPL: 59.861629486083984, Close_AMZN: 91.5, Close_GOOGL: 54.299896240234375, Close_MSFT: 134.3878936767578, Close_NVDA: 5.0518879890441895 },
+    { date: "2020-03-19", Close_AAPL: 59.40296936035156, Close_AMZN: 94.04650115966797, Close_GOOGL: 55.31902313232422, Close_MSFT: 136.59898376464844, Close_NVDA: 5.304705619812012 },
+    { date: "2020-03-20", Close_AAPL: 55.63174819946289, Close_AMZN: 92.30449676513672, Close_GOOGL: 53.1563606262207, Close_MSFT: 131.46849060058594, Close_NVDA: 5.124867916107178 },
+    { date: "2020-03-23", Close_AAPL: 54.44988250732422, Close_AMZN: 95.1415023803711, Close_GOOGL: 52.455711364746094, Close_MSFT: 130.1571807861328, Close_NVDA: 5.297730922698975 },
+    { date: "2020-03-24", Close_AAPL: 59.91259765625, Close_AMZN: 97.00499725341797, Close_GOOGL: 56.231658935546875, Close_MSFT: 141.98785400390625, Close_NVDA: 6.206632137298584 },
+    { date: "2020-03-25", Close_AAPL: 59.582550048828125, Close_AMZN: 94.29199981689453, Close_GOOGL: 54.818912506103516, Close_MSFT: 140.628662109375, Close_NVDA: 6.117960453033447 },
+    { date: "2020-03-26", Close_AAPL: 62.71797180175781, Close_AMZN: 97.77449798583984, Close_GOOGL: 57.869327545166016, Close_MSFT: 149.4251708984375, Close_NVDA: 6.407393455505371 },
+    { date: "2020-03-27", Close_AAPL: 60.121299743652344, Close_AMZN: 95.00499725341797, Close_GOOGL: 55.24885940551758, Close_MSFT: 143.28968811035156, Close_NVDA: 6.2950568199157715 },
+    { date: "2020-03-30", Close_AAPL: 61.8370475769043, Close_AMZN: 98.19750213623047, Close_GOOGL: 57.042781829833984, Close_MSFT: 153.36874389648438, Close_NVDA: 6.615377902984619 },
+    { date: "2020-03-31", Close_AAPL: 61.710845947265625, Close_AMZN: 97.48600006103516, Close_GOOGL: 57.82106018066406, Close_MSFT: 150.95664978027344, Close_NVDA: 6.56580924987793 },
+    { date: "2020-04-01", Close_AAPL: 58.463802337646484, Close_AMZN: 95.38500213623047, Close_GOOGL: 54.842796325683594, Close_MSFT: 145.59649658203125, Close_NVDA: 6.054444313049316 },
+    { date: "2020-04-02", Close_AAPL: 59.43937683105469, Close_AMZN: 95.94149780273438, Close_GOOGL: 55.58574676513672, Close_MSFT: 148.61154174804688, Close_NVDA: 6.363306522369385 },
+    { date: "2020-04-03", Close_AAPL: 58.58514404296875, Close_AMZN: 95.32949829101562, Close_GOOGL: 54.37503433227539, Close_MSFT: 147.24281311035156, Close_NVDA: 6.075366020202637 },
+    { date: "2020-04-06", Close_AAPL: 63.69598388671875, Close_AMZN: 99.87950134277344, Close_GOOGL: 58.87800979614258, Close_MSFT: 158.19290161132812, Close_NVDA: 6.685369491577148 },
+    { date: "2020-04-07", Close_AAPL: 62.95822525024414, Close_AMZN: 100.58000183105469, Close_GOOGL: 58.846656799316406, Close_MSFT: 156.48915100097656, Close_NVDA: 6.451979160308838 },
+    { date: "2020-04-08", Close_AAPL: 64.5696029663086, Close_AMZN: 102.1500015258789, Close_GOOGL: 60.062843322753906, Close_MSFT: 158.0589141845703, Close_NVDA: 6.649252414703369 },
+    { date: "2020-04-09", Close_AAPL: 65.03556060791016, Close_AMZN: 102.13800048828125, Close_GOOGL: 60.04144287109375, Close_MSFT: 158.0684814453125, Close_NVDA: 6.549619197845459 },
+    { date: "2020-04-13", Close_AAPL: 66.31205749511719, Close_AMZN: 108.44349670410156, Close_GOOGL: 60.2325325012207, Close_MSFT: 158.4226531982422, Close_NVDA: 6.7214860916137695 },
+    { date: "2020-04-14", Close_AAPL: 69.66100311279297, Close_AMZN: 114.16600036621094, Close_GOOGL: 62.96049118041992, Close_MSFT: 166.26197814941406, Close_NVDA: 7.07269287109375 },
+    { date: "2020-04-15", Close_AAPL: 69.02518463134766, Close_AMZN: 115.38400268554688, Close_GOOGL: 62.56587600708008, Close_MSFT: 164.51991271972656, Close_NVDA: 6.995227336883545 },
+    { date: "2020-04-16", Close_AAPL: 69.57366180419922, Close_AMZN: 120.40950012207031, Close_GOOGL: 62.57234191894531, Close_MSFT: 169.45892333984375, Close_NVDA: 7.3404541015625 },
+    { date: "2020-04-17", Close_AAPL: 68.6296157836914, Close_AMZN: 118.75, Close_GOOGL: 63.64570999145508, Close_MSFT: 170.95211791992188, Close_NVDA: 7.2811737060546875 },
+    { date: "2020-04-20", Close_AAPL: 67.2051010131836, Close_AMZN: 119.68049621582031, Close_GOOGL: 62.7574577331543, Close_MSFT: 167.563720703125, Close_NVDA: 7.149907112121582 },
+    { date: "2020-04-21", Close_AAPL: 65.12777709960938, Close_AMZN: 116.40599822998047, Close_GOOGL: 60.319618225097656, Close_MSFT: 160.63375854492188, Close_NVDA: 6.71301794052124 },
+    { date: "2020-04-22", Close_AAPL: 67.00367736816406, Close_AMZN: 118.17449951171875, Close_GOOGL: 62.62111282348633, Close_MSFT: 166.0896453857422, Close_NVDA: 7.127490043640137 },
+    { date: "2020-04-23", Close_AAPL: 66.74401092529297, Close_AMZN: 119.97250366210938, Close_GOOGL: 63.256072998046875, Close_MSFT: 164.07957458496094, Close_NVDA: 7.074185848236084 },
+    { date: "2020-04-24", Close_AAPL: 68.67088317871094, Close_AMZN: 120.51100158691406, Close_GOOGL: 63.526283264160156, Close_MSFT: 167.07554626464844, Close_NVDA: 7.213173866271973 },
+    { date: "2020-04-27", Close_AAPL: 68.71942138671875, Close_AMZN: 118.80000305175781, Close_GOOGL: 63.24064636230469, Close_MSFT: 166.596923828125, Close_NVDA: 7.399737358093262 },
+    { date: "2020-04-28", Close_AAPL: 67.60553741455078, Close_AMZN: 115.7040023803711, Close_GOOGL: 61.33625793457031, Close_MSFT: 162.5385284423828, Close_NVDA: 7.257261753082275 },
+    { date: "2020-04-29", Close_AAPL: 69.82604217529297, Close_AMZN: 118.635498046875, Close_GOOGL: 66.78968048095703, Close_MSFT: 169.8322296142578, Close_NVDA: 7.434111595153809 },
+    { date: "2020-04-30", Close_AAPL: 71.2990951538086, Close_AMZN: 123.69999694824219, Close_GOOGL: 67.01460266113281, Close_MSFT: 171.53599548339844, Close_NVDA: 7.280177593231201 },
+    { date: "2020-05-01", Close_AAPL: 70.1512451171875, Close_AMZN: 114.302001953125, Close_GOOGL: 65.55260467529297, Close_MSFT: 167.0947265625, Close_NVDA: 7.043549537658691 },
+    { date: "2020-05-04", Close_AAPL: 71.143798828125, Close_AMZN: 115.79949951171875, Close_GOOGL: 65.83026885986328, Close_MSFT: 171.1818389892578, Close_NVDA: 7.255519390106201 },
+    { date: "2020-05-05", Close_AAPL: 72.2115707397461, Close_AMZN: 115.88999938964844, Close_GOOGL: 67.13005828857422, Close_MSFT: 173.01966857910156, Close_NVDA: 7.316544055938721 },
+    { date: "2020-05-06", Close_AAPL: 72.95658111572266, Close_AMZN: 117.56300354003906, Close_GOOGL: 66.951416015625, Close_MSFT: 174.723388671875, Close_NVDA: 7.417421817779541 },
+    { date: "2020-05-07", Close_AAPL: 73.7113265991211, Close_AMZN: 118.38050079345703, Close_GOOGL: 68.13822937011719, Close_MSFT: 175.738037109375, Close_NVDA: 7.593771934509277 },
+    { date: "2020-05-08", Close_AAPL: 75.46578979492188, Close_AMZN: 118.98049926757812, Close_GOOGL: 68.88765716552734, Close_MSFT: 176.77175903320312, Close_NVDA: 7.7838215827941895 },
+    { date: "2020-05-11", Close_AAPL: 76.65326690673828, Close_AMZN: 120.44999694824219, Close_GOOGL: 69.84556579589844, Close_MSFT: 178.74359130859375, Close_NVDA: 8.035895347595215 },
+    { date: "2020-05-12", Close_AAPL: 75.77722930908203, Close_AMZN: 117.84750366210938, Close_GOOGL: 68.43182373046875, Close_MSFT: 174.69471740722656, Close_NVDA: 7.773857593536377 },
+    { date: "2020-05-13", Close_AAPL: 74.86231231689453, Close_AMZN: 118.39600372314453, Close_GOOGL: 67.09571838378906, Close_MSFT: 172.0528564453125, Close_NVDA: 7.751440525054932 },
+    { date: "2020-05-14", Close_AAPL: 75.32220458984375, Close_AMZN: 119.44249725341797, Close_GOOGL: 67.52019500732422, Close_MSFT: 172.79949951171875, Close_NVDA: 8.001022338867188 },
+    { date: "2020-05-15", Close_AAPL: 74.87691497802734, Close_AMZN: 120.48899841308594, Close_GOOGL: 68.32633209228516, Close_MSFT: 175.31686401367188, Close_NVDA: 8.459582328796387 },
+    { date: "2020-05-18", Close_AAPL: 76.64108276367188, Close_AMZN: 121.31300354003906, Close_GOOGL: 68.92945098876953, Close_MSFT: 176.99191284179688, Close_NVDA: 8.718132019042969 },
+    { date: "2020-05-19", Close_AAPL: 76.19822692871094, Close_AMZN: 122.46649932861328, Close_GOOGL: 68.39301300048828, Close_MSFT: 175.76673889160156, Close_NVDA: 8.773178100585938 },
+    { date: "2020-05-20", Close_AAPL: 77.68013000488281, Close_AMZN: 124.89700317382812, Close_GOOGL: 70.12274169921875, Close_MSFT: 178.20469665527344, Close_NVDA: 8.937070846557617 },
+    { date: "2020-05-21", Close_AAPL: 77.10099029541016, Close_AMZN: 122.33699798583984, Close_GOOGL: 70.00281524658203, Close_MSFT: 176.06427001953125, Close_NVDA: 8.743038177490234 },
+    { date: "2020-05-22", Close_AAPL: 77.5973892211914, Close_AMZN: 121.84400177001953, Close_GOOGL: 70.3257827758789, Close_MSFT: 176.14109802246094, Close_NVDA: 8.993117332458496 },
+    { date: "2020-05-26", Close_AAPL: 77.07182312011719, Close_AMZN: 121.09300231933594, Close_GOOGL: 70.73033905029297, Close_MSFT: 174.2789764404297, Close_NVDA: 8.685749053955078 },
+    { date: "2020-05-27", Close_AAPL: 77.40758514404297, Close_AMZN: 120.51950073242188, Close_GOOGL: 70.67610168457031, Close_MSFT: 174.5093231201172, Close_NVDA: 8.493956565856934 },
+    { date: "2020-05-28", Close_AAPL: 77.4416732788086, Close_AMZN: 120.05500030517578, Close_GOOGL: 70.5745849609375, Close_MSFT: 174.11578369140625, Close_NVDA: 8.455846786499023 },
+    { date: "2020-05-29", Close_AAPL: 77.36624145507812, Close_AMZN: 122.11849975585938, Close_GOOGL: 71.3349609375, Close_MSFT: 175.8915252685547, Close_NVDA: 8.84291934967041 },
+    { date: "2020-06-01", Close_AAPL: 78.31767272949219, Close_AMZN: 123.552001953125, Close_GOOGL: 71.4021224975586, Close_MSFT: 175.48838806152344, Close_NVDA: 8.773924827575684 },
+    { date: "2020-06-02", Close_AAPL: 78.68023681640625, Close_AMZN: 123.62049865722656, Close_GOOGL: 71.7723617553711, Close_MSFT: 177.48484802246094, Close_NVDA: 8.792855262756348 },
+    { date: "2020-06-03", Close_AAPL: 79.1133804321289, Close_AMZN: 123.91999816894531, Close_GOOGL: 71.62008666992188, Close_MSFT: 177.91677856445312, Close_NVDA: 8.737308502197266 },
+    { date: "2020-06-04", Close_AAPL: 78.43206024169922, Close_AMZN: 123.02999877929688, Close_GOOGL: 70.37852478027344, Close_MSFT: 175.5747528076172, Close_NVDA: 8.738306045532227 },
+    { date: "2020-06-05", Close_AAPL: 80.66586303710938, Close_AMZN: 124.1500015258789, Close_GOOGL: 71.65840911865234, Close_MSFT: 179.68287658691406, Close_NVDA: 8.891315460205078 },
+    { date: "2020-06-08", Close_AAPL: 81.1427993774414, Close_AMZN: 126.2030029296875, Close_GOOGL: 72.05750274658203, Close_MSFT: 180.79627990722656, Close_NVDA: 8.776681900024414 },
+    { date: "2020-06-09", Close_AAPL: 83.70513153076172, Close_AMZN: 130.04299926757812, Close_GOOGL: 72.25852966308594, Close_MSFT: 182.17845153808594, Close_NVDA: 9.0169038772583 },
+    { date: "2020-06-10", Close_AAPL: 85.858642578125, Close_AMZN: 132.37249755859375, Close_GOOGL: 72.88654327392578, Close_MSFT: 188.93577575683594, Close_NVDA: 9.336627960205078 },
+    { date: "2020-06-11", Close_AAPL: 81.7365493774414, Close_AMZN: 127.89800262451172, Close_GOOGL: 69.76148223876953, Close_MSFT: 178.79026794433594, Close_NVDA: 8.767964363098145 },
+    { date: "2020-06-12", Close_AAPL: 82.44221496582031, Close_AMZN: 127.2509994506836, Close_GOOGL: 70.30985260009766, Close_MSFT: 180.2012176513672, Close_NVDA: 8.903772354125977 },
+    { date: "2020-06-15", Close_AAPL: 83.46178436279297, Close_AMZN: 128.63400268554688, Close_GOOGL: 70.6989974975586, Close_MSFT: 181.35301208496094, Close_NVDA: 9.144244194030762 },
+    { date: "2020-06-16", Close_AAPL: 85.67371368408203, Close_AMZN: 130.7635040283203, Close_GOOGL: 71.9793701171875, Close_MSFT: 185.79710388183594, Close_NVDA: 9.039331436157227 },
+    { date: "2020-06-17", Close_AAPL: 85.55448150634766, Close_AMZN: 132.0489959716797, Close_GOOGL: 72.28142547607422, Close_MSFT: 186.440185546875, Close_NVDA: 9.20629596710205 },
+    { date: "2020-06-18", Close_AAPL: 85.58854675292969, Close_AMZN: 132.69900512695312, Close_GOOGL: 71.36481475830078, Close_MSFT: 188.43673706054688, Close_NVDA: 9.188353538513184 },
+    { date: "2020-06-19", Close_AAPL: 85.09944152832031, Close_AMZN: 133.75050354003906, Close_GOOGL: 70.89307403564453, Close_MSFT: 187.3136444091797, Close_NVDA: 9.231465339660645 },
+    { date: "2020-06-22", Close_AAPL: 87.32598114013672, Close_AMZN: 135.6909942626953, Close_GOOGL: 72.1878662109375, Close_MSFT: 192.5160369873047, Close_NVDA: 9.496110916137695 },
+    { date: "2020-06-23", Close_AAPL: 89.1899185180664, Close_AMZN: 138.2205047607422, Close_GOOGL: 72.85070037841797, Close_MSFT: 193.80221557617188, Close_NVDA: 9.419610023498535 },
+    { date: "2020-06-24", Close_AAPL: 87.61553192138672, Close_AMZN: 136.72000122070312, Close_GOOGL: 71.29415130615234, Close_MSFT: 189.89564514160156, Close_NVDA: 9.20579719543457 },
+    { date: "2020-06-25", Close_AAPL: 88.7786865234375, Close_AMZN: 137.72900390625, Close_GOOGL: 71.71214294433594, Close_MSFT: 192.29525756835938, Close_NVDA: 9.459478378295898 },
+    { date: "2020-06-26", Close_AAPL: 86.05089569091797, Close_AMZN: 134.64349365234375, Close_GOOGL: 67.80284118652344, Close_MSFT: 188.44627380371094, Close_NVDA: 9.125555992126465 },
+    { date: "2020-06-29", Close_AAPL: 88.03409576416016, Close_AMZN: 134.0189971923828, Close_GOOGL: 69.5261001586914, Close_MSFT: 190.47157287597656, Close_NVDA: 9.170412063598633 },
+    { date: "2020-06-30", Close_AAPL: 88.76895904541016, Close_AMZN: 137.9409942626953, Close_GOOGL: 70.56513214111328, Close_MSFT: 195.3379669189453, Close_NVDA: 9.467204093933105 },
+    { date: "2020-07-01", Close_AAPL: 88.60104370117188, Close_AMZN: 143.93499755859375, Close_GOOGL: 71.7569351196289, Close_MSFT: 196.48019409179688, Close_NVDA: 9.499351501464844 },
+    { date: "2020-07-02", Close_AAPL: 88.60104370117188, Close_AMZN: 144.51499938964844, Close_GOOGL: 73.14678192138672, Close_MSFT: 197.97752380371094, Close_NVDA: 9.581336975097656 },
+    { date: "2020-07-06", Close_AAPL: 90.97115325927734, Close_AMZN: 152.8520050048828, Close_GOOGL: 74.62571716308594, Close_MSFT: 202.2392578125, Close_NVDA: 9.807604789733887 },
+    { date: "2020-07-07", Close_AAPL: 90.68888092041016, Close_AMZN: 150.00599670410156, Close_GOOGL: 74.14153289794922, Close_MSFT: 199.8876190185547, Close_NVDA: 9.840001106262207 },
+    { date: "2020-07-08", Close_AAPL: 92.80103302001953, Close_AMZN: 154.0554962158203, Close_GOOGL: 74.82228088378906, Close_MSFT: 204.28372192382812, Close_NVDA: 10.183143615722656 },
+    { date: "2020-07-09", Close_AAPL: 93.20010375976562, Close_AMZN: 159.13150024414062, Close_GOOGL: 75.57170104980469, Close_MSFT: 205.71392822265625, Close_NVDA: 10.475201606750488 },
+    { date: "2020-07-10", Close_AAPL: 93.36314392089844, Close_AMZN: 160.0, Close_GOOGL: 76.58435821533203, Close_MSFT: 205.08999633789062, Close_NVDA: 10.445548057556152 },
+    { date: "2020-07-13", Close_AAPL: 92.93243408203125, Close_AMZN: 155.1999969482422, Close_GOOGL: 75.2517318725586, Close_MSFT: 198.75497436523438, Close_NVDA: 10.019920349121094 },
+    { date: "2020-07-14", Close_AAPL: 94.47030639648438, Close_AMZN: 154.1999969482422, Close_GOOGL: 75.68116760253906, Close_MSFT: 199.983642578125, Close_NVDA: 10.343626976013184 },
+    { date: "2020-07-15", Close_AAPL: 95.1200180053711, Close_AMZN: 150.44349670410156, Close_GOOGL: 75.48311614990234, Close_MSFT: 199.68606567382812, Close_NVDA: 10.194357872009277 },
+    { date: "2020-07-16", Close_AAPL: 93.94957733154297, Close_AMZN: 149.9949951171875, Close_GOOGL: 75.38558959960938, Close_MSFT: 195.73150634765625, Close_NVDA: 10.102155685424805 },
+    { date: "2020-07-17", Close_AAPL: 93.75975799560547, Close_AMZN: 148.09849548339844, Close_GOOGL: 75.48162078857422, Close_MSFT: 194.7332763671875, Close_NVDA: 10.168692588806152 },
+    { date: "2020-07-20", Close_AAPL: 95.73565673828125, Close_AMZN: 159.8419952392578, Close_GOOGL: 77.81995391845703, Close_MSFT: 203.1031036376953, Close_NVDA: 10.476946830749512 },
+    { date: "2020-07-21", Close_AAPL: 94.41436004638672, Close_AMZN: 156.9145050048828, Close_GOOGL: 77.42582702636719, Close_MSFT: 200.36752319335938, Close_NVDA: 10.295282363891602 },
+    { date: "2020-07-22", Close_AAPL: 94.6795883178711, Close_AMZN: 154.99549865722656, Close_GOOGL: 77.87020111083984, Close_MSFT: 203.24708557128906, Close_NVDA: 10.40517807006836 },
+    { date: "2020-07-23", Close_AAPL: 90.3701171875, Close_AMZN: 149.32749938964844, Close_GOOGL: 75.47665405273438, Close_MSFT: 194.4069061279297, Close_NVDA: 10.097171783447266 },
+    { date: "2020-07-24", Close_AAPL: 90.14624786376953, Close_AMZN: 150.44549560546875, Close_GOOGL: 75.05168914794922, Close_MSFT: 193.21670532226562, Close_NVDA: 10.161713600158691 },
+    { date: "2020-07-27", Close_AAPL: 92.28272247314453, Close_AMZN: 152.760498046875, Close_GOOGL: 76.10763549804688, Close_MSFT: 195.66427612304688, Close_NVDA: 10.387983322143555 },
+    { date: "2020-07-28", Close_AAPL: 90.76675415039062, Close_AMZN: 150.01649475097656, Close_GOOGL: 74.82476806640625, Close_MSFT: 193.90782165527344, Close_NVDA: 10.182645797729492 },
+    { date: "2020-07-29", Close_AAPL: 92.50660705566406, Close_AMZN: 151.67649841308594, Close_GOOGL: 75.81303405761719, Close_MSFT: 195.8658905029297, Close_NVDA: 10.431842803955078 },
+    { date: "2020-07-30", Close_AAPL: 93.62593078613281, Close_AMZN: 152.593994140625, Close_GOOGL: 76.55250549316406, Close_MSFT: 195.71229553222656, Close_NVDA: 10.579865455627441 },
+    { date: "2020-07-31", Close_AAPL: 103.42750549316406, Close_AMZN: 158.23399353027344, Close_GOOGL: 74.04349517822266, Close_MSFT: 196.77774047851562, Close_NVDA: 10.580610275268555 },
+    { date: "2020-08-03", Close_AAPL: 106.03364562988281, Close_AMZN: 155.59449768066406, Close_GOOGL: 73.78523254394531, Close_MSFT: 207.8447265625, Close_NVDA: 10.97484016418457 },
+    { date: "2020-08-04", Close_AAPL: 106.74173736572266, Close_AMZN: 156.94149780273438, Close_GOOGL: 73.31449127197266, Close_MSFT: 204.72523498535156, Close_NVDA: 11.191638946533203 },
+    { date: "2020-08-05", Close_AAPL: 107.1286392211914, Close_AMZN: 160.25149536132812, Close_GOOGL: 73.60261535644531, Close_MSFT: 204.38931274414062, Close_NVDA: 11.25045108795166 },
+    { date: "2020-08-06", Close_AAPL: 110.86628723144531, Close_AMZN: 161.25, Close_GOOGL: 74.88945007324219, Close_MSFT: 207.66233825683594, Close_NVDA: 11.299041748046875 },
+    { date: "2020-08-07", Close_AAPL: 108.34566497802734, Close_AMZN: 158.3730010986328, Close_GOOGL: 74.56202697753906, Close_MSFT: 203.9477996826172, Close_NVDA: 11.163481712341309 },
+    { date: "2020-08-10", Close_AAPL: 109.92044830322266, Close_AMZN: 157.4080047607422, Close_GOOGL: 74.4848861694336, Close_MSFT: 199.8876190185547, Close_NVDA: 11.1290922164917 },
+    { date: "2020-08-11", Close_AAPL: 106.65142059326172, Close_AMZN: 154.0334930419922, Close_GOOGL: 73.67476654052734, Close_MSFT: 195.21324157714844, Close_NVDA: 10.815109252929688 },
+    { date: "2020-08-12", Close_AAPL: 110.19590759277344, Close_AMZN: 158.11199951171875, Close_GOOGL: 75.00341033935547, Close_MSFT: 200.78985595703125, Close_NVDA: 11.403459548950195 },
+    { date: "2020-08-13", Close_AAPL: 112.14610290527344, Close_AMZN: 158.05099487304688, Close_GOOGL: 75.47167205810547, Close_MSFT: 200.31954956054688, Close_NVDA: 11.406197547912598 },
+    { date: "2020-08-14", Close_AAPL: 112.0461654663086, Close_AMZN: 157.4010009765625, Close_GOOGL: 74.87354278564453, Close_MSFT: 200.51148986816406, Close_NVDA: 11.526810646057129 },
+    { date: "2020-08-17", Close_AAPL: 111.75362396240234, Close_AMZN: 159.12049865722656, Close_GOOGL: 75.4512710571289, Close_MSFT: 201.83607482910156, Close_NVDA: 12.297321319580078 },
+    { date: "2020-08-18", Close_AAPL: 112.6848373413086, Close_AMZN: 165.62449645996094, Close_GOOGL: 77.41886138916016, Close_MSFT: 202.99754333496094, Close_NVDA: 12.221320152282715 },
+    { date: "2020-08-19", Close_AAPL: 112.82624053955078, Close_AMZN: 163.0240020751953, Close_GOOGL: 76.86302185058594, Close_MSFT: 201.7659454345703, Close_NVDA: 12.099461555480957 },
+    { date: "2020-08-20", Close_AAPL: 115.32979583740234, Close_AMZN: 164.86849975585938, Close_GOOGL: 78.43749237060547, Close_MSFT: 206.46128845214844, Close_NVDA: 12.101951599121094 },
+    { date: "2020-08-21", Close_AAPL: 121.27302551269531, Close_AMZN: 164.23599243164062, Close_GOOGL: 78.4036636352539, Close_MSFT: 204.96031188964844, Close_NVDA: 12.642708778381348 },
+    { date: "2020-08-24", Close_AAPL: 122.72350311279297, Close_AMZN: 165.3730010986328, Close_GOOGL: 78.88037872314453, Close_MSFT: 205.6050262451172, Close_NVDA: 12.679341316223145 },
+    { date: "2020-08-25", Close_AAPL: 121.71669006347656, Close_AMZN: 167.32449340820312, Close_GOOGL: 79.91045379638672, Close_MSFT: 208.27980041503906, Close_NVDA: 12.708992958068848 },
+    { date: "2020-08-26", Close_AAPL: 123.37193298339844, Close_AMZN: 172.09249877929688, Close_GOOGL: 81.81534576416016, Close_MSFT: 212.78274536132812, Close_NVDA: 12.731921195983887 },
+    { date: "2020-08-27", Close_AAPL: 121.8971176147461, Close_AMZN: 170.0, Close_GOOGL: 81.0385513305664, Close_MSFT: 218.00732421875, Close_NVDA: 12.587635040283203 },
+    { date: "2020-08-28", Close_AAPL: 121.69963836669922, Close_AMZN: 170.08999633789062, Close_GOOGL: 81.58145904541016, Close_MSFT: 220.24917602539062, Close_NVDA: 13.10546588897705 },
+    { date: "2020-08-31", Close_AAPL: 125.82674407958984, Close_AMZN: 172.54800415039062, Close_GOOGL: 81.08882141113281, Close_MSFT: 216.99703979492188, Close_NVDA: 13.331486701965332 },
+    { date: "2020-09-01", Close_AAPL: 130.8387451171875, Close_AMZN: 174.95599365234375, Close_GOOGL: 82.36023712158203, Close_MSFT: 218.6711883544922, Close_NVDA: 13.780670166015625 },
+    { date: "2020-09-02", Close_AAPL: 128.12794494628906, Close_AMZN: 176.57249450683594, Close_GOOGL: 85.46090698242188, Close_MSFT: 222.8854522705078, Close_NVDA: 14.304638862609863 },
+    { date: "2020-09-03", Close_AAPL: 117.86992645263672, Close_AMZN: 168.39999389648438, Close_GOOGL: 81.08782958984375, Close_MSFT: 209.07843017578125, Close_NVDA: 12.977521896362305 },
+    { date: "2020-09-04", Close_AAPL: 117.94793701171875, Close_AMZN: 164.7310028076172, Close_GOOGL: 78.68431091308594, Close_MSFT: 206.143798828125, Close_NVDA: 12.58566951751709 },
+    { date: "2020-09-08", Close_AAPL: 110.0106430053711, Close_AMZN: 157.49200439453125, Close_GOOGL: 75.81752014160156, Close_MSFT: 194.99232482910156, Close_NVDA: 11.878240585327148 },
+    { date: "2020-09-09", Close_AAPL: 114.3985824584961, Close_AMZN: 163.4304962158203, Close_GOOGL: 76.99340057373047, Close_MSFT: 203.2957763671875, Close_NVDA: 12.677899360656738 },
+    { date: "2020-09-10", Close_AAPL: 110.66397857666016, Close_AMZN: 158.7554931640625, Close_GOOGL: 75.9394302368164, Close_MSFT: 197.59976196289062, Close_NVDA: 12.275825500488281 },
+    { date: "2020-09-11", Close_AAPL: 109.21106719970703, Close_AMZN: 155.81100463867188, Close_GOOGL: 75.42738342285156, Close_MSFT: 196.31048583984375, Close_NVDA: 12.129006385803223 },
+    { date: "2020-09-14", Close_AAPL: 112.48738861083984, Close_AMZN: 155.14849853515625, Close_GOOGL: 75.08252716064453, Close_MSFT: 197.63827514648438, Close_NVDA: 12.83469009399414 },
+    { date: "2020-09-15", Close_AAPL: 112.66290283203125, Close_AMZN: 157.80650329589844, Close_GOOGL: 76.39077758789062, Close_MSFT: 200.88076782226562, Close_NVDA: 12.953096389770508 },
+    { date: "2020-09-16", Close_AAPL: 109.33781433105469, Close_AMZN: 153.90499877929688, Close_GOOGL: 75.24475860595703, Close_MSFT: 197.2918701171875, Close_NVDA: 12.477985382080078 },
+    { date: "2020-09-17", Close_AAPL: 107.59239196777344, Close_AMZN: 150.43649291992188, Close_GOOGL: 73.99821472167969, Close_MSFT: 195.23284912109375, Close_NVDA: 12.427132606506348 },
+    { date: "2020-09-18", Close_AAPL: 104.17955017089844, Close_AMZN: 147.74549865722656, Close_GOOGL: 72.20927429199219, Close_MSFT: 192.80821228027344, Close_NVDA: 12.15368366241455 },
+    { date: "2020-09-21", Close_AAPL: 107.33888244628906, Close_AMZN: 148.02349853515625, Close_GOOGL: 71.16675567626953, Close_MSFT: 194.8768310546875, Close_NVDA: 12.480727195739746 },
+    { date: "2020-09-22", Close_AAPL: 109.02580261230469, Close_AMZN: 156.44949340820312, Close_GOOGL: 72.64369201660156, Close_MSFT: 199.5722198486328, Close_NVDA: 12.600872993469238 },
+    { date: "2020-09-23", Close_AAPL: 104.45257568359375, Close_AMZN: 149.9929962158203, Close_GOOGL: 70.13420104980469, Close_MSFT: 193.0006103515625, Close_NVDA: 12.088375091552734 },
+    { date: "2020-09-24", Close_AAPL: 105.52518463134766, Close_AMZN: 150.989501953125, Close_GOOGL: 70.80448913574219, Close_MSFT: 195.50225830078125, Close_NVDA: 12.311968803405762 },
+    { date: "2020-09-25", Close_AAPL: 109.48408508300781, Close_AMZN: 154.75650024414062, Close_GOOGL: 71.61064147949219, Close_MSFT: 199.95709228515625, Close_NVDA: 12.836186408996582 },
+    { date: "2020-09-28", Close_AAPL: 112.09734344482422, Close_AMZN: 158.70249938964844, Close_GOOGL: 72.58596801757812, Close_MSFT: 201.51580810546875, Close_NVDA: 12.996965408325195 },
+    { date: "2020-09-29", Close_AAPL: 111.24901580810547, Close_AMZN: 157.24400329589844, Close_GOOGL: 72.95222473144531, Close_MSFT: 199.4182891845703, Close_NVDA: 13.18716049194336 },
+    { date: "2020-09-30", Close_AAPL: 112.92618560791016, Close_AMZN: 157.43649291992188, Close_GOOGL: 72.93132019042969, Close_MSFT: 202.3721160888672, Close_NVDA: 13.491021156311035 },
+    { date: "2020-10-01", Close_AAPL: 113.88176727294922, Close_AMZN: 161.06300354003906, Close_GOOGL: 74.041015625, Close_MSFT: 204.42149353027344, Close_NVDA: 13.574774742126465 },
+    { date: "2020-10-02", Close_AAPL: 110.2056655883789, Close_AMZN: 156.25, Close_GOOGL: 72.4336929321289, Close_MSFT: 198.3887481689453, Close_NVDA: 13.024134635925293 },
+    { date: "2020-10-05", Close_AAPL: 113.5989990234375, Close_AMZN: 159.9600067138672, Close_GOOGL: 73.78872680664062, Close_MSFT: 202.4202117919922, Close_NVDA: 13.602693557739258 },
+    { date: "2020-10-06", Close_AAPL: 110.34217834472656, Close_AMZN: 154.9980010986328, Close_GOOGL: 72.2057876586914, Close_MSFT: 198.1193389892578, Close_NVDA: 13.696415901184082 },
+    { date: "2020-10-07", Close_AAPL: 112.21437072753906, Close_AMZN: 159.7845001220703, Close_GOOGL: 72.60985565185547, Close_MSFT: 201.8910369873047, Close_NVDA: 13.923256874084473 },
+    { date: "2020-10-08", Close_AAPL: 112.10709381103516, Close_AMZN: 159.52749633789062, Close_GOOGL: 73.81857299804688, Close_MSFT: 202.61264038085938, Close_NVDA: 13.798372268676758 },
+    { date: "2020-10-09", Close_AAPL: 114.05728912353516, Close_AMZN: 164.33250427246094, Close_GOOGL: 75.16314697265625, Close_MSFT: 207.64479064941406, Close_NVDA: 13.722591400146484 },
+    { date: "2020-10-12", Close_AAPL: 121.30230712890625, Close_AMZN: 172.14649963378906, Close_GOOGL: 77.85726165771484, Close_MSFT: 213.02325439453125, Close_NVDA: 14.184488296508789 },
+    { date: "2020-10-13", Close_AAPL: 118.0844497680664, Close_AMZN: 172.18150329589844, Close_GOOGL: 77.98068237304688, Close_MSFT: 214.42803955078125, Close_NVDA: 14.206673622131348 },
+    { date: "2020-10-14", Close_AAPL: 118.1722183227539, Close_AMZN: 168.1855010986328, Close_GOOGL: 77.80004119873047, Close_MSFT: 212.50369262695312, Close_NVDA: 14.054120063781738 },
+    { date: "2020-10-15", Close_AAPL: 117.70416259765625, Close_AMZN: 166.9324951171875, Close_GOOGL: 77.40343475341797, Close_MSFT: 211.34913635253906, Close_NVDA: 13.929237365722656 },
+    { date: "2020-10-16", Close_AAPL: 116.05625915527344, Close_AMZN: 163.635498046875, Close_GOOGL: 78.01203155517578, Close_MSFT: 211.34913635253906, Close_NVDA: 13.771198272705078 },
+    { date: "2020-10-19", Close_AAPL: 113.09195709228516, Close_AMZN: 160.36050415039062, Close_GOOGL: 76.13350677490234, Close_MSFT: 206.11495971679688, Close_NVDA: 13.458366394042969 },
+    { date: "2020-10-20", Close_AAPL: 114.58384704589844, Close_AMZN: 160.85049438476562, Close_GOOGL: 77.18497467041016, Close_MSFT: 206.5286865234375, Close_NVDA: 13.605683326721191 },
+    { date: "2020-10-21", Close_AAPL: 113.95980072021484, Close_AMZN: 159.2469940185547, Close_GOOGL: 78.92217254638672, Close_MSFT: 206.67303466796875, Close_NVDA: 13.485286712646484 },
+    { date: "2020-10-22", Close_AAPL: 112.86768341064453, Close_AMZN: 158.82000732421875, Close_GOOGL: 79.95075988769531, Close_MSFT: 206.7595977783203, Close_NVDA: 13.322013854980469 },
+    { date: "2020-10-23", Close_AAPL: 112.17536163330078, Close_AMZN: 160.22000122070312, Close_GOOGL: 81.26050567626953, Close_MSFT: 208.0489044189453, Close_NVDA: 13.5505952835083 },
+    { date: "2020-10-26", Close_AAPL: 112.18509674072266, Close_AMZN: 160.3520050048828, Close_GOOGL: 78.83757781982422, Close_MSFT: 202.131591796875, Close_NVDA: 13.1029052734375 },
+    { date: "2020-10-27", Close_AAPL: 113.69650268554688, Close_AMZN: 164.31649780273438, Close_GOOGL: 79.56361389160156, Close_MSFT: 205.18165588378906, Close_NVDA: 13.357661247253418 },
+    { date: "2020-10-28", Close_AAPL: 108.43099212646484, Close_AMZN: 158.13900756835938, Close_GOOGL: 75.1805648803711, Close_MSFT: 195.0115509033203, Close_NVDA: 12.590154647827148 },
+    { date: "2020-10-29", Close_AAPL: 112.44840240478516, Close_AMZN: 160.55050659179688, Close_GOOGL: 77.4736099243164, Close_MSFT: 196.974365234375, Close_NVDA: 12.98599624633789 },
+    { date: "2020-10-30", Close_AAPL: 106.14924621582031, Close_AMZN: 151.8074951171875, Close_GOOGL: 80.42100524902344, Close_MSFT: 194.8094940185547, Close_NVDA: 12.497426986694336 },
+    { date: "2020-11-02", Close_AAPL: 106.06147766113281, Close_AMZN: 150.2239990234375, Close_GOOGL: 80.8295669555664, Close_MSFT: 194.67478942871094, Close_NVDA: 12.54404067993164 },
+    { date: "2020-11-03", Close_AAPL: 107.6899185180664, Close_AMZN: 152.42050170898438, Close_GOOGL: 81.8914794921875, Close_MSFT: 198.6196746826172, Close_NVDA: 12.981511116027832 },
+    { date: "2020-11-04", Close_AAPL: 112.08761596679688, Close_AMZN: 162.05799865722656, Close_GOOGL: 86.87715148925781, Close_MSFT: 208.20285034179688, Close_NVDA: 13.753998756408691 },
+    { date: "2020-11-05", Close_AAPL: 116.06599426269531, Close_AMZN: 166.10000610351562, Close_GOOGL: 87.70568084716797, Close_MSFT: 214.8417510986328, Close_NVDA: 14.118681907653809 },
+    { date: "2020-11-06", Close_AAPL: 115.93413543701172, Close_AMZN: 165.56849670410156, Close_GOOGL: 87.5678482055664, Close_MSFT: 215.25550842285156, Close_NVDA: 14.519508361816406 },
+    { date: "2020-11-09", Close_AAPL: 113.6191635131836, Close_AMZN: 157.18699645996094, Close_GOOGL: 87.65194702148438, Close_MSFT: 210.12718200683594, Close_NVDA: 13.590977668762207 },
+    { date: "2020-11-10", Close_AAPL: 113.27729797363281, Close_AMZN: 151.75100708007812, Close_GOOGL: 86.47257995605469, Close_MSFT: 203.02642822265625, Close_NVDA: 12.732739448547363 },
+    { date: "2020-11-11", Close_AAPL: 116.71556854248047, Close_AMZN: 156.8695068359375, Close_GOOGL: 86.9458236694336, Close_MSFT: 208.3567657470703, Close_NVDA: 13.378849983215332 },
+    { date: "2020-11-12", Close_AAPL: 116.44206237792969, Close_AMZN: 155.51400756835938, Close_GOOGL: 86.72636413574219, Close_MSFT: 207.28880310058594, Close_NVDA: 13.417486190795898 },
+    { date: "2020-11-13", Close_AAPL: 116.49090576171875, Close_AMZN: 156.4405059814453, Close_GOOGL: 88.19136810302734, Close_MSFT: 208.31829833984375, Close_NVDA: 13.258200645446777 },
+    { date: "2020-11-16", Close_AAPL: 117.50676727294922, Close_AMZN: 156.55299377441406, Close_GOOGL: 88.27943420410156, Close_MSFT: 209.01104736328125, Close_NVDA: 13.475815773010254 },
+    { date: "2020-11-17", Close_AAPL: 116.61788940429688, Close_AMZN: 156.7830047607422, Close_GOOGL: 87.66388702392578, Close_MSFT: 206.34588623046875, Close_NVDA: 13.383084297180176 },
+    { date: "2020-11-18", Close_AAPL: 115.28947448730469, Close_AMZN: 155.2729949951172, Close_GOOGL: 86.61788177490234, Close_MSFT: 203.6254425048828, Close_NVDA: 13.389566421508789 },
+    { date: "2020-11-19", Close_AAPL: 115.88530731201172, Close_AMZN: 155.8509979248047, Close_GOOGL: 87.5101089477539, Close_MSFT: 204.91810607910156, Close_NVDA: 13.401034355163574 },
+    { date: "2020-11-20", Close_AAPL: 114.615478515625, Close_AMZN: 154.97000122070312, Close_GOOGL: 86.40589904785156, Close_MSFT: 202.95982360839844, Close_NVDA: 13.049561500549316 },
+    { date: "2020-11-23", Close_AAPL: 111.20651245117188, Close_AMZN: 154.91949462890625, Close_GOOGL: 85.96699523925781, Close_MSFT: 202.68971252441406, Close_NVDA: 13.10166072845459 },
+    { date: "2020-11-24", Close_AAPL: 112.49586486816406, Close_AMZN: 155.9029998779297, Close_GOOGL: 87.77534484863281, Close_MSFT: 206.30726623535156, Close_NVDA: 12.919940948486328 },
+    { date: "2020-11-25", Close_AAPL: 113.33588409423828, Close_AMZN: 159.2534942626953, Close_GOOGL: 87.78679656982422, Close_MSFT: 206.31690979003906, Close_NVDA: 13.196134567260742 },
+    { date: "2020-11-27", Close_AAPL: 113.88288879394531, Close_AMZN: 159.76699829101562, Close_GOOGL: 88.92585754394531, Close_MSFT: 207.62890625, Close_NVDA: 13.222553253173828 },
+    { date: "2020-11-30", Close_AAPL: 116.28579711914062, Close_AMZN: 158.40199279785156, Close_GOOGL: 87.3026123046875, Close_MSFT: 206.50987243652344, Close_NVDA: 13.362396240234375 },
+    { date: "2020-12-01", Close_AAPL: 119.8705825805664, Close_AMZN: 161.00399780273438, Close_GOOGL: 89.34086608886719, Close_MSFT: 208.57427978515625, Close_NVDA: 13.350930213928223 },
+    { date: "2020-12-02", Close_AAPL: 120.22222900390625, Close_AMZN: 160.17649841308594, Close_GOOGL: 90.81431579589844, Close_MSFT: 207.76393127441406, Close_NVDA: 13.50497817993164 },
+    { date: "2020-12-03", Close_AAPL: 120.0854721069336, Close_AMZN: 159.3365020751953, Close_GOOGL: 90.65856170654297, Close_MSFT: 206.67388916015625, Close_NVDA: 13.360859870910645 },
+    { date: "2020-12-04", Close_AAPL: 119.41148376464844, Close_AMZN: 158.12899780273438, Close_GOOGL: 90.75411224365234, Close_MSFT: 206.7896270751953, Close_NVDA: 13.522683143615723 },
+    { date: "2020-12-07", Close_AAPL: 120.87666320800781, Close_AMZN: 157.89999389648438, Close_GOOGL: 90.4192123413086, Close_MSFT: 206.72207641601562, Close_NVDA: 13.571054458618164 },
+    { date: "2020-12-08", Close_AAPL: 121.49202728271484, Close_AMZN: 158.864501953125, Close_GOOGL: 90.13555908203125, Close_MSFT: 208.38134765625, Close_NVDA: 13.314981460571289 },
+    { date: "2020-12-09", Close_AAPL: 118.952392578125, Close_AMZN: 155.2100067138672, Close_GOOGL: 88.47002410888672, Close_MSFT: 204.32003784179688, Close_NVDA: 12.896827697753906 },
+    { date: "2020-12-10", Close_AAPL: 120.37849426269531, Close_AMZN: 155.07449340820312, Close_GOOGL: 87.96195983886719, Close_MSFT: 203.08523559570312, Close_NVDA: 12.938220024108887 },
+    { date: "2020-12-11", Close_AAPL: 119.56776428222656, Close_AMZN: 155.8209991455078, Close_GOOGL: 88.31775665283203, Close_MSFT: 205.72848510742188, Close_NVDA: 12.979113578796387 },
+    { date: "2020-12-14", Close_AAPL: 118.952392578125, Close_AMZN: 157.84849548339844, Close_GOOGL: 87.19612121582031, Close_MSFT: 206.63528442382812, Close_NVDA: 13.273837089538574 },
+    { date: "2020-12-15", Close_AAPL: 124.9107437133789, Close_AMZN: 158.25599670410156, Close_GOOGL: 87.63502502441406, Close_MSFT: 206.56773376464844, Close_NVDA: 13.32545280456543 },
+    { date: "2020-12-16", Close_AAPL: 124.84239196777344, Close_AMZN: 162.04800415039062, Close_GOOGL: 87.44144439697266, Close_MSFT: 211.53585815429688, Close_NVDA: 13.20776081085205 },
+    { date: "2020-12-17", Close_AAPL: 125.71170806884766, Close_AMZN: 161.8040008544922, Close_GOOGL: 86.61141204833984, Close_MSFT: 211.67092895507812, Close_NVDA: 13.306252479553223 },
+    { date: "2020-12-18", Close_AAPL: 123.71907806396484, Close_AMZN: 160.08250427246094, Close_GOOGL: 85.90031433105469, Close_MSFT: 210.87020874023438, Close_NVDA: 13.23718547821045 },
+    { date: "2020-12-21", Close_AAPL: 125.25262451171875, Close_AMZN: 160.3090057373047, Close_GOOGL: 86.31532287597656, Close_MSFT: 214.7289581298828, Close_NVDA: 13.297272682189941 },
+    { date: "2020-12-22", Close_AAPL: 128.81787109375, Close_AMZN: 160.3260040283203, Close_GOOGL: 85.60174560546875, Close_MSFT: 216.03128051757812, Close_NVDA: 13.243415832519531 },
+    { date: "2020-12-23", Close_AAPL: 127.91926574707031, Close_AMZN: 159.2635040283203, Close_GOOGL: 86.00033569335938, Close_MSFT: 213.2144317626953, Close_NVDA: 12.975122451782227 },
+    { date: "2020-12-24", Close_AAPL: 128.9058074951172, Close_AMZN: 158.63450622558594, Close_GOOGL: 86.29542541503906, Close_MSFT: 214.88330078125, Close_NVDA: 12.959663391113281 },
+    { date: "2020-12-28", Close_AAPL: 133.51620483398438, Close_AMZN: 164.197998046875, Close_GOOGL: 88.27595520019531, Close_MSFT: 217.01527404785156, Close_NVDA: 12.866156578063965 },
+    { date: "2020-12-29", Close_AAPL: 131.73846435546875, Close_AMZN: 166.10000610351562, Close_GOOGL: 87.46980285644531, Close_MSFT: 216.23385620117188, Close_NVDA: 12.909296989440918 },
+    { date: "2020-12-30", Close_AAPL: 130.6151885986328, Close_AMZN: 164.29249572753906, Close_GOOGL: 86.39942932128906, Close_MSFT: 213.85110473632812, Close_NVDA: 13.111266136169434 },
+    { date: "2020-12-31", Close_AAPL: 129.60910034179688, Close_AMZN: 162.84649658203125, Close_GOOGL: 87.21504211425781, Close_MSFT: 214.56495666503906, Close_NVDA: 13.020752906799316 },
+    { date: "2021-01-04", Close_AAPL: 126.4052505493164, Close_AMZN: 159.3314971923828, Close_GOOGL: 85.89584350585938, Close_MSFT: 210.00201416015625, Close_NVDA: 13.07909870147705 },
+    { date: "2021-01-05", Close_AAPL: 127.96807861328125, Close_AMZN: 160.92550659179688, Close_GOOGL: 86.58853149414062, Close_MSFT: 210.20457458496094, Close_NVDA: 13.369585037231445 },
+    { date: "2021-01-06", Close_AAPL: 123.66048431396484, Close_AMZN: 156.91900634765625, Close_GOOGL: 85.7341079711914, Close_MSFT: 204.75411987304688, Close_NVDA: 12.58140754699707 },
+    { date: "2021-01-07", Close_AAPL: 127.88018035888672, Close_AMZN: 158.10800170898438, Close_GOOGL: 88.29486846923828, Close_MSFT: 210.58082580566406, Close_NVDA: 13.308993339538574 },
+    { date: "2021-01-08", Close_AAPL: 128.98397827148438, Close_AMZN: 159.13499450683594, Close_GOOGL: 89.46378326416016, Close_MSFT: 211.86387634277344, Close_NVDA: 13.241922378540039 },
+    { date: "2021-01-11", Close_AAPL: 125.9852066040039, Close_AMZN: 155.7104949951172, Close_GOOGL: 87.39665222167969, Close_MSFT: 209.80908203125, Close_NVDA: 13.585765838623047 },
+    { date: "2021-01-12", Close_AAPL: 125.80937194824219, Close_AMZN: 156.04150390625, Close_GOOGL: 86.45813751220703, Close_MSFT: 207.3394775390625, Close_NVDA: 13.449374198913574 },
+    { date: "2021-01-13", Close_AAPL: 127.85088348388672, Close_AMZN: 158.29449462890625, Close_GOOGL: 86.94680786132812, Close_MSFT: 208.69967651367188, Close_NVDA: 13.496251106262207 },
+    { date: "2021-01-14", Close_AAPL: 125.91683959960938, Close_AMZN: 156.37350463867188, Close_GOOGL: 86.13419342041016, Close_MSFT: 205.49691772460938, Close_NVDA: 13.165623664855957 },
+    { date: "2021-01-15", Close_AAPL: 124.18793487548828, Close_AMZN: 155.21249389648438, Close_GOOGL: 85.96997833251953, Close_MSFT: 205.13999938964844, Close_NVDA: 12.825765609741211 },
+    { date: "2021-01-19", Close_AAPL: 124.86193084716797, Close_AMZN: 156.03799438476562, Close_GOOGL: 88.79896545410156, Close_MSFT: 208.7961883544922, Close_NVDA: 12.991082191467285 },
+    { date: "2021-01-20", Close_AAPL: 128.9644012451172, Close_AMZN: 163.16900634765625, Close_GOOGL: 93.55621337890625, Close_MSFT: 216.41714477539062, Close_NVDA: 13.330686569213867 },
+    { date: "2021-01-21", Close_AAPL: 133.6920166015625, Close_AMZN: 165.34950256347656, Close_GOOGL: 93.75923919677734, Close_MSFT: 217.02488708496094, Close_NVDA: 13.831122398376465 },
+    { date: "2021-01-22", Close_AAPL: 135.8409423828125, Close_AMZN: 164.6114959716797, Close_GOOGL: 94.17774200439453, Close_MSFT: 217.97027587890625, Close_NVDA: 13.67652702331543 },
+    { date: "2021-01-25", Close_AAPL: 139.60157775878906, Close_AMZN: 164.6999969482422, Close_GOOGL: 94.2633285522461, Close_MSFT: 221.42385864257812, Close_NVDA: 13.617432594299316 },
+    { date: "2021-01-26", Close_AAPL: 139.83599853515625, Close_AMZN: 166.30650329589844, Close_GOOGL: 94.9435806274414, Close_MSFT: 224.12498474121094, Close_NVDA: 13.400005340576172 },
+    { date: "2021-01-27", Close_AAPL: 138.76153564453125, Close_AMZN: 161.62899780273438, Close_GOOGL: 90.51425170898438, Close_MSFT: 224.67483520507812, Close_NVDA: 12.883862495422363 },
+    { date: "2021-01-28", Close_AAPL: 133.9069061279297, Close_AMZN: 161.88099670410156, Close_GOOGL: 92.21910858154297, Close_MSFT: 230.49191284179688, Close_NVDA: 13.016761779785156 },
+    { date: "2021-01-29", Close_AAPL: 128.89601135253906, Close_AMZN: 160.30999755859375, Close_GOOGL: 90.93324279785156, Close_MSFT: 223.7680206298828, Close_NVDA: 12.955674171447754 },
+    { date: "2021-02-01", Close_AAPL: 131.02542114257812, Close_AMZN: 167.1439971923828, Close_GOOGL: 94.203125, Close_MSFT: 231.1864471435547, Close_NVDA: 13.202275276184082 },
+    { date: "2021-02-02", Close_AAPL: 131.85569763183594, Close_AMZN: 169.0, Close_GOOGL: 95.49942016601562, Close_MSFT: 231.05140686035156, Close_NVDA: 13.521187782287598 },
+    { date: "2021-02-03", Close_AAPL: 130.83006286621094, Close_AMZN: 165.62649536132812, Close_GOOGL: 102.45417022705078, Close_MSFT: 234.41815185546875, Close_NVDA: 13.495006561279297 },
+    { date: "2021-02-04", Close_AAPL: 134.199951171875, Close_AMZN: 166.5500030517578, Close_GOOGL: 102.19293212890625, Close_MSFT: 233.46311950683594, Close_NVDA: 13.628405570983887 },
+    { date: "2021-02-05", Close_AAPL: 133.78419494628906, Close_AMZN: 167.6074981689453, Close_GOOGL: 103.94454956054688, Close_MSFT: 233.64642333984375, Close_NVDA: 13.555346488952637 },
+    { date: "2021-02-08", Close_AAPL: 133.93096923828125, Close_AMZN: 166.14700317382812, Close_GOOGL: 103.73007202148438, Close_MSFT: 233.90689086914062, Close_NVDA: 14.400873184204102 },
+    { date: "2021-02-09", Close_AAPL: 133.05052185058594, Close_AMZN: 165.25, Close_GOOGL: 103.27574920654297, Close_MSFT: 235.1609649658203, Close_NVDA: 14.22583293914795 },
+    { date: "2021-02-10", Close_AAPL: 132.4440155029297, Close_AMZN: 164.32899475097656, Close_GOOGL: 103.82760620117188, Close_MSFT: 234.24453735351562, Close_NVDA: 14.725520133972168 },
+    { date: "2021-02-11", Close_AAPL: 132.1896514892578, Close_AMZN: 163.10650634765625, Close_GOOGL: 103.94056701660156, Close_MSFT: 235.85556030273438, Close_NVDA: 15.21074390411377 },
+    { date: "2021-02-12", Close_AAPL: 132.42445373535156, Close_AMZN: 163.885498046875, Close_GOOGL: 104.25306701660156, Close_MSFT: 236.337890625, Close_NVDA: 14.922003746032715 },
+    { date: "2021-02-16", Close_AAPL: 130.29185485839844, Close_AMZN: 163.44749450683594, Close_GOOGL: 105.03284454345703, Close_MSFT: 235.09344482421875, Close_NVDA: 15.290035247802734 },
+    { date: "2021-02-17", Close_AAPL: 127.99302673339844, Close_AMZN: 165.4320068359375, Close_GOOGL: 105.42696380615234, Close_MSFT: 236.11830139160156, Close_NVDA: 14.866899490356445 },
+    { date: "2021-02-18", Close_AAPL: 126.88761138916016, Close_AMZN: 166.4114990234375, Close_GOOGL: 104.78950500488281, Close_MSFT: 235.72189331054688, Close_NVDA: 14.790099143981934 },
+    { date: "2021-02-19", Close_AAPL: 127.04410552978516, Close_AMZN: 162.4949951171875, Close_GOOGL: 103.94355010986328, Close_MSFT: 232.99525451660156, Close_NVDA: 14.887345314025879 },
+    { date: "2021-02-22", Close_AAPL: 123.2583236694336, Close_AMZN: 159.03700256347656, Close_GOOGL: 102.2242660522461, Close_MSFT: 226.74905395507812, Close_NVDA: 14.318092346191406 },
+    { date: "2021-02-23", Close_AAPL: 123.12137603759766, Close_AMZN: 159.72500610351562, Close_GOOGL: 102.515869140625, Close_MSFT: 225.5500946044922, Close_NVDA: 14.104901313781738 },
+    { date: "2021-02-24", Close_AAPL: 122.6224594116211, Close_AMZN: 157.97650146484375, Close_GOOGL: 103.69474029541016, Close_MSFT: 226.78770446777344, Close_NVDA: 14.460965156555176 },
+    { date: "2021-02-25", Close_AAPL: 118.35735321044922, Close_AMZN: 152.85800170898438, Close_GOOGL: 100.31788635253906, Close_MSFT: 221.41171264648438, Close_NVDA: 13.272589683532715 },
+    { date: "2021-02-26", Close_AAPL: 118.6214599609375, Close_AMZN: 154.64649963378906, Close_GOOGL: 100.61446380615234, Close_MSFT: 224.6894989013672, Close_NVDA: 13.678522109985352 },
+    { date: "2021-03-01", Close_AAPL: 125.0093765258789, Close_AMZN: 157.3070068359375, Close_GOOGL: 102.99061584472656, Close_MSFT: 229.0986328125, Close_NVDA: 13.805438041687012 },
+    { date: "2021-03-02", Close_AAPL: 122.3974838256836, Close_AMZN: 154.72650146484375, Close_GOOGL: 102.73284912109375, Close_MSFT: 226.13021850585938, Close_NVDA: 13.371081352233887 },
+    { date: "2021-03-03", Close_AAPL: 119.404052734375, Close_AMZN: 150.25, Close_GOOGL: 100.09196472167969, Close_MSFT: 220.02906799316406, Close_NVDA: 12.771160125732422 },
+    { date: "2021-03-04", Close_AAPL: 117.51605987548828, Close_AMZN: 148.8784942626953, Close_GOOGL: 101.21260833740234, Close_MSFT: 219.22650146484375, Close_NVDA: 12.337797164916992 },
+    { date: "2021-03-05", Close_AAPL: 118.7779769897461, Close_AMZN: 150.0229949951172, Close_GOOGL: 104.35458374023438, Close_MSFT: 223.9353485107422, Close_NVDA: 12.428812026977539 },
+    { date: "2021-03-08", Close_AAPL: 113.82805633544922, Close_AMZN: 147.59750366210938, Close_GOOGL: 99.89739227294922, Close_MSFT: 219.86465454101562, Close_NVDA: 11.562836647033691 },
+    { date: "2021-03-09", Close_AAPL: 118.45515441894531, Close_AMZN: 153.1425018310547, Close_GOOGL: 101.53258514404297, Close_MSFT: 226.04319763183594, Close_NVDA: 12.491716384887695 },
+    { date: "2021-03-10", Close_AAPL: 117.36932373046875, Close_AMZN: 152.8820037841797, Close_GOOGL: 101.3250732421875, Close_MSFT: 224.72821044921875, Close_NVDA: 12.439836502075195 },
+    { date: "2021-03-11", Close_AAPL: 119.30622863769531, Close_AMZN: 155.67950439453125, Close_GOOGL: 104.52725982666016, Close_MSFT: 229.28233337402344, Close_NVDA: 12.963887214660645 },
+    { date: "2021-03-12", Close_AAPL: 118.3964614868164, Close_AMZN: 154.47450256347656, Close_GOOGL: 102.01228332519531, Close_MSFT: 227.94802856445312, Close_NVDA: 12.826700210571289 },
+    { date: "2021-03-15", Close_AAPL: 121.29204559326172, Close_AMZN: 154.08399963378906, Close_GOOGL: 102.23323059082031, Close_MSFT: 227.03909301757812, Close_NVDA: 13.161185264587402 },
+    { date: "2021-03-16", Close_AAPL: 122.83768463134766, Close_AMZN: 154.59300231933594, Close_GOOGL: 103.69871520996094, Close_MSFT: 229.84315490722656, Close_NVDA: 13.260958671569824 },
+    { date: "2021-03-17", Close_AAPL: 122.0452880859375, Close_AMZN: 156.7864990234375, Close_GOOGL: 103.6156234741211, Close_MSFT: 229.19529724121094, Close_NVDA: 13.310845375061035 },
+    { date: "2021-03-18", Close_AAPL: 117.90733337402344, Close_AMZN: 151.39950561523438, Close_GOOGL: 100.58609771728516, Close_MSFT: 223.08445739746094, Close_NVDA: 12.693506240844727 },
+    { date: "2021-03-19", Close_AAPL: 117.37908935546875, Close_AMZN: 153.7480010986328, Close_GOOGL: 100.86576843261719, Close_MSFT: 222.7267303466797, Close_NVDA: 12.816473007202148 },
+    { date: "2021-03-22", Close_AAPL: 120.7051010131836, Close_AMZN: 155.5435028076172, Close_GOOGL: 101.05137634277344, Close_MSFT: 228.18003845214844, Close_NVDA: 13.156197547912598 },
+    { date: "2021-03-23", Close_AAPL: 119.87360382080078, Close_AMZN: 156.875, Close_GOOGL: 101.58084106445312, Close_MSFT: 229.71746826171875, Close_NVDA: 13.040962219238281 },
+    { date: "2021-03-24", Close_AAPL: 117.4769058227539, Close_AMZN: 154.35350036621094, Close_GOOGL: 101.14293670654297, Close_MSFT: 227.6676025390625, Close_NVDA: 12.61418628692627 },
+    { date: "2021-03-25", Close_AAPL: 117.96603393554688, Close_AMZN: 152.31300354003906, Close_GOOGL: 101.13945770263672, Close_MSFT: 224.6508331298828, Close_NVDA: 12.506682395935059 },
+    { date: "2021-03-26", Close_AAPL: 118.57254791259766, Close_AMZN: 152.60150146484375, Close_GOOGL: 100.75479888916016, Close_MSFT: 228.65383911132812, Close_NVDA: 12.809988975524902 },
+    { date: "2021-03-29", Close_AAPL: 118.74864196777344, Close_AMZN: 153.7864990234375, Close_GOOGL: 101.80278778076172, Close_MSFT: 227.4548797607422, Close_NVDA: 12.918739318847656 },
+    { date: "2021-03-30", Close_AAPL: 117.29105377197266, Close_AMZN: 152.76449584960938, Close_GOOGL: 101.83663177490234, Close_MSFT: 224.17706298828125, Close_NVDA: 12.842412948608398 },
+    { date: "2021-03-31", Close_AAPL: 119.49211120605469, Close_AMZN: 154.70399475097656, Close_GOOGL: 102.63530731201172, Close_MSFT: 227.96731567382812, Close_NVDA: 13.317829132080078 },
+    { date: "2021-04-01", Close_AAPL: 120.32362365722656, Close_AMZN: 158.0500030517578, Close_GOOGL: 105.9822998046875, Close_MSFT: 234.32960510253906, Close_NVDA: 13.780272483825684 },
+    { date: "2021-04-05", Close_AAPL: 123.1605224609375, Close_AMZN: 161.3365020751953, Close_GOOGL: 110.42008209228516, Close_MSFT: 240.8271942138672, Close_NVDA: 13.955621719360352 },
+    { date: "2021-04-06", Close_AAPL: 123.46376037597656, Close_AMZN: 161.1909942626953, Close_GOOGL: 109.93738555908203, Close_MSFT: 239.6572265625, Close_NVDA: 13.829909324645996 },
+    { date: "2021-04-07", Close_AAPL: 125.11698150634766, Close_AMZN: 163.96949768066406, Close_GOOGL: 111.41881561279297, Close_MSFT: 241.62969970703125, Close_NVDA: 14.111268043518066 },
+    { date: "2021-04-08", Close_AAPL: 127.5234375, Close_AMZN: 164.96499633789062, Close_GOOGL: 111.98609924316406, Close_MSFT: 244.8688201904297, Close_NVDA: 14.284370422363281 },
+    { date: "2021-04-09", Close_AAPL: 130.10598754882812, Close_AMZN: 168.61000061035156, Close_GOOGL: 112.99327850341797, Close_MSFT: 247.3828125, Close_NVDA: 14.367179870605469 },
+    { date: "2021-04-12", Close_AAPL: 128.38429260253906, Close_AMZN: 168.96949768066406, Close_GOOGL: 111.69699096679688, Close_MSFT: 247.44081115722656, Close_NVDA: 15.174338340759277 },
+    { date: "2021-04-13", Close_AAPL: 131.50485229492188, Close_AMZN: 170.0, Close_GOOGL: 112.18515014648438, Close_MSFT: 249.93540954589844, Close_NVDA: 15.643766403198242 },
+    { date: "2021-04-14", Close_AAPL: 129.15707397460938, Close_AMZN: 166.64999389648438, Close_GOOGL: 111.56211853027344, Close_MSFT: 247.13140869140625, Close_NVDA: 15.242182731628418 },
+    { date: "2021-04-15", Close_AAPL: 131.57333374023438, Close_AMZN: 168.95449829101562, Close_GOOGL: 113.71881103515625, Close_MSFT: 250.9119873046875, Close_NVDA: 16.100473403930664 },
+    { date: "2021-04-16", Close_AAPL: 131.2407684326172, Close_AMZN: 169.9720001220703, Close_GOOGL: 113.59440612792969, Close_MSFT: 252.11093139648438, Close_NVDA: 15.876235008239746 },
+    { date: "2021-04-19", Close_AAPL: 131.90597534179688, Close_AMZN: 168.60049438476562, Close_GOOGL: 113.94324493408203, Close_MSFT: 250.17713928222656, Close_NVDA: 15.326739311218262 },
+    { date: "2021-04-20", Close_AAPL: 130.21360778808594, Close_AMZN: 166.7344970703125, Close_GOOGL: 113.4083023071289, Close_MSFT: 249.71307373046875, Close_NVDA: 15.136675834655762 },
+    { date: "2021-04-21", Close_AAPL: 130.5951385498047, Close_AMZN: 168.1009979248047, Close_GOOGL: 113.37545776367188, Close_MSFT: 251.9562530517578, Close_NVDA: 15.325494766235352 },
+    { date: "2021-04-22", Close_AAPL: 129.06906127929688, Close_AMZN: 165.45199584960938, Close_GOOGL: 112.09010314941406, Close_MSFT: 248.65916442871094, Close_NVDA: 14.81640625 },
+    { date: "2021-04-23", Close_AAPL: 131.3972625732422, Close_AMZN: 167.04400634765625, Close_GOOGL: 114.44932556152344, Close_MSFT: 252.50743103027344, Close_NVDA: 15.23045825958252 },
+    { date: "2021-04-26", Close_AAPL: 131.78857421875, Close_AMZN: 170.4499969482422, Close_GOOGL: 114.94694519042969, Close_MSFT: 252.8941650390625, Close_NVDA: 15.442723274230957 },
+    { date: "2021-04-27", Close_AAPL: 131.4657440185547, Close_AMZN: 170.8715057373047, Close_GOOGL: 114.00395202636719, Close_MSFT: 253.30029296875, Close_NVDA: 15.346694946289062 },
+    { date: "2021-04-28", Close_AAPL: 130.67340087890625, Close_AMZN: 172.9250030517578, Close_GOOGL: 117.39076232910156, Close_MSFT: 246.135498046875, Close_NVDA: 15.24193286895752 },
+    { date: "2021-04-29", Close_AAPL: 130.5755615234375, Close_AMZN: 173.5655059814453, Close_GOOGL: 119.06874084472656, Close_MSFT: 244.15328979492188, Close_NVDA: 15.289824485778809 },
+    { date: "2021-04-30", Close_AAPL: 128.59951782226562, Close_AMZN: 173.37100219726562, Close_GOOGL: 117.11508178710938, Close_MSFT: 243.83421325683594, Close_NVDA: 14.97529411315918 },
+    { date: "2021-05-03", Close_AAPL: 129.65599060058594, Close_AMZN: 169.32449340820312, Close_GOOGL: 116.5965576171875, Close_MSFT: 243.52487182617188, Close_NVDA: 14.802937507629395 },
+    { date: "2021-05-04", Close_AAPL: 125.06805419921875, Close_AMZN: 165.593505859375, Close_GOOGL: 114.79268646240234, Close_MSFT: 239.5895538330078, Close_NVDA: 14.318543434143066 },
+    { date: "2021-05-05", Close_AAPL: 125.31263732910156, Close_AMZN: 163.52699279785156, Close_GOOGL: 115.18779754638672, Close_MSFT: 238.31321716308594, Close_NVDA: 14.425549507141113 },
+    { date: "2021-05-06", Close_AAPL: 126.91693115234375, Close_AMZN: 165.31849670410156, Close_GOOGL: 116.3114242553711, Close_MSFT: 241.46534729003906, Close_NVDA: 14.489900588989258 },
+    { date: "2021-05-07", Close_AAPL: 127.59306335449219, Close_AMZN: 164.58050537109375, Close_GOOGL: 117.03695678710938, Close_MSFT: 244.10499572753906, Close_NVDA: 14.778491020202637 },
+    { date: "2021-05-10", Close_AAPL: 124.30062103271484, Close_AMZN: 159.52450561523438, Close_GOOGL: 114.04226684570312, Close_MSFT: 238.99972534179688, Close_NVDA: 14.23323917388916 },
+    { date: "2021-05-11", Close_AAPL: 123.37950897216797, Close_AMZN: 161.19549560546875, Close_GOOGL: 112.96292877197266, Close_MSFT: 238.08119201660156, Close_NVDA: 14.273645401000977 },
+    { date: "2021-05-12", Close_AAPL: 120.30259704589844, Close_AMZN: 157.5970001220703, Close_GOOGL: 109.4890365600586, Close_MSFT: 231.0904541015625, Close_NVDA: 13.727143287658691 },
+    { date: "2021-05-13", Close_AAPL: 122.45838165283203, Close_AMZN: 158.07350158691406, Close_GOOGL: 110.92169189453125, Close_MSFT: 234.9871063232422, Close_NVDA: 13.634108543395996 },
+    { date: "2021-05-14", Close_AAPL: 124.88853454589844, Close_AMZN: 161.14500427246094, Close_GOOGL: 113.37694549560547, Close_MSFT: 239.93760681152344, Close_NVDA: 14.210539817810059 },
+    { date: "2021-05-17", Close_AAPL: 123.73225402832031, Close_AMZN: 163.51950073242188, Close_GOOGL: 113.90144348144531, Close_MSFT: 237.06593322753906, Close_NVDA: 14.133214950561523 },
+    { date: "2021-05-18", Close_AAPL: 122.3407974243164, Close_AMZN: 161.61399841308594, Close_GOOGL: 112.58523559570312, Close_MSFT: 235.03543090820312, Close_NVDA: 13.983806610107422 },
+    { date: "2021-05-19", Close_AAPL: 122.18402099609375, Close_AMZN: 161.58999633789062, Close_GOOGL: 113.03458404541016, Close_MSFT: 235.61692810058594, Close_NVDA: 14.033693313598633 },
+    { date: "2021-05-20", Close_AAPL: 124.7513427734375, Close_AMZN: 162.38400268554688, Close_GOOGL: 114.79866027832031, Close_MSFT: 238.87319946289062, Close_NVDA: 14.57919979095459 },
+    { date: "2021-05-21", Close_AAPL: 122.90914154052734, Close_AMZN: 160.1540069580078, Close_GOOGL: 114.16069793701172, Close_MSFT: 237.60366821289062, Close_NVDA: 14.95758056640625 },
+    { date: "2021-05-24", Close_AAPL: 124.54557800292969, Close_AMZN: 162.24949645996094, Close_GOOGL: 117.49028778076172, Close_MSFT: 243.04051208496094, Close_NVDA: 15.576422691345215 },
+    { date: "2021-05-25", Close_AAPL: 124.349609375, Close_AMZN: 162.95249938964844, Close_GOOGL: 117.58134460449219, Close_MSFT: 243.95147705078125, Close_NVDA: 15.61208724975586 },
+    { date: "2021-05-26", Close_AAPL: 124.30062103271484, Close_AMZN: 163.25799560546875, Close_GOOGL: 118.44921112060547, Close_MSFT: 243.7285614013672, Close_NVDA: 15.664217948913574 },
+    { date: "2021-05-27", Close_AAPL: 122.76216125488281, Close_AMZN: 161.5054931640625, Close_GOOGL: 117.5718994140625, Close_MSFT: 241.61585998535156, Close_NVDA: 15.452702522277832 },
+    { date: "2021-05-28", Close_AAPL: 122.10562133789062, Close_AMZN: 161.15350341796875, Close_GOOGL: 117.28178405761719, Close_MSFT: 241.97442626953125, Close_NVDA: 16.20747947692871 },
+    { date: "2021-06-01", Close_AAPL: 121.78224182128906, Close_AMZN: 160.9324951171875, Close_GOOGL: 118.49248504638672, Close_MSFT: 239.76480102539062, Close_NVDA: 16.227434158325195 },
+    { date: "2021-06-02", Close_AAPL: 122.54659271240234, Close_AMZN: 161.69949340820312, Close_GOOGL: 117.96551513671875, Close_MSFT: 239.6678924560547, Close_NVDA: 16.740013122558594 },
+    { date: "2021-06-03", Close_AAPL: 121.05711364746094, Close_AMZN: 159.35049438476562, Close_GOOGL: 116.82048034667969, Close_MSFT: 238.126953125, Close_NVDA: 16.931074142456055 },
+    { date: "2021-06-04", Close_AAPL: 123.3598861694336, Close_AMZN: 160.31100463867188, Close_GOOGL: 119.10904693603516, Close_MSFT: 243.05018615722656, Close_NVDA: 17.538185119628906 },
+    { date: "2021-06-07", Close_AAPL: 123.36970520019531, Close_AMZN: 159.90049743652344, Close_GOOGL: 119.54346466064453, Close_MSFT: 245.9770050048828, Close_NVDA: 17.578845977783203 },
+    { date: "2021-06-08", Close_AAPL: 124.19281768798828, Close_AMZN: 163.20550537109375, Close_GOOGL: 119.35138702392578, Close_MSFT: 244.77525329589844, Close_NVDA: 17.41721534729004 },
+    { date: "2021-06-09", Close_AAPL: 124.57498168945312, Close_AMZN: 164.0574951171875, Close_GOOGL: 119.82412719726562, Close_MSFT: 245.76377868652344, Close_NVDA: 17.322660446166992 },
+    { date: "2021-06-10", Close_AAPL: 123.57549285888672, Close_AMZN: 167.4824981689453, Close_GOOGL: 121.17715454101562, Close_MSFT: 249.30111694335938, Close_NVDA: 17.389272689819336 },
+    { date: "2021-06-11", Close_AAPL: 124.7905502319336, Close_AMZN: 167.3415069580078, Close_GOOGL: 120.93183898925781, Close_MSFT: 249.9311065673828, Close_NVDA: 17.7887020111084 },
+    { date: "2021-06-14", Close_AAPL: 127.85765075683594, Close_AMZN: 169.19349670410156, Close_GOOGL: 121.8628921508789, Close_MSFT: 251.86941528320312, Close_NVDA: 17.981800079345703 },
+    { date: "2021-06-15", Close_AAPL: 127.03453063964844, Close_AMZN: 169.156494140625, Close_GOOGL: 120.84175872802734, Close_MSFT: 250.3865509033203, Close_NVDA: 17.752025604248047 },
+    { date: "2021-06-16", Close_AAPL: 127.53425598144531, Close_AMZN: 170.7624969482422, Close_GOOGL: 120.19784545898438, Close_MSFT: 249.4368133544922, Close_NVDA: 17.77372932434082 },
+    { date: "2021-06-17", Close_AAPL: 129.14132690429688, Close_AMZN: 174.46200561523438, Close_GOOGL: 121.16421508789062, Close_MSFT: 252.84817504882812, Close_NVDA: 18.618993759155273 },
+    { date: "2021-06-18", Close_AAPL: 127.83806610107422, Close_AMZN: 174.34500122070312, Close_GOOGL: 119.53948974609375, Close_MSFT: 251.42355346679688, Close_NVDA: 18.60053253173828 },
+    { date: "2021-06-21", Close_AAPL: 129.64108276367188, Close_AMZN: 172.697998046875, Close_GOOGL: 121.23289489746094, Close_MSFT: 254.52484130859375, Close_NVDA: 18.38946533203125 },
+    { date: "2021-06-22", Close_AAPL: 131.2873077392578, Close_AMZN: 175.27200317382812, Close_GOOGL: 121.74842834472656, Close_MSFT: 257.3158874511719, Close_NVDA: 18.848020553588867 },
+    { date: "2021-06-23", Close_AAPL: 131.012939453125, Close_AMZN: 175.1909942626953, Close_GOOGL: 121.54590606689453, Close_MSFT: 257.0833435058594, Close_NVDA: 19.018173217773438 },
+    { date: "2021-06-24", Close_AAPL: 130.72877502441406, Close_AMZN: 172.45399475097656, Close_GOOGL: 121.91712188720703, Close_MSFT: 258.4594421386719, Close_NVDA: 19.166122436523438 },
+    { date: "2021-06-25", Close_AAPL: 130.43479919433594, Close_AMZN: 170.072998046875, Close_GOOGL: 121.92557525634766, Close_MSFT: 256.841064453125, Close_NVDA: 18.991981506347656 },
+    { date: "2021-06-28", Close_AAPL: 132.07122802734375, Close_AMZN: 172.1945037841797, Close_GOOGL: 121.95294952392578, Close_MSFT: 260.42681884765625, Close_NVDA: 19.94402313232422 },
+    { date: "2021-06-29", Close_AAPL: 133.590087890625, Close_AMZN: 172.40699768066406, Close_GOOGL: 121.69071197509766, Close_MSFT: 263.0241394042969, Close_NVDA: 19.985689163208008 },
+    { date: "2021-06-30", Close_AAPL: 134.20741271972656, Close_AMZN: 172.00799560546875, Close_GOOGL: 121.5085678100586, Close_MSFT: 262.5395202636719, Close_NVDA: 19.96148681640625 },
+    { date: "2021-07-01", Close_AAPL: 134.51116943359375, Close_AMZN: 171.64849853515625, Close_GOOGL: 121.86189270019531, Close_MSFT: 263.218017578125, Close_NVDA: 20.170555114746094 },
+    { date: "2021-07-02", Close_AAPL: 137.14710998535156, Close_AMZN: 175.5489959716797, Close_GOOGL: 124.6614990234375, Close_MSFT: 269.0812683105469, Close_NVDA: 20.444997787475586 },
+    { date: "2021-07-06", Close_AAPL: 139.1657257080078, Close_AMZN: 183.78700256347656, Close_GOOGL: 125.58956909179688, Close_MSFT: 269.0909118652344, Close_NVDA: 20.65605926513672 },
+    { date: "2021-07-07", Close_AAPL: 141.66448974609375, Close_AMZN: 184.82899475097656, Close_GOOGL: 125.87220764160156, Close_MSFT: 271.2908630371094, Close_NVDA: 20.32997703552246 },
+    { date: "2021-07-08", Close_AAPL: 140.36119079589844, Close_AMZN: 186.57049560546875, Close_GOOGL: 124.44901275634766, Close_MSFT: 268.8583679199219, Close_NVDA: 19.8619384765625 },
+    { date: "2021-07-09", Close_AAPL: 142.19361877441406, Close_AMZN: 185.9669952392578, Close_GOOGL: 124.92125701904297, Close_MSFT: 269.3622741699219, Close_NVDA: 20.009138107299805 },
+    { date: "2021-07-12", Close_AAPL: 141.59588623046875, Close_AMZN: 185.92750549316406, Close_GOOGL: 126.37133026123047, Close_MSFT: 268.76141357421875, Close_NVDA: 20.470441818237305 },
+    { date: "2021-07-13", Close_AAPL: 142.7129669189453, Close_AMZN: 183.8679962158203, Close_GOOGL: 126.73558044433594, Close_MSFT: 272.3085021972656, Close_NVDA: 20.208478927612305 },
+    { date: "2021-07-14", Close_AAPL: 146.15240478515625, Close_AMZN: 184.08399963378906, Close_GOOGL: 127.62682342529297, Close_MSFT: 273.791259765625, Close_NVDA: 19.800813674926758 },
+    { date: "2021-07-15", Close_AAPL: 145.49591064453125, Close_AMZN: 181.55999755859375, Close_GOOGL: 126.40067291259766, Close_MSFT: 272.35693359375, Close_NVDA: 18.92736053466797 },
+    { date: "2021-07-16", Close_AAPL: 143.44789123535156, Close_AMZN: 178.68150329589844, Close_GOOGL: 126.36585235595703, Close_MSFT: 272.0855712890625, Close_NVDA: 18.123762130737305 },
+    { date: "2021-07-19", Close_AAPL: 139.58706665039062, Close_AMZN: 177.47950744628906, Close_GOOGL: 123.98523712158203, Close_MSFT: 268.4609680175781, Close_NVDA: 18.741241455078125 },
+    { date: "2021-07-20", Close_AAPL: 143.21270751953125, Close_AMZN: 178.6595001220703, Close_GOOGL: 125.60897064208984, Close_MSFT: 270.69976806640625, Close_NVDA: 18.57383918762207 },
+    { date: "2021-07-21", Close_AAPL: 142.47776794433594, Close_AMZN: 179.25999450683594, Close_GOOGL: 126.94210052490234, Close_MSFT: 272.715576171875, Close_NVDA: 19.370201110839844 },
+    { date: "2021-07-22", Close_AAPL: 143.84967041015625, Close_AMZN: 181.90150451660156, Close_GOOGL: 127.81043243408203, Close_MSFT: 277.30926513671875, Close_NVDA: 19.553823471069336 },
+    { date: "2021-07-23", Close_AAPL: 145.57427978515625, Close_AMZN: 182.83200073242188, Close_GOOGL: 132.382080078125, Close_MSFT: 280.7303466796875, Close_NVDA: 19.517894744873047 },
+    { date: "2021-07-26", Close_AAPL: 145.99566650390625, Close_AMZN: 184.99099731445312, Close_GOOGL: 133.39724731445312, Close_MSFT: 280.12939453125, Close_NVDA: 19.254440307617188 },
+    { date: "2021-07-27", Close_AAPL: 143.8202667236328, Close_AMZN: 181.3195037841797, Close_GOOGL: 131.2723846435547, Close_MSFT: 277.6968688964844, Close_NVDA: 19.16861915588379 },
+    { date: "2021-07-28", Close_AAPL: 142.06622314453125, Close_AMZN: 181.51600646972656, Close_GOOGL: 135.44644165039062, Close_MSFT: 277.38677978515625, Close_NVDA: 19.4630126953125 },
+    { date: "2021-07-29", Close_AAPL: 142.7129669189453, Close_AMZN: 179.99600219726562, Close_GOOGL: 135.13143920898438, Close_MSFT: 277.65814208984375, Close_NVDA: 19.621686935424805 },
+    { date: "2021-07-30", Close_AAPL: 142.9285430908203, Close_AMZN: 166.37950134277344, Close_GOOGL: 134.08544921875, Close_MSFT: 276.1171875, Close_NVDA: 19.45901870727539 },
+    { date: "2021-08-02", Close_AAPL: 142.59536743164062, Close_AMZN: 166.57400512695312, Close_GOOGL: 134.21282958984375, Close_MSFT: 276.030029296875, Close_NVDA: 19.709508895874023 },
+    { date: "2021-08-03", Close_AAPL: 144.3984375, Close_AMZN: 168.31199645996094, Close_GOOGL: 134.98464965820312, Close_MSFT: 278.25897216796875, Close_NVDA: 19.774375915527344 },
+    { date: "2021-08-04", Close_AAPL: 143.99661254882812, Close_AMZN: 167.73599243164062, Close_GOOGL: 134.48255920410156, Close_MSFT: 277.6678161621094, Close_NVDA: 20.23242950439453 },
+    { date: "2021-08-05", Close_AAPL: 144.10440063476562, Close_AMZN: 168.79949951171875, Close_GOOGL: 135.60317993164062, Close_MSFT: 280.5849304199219, Close_NVDA: 20.59468650817871 },
+    { date: "2021-08-06", Close_AAPL: 143.41746520996094, Close_AMZN: 167.2469940185547, Close_GOOGL: 135.09262084960938, Close_MSFT: 280.52679443359375, Close_NVDA: 20.324241638183594 },
+    { date: "2021-08-09", Close_AAPL: 143.36837768554688, Close_AMZN: 167.093505859375, Close_GOOGL: 136.26153564453125, Close_MSFT: 279.4316711425781, Close_NVDA: 20.25338363647461 },
+    { date: "2021-08-10", Close_AAPL: 142.88754272460938, Close_AMZN: 166.03399658203125, Close_GOOGL: 136.1560516357422, Close_MSFT: 277.5999755859375, Close_NVDA: 19.895124435424805 },
+    { date: "2021-08-11", Close_AAPL: 143.14266967773438, Close_AMZN: 164.60549926757812, Close_GOOGL: 135.6305694580078, Close_MSFT: 278.0942077636719, Close_NVDA: 19.658605575561523 },
+    { date: "2021-08-12", Close_AAPL: 146.11624145507812, Close_AMZN: 165.1750030517578, Close_GOOGL: 136.54119873046875, Close_MSFT: 280.8659973144531, Close_NVDA: 19.864187240600586 },
+    { date: "2021-08-13", Close_AAPL: 146.32235717773438, Close_AMZN: 164.69850158691406, Close_GOOGL: 137.07217407226562, Close_MSFT: 283.81219482421875, Close_NVDA: 20.146608352661133 },
+    { date: "2021-08-16", Close_AAPL: 148.3046875, Close_AMZN: 164.94949340820312, Close_GOOGL: 137.65139770507812, Close_MSFT: 285.5081481933594, Close_NVDA: 19.909095764160156 },
+    { date: "2021-08-17", Close_AAPL: 147.39202880859375, Close_AMZN: 162.09800720214844, Close_GOOGL: 136.01124572753906, Close_MSFT: 284.03509521484375, Close_NVDA: 19.418106079101562 },
+    { date: "2021-08-18", Close_AAPL: 143.6333770751953, Close_AMZN: 160.06100463867188, Close_GOOGL: 134.8045196533203, Close_MSFT: 282.2969970703125, Close_NVDA: 19.00096321105957 },
+    { date: "2021-08-19", Close_AAPL: 143.967041015625, Close_AMZN: 159.3874969482422, Close_GOOGL: 135.03440856933594, Close_MSFT: 288.1617736816406, Close_NVDA: 19.757404327392578 },
+    { date: "2021-08-20", Close_AAPL: 145.4292755126953, Close_AMZN: 159.99749755859375, Close_GOOGL: 136.7755889892578, Close_MSFT: 295.53155517578125, Close_NVDA: 20.773317337036133 },
+    { date: "2021-08-23", Close_AAPL: 146.92095947265625, Close_AMZN: 163.2935028076172, Close_GOOGL: 139.3751678466797, Close_MSFT: 295.813232421875, Close_NVDA: 21.91297721862793 },
+    { date: "2021-08-24", Close_AAPL: 146.8326416015625, Close_AMZN: 165.28900146484375, Close_GOOGL: 140.58934020996094, Close_MSFT: 293.8421630859375, Close_NVDA: 21.748313903808594 },
+    { date: "2021-08-25", Close_AAPL: 145.5961151123047, Close_AMZN: 164.95899963378906, Close_GOOGL: 141.4029541015625, Close_MSFT: 293.2497863769531, Close_NVDA: 22.167455673217773 },
+    { date: "2021-08-26", Close_AAPL: 144.79136657714844, Close_AMZN: 165.8000030517578, Close_GOOGL: 140.7675018310547, Close_MSFT: 290.41448974609375, Close_NVDA: 22.02275276184082 },
+    { date: "2021-08-27", Close_AAPL: 145.83164978027344, Close_AMZN: 167.48150634765625, Close_GOOGL: 143.31878662109375, Close_MSFT: 291.0261535644531, Close_NVDA: 22.589588165283203 },
+    { date: "2021-08-30", Close_AAPL: 150.26739501953125, Close_AMZN: 171.07850646972656, Close_GOOGL: 143.9025115966797, Close_MSFT: 294.78399658203125, Close_NVDA: 22.641477584838867 },
+    { date: "2021-08-31", Close_AAPL: 149.00146484375, Close_AMZN: 173.5395050048828, Close_GOOGL: 144.00900268554688, Close_MSFT: 293.12359619140625, Close_NVDA: 22.343040466308594 },
+    { date: "2021-09-01", Close_AAPL: 149.66879272460938, Close_AMZN: 173.9499969482422, Close_GOOGL: 144.5245361328125, Close_MSFT: 293.0749816894531, Close_NVDA: 22.39893341064453 },
+    { date: "2021-09-02", Close_AAPL: 150.78756713867188, Close_AMZN: 173.156005859375, Close_GOOGL: 142.60520935058594, Close_MSFT: 292.4146728515625, Close_NVDA: 22.35401725769043 },
+    { date: "2021-09-03", Close_AAPL: 151.4254608154297, Close_AMZN: 173.90249633789062, Close_GOOGL: 143.0555419921875, Close_MSFT: 292.4050598144531, Close_NVDA: 22.800189971923828 },
+    { date: "2021-09-07", Close_AAPL: 153.77090454101562, Close_AMZN: 175.46449279785156, Close_GOOGL: 143.593994140625, Close_MSFT: 291.4728698730469, Close_NVDA: 22.619522094726562 },
+    { date: "2021-09-08", Close_AAPL: 152.22036743164062, Close_AMZN: 176.27499389648438, Close_GOOGL: 143.0072784423828, Close_MSFT: 291.5019836425781, Close_NVDA: 22.297128677368164 },
+    { date: "2021-09-09", Close_AAPL: 151.19972229003906, Close_AMZN: 174.20799255371094, Close_GOOGL: 142.8579864501953, Close_MSFT: 288.6278076171875, Close_NVDA: 22.13543128967285 },
+    { date: "2021-09-10", Close_AAPL: 146.1947784423828, Close_AMZN: 173.45750427246094, Close_GOOGL: 140.20567321777344, Close_MSFT: 287.13250732421875, Close_NVDA: 22.43586540222168 },
+    { date: "2021-09-13", Close_AAPL: 146.76394653320312, Close_AMZN: 172.85850524902344, Close_GOOGL: 141.65524291992188, Close_MSFT: 288.37542724609375, Close_NVDA: 22.110477447509766 },
+    { date: "2021-09-14", Close_AAPL: 145.36062622070312, Close_AMZN: 172.5, Close_GOOGL: 141.86624145507812, Close_MSFT: 291.09417724609375, Close_NVDA: 22.2003116607666 },
+    { date: "2021-09-15", Close_AAPL: 146.25364685058594, Close_AMZN: 173.7895050048828, Close_GOOGL: 143.74227905273438, Close_MSFT: 295.97833251953125, Close_NVDA: 22.299123764038086 },
+    { date: "2021-09-16", Close_AAPL: 146.01809692382812, Close_AMZN: 174.41200256347656, Close_GOOGL: 142.92666625976562, Close_MSFT: 296.3666687011719, Close_NVDA: 22.2003116607666 },
+    { date: "2021-09-17", Close_AAPL: 143.33895874023438, Close_AMZN: 173.12600708007812, Close_GOOGL: 140.1300506591797, Close_MSFT: 291.17181396484375, Close_NVDA: 21.858949661254883 },
+    { date: "2021-09-20", Close_AAPL: 140.277099609375, Close_AMZN: 167.7864990234375, Close_GOOGL: 138.05943298339844, Close_MSFT: 285.76336669921875, Close_NVDA: 21.073427200317383 },
+    { date: "2021-09-21", Close_AAPL: 140.75794982910156, Close_AMZN: 167.18150329589844, Close_GOOGL: 138.3714599609375, Close_MSFT: 286.2488708496094, Close_NVDA: 21.2061767578125 },
+    { date: "2021-09-22", Close_AAPL: 143.1328582763672, Close_AMZN: 169.00250244140625, Close_GOOGL: 139.6160125732422, Close_MSFT: 289.9192810058594, Close_NVDA: 21.899877548217773 },
+    { date: "2021-09-23", Close_AAPL: 144.0946044921875, Close_AMZN: 170.8000030517578, Close_GOOGL: 140.54408264160156, Close_MSFT: 290.870849609375, Close_NVDA: 22.439865112304688 },
+    { date: "2021-09-24", Close_AAPL: 144.1829376220703, Close_AMZN: 171.2760009765625, Close_GOOGL: 141.53829956054688, Close_MSFT: 290.6669616699219, Close_NVDA: 22.039609909057617 },
+    { date: "2021-09-27", Close_AAPL: 142.6618194580078, Close_AMZN: 170.2899932861328, Close_GOOGL: 140.4007568359375, Close_MSFT: 285.6372375488281, Close_NVDA: 21.61940574645996 },
+    { date: "2021-09-28", Close_AAPL: 139.26626586914062, Close_AMZN: 165.79800415039062, Close_GOOGL: 135.18370056152344, Close_MSFT: 275.2960510253906, Close_NVDA: 20.660200119018555 },
+    { date: "2021-09-29", Close_AAPL: 140.16912841796875, Close_AMZN: 165.05599975585938, Close_GOOGL: 133.71421813964844, Close_MSFT: 275.76220703125, Close_NVDA: 20.47854232788086 },
+    { date: "2021-09-30", Close_AAPL: 138.8638916015625, Close_AMZN: 164.2519989013672, Close_GOOGL: 133.03993225097656, Close_MSFT: 273.74249267578125, Close_NVDA: 20.677167892456055 },
+    { date: "2021-10-01", Close_AAPL: 139.99246215820312, Close_AMZN: 164.16299438476562, Close_GOOGL: 135.89329528808594, Close_MSFT: 280.71429443359375, Close_NVDA: 20.703121185302734 },
+    { date: "2021-10-04", Close_AAPL: 136.54791259765625, Close_AMZN: 159.48899841308594, Close_GOOGL: 133.02352905273438, Close_MSFT: 274.8979797363281, Close_NVDA: 19.69501304626465 },
+    { date: "2021-10-05", Close_AAPL: 138.48117065429688, Close_AMZN: 161.0500030517578, Close_GOOGL: 135.37576293945312, Close_MSFT: 280.3841247558594, Close_NVDA: 20.41266441345215 },
+    { date: "2021-10-06", Close_AAPL: 139.3546142578125, Close_AMZN: 163.10049438476562, Close_GOOGL: 136.9104461669922, Close_MSFT: 284.60791015625, Close_NVDA: 20.66119956970215 },
+    { date: "2021-10-07", Close_AAPL: 140.6205596923828, Close_AMZN: 165.1215057373047, Close_GOOGL: 138.5625457763672, Close_MSFT: 286.2974853515625, Close_NVDA: 21.035499572753906 },
+    { date: "2021-10-08", Close_AAPL: 140.2378387451172, Close_AMZN: 164.43099975585938, Close_GOOGL: 139.12037658691406, Close_MSFT: 286.2974853515625, Close_NVDA: 20.791954040527344 },
+    { date: "2021-10-11", Close_AAPL: 140.14952087402344, Close_AMZN: 162.31500244140625, Close_GOOGL: 138.25302124023438, Close_MSFT: 285.69549560546875, Close_NVDA: 20.656206130981445 },
+    { date: "2021-10-12", Close_AAPL: 138.87371826171875, Close_AMZN: 162.3665008544922, Close_GOOGL: 135.7997589111328, Close_MSFT: 284.3846740722656, Close_NVDA: 20.632251739501953 },
+    { date: "2021-10-13", Close_AAPL: 138.28489685058594, Close_AMZN: 164.21400451660156, Close_GOOGL: 136.9273681640625, Close_MSFT: 287.715087890625, Close_NVDA: 20.899749755859375 },
+    { date: "2021-10-14", Close_AAPL: 141.08180236816406, Close_AMZN: 164.9929962158203, Close_GOOGL: 140.47940063476562, Close_MSFT: 293.9682922363281, Close_NVDA: 21.70523452758789 },
+    { date: "2021-10-15", Close_AAPL: 142.14170837402344, Close_AMZN: 170.4510040283203, Close_GOOGL: 140.69532775878906, Close_MSFT: 295.3860168457031, Close_NVDA: 21.821020126342773 },
+    { date: "2021-10-18", Close_AAPL: 143.81982421875, Close_AMZN: 172.33700561523438, Close_GOOGL: 142.09864807128906, Close_MSFT: 298.3766784667969, Close_NVDA: 22.180349349975586 },
+    { date: "2021-10-19", Close_AAPL: 145.98866271972656, Close_AMZN: 172.20750427246094, Close_GOOGL: 142.55545043945312, Close_MSFT: 299.28936767578125, Close_NVDA: 22.24822425842285 },
+    { date: "2021-10-20", Close_AAPL: 146.47933959960938, Close_AMZN: 170.7530059814453, Close_GOOGL: 141.09442138671875, Close_MSFT: 298.4931335449219, Close_NVDA: 22.061573028564453 },
+    { date: "2021-10-21", Close_AAPL: 146.69525146484375, Close_AMZN: 171.75050354003906, Close_GOOGL: 141.2108917236328, Close_MSFT: 301.7459411621094, Close_NVDA: 22.649463653564453 },
+    { date: "2021-10-22", Close_AAPL: 145.91995239257812, Close_AMZN: 166.77749633789062, Close_GOOGL: 136.9119415283203, Close_MSFT: 300.1924133300781, Close_NVDA: 22.68340301513672 },
+    { date: "2021-10-25", Close_AAPL: 145.87091064453125, Close_AMZN: 166.01849365234375, Close_GOOGL: 136.7930145263672, Close_MSFT: 299.1922912597656, Close_NVDA: 23.122577667236328 },
+    { date: "2021-10-26", Close_AAPL: 146.5382537841797, Close_AMZN: 168.80349731445312, Close_GOOGL: 138.6456298828125, Close_MSFT: 301.1148681640625, Close_NVDA: 24.67066764831543 },
+    { date: "2021-10-27", Close_AAPL: 146.07699584960938, Close_AMZN: 169.62449645996094, Close_GOOGL: 145.5217742919922, Close_MSFT: 313.79595947265625, Close_NVDA: 24.405170440673828 },
+    { date: "2021-10-28", Close_AAPL: 149.72769165039062, Close_AMZN: 172.32850646972656, Close_GOOGL: 145.15499877929688, Close_MSFT: 314.9417419433594, Close_NVDA: 24.89424705505371 },
+    { date: "2021-10-29", Close_AAPL: 147.00926208496094, Close_AMZN: 168.6215057373047, Close_GOOGL: 147.34156799316406, Close_MSFT: 322.0009460449219, Close_NVDA: 25.519075393676758 },
+    { date: "2021-11-01", Close_AAPL: 146.18496704101562, Close_AMZN: 165.90550231933594, Close_GOOGL: 142.814208984375, Close_MSFT: 319.8161926269531, Close_NVDA: 25.77858543395996 },
+    { date: "2021-11-02", Close_AAPL: 147.22518920898438, Close_AMZN: 165.6374969482422, Close_GOOGL: 144.74050903320312, Close_MSFT: 323.4671325683594, Close_NVDA: 26.35150909423828 },
+    { date: "2021-11-03", Close_AAPL: 148.66783142089844, Close_AMZN: 169.1999969482422, Close_GOOGL: 145.9004669189453, Close_MSFT: 324.3118591308594, Close_NVDA: 26.548145294189453 },
+    { date: "2021-11-04", Close_AAPL: 148.14768981933594, Close_AMZN: 173.85000610351562, Close_GOOGL: 147.56202697753906, Close_MSFT: 326.6811218261719, Close_NVDA: 29.745141983032227 },
+    { date: "2021-11-05", Close_AAPL: 148.67840576171875, Close_AMZN: 175.94949340820312, Close_GOOGL: 148.14373779296875, Close_MSFT: 326.31207275390625, Close_NVDA: 29.69623374938965 },
+    { date: "2021-11-08", Close_AAPL: 147.8528289794922, Close_AMZN: 174.44900512695312, Close_GOOGL: 148.32188415527344, Close_MSFT: 327.21514892578125, Close_NVDA: 30.746265411376953 },
+    { date: "2021-11-09", Close_AAPL: 148.21646118164062, Close_AMZN: 178.81149291992188, Close_GOOGL: 148.2099151611328, Close_MSFT: 326.205322265625, Close_NVDA: 30.599538803100586 },
+    { date: "2021-11-10", Close_AAPL: 145.37619018554688, Close_AMZN: 174.1024932861328, Close_GOOGL: 145.19931030273438, Close_MSFT: 321.2047119140625, Close_NVDA: 29.40378189086914 },
+    { date: "2021-11-11", Close_AAPL: 145.32705688476562, Close_AMZN: 173.625, Close_GOOGL: 145.0729217529297, Close_MSFT: 322.78741455078125, Close_NVDA: 30.333036422729492 },
+    { date: "2021-11-12", Close_AAPL: 147.41058349609375, Close_AMZN: 176.25750732421875, Close_GOOGL: 147.97055053710938, Close_MSFT: 326.9530029296875, Close_NVDA: 30.333036422729492 },
+    { date: "2021-11-15", Close_AAPL: 147.42041015625, Close_AMZN: 177.28399658203125, Close_GOOGL: 147.74563598632812, Close_MSFT: 326.32183837890625, Close_NVDA: 29.968721389770508 },
+    { date: "2021-11-16", Close_AAPL: 148.4031982421875, Close_AMZN: 177.03500366210938, Close_GOOGL: 147.17239379882812, Close_MSFT: 329.6620788574219, Close_NVDA: 30.146385192871094 },
+    { date: "2021-11-17", Close_AAPL: 150.85037231445312, Close_AMZN: 177.4499969482422, Close_GOOGL: 147.34255981445312, Close_MSFT: 329.8857727050781, Close_NVDA: 29.20615005493164 },
+    { date: "2021-11-18", Close_AAPL: 155.15504455566406, Close_AMZN: 184.80299377441406, Close_GOOGL: 149.12554931640625, Close_MSFT: 331.977294921875, Close_NVDA: 31.615629196166992 },
+    { date: "2021-11-19", Close_AAPL: 157.78897094726562, Close_AMZN: 183.82850646972656, Close_GOOGL: 148.21786499023438, Close_MSFT: 333.76715087890625, Close_NVDA: 32.923179626464844 },
+    { date: "2021-11-22", Close_AAPL: 158.25088500976562, Close_AMZN: 178.6284942626953, Close_GOOGL: 145.60586547851562, Close_MSFT: 330.57647705078125, Close_NVDA: 31.896100997924805 },
+    { date: "2021-11-23", Close_AAPL: 158.6342010498047, Close_AMZN: 179.0019989013672, Close_GOOGL: 145.08831787109375, Close_MSFT: 328.4849548339844, Close_NVDA: 31.686498641967773 },
+    { date: "2021-11-24", Close_AAPL: 159.15505981445312, Close_AMZN: 179.02049255371094, Close_GOOGL: 145.4247283935547, Close_MSFT: 328.708740234375, Close_NVDA: 32.612762451171875 },
+    { date: "2021-11-26", Close_AAPL: 154.11329650878906, Close_AMZN: 175.22799682617188, Close_GOOGL: 141.5064697265625, Close_MSFT: 320.70281982421875, Close_NVDA: 31.44394874572754 },
+    { date: "2021-11-29", Close_AAPL: 157.4843292236328, Close_AMZN: 178.07850646972656, Close_GOOGL: 144.83802795410156, Close_MSFT: 327.4635314941406, Close_NVDA: 33.313446044921875 },
+    { date: "2021-11-30", Close_AAPL: 162.45729064941406, Close_AMZN: 175.35350036621094, Close_GOOGL: 141.2223358154297, Close_MSFT: 321.5880432128906, Close_NVDA: 32.61475372314453 },
+    { date: "2021-12-01", Close_AAPL: 161.9363555908203, Close_AMZN: 172.18600463867188, Close_GOOGL: 140.38034057617188, Close_MSFT: 321.0919494628906, Close_NVDA: 31.37991714477539 },
+    { date: "2021-12-02", Close_AAPL: 160.94374084472656, Close_AMZN: 171.8679962158203, Close_GOOGL: 142.28573608398438, Close_MSFT: 320.5180358886719, Close_NVDA: 32.0697021484375 },
+    { date: "2021-12-03", Close_AAPL: 159.05677795410156, Close_AMZN: 169.489501953125, Close_GOOGL: 141.32582092285156, Close_MSFT: 314.2144470214844, Close_NVDA: 30.63922119140625 },
+    { date: "2021-12-06", Close_AAPL: 162.47694396972656, Close_AMZN: 171.36849975585938, Close_GOOGL: 142.4738311767578, Close_MSFT: 317.3078918457031, Close_NVDA: 29.984371185302734 },
+    { date: "2021-12-07", Close_AAPL: 168.2361602783203, Close_AMZN: 176.1645050048828, Close_GOOGL: 146.56875610351562, Close_MSFT: 325.8001403808594, Close_NVDA: 32.370182037353516 },
+    { date: "2021-12-08", Close_AAPL: 172.0691375732422, Close_AMZN: 176.1580047607422, Close_GOOGL: 147.4813995361328, Close_MSFT: 325.8487548828125, Close_NVDA: 31.770233154296875 },
+    { date: "2021-12-09", Close_AAPL: 171.55801391601562, Close_AMZN: 174.17100524902344, Close_GOOGL: 146.93600463867188, Close_MSFT: 324.0296936035156, Close_NVDA: 30.43657875061035 },
+    { date: "2021-12-10", Close_AAPL: 176.3639678955078, Close_AMZN: 172.21200561523438, Close_GOOGL: 147.2972869873047, Close_MSFT: 333.21270751953125, Close_NVDA: 30.145084381103516 },
+    { date: "2021-12-13", Close_AAPL: 172.7177734375, Close_AMZN: 169.5675048828125, Close_GOOGL: 145.13262939453125, Close_MSFT: 330.1581726074219, Close_NVDA: 28.111656188964844 },
+    { date: "2021-12-14", Close_AAPL: 171.33197021484375, Close_AMZN: 169.0915069580078, Close_GOOGL: 143.22227478027344, Close_MSFT: 319.3993225097656, Close_NVDA: 28.287349700927734 },
+    { date: "2021-12-15", Close_AAPL: 176.21649169921875, Close_AMZN: 173.31500244140625, Close_GOOGL: 145.74420166015625, Close_MSFT: 325.5374755859375, Close_NVDA: 30.40562629699707 },
+    { date: "2021-12-16", Close_AAPL: 169.29757690429688, Close_AMZN: 168.87100219726562, Close_GOOGL: 143.7576904296875, Close_MSFT: 316.052978515625, Close_NVDA: 28.337263107299805 },
+    { date: "2021-12-17", Close_AAPL: 168.19686889648438, Close_AMZN: 170.0175018310547, Close_GOOGL: 141.0506591796875, Close_MSFT: 314.98291015625, Close_NVDA: 27.75228500366211 },
+    { date: "2021-12-20", Close_AAPL: 166.8307647705078, Close_AMZN: 167.07899475097656, Close_GOOGL: 140.93319702148438, Close_MSFT: 311.1988525390625, Close_NVDA: 27.67043113708496 },
+    { date: "2021-12-21", Close_AAPL: 170.01504516601562, Close_AMZN: 170.41700744628906, Close_GOOGL: 142.78982543945312, Close_MSFT: 318.3779602050781, Close_NVDA: 29.0240535736084 },
+    { date: "2021-12-22", Close_AAPL: 172.61944580078125, Close_AMZN: 171.03700256347656, Close_GOOGL: 145.71832275390625, Close_MSFT: 324.1270446777344, Close_NVDA: 29.348480224609375 },
+    { date: "2021-12-23", Close_AAPL: 173.24844360351562, Close_AMZN: 171.06849670410156, Close_GOOGL: 146.2174530029297, Close_MSFT: 325.5763854980469, Close_NVDA: 29.58806610107422 },
+    { date: "2021-12-27", Close_AAPL: 177.2288055419922, Close_AMZN: 169.66949462890625, Close_GOOGL: 147.20272827148438, Close_MSFT: 333.1251220703125, Close_NVDA: 30.890777587890625 },
+    { date: "2021-12-28", Close_AAPL: 176.2066650390625, Close_AMZN: 170.66099548339844, Close_GOOGL: 145.98902893066406, Close_MSFT: 331.957763671875, Close_NVDA: 30.26887321472168 },
+    { date: "2021-12-29", Close_AAPL: 176.295166015625, Close_AMZN: 169.2010040283203, Close_GOOGL: 145.9571990966797, Close_MSFT: 332.6387634277344, Close_NVDA: 29.94843292236328 },
+    { date: "2021-12-30", Close_AAPL: 175.1354522705078, Close_AMZN: 168.64450073242188, Close_GOOGL: 145.50485229492188, Close_MSFT: 330.0803527832031, Close_NVDA: 29.53415870666504 },
+    { date: "2021-12-31", Close_AAPL: 174.5162811279297, Close_AMZN: 166.7169952392578, Close_GOOGL: 144.16278076171875, Close_MSFT: 327.1620788574219, Close_NVDA: 29.359468460083008 },
+    { date: "2022-01-03", Close_AAPL: 178.87991333007812, Close_AMZN: 170.4044952392578, Close_GOOGL: 144.30160522460938, Close_MSFT: 325.6347351074219, Close_NVDA: 30.068225860595703 },
+    { date: "2022-01-04", Close_AAPL: 176.609619140625, Close_AMZN: 167.52200317382812, Close_GOOGL: 143.71243286132812, Close_MSFT: 320.0510559082031, Close_NVDA: 29.23868179321289 },
+    { date: "2022-01-05", Close_AAPL: 171.91183471679688, Close_AMZN: 164.35699462890625, Close_GOOGL: 137.1194305419922, Close_MSFT: 307.7650146484375, Close_NVDA: 27.55563735961914 },
+    { date: "2022-01-06", Close_AAPL: 169.04205322265625, Close_AMZN: 163.25399780273438, Close_GOOGL: 137.09205627441406, Close_MSFT: 305.33306884765625, Close_NVDA: 28.128625869750977 },
+    { date: "2022-01-07", Close_AAPL: 169.20916748046875, Close_AMZN: 162.5540008544922, Close_GOOGL: 136.36505126953125, Close_MSFT: 305.4886779785156, Close_NVDA: 27.199256896972656 },
+    { date: "2022-01-10", Close_AAPL: 169.22879028320312, Close_AMZN: 161.48599243164062, Close_GOOGL: 138.0096893310547, Close_MSFT: 305.71246337890625, Close_NVDA: 27.351991653442383 },
+    { date: "2022-01-11", Close_AAPL: 172.0691375732422, Close_AMZN: 165.36199951171875, Close_GOOGL: 139.0710906982422, Close_MSFT: 306.4031677246094, Close_NVDA: 27.768259048461914 },
+    { date: "2022-01-12", Close_AAPL: 172.51132202148438, Close_AMZN: 165.20700073242188, Close_GOOGL: 140.75753784179688, Close_MSFT: 309.6035461425781, Close_NVDA: 27.94994354248047 },
+    { date: "2022-01-13", Close_AAPL: 169.22879028320312, Close_AMZN: 161.21400451660156, Close_GOOGL: 137.92758178710938, Close_MSFT: 296.50030517578125, Close_NVDA: 26.52843475341797 },
+    { date: "2022-01-14", Close_AAPL: 170.09365844726562, Close_AMZN: 162.13800048828125, Close_GOOGL: 138.8168182373047, Close_MSFT: 301.7532958984375, Close_NVDA: 26.894792556762695 },
+    { date: "2022-01-18", Close_AAPL: 166.8798828125, Close_AMZN: 158.91749572753906, Close_GOOGL: 135.35089111328125, Close_MSFT: 294.40887451171875, Close_NVDA: 25.85761070251465 },
+    { date: "2022-01-19", Close_AAPL: 163.3712615966797, Close_AMZN: 156.2989959716797, Close_GOOGL: 134.4735870361328, Close_MSFT: 295.0702819824219, Close_NVDA: 25.023075103759766 },
+    { date: "2022-01-20", Close_AAPL: 161.6808624267578, Close_AMZN: 151.66749572753906, Close_GOOGL: 132.67318725585938, Close_MSFT: 293.3874206542969, Close_NVDA: 24.10768699645996 },
+    { date: "2022-01-21", Close_AAPL: 159.6169891357422, Close_AMZN: 142.64300537109375, Close_GOOGL: 129.73126220703125, Close_MSFT: 287.9691162109375, Close_NVDA: 23.33304786682129 },
+    { date: "2022-01-24", Close_AAPL: 158.84056091308594, Close_AMZN: 144.54400634765625, Close_GOOGL: 130.18161010742188, Close_MSFT: 288.29986572265625, Close_NVDA: 23.33104705810547 },
+    { date: "2022-01-25", Close_AAPL: 157.0321807861328, Close_AMZN: 139.98599243164062, Close_GOOGL: 126.33102416992188, Close_MSFT: 280.63446044921875, Close_NVDA: 22.284881591796875 },
+    { date: "2022-01-26", Close_AAPL: 156.94375610351562, Close_AMZN: 138.87249755859375, Close_GOOGL: 128.6180877685547, Close_MSFT: 288.6306457519531, Close_NVDA: 22.732099533081055 },
+    { date: "2022-01-27", Close_AAPL: 156.48187255859375, Close_AMZN: 139.6374969482422, Close_GOOGL: 128.39117431640625, Close_MSFT: 291.6753234863281, Close_NVDA: 21.90555191040039 },
+    { date: "2022-01-28", Close_AAPL: 167.40078735351562, Close_AMZN: 143.97799682617188, Close_GOOGL: 132.71649169921875, Close_MSFT: 299.86614990234375, Close_NVDA: 22.799983978271484 },
+    { date: "2022-01-31", Close_AAPL: 171.77423095703125, Close_AMZN: 149.57350158691406, Close_GOOGL: 134.65968322753906, Close_MSFT: 302.51202392578125, Close_NVDA: 24.44309425354004 },
+    { date: "2022-02-01", Close_AAPL: 171.60716247558594, Close_AMZN: 151.19349670410156, Close_GOOGL: 136.9890594482422, Close_MSFT: 300.35247802734375, Close_NVDA: 24.594831466674805 },
+    { date: "2022-02-02", Close_AAPL: 172.8160400390625, Close_AMZN: 150.6125030517578, Close_GOOGL: 147.29579162597656, Close_MSFT: 304.9244384765625, Close_NVDA: 25.197772979736328 },
+    { date: "2022-02-03", Close_AAPL: 169.9265594482422, Close_AMZN: 138.8455047607422, Close_GOOGL: 142.4091339111328, Close_MSFT: 293.0469665527344, Close_NVDA: 23.906036376953125 },
+    { date: "2022-02-04", Close_AAPL: 169.64120483398438, Close_AMZN: 157.63949584960938, Close_GOOGL: 142.61119079589844, Close_MSFT: 297.6092529296875, Close_NVDA: 24.27638816833496 },
+    { date: "2022-02-07", Close_AAPL: 168.92283630371094, Close_AMZN: 157.9355010986328, Close_GOOGL: 138.5386505126953, Close_MSFT: 292.7551574707031, Close_NVDA: 24.684677124023438 },
+    { date: "2022-02-08", Close_AAPL: 172.0423126220703, Close_AMZN: 161.4134979248047, Close_GOOGL: 138.7357177734375, Close_MSFT: 296.266845703125, Close_NVDA: 25.064006805419922 },
+    { date: "2022-02-09", Close_AAPL: 173.46917724609375, Close_AMZN: 161.1894989013672, Close_GOOGL: 140.91827392578125, Close_MSFT: 302.7358093261719, Close_NVDA: 26.658206939697266 },
+    { date: "2022-02-10", Close_AAPL: 169.37551879882812, Close_AMZN: 159.0034942626953, Close_GOOGL: 137.96041870117188, Close_MSFT: 294.1462097167969, Close_NVDA: 25.77874755859375 },
+    { date: "2022-02-11", Close_AAPL: 165.95103454589844, Close_AMZN: 153.2935028076172, Close_GOOGL: 133.6435546875, Close_MSFT: 287.006103515625, Close_NVDA: 23.90703582763672 },
+    { date: "2022-02-14", Close_AAPL: 166.18719482421875, Close_AMZN: 155.16700744628906, Close_GOOGL: 134.8811492919922, Close_MSFT: 286.9671325683594, Close_NVDA: 24.22447967529297 },
+    { date: "2022-02-15", Close_AAPL: 170.03482055664062, Close_AMZN: 156.510498046875, Close_GOOGL: 135.95849609375, Close_MSFT: 292.28826904296875, Close_NVDA: 26.448575973510742 },
+    { date: "2022-02-16", Close_AAPL: 169.7986602783203, Close_AMZN: 158.10049438476562, Close_GOOGL: 137.08262634277344, Close_MSFT: 291.947021484375, Close_NVDA: 26.46454620361328 },
+    { date: "2022-02-17", Close_AAPL: 166.18719482421875, Close_AMZN: 154.65249633789062, Close_GOOGL: 131.90835571289062, Close_MSFT: 283.39825439453125, Close_NVDA: 24.46405792236328 },
+    { date: "2022-02-18", Close_AAPL: 164.6323699951172, Close_AMZN: 152.60150146484375, Close_GOOGL: 129.7825164794922, Close_MSFT: 280.6688232421875, Close_NVDA: 23.600574493408203 },
+    { date: "2022-02-22", Close_AAPL: 161.6999053955078, Close_AMZN: 150.19749450683594, Close_GOOGL: 129.19581604003906, Close_MSFT: 280.464111328125, Close_NVDA: 23.349016189575195 },
+    { date: "2022-02-23", Close_AAPL: 157.51766967773438, Close_AMZN: 144.82699584960938, Close_GOOGL: 126.98090362548828, Close_MSFT: 273.2020263671875, Close_NVDA: 22.347776412963867 },
+    { date: "2022-02-24", Close_AAPL: 160.1450958251953, Close_AMZN: 151.35800170898438, Close_GOOGL: 132.05963134765625, Close_MSFT: 287.1608581542969, Close_NVDA: 23.706390380859375 },
+    { date: "2022-02-25", Close_AAPL: 162.221435546875, Close_AMZN: 153.7884979248047, Close_GOOGL: 133.81971740722656, Close_MSFT: 289.8122863769531, Close_NVDA: 24.114669799804688 },
+    { date: "2022-02-28", Close_AAPL: 162.48712158203125, Close_AMZN: 153.56300354003906, Close_GOOGL: 134.4143829345703, Close_MSFT: 291.2549743652344, Close_NVDA: 24.34227180480957 },
+    { date: "2022-03-01", Close_AAPL: 160.59776306152344, Close_AMZN: 151.14199829101562, Close_GOOGL: 133.42361450195312, Close_MSFT: 287.51177978515625, Close_NVDA: 23.435863494873047 },
+    { date: "2022-03-02", Close_AAPL: 163.9041748046875, Close_AMZN: 152.05250549316406, Close_GOOGL: 133.9311981201172, Close_MSFT: 292.6196594238281, Close_NVDA: 24.18168067932129 },
+    { date: "2022-03-03", Close_AAPL: 163.57940673828125, Close_AMZN: 147.89849853515625, Close_GOOGL: 133.26239013671875, Close_MSFT: 288.4573059082031, Close_NVDA: 23.676481246948242 },
+    { date: "2022-03-04", Close_AAPL: 160.56822204589844, Close_AMZN: 145.64100646972656, Close_GOOGL: 131.2788543701172, Close_MSFT: 282.55010986328125, Close_NVDA: 22.89971351623535 },
+    { date: "2022-03-07", Close_AAPL: 156.7599639892578, Close_AMZN: 137.4530029296875, Close_GOOGL: 125.77716064453125, Close_MSFT: 271.87628173828125, Close_NVDA: 21.318218231201172 },
+    { date: "2022-03-08", Close_AAPL: 154.92959594726562, Close_AMZN: 136.01449584960938, Close_GOOGL: 126.49971008300781, Close_MSFT: 268.89349365234375, Close_NVDA: 21.479965209960938 },
+    { date: "2022-03-09", Close_AAPL: 160.35171508789062, Close_AMZN: 139.2790069580078, Close_GOOGL: 132.78515625, Close_MSFT: 281.2244567871094, Close_NVDA: 22.977588653564453 },
+    { date: "2022-03-10", Close_AAPL: 155.99240112304688, Close_AMZN: 146.8175048828125, Close_GOOGL: 131.79937744140625, Close_MSFT: 278.38787841796875, Close_NVDA: 22.62215232849121 },
+    { date: "2022-03-11", Close_AAPL: 152.26278686523438, Close_AMZN: 145.52450561523438, Close_GOOGL: 129.25254821777344, Close_MSFT: 273.007080078125, Close_NVDA: 22.065034866333008 },
+    { date: "2022-03-14", Close_AAPL: 148.2183380126953, Close_AMZN: 141.85299682617188, Close_GOOGL: 125.35169982910156, Close_MSFT: 269.4685974121094, Close_NVDA: 21.296253204345703 },
+    { date: "2022-03-15", Close_AAPL: 152.61703491210938, Close_AMZN: 147.3665008544922, Close_GOOGL: 128.583251953125, Close_MSFT: 279.9084777832031, Close_NVDA: 22.9366512298584 },
+    { date: "2022-03-16", Close_AAPL: 157.04531860351562, Close_AMZN: 153.10400390625, Close_GOOGL: 132.6463165283203, Close_MSFT: 286.9659423828125, Close_NVDA: 24.457244873046875 },
+    { date: "2022-03-17", Close_AAPL: 158.05886840820312, Close_AMZN: 157.23899841308594, Close_GOOGL: 133.20216369628906, Close_MSFT: 287.77496337890625, Close_NVDA: 24.72681427001953 },
+    { date: "2022-03-18", Close_AAPL: 161.36532592773438, Close_AMZN: 161.25050354003906, Close_GOOGL: 135.477783203125, Close_MSFT: 292.8536071777344, Close_NVDA: 26.411144256591797 },
+    { date: "2022-03-21", Close_AAPL: 162.74301147460938, Close_AMZN: 161.4915008544922, Close_GOOGL: 135.4539031982422, Close_MSFT: 291.6156311035156, Close_NVDA: 26.69170570373535 },
+    { date: "2022-03-22", Close_AAPL: 166.12814331054688, Close_AMZN: 164.88900756835938, Close_GOOGL: 139.20248413085938, Close_MSFT: 296.3920593261719, Close_NVDA: 26.482036590576172 },
+    { date: "2022-03-23", Close_AAPL: 167.49598693847656, Close_AMZN: 163.4080047607422, Close_GOOGL: 137.6175537109375, Close_MSFT: 291.9372863769531, Close_NVDA: 25.59344482421875 },
+    { date: "2022-03-24", Close_AAPL: 171.29441833496094, Close_AMZN: 163.64950561523438, Close_GOOGL: 140.89837646484375, Close_MSFT: 296.4310302734375, Close_NVDA: 28.1054630279541 },
+    { date: "2022-03-25", Close_AAPL: 171.93406677246094, Close_AMZN: 164.77349853515625, Close_GOOGL: 140.9989013671875, Close_MSFT: 296.0216369628906, Close_NVDA: 27.6481876373291 },
+    { date: "2022-03-28", Close_AAPL: 172.80003356933594, Close_AMZN: 168.99049377441406, Close_GOOGL: 140.78244018554688, Close_MSFT: 302.8646545410156, Close_NVDA: 28.17435073852539 },
+    { date: "2022-03-29", Close_AAPL: 176.1064453125, Close_AMZN: 169.31500244140625, Close_GOOGL: 141.82740783691406, Close_MSFT: 307.45587158203125, Close_NVDA: 28.61066246032715 },
+    { date: "2022-03-30", Close_AAPL: 174.93545532226562, Close_AMZN: 166.30099487304688, Close_GOOGL: 141.2631378173828, Close_MSFT: 305.9449157714844, Close_NVDA: 27.64619255065918 },
+    { date: "2022-03-31", Close_AAPL: 171.82582092285156, Close_AMZN: 162.99749755859375, Close_GOOGL: 138.40579223632812, Close_MSFT: 300.5348815917969, Close_NVDA: 27.242826461791992 },
+    { date: "2022-04-01", Close_AAPL: 171.53060913085938, Close_AMZN: 163.55999755859375, Close_GOOGL: 139.48362731933594, Close_MSFT: 301.6169128417969, Close_NVDA: 26.669736862182617 },
+    { date: "2022-04-04", Close_AAPL: 175.59474182128906, Close_AMZN: 168.34649658203125, Close_GOOGL: 142.2912139892578, Close_MSFT: 307.02691650390625, Close_NVDA: 27.31671714782715 },
+    { date: "2022-04-05", Close_AAPL: 172.26864624023438, Close_AMZN: 164.05499267578125, Close_GOOGL: 139.92205810546875, Close_MSFT: 303.04010009765625, Close_NVDA: 25.889976501464844 },
+    { date: "2022-04-06", Close_AAPL: 169.09019470214844, Close_AMZN: 158.75599670410156, Close_GOOGL: 135.89828491210938, Close_MSFT: 291.947021484375, Close_NVDA: 24.368383407592773 },
+    { date: "2022-04-07", Close_AAPL: 169.39517211914062, Close_AMZN: 157.7845001220703, Close_GOOGL: 135.24191284179688, Close_MSFT: 293.76983642578125, Close_NVDA: 24.169700622558594 },
+    { date: "2022-04-08", Close_AAPL: 167.37786865234375, Close_AMZN: 154.4604949951172, Close_GOOGL: 132.65328979492188, Close_MSFT: 289.4808349609375, Close_NVDA: 23.082426071166992 },
+    { date: "2022-04-11", Close_AAPL: 163.10708618164062, Close_AMZN: 151.1219940185547, Close_GOOGL: 128.21054077148438, Close_MSFT: 278.0661926269531, Close_NVDA: 21.882328033447266 },
+    { date: "2022-04-12", Close_AAPL: 164.9866180419922, Close_AMZN: 150.78750610351562, Close_GOOGL: 127.1068115234375, Close_MSFT: 274.9468994140625, Close_NVDA: 21.4699764251709 },
+    { date: "2022-04-13", Close_AAPL: 167.68296813964844, Close_AMZN: 155.54100036621094, Close_GOOGL: 129.2759246826172, Close_MSFT: 280.36669921875, Close_NVDA: 22.16786766052246 },
+    { date: "2022-04-14", Close_AAPL: 162.65440368652344, Close_AMZN: 151.7064971923828, Close_GOOGL: 126.12699127197266, Close_MSFT: 272.77313232421875, Close_NVDA: 21.224365234375 },
+    { date: "2022-04-18", Close_AAPL: 162.4379425048828, Close_AMZN: 152.78500366210938, Close_GOOGL: 127.0689926147461, Close_MSFT: 273.44573974609375, Close_NVDA: 21.74854278564453 },
+    { date: "2022-04-19", Close_AAPL: 164.7307586669922, Close_AMZN: 158.11549377441406, Close_GOOGL: 129.39041137695312, Close_MSFT: 278.10516357421875, Close_NVDA: 22.16288185119629 },
+    { date: "2022-04-20", Close_AAPL: 164.5635223388672, Close_AMZN: 153.9980010986328, Close_GOOGL: 127.43075561523438, Close_MSFT: 279.1384582519531, Close_NVDA: 21.44801139831543 },
+    { date: "2022-04-21", Close_AAPL: 163.76638793945312, Close_AMZN: 148.29600524902344, Close_GOOGL: 124.2206039428711, Close_MSFT: 273.7283630371094, Close_NVDA: 20.151071548461914 },
+    { date: "2022-04-22", Close_AAPL: 159.21022033691406, Close_AMZN: 144.35000610351562, Close_GOOGL: 119.06625366210938, Close_MSFT: 267.119384765625, Close_NVDA: 19.48412322998047 },
+    { date: "2022-04-25", Close_AAPL: 160.28285217285156, Close_AMZN: 146.07400512695312, Close_GOOGL: 122.48838806152344, Close_MSFT: 273.64068603515625, Close_NVDA: 19.870513916015625 },
+    { date: "2022-04-26", Close_AAPL: 154.29978942871094, Close_AMZN: 139.39100646972656, Close_GOOGL: 118.08543395996094, Close_MSFT: 263.4053955078125, Close_NVDA: 18.75827407836914 },
+    { date: "2022-04-27", Close_AAPL: 154.07347106933594, Close_AMZN: 138.16700744628906, Close_GOOGL: 113.75067138671875, Close_MSFT: 276.0776672363281, Close_NVDA: 18.385866165161133 },
+    { date: "2022-04-28", Close_AAPL: 161.03073120117188, Close_AMZN: 144.59649658203125, Close_GOOGL: 117.95854187011719, Close_MSFT: 282.3259582519531, Close_NVDA: 19.750699996948242 },
+    { date: "2022-04-29", Close_AAPL: 155.1362762451172, Close_AMZN: 124.28150177001953, Close_GOOGL: 113.56653594970703, Close_MSFT: 270.5213928222656, Close_NVDA: 18.517658233642578 },
+    { date: "2022-05-02", Close_AAPL: 155.44129943847656, Close_AMZN: 124.5, Close_GOOGL: 116.02827453613281, Close_MSFT: 277.2961730957031, Close_NVDA: 19.50209617614746 },
+    { date: "2022-05-03", Close_AAPL: 156.93707275390625, Close_AMZN: 124.25350189208984, Close_GOOGL: 116.77569580078125, Close_MSFT: 274.6739196777344, Close_NVDA: 19.570985794067383 },
+    { date: "2022-05-04", Close_AAPL: 163.37278747558594, Close_AMZN: 125.92849731445312, Close_GOOGL: 121.67925262451172, Close_MSFT: 282.66717529296875, Close_NVDA: 20.301830291748047 },
+    { date: "2022-05-05", Close_AAPL: 154.27029418945312, Close_AMZN: 116.40699768066406, Close_GOOGL: 115.95114135742188, Close_MSFT: 270.35565185546875, Close_NVDA: 18.814184188842773 },
+    { date: "2022-05-06", Close_AAPL: 154.99952697753906, Close_AMZN: 114.77249908447266, Close_GOOGL: 115.19575500488281, Close_MSFT: 267.8017272949219, Close_NVDA: 18.64545440673828 },
+    { date: "2022-05-09", Close_AAPL: 149.85519409179688, Close_AMZN: 108.78900146484375, Close_GOOGL: 111.97564697265625, Close_MSFT: 257.9076843261719, Close_NVDA: 16.923179626464844 },
+    { date: "2022-05-10", Close_AAPL: 152.2696990966797, Close_AMZN: 108.85900115966797, Close_GOOGL: 113.85067749023438, Close_MSFT: 262.70361328125, Close_NVDA: 17.567167282104492 },
+    { date: "2022-05-11", Close_AAPL: 144.37583923339844, Close_AMZN: 105.37200164794922, Close_GOOGL: 113.06195831298828, Close_MSFT: 253.9793243408203, Close_NVDA: 16.603687286376953 },
+    { date: "2022-05-12", Close_AAPL: 140.49298095703125, Close_AMZN: 106.93049621582031, Close_GOOGL: 112.30706787109375, Close_MSFT: 248.91043090820312, Close_NVDA: 16.1494083404541 },
+    { date: "2022-05-13", Close_AAPL: 144.9770050048828, Close_AMZN: 113.05500030517578, Close_GOOGL: 115.4983139038086, Close_MSFT: 254.53492736816406, Close_NVDA: 17.677988052368164 },
+    { date: "2022-05-16", Close_AAPL: 143.42977905273438, Close_AMZN: 110.81050109863281, Close_GOOGL: 113.90045166015625, Close_MSFT: 254.90533447265625, Close_NVDA: 17.23668670654297 },
+    { date: "2022-05-17", Close_AAPL: 147.0760955810547, Close_AMZN: 115.36849975585938, Close_GOOGL: 115.9188003540039, Close_MSFT: 260.0911865234375, Close_NVDA: 18.14824104309082 },
+    { date: "2022-05-18", Close_AAPL: 138.77821350097656, Close_AMZN: 107.11250305175781, Close_GOOGL: 111.3670654296875, Close_MSFT: 248.2493133544922, Close_NVDA: 16.91119956970215 },
+    { date: "2022-05-19", Close_AAPL: 135.35853576660156, Close_AMZN: 107.31900024414062, Close_GOOGL: 109.85877227783203, Close_MSFT: 247.3308868408203, Close_NVDA: 17.096906661987305 },
+    { date: "2022-05-20", Close_AAPL: 135.5950469970703, Close_AMZN: 107.59100341796875, Close_GOOGL: 108.38980102539062, Close_MSFT: 246.7642059326172, Close_NVDA: 16.667587280273438 },
+    { date: "2022-05-23", Close_AAPL: 141.03500366210938, Close_AMZN: 107.55699920654297, Close_GOOGL: 110.95751953125, Close_MSFT: 254.6685791015625, Close_NVDA: 16.87126922607422 },
+    { date: "2022-05-24", Close_AAPL: 138.32485961914062, Close_AMZN: 104.0999984741211, Close_GOOGL: 105.46577453613281, Close_MSFT: 253.6621856689453, Close_NVDA: 16.128440856933594 },
+    { date: "2022-05-25", Close_AAPL: 138.48255920410156, Close_AMZN: 106.7750015258789, Close_GOOGL: 105.30155944824219, Close_MSFT: 256.49566650390625, Close_NVDA: 16.948139190673828 },
+    { date: "2022-05-26", Close_AAPL: 141.69525146484375, Close_AMZN: 111.07749938964844, Close_GOOGL: 107.27960968017578, Close_MSFT: 259.79803466796875, Close_NVDA: 17.822755813598633 },
+    { date: "2022-05-27", Close_AAPL: 147.47030639648438, Close_AMZN: 115.14649963378906, Close_GOOGL: 111.78207397460938, Close_MSFT: 266.96966552734375, Close_NVDA: 18.781240463256836 },
+    { date: "2022-05-31", Close_AAPL: 146.68191528320312, Close_AMZN: 120.20950317382812, Close_GOOGL: 113.22069549560547, Close_MSFT: 265.6310729980469, Close_NVDA: 18.642457962036133 },
+    { date: "2022-06-01", Close_AAPL: 146.55381774902344, Close_AMZN: 121.68399810791016, Close_GOOGL: 113.35008239746094, Close_MSFT: 266.16845703125, Close_NVDA: 18.291015625 },
+    { date: "2022-06-02", Close_AAPL: 149.01754760742188, Close_AMZN: 125.51100158691406, Close_GOOGL: 117.06282806396484, Close_MSFT: 268.2789001464844, Close_NVDA: 19.56100082397461 },
+    { date: "2022-06-03", Close_AAPL: 143.2720947265625, Close_AMZN: 122.3499984741211, Close_GOOGL: 113.99598693847656, Close_MSFT: 263.8235168457031, Close_NVDA: 18.690383911132812 },
+    { date: "2022-06-06", Close_AAPL: 144.02105712890625, Close_AMZN: 124.79000091552734, Close_GOOGL: 116.2646484375, Close_MSFT: 262.5826721191406, Close_NVDA: 18.756275177001953 },
+    { date: "2022-06-07", Close_AAPL: 146.55381774902344, Close_AMZN: 123.0, Close_GOOGL: 116.59207916259766, Close_MSFT: 266.24664306640625, Close_NVDA: 18.89605712890625 },
+    { date: "2022-06-08", Close_AAPL: 145.814697265625, Close_AMZN: 121.18000030517578, Close_GOOGL: 116.63636779785156, Close_MSFT: 264.2045593261719, Close_NVDA: 18.622434616088867 },
+    { date: "2022-06-09", Close_AAPL: 140.5718231201172, Close_AMZN: 116.1500015258789, Close_GOOGL: 114.28909301757812, Close_MSFT: 258.713623046875, Close_NVDA: 18.02325439453125 },
+    { date: "2022-06-10", Close_AAPL: 135.14170837402344, Close_AMZN: 109.6500015258789, Close_GOOGL: 110.632568359375, Close_MSFT: 247.18434143066406, Close_NVDA: 16.950727462768555 },
+    { date: "2022-06-13", Close_AAPL: 129.9678192138672, Close_AMZN: 103.66999816894531, Close_GOOGL: 105.88626861572266, Close_MSFT: 236.70057678222656, Close_NVDA: 15.625547409057617 },
+    { date: "2022-06-14", Close_AAPL: 130.83506774902344, Close_AMZN: 102.30999755859375, Close_GOOGL: 106.20773315429688, Close_MSFT: 238.87939453125, Close_NVDA: 15.814289093017578 },
+    { date: "2022-06-15", Close_AAPL: 133.46633911132812, Close_AMZN: 107.66999816894531, Close_GOOGL: 109.24222564697266, Close_MSFT: 245.98257446289062, Close_NVDA: 16.504344940185547 },
+    { date: "2022-06-16", Close_AAPL: 128.17420959472656, Close_AMZN: 103.66000366210938, Close_GOOGL: 105.52897644042969, Close_MSFT: 239.348388671875, Close_NVDA: 15.579608917236328 },
+    { date: "2022-06-17", Close_AAPL: 129.65245056152344, Close_AMZN: 106.22000122070312, Close_GOOGL: 106.6336898803711, Close_MSFT: 241.96688842773438, Close_NVDA: 15.858227729797363 },
+    { date: "2022-06-21", Close_AAPL: 133.8999786376953, Close_AMZN: 108.68000030517578, Close_GOOGL: 111.01325225830078, Close_MSFT: 247.91714477539062, Close_NVDA: 16.543285369873047 },
+    { date: "2022-06-22", Close_AAPL: 133.38751220703125, Close_AMZN: 108.94999694824219, Close_GOOGL: 110.95702362060547, Close_MSFT: 247.3211212158203, Close_NVDA: 16.33757209777832 },
+    { date: "2022-06-23", Close_AAPL: 136.26515197753906, Close_AMZN: 112.44000244140625, Close_GOOGL: 111.70792388916016, Close_MSFT: 252.9196014404297, Close_NVDA: 16.2027587890625 },
+    { date: "2022-06-24", Close_AAPL: 139.6060028076172, Close_AMZN: 116.45999908447266, Close_GOOGL: 117.41365051269531, Close_MSFT: 261.5567932128906, Close_NVDA: 17.10251808166504 },
+    { date: "2022-06-27", Close_AAPL: 139.6060028076172, Close_AMZN: 113.22000122070312, Close_GOOGL: 115.28233337402344, Close_MSFT: 258.811279296875, Close_NVDA: 16.845870971679688 },
+    { date: "2022-06-28", Close_AAPL: 135.44723510742188, Close_AMZN: 107.4000015258789, Close_GOOGL: 111.47453308105469, Close_MSFT: 250.5942840576172, Close_NVDA: 15.960086822509766 },
+    { date: "2022-06-29", Close_AAPL: 137.2112579345703, Close_AMZN: 108.91999816894531, Close_GOOGL: 111.17000579833984, Close_MSFT: 254.2875518798828, Close_NVDA: 15.52069091796875 },
+    { date: "2022-06-30", Close_AAPL: 134.73765563964844, Close_AMZN: 106.20999908447266, Close_GOOGL: 108.44452667236328, Close_MSFT: 250.9362335205078, Close_NVDA: 15.138216018676758 },
+    { date: "2022-07-01", Close_AAPL: 136.91563415527344, Close_AMZN: 109.55999755859375, Close_GOOGL: 108.22010040283203, Close_MSFT: 253.6230926513672, Close_NVDA: 14.503087997436523 },
+    { date: "2022-07-05", Close_AAPL: 139.50746154785156, Close_AMZN: 113.5, Close_GOOGL: 112.72407531738281, Close_MSFT: 256.8180847167969, Close_NVDA: 14.943483352661133 },
+    { date: "2022-07-06", Close_AAPL: 140.84776306152344, Close_AMZN: 114.33000183105469, Close_GOOGL: 114.02684020996094, Close_MSFT: 260.1009521484375, Close_NVDA: 15.109254837036133 },
+    { date: "2022-07-07", Close_AAPL: 144.22804260253906, Close_AMZN: 116.33000183105469, Close_GOOGL: 118.2177963256836, Close_MSFT: 262.24072265625, Close_NVDA: 15.836256980895996 },
+    { date: "2022-07-08", Close_AAPL: 144.90802001953125, Close_AMZN: 115.54000091552734, Close_GOOGL: 118.78559112548828, Close_MSFT: 261.5177001953125, Close_NVDA: 15.816286087036133 },
+    { date: "2022-07-11", Close_AAPL: 142.76943969726562, Close_AMZN: 111.75, Close_GOOGL: 115.12609100341797, Close_MSFT: 258.4400329589844, Close_NVDA: 15.131227493286133 },
+    { date: "2022-07-12", Close_AAPL: 143.74513244628906, Close_AMZN: 109.22000122070312, Close_GOOGL: 113.47796630859375, Close_MSFT: 247.84877014160156, Close_NVDA: 15.061323165893555 },
+    { date: "2022-07-13", Close_AAPL: 143.38052368164062, Close_AMZN: 110.4000015258789, Close_GOOGL: 110.82366180419922, Close_MSFT: 246.92056274414062, Close_NVDA: 15.143210411071777 },
+    { date: "2022-07-14", Close_AAPL: 146.3173065185547, Close_AMZN: 110.62999725341797, Close_GOOGL: 109.84235382080078, Close_MSFT: 248.2493133544922, Close_NVDA: 15.350924491882324 },
+    { date: "2022-07-15", Close_AAPL: 147.9926300048828, Close_AMZN: 113.55000305175781, Close_GOOGL: 111.24563598632812, Close_MSFT: 250.8287811279297, Close_NVDA: 15.740389823913574 },
+    { date: "2022-07-18", Close_AAPL: 144.93760681152344, Close_AMZN: 113.76000213623047, Close_GOOGL: 108.5112075805664, Close_MSFT: 248.41542053222656, Close_NVDA: 16.07892417907715 },
+    { date: "2022-07-19", Close_AAPL: 148.8105926513672, Close_AMZN: 118.20999908447266, Close_GOOGL: 113.26847076416016, Close_MSFT: 253.57427978515625, Close_NVDA: 16.968704223632812 },
+    { date: "2022-07-20", Close_AAPL: 150.82102966308594, Close_AMZN: 122.7699966430664, Close_GOOGL: 113.35803985595703, Close_MSFT: 256.2513122558594, Close_NVDA: 17.782583236694336 },
+    { date: "2022-07-21", Close_AAPL: 153.09756469726562, Close_AMZN: 124.62999725341797, Close_GOOGL: 113.79594421386719, Close_MSFT: 258.7623596191406, Close_NVDA: 18.025253295898438 },
+    { date: "2022-07-22", Close_AAPL: 151.85580444335938, Close_AMZN: 122.41999816894531, Close_GOOGL: 107.3865966796875, Close_MSFT: 254.38522338867188, Close_NVDA: 17.29525375366211 },
+    { date: "2022-07-25", Close_AAPL: 150.73231506347656, Close_AMZN: 121.13999938964844, Close_GOOGL: 106.99845123291016, Close_MSFT: 252.89028930664062, Close_NVDA: 17.000661849975586 },
+    { date: "2022-07-26", Close_AAPL: 149.4019012451172, Close_AMZN: 114.80999755859375, Close_GOOGL: 104.5202865600586, Close_MSFT: 246.1193389892578, Close_NVDA: 16.510330200195312 },
+    { date: "2022-07-27", Close_AAPL: 154.51666259765625, Close_AMZN: 120.97000122070312, Close_GOOGL: 112.52203369140625, Close_MSFT: 262.57293701171875, Close_NVDA: 17.765609741210938 },
+    { date: "2022-07-28", Close_AAPL: 155.06851196289062, Close_AMZN: 122.27999877929688, Close_GOOGL: 113.67652130126953, Close_MSFT: 270.06695556640625, Close_NVDA: 17.9593448638916 },
+    { date: "2022-07-29", Close_AAPL: 160.15370178222656, Close_AMZN: 134.9499969482422, Close_GOOGL: 115.76652526855469, Close_MSFT: 274.2974853515625, Close_NVDA: 18.13809585571289 },
+    { date: "2022-08-01", Close_AAPL: 159.16822814941406, Close_AMZN: 135.38999938964844, Close_GOOGL: 114.31346893310547, Close_MSFT: 271.6302185058594, Close_NVDA: 18.41571617126465 },
+    { date: "2022-08-02", Close_AAPL: 157.68995666503906, Close_AMZN: 134.16000366210938, Close_GOOGL: 114.58219146728516, Close_MSFT: 268.513427734375, Close_NVDA: 18.500600814819336 },
+    { date: "2022-08-03", Close_AAPL: 163.72125244140625, Close_AMZN: 139.52000427246094, Close_GOOGL: 117.51815795898438, Close_MSFT: 275.9878234863281, Close_NVDA: 18.867097854614258 },
+    { date: "2022-08-04", Close_AAPL: 163.4058837890625, Close_AMZN: 142.57000732421875, Close_GOOGL: 117.62762451171875, Close_MSFT: 277.1407775878906, Close_NVDA: 19.18865966796875 },
+    { date: "2022-08-05", Close_AAPL: 163.17889404296875, Close_AMZN: 140.8000030517578, Close_GOOGL: 116.91106414794922, Close_MSFT: 276.417724609375, Close_NVDA: 18.96296501159668 },
+    { date: "2022-08-08", Close_AAPL: 162.7051544189453, Close_AMZN: 139.41000366210938, Close_GOOGL: 116.74185943603516, Close_MSFT: 273.88714599609375, Close_NVDA: 17.76860237121582 },
+    { date: "2022-08-09", Close_AAPL: 162.75453186035156, Close_AMZN: 137.8300018310547, Close_GOOGL: 116.07504272460938, Close_MSFT: 275.8216857910156, Close_NVDA: 17.06257438659668 },
+    { date: "2022-08-10", Close_AAPL: 167.017822265625, Close_AMZN: 142.69000244140625, Close_GOOGL: 119.13043212890625, Close_MSFT: 282.5243225097656, Close_NVDA: 18.072187423706055 },
+    { date: "2022-08-11", Close_AAPL: 166.27769470214844, Close_AMZN: 140.63999938964844, Close_GOOGL: 118.27452850341797, Close_MSFT: 280.43341064453125, Close_NVDA: 17.917404174804688 },
+    { date: "2022-08-12", Close_AAPL: 169.8402557373047, Close_AMZN: 143.5500030517578, Close_GOOGL: 121.10102081298828, Close_MSFT: 285.211181640625, Close_NVDA: 18.683347702026367 },
+    { date: "2022-08-15", Close_AAPL: 170.9159393310547, Close_AMZN: 143.17999267578125, Close_GOOGL: 121.49913024902344, Close_MSFT: 286.7353820800781, Close_NVDA: 19.00590705871582 },
+    { date: "2022-08-16", Close_AAPL: 170.75804138183594, Close_AMZN: 144.77999877929688, Close_GOOGL: 121.12092590332031, Close_MSFT: 285.9927978515625, Close_NVDA: 18.85311508178711 },
+    { date: "2022-08-17", Close_AAPL: 172.25808715820312, Close_AMZN: 142.10000610351562, Close_GOOGL: 118.98115539550781, Close_MSFT: 285.23895263671875, Close_NVDA: 18.30986213684082 },
+    { date: "2022-08-18", Close_AAPL: 171.86334228515625, Close_AMZN: 142.3000030517578, Close_GOOGL: 119.59820556640625, Close_MSFT: 284.1129455566406, Close_NVDA: 18.747262954711914 },
+    { date: "2022-08-19", Close_AAPL: 169.26788330078125, Close_AMZN: 138.22999572753906, Close_GOOGL: 116.65229797363281, Close_MSFT: 280.17681884765625, Close_NVDA: 17.82452964782715 },
+    { date: "2022-08-22", Close_AAPL: 165.36973571777344, Close_AMZN: 133.22000122070312, Close_GOOGL: 113.69642639160156, Close_MSFT: 271.95220947265625, Close_NVDA: 17.010644912719727 },
+    { date: "2022-08-23", Close_AAPL: 165.03421020507812, Close_AMZN: 133.6199951171875, Close_GOOGL: 113.31822204589844, Close_MSFT: 270.6695251464844, Close_NVDA: 17.15744400024414 },
+    { date: "2022-08-24", Close_AAPL: 165.33026123046875, Close_AMZN: 133.8000030517578, Close_GOOGL: 113.1490478515625, Close_MSFT: 270.03314208984375, Close_NVDA: 17.19839096069336 },
+    { date: "2022-08-25", Close_AAPL: 167.7974090576172, Close_AMZN: 137.27999877929688, Close_GOOGL: 116.09495544433594, Close_MSFT: 273.0291748046875, Close_NVDA: 17.888439178466797 },
+    { date: "2022-08-26", Close_AAPL: 161.47161865234375, Close_AMZN: 130.75, Close_GOOGL: 109.81497955322266, Close_MSFT: 262.49383544921875, Close_NVDA: 16.23770523071289 },
+    { date: "2022-08-29", Close_AAPL: 159.2610321044922, Close_AMZN: 129.7899932861328, Close_GOOGL: 108.89936065673828, Close_MSFT: 259.69354248046875, Close_NVDA: 15.779335975646973 },
+    { date: "2022-08-30", Close_AAPL: 156.82345581054688, Close_AMZN: 128.72999572753906, Close_GOOGL: 108.42164611816406, Close_MSFT: 257.480712890625, Close_NVDA: 15.446792602539062 },
+    { date: "2022-08-31", Close_AAPL: 155.1556396484375, Close_AMZN: 126.7699966430664, Close_GOOGL: 107.70507049560547, Close_MSFT: 256.0119934082031, Close_NVDA: 15.073304176330566 },
+    { date: "2022-09-01", Close_AAPL: 155.8859405517578, Close_AMZN: 127.81999969482422, Close_GOOGL: 109.21782684326172, Close_MSFT: 254.96434020996094, Close_NVDA: 13.917892456054688 },
+    { date: "2022-09-02", Close_AAPL: 153.76414489746094, Close_AMZN: 127.51000213623047, Close_GOOGL: 107.33682250976562, Close_MSFT: 250.7149200439453, Close_NVDA: 13.628290176391602 },
+    { date: "2022-09-06", Close_AAPL: 152.50094604492188, Close_AMZN: 126.11000061035156, Close_GOOGL: 106.30176544189453, Close_MSFT: 247.96356201171875, Close_NVDA: 13.446539878845215 },
+    { date: "2022-09-07", Close_AAPL: 153.91220092773438, Close_AMZN: 129.47999572753906, Close_GOOGL: 108.92921447753906, Close_MSFT: 252.70252990722656, Close_NVDA: 13.69926643371582 },
+    { date: "2022-09-08", Close_AAPL: 152.43190002441406, Close_AMZN: 129.82000732421875, Close_GOOGL: 107.86430358886719, Close_MSFT: 253.12355041503906, Close_NVDA: 13.974970817565918 },
+    { date: "2022-09-09", Close_AAPL: 155.3036651611328, Close_AMZN: 133.27000427246094, Close_GOOGL: 110.12350463867188, Close_MSFT: 258.9395751953125, Close_NVDA: 14.37154483795166 },
+    { date: "2022-09-12", Close_AAPL: 161.28408813476562, Close_AMZN: 136.4499969482422, Close_GOOGL: 110.33250427246094, Close_MSFT: 261.0838928222656, Close_NVDA: 14.48941707611084 },
+    { date: "2022-09-13", Close_AAPL: 151.8200225830078, Close_AMZN: 126.81999969482422, Close_GOOGL: 103.8236312866211, Close_MSFT: 246.7299041748047, Close_NVDA: 13.116893768310547 },
+    { date: "2022-09-14", Close_AAPL: 153.2707061767578, Close_AMZN: 128.5500030517578, Close_GOOGL: 104.5003890991211, Close_MSFT: 246.955078125, Close_NVDA: 13.113896369934082 },
+    { date: "2022-09-15", Close_AAPL: 150.3693389892578, Close_AMZN: 126.27999877929688, Close_GOOGL: 102.42034149169922, Close_MSFT: 240.25787353515625, Close_NVDA: 12.915111541748047 },
+    { date: "2022-09-16", Close_AAPL: 148.72125244140625, Close_AMZN: 123.52999877929688, Close_GOOGL: 102.31085968017578, Close_MSFT: 239.6312255859375, Close_NVDA: 13.183820724487305 },
+    { date: "2022-09-19", Close_AAPL: 152.4516143798828, Close_AMZN: 124.66000366210938, Close_GOOGL: 102.57957458496094, Close_MSFT: 239.4158172607422, Close_NVDA: 13.367623329162598 },
+    { date: "2022-09-20", Close_AAPL: 154.83981323242188, Close_AMZN: 122.19000244140625, Close_GOOGL: 100.65875244140625, Close_MSFT: 237.3890380859375, Close_NVDA: 13.161844253540039 },
+    { date: "2022-09-21", Close_AAPL: 151.7015838623047, Close_AMZN: 118.54000091552734, Close_GOOGL: 98.80760192871094, Close_MSFT: 233.96209716796875, Close_NVDA: 13.24675464630127 },
+    { date: "2022-09-22", Close_AAPL: 150.73446655273438, Close_AMZN: 117.30999755859375, Close_GOOGL: 99.66351318359375, Close_MSFT: 235.94969177246094, Close_NVDA: 12.547504425048828 },
+    { date: "2022-09-23", Close_AAPL: 148.4547882080078, Close_AMZN: 113.77999877929688, Close_GOOGL: 98.27017974853516, Close_MSFT: 232.95361328125, Close_NVDA: 12.502553939819336 },
+    { date: "2022-09-26", Close_AAPL: 148.79031372070312, Close_AMZN: 115.1500015258789, Close_GOOGL: 97.702880859375, Close_MSFT: 232.493408203125, Close_NVDA: 12.214863777160645 },
+    { date: "2022-09-27", Close_AAPL: 149.76731872558594, Close_AMZN: 114.41000366210938, Close_GOOGL: 97.03607940673828, Close_MSFT: 231.47509765625, Close_NVDA: 12.399664878845215 },
+    { date: "2022-09-28", Close_AAPL: 147.87254333496094, Close_AMZN: 118.01000213623047, Close_GOOGL: 99.57394409179688, Close_MSFT: 236.03785705566406, Close_NVDA: 12.72231674194336 },
+    { date: "2022-09-29", Close_AAPL: 140.60916137695312, Close_AMZN: 114.80000305175781, Close_GOOGL: 96.95645141601562, Close_MSFT: 232.54234313964844, Close_NVDA: 12.206872940063477 },
+    { date: "2022-09-30", Close_AAPL: 136.3853759765625, Close_AMZN: 113.0, Close_GOOGL: 95.19487762451172, Close_MSFT: 228.03834533691406, Close_NVDA: 12.125959396362305 },
+    { date: "2022-10-03", Close_AAPL: 140.57958984375, Close_AMZN: 115.87999725341797, Close_GOOGL: 98.170654296875, Close_MSFT: 235.71475219726562, Close_NVDA: 12.498559951782227 },
+    { date: "2022-10-04", Close_AAPL: 144.1816864013672, Close_AMZN: 121.08999633789062, Close_GOOGL: 101.1563720703125, Close_MSFT: 243.68484497070312, Close_NVDA: 13.152854919433594 },
+    { date: "2022-10-05", Close_AAPL: 144.4777069091797, Close_AMZN: 120.94999694824219, Close_GOOGL: 100.94738006591797, Close_MSFT: 243.9981231689453, Close_NVDA: 13.194808959960938 },
+    { date: "2022-10-06", Close_AAPL: 143.52041625976562, Close_AMZN: 120.30000305175781, Close_GOOGL: 100.93741607666016, Close_MSFT: 241.63844299316406, Close_NVDA: 13.115894317626953 },
+    { date: "2022-10-07", Close_AAPL: 138.25054931640625, Close_AMZN: 114.55999755859375, Close_GOOGL: 98.21046447753906, Close_MSFT: 229.35040283203125, Close_NVDA: 12.063026428222656 },
+    { date: "2022-10-10", Close_AAPL: 138.5762176513672, Close_AMZN: 113.66999816894531, Close_GOOGL: 97.39437103271484, Close_MSFT: 224.46456909179688, Close_NVDA: 11.657463073730469 },
+    { date: "2022-10-11", Close_AAPL: 137.1551513671875, Close_AMZN: 112.20999908447266, Close_GOOGL: 96.71759796142578, Close_MSFT: 220.70472717285156, Close_NVDA: 11.573553085327148 },
+    { date: "2022-10-12", Close_AAPL: 136.52352905273438, Close_AMZN: 112.9000015258789, Close_GOOGL: 97.09578704833984, Close_MSFT: 221.03762817382812, Close_NVDA: 11.487646102905273 },
+    { date: "2022-10-13", Close_AAPL: 141.1125030517578, Close_AMZN: 112.52999877929688, Close_GOOGL: 98.58865356445312, Close_MSFT: 229.35040283203125, Close_NVDA: 11.947152137756348 },
+    { date: "2022-10-14", Close_AAPL: 136.56301879882812, Close_AMZN: 106.9000015258789, Close_GOOGL: 96.10054779052734, Close_MSFT: 223.78895568847656, Close_NVDA: 11.214938163757324 },
+    { date: "2022-10-17", Close_AAPL: 140.5400848388672, Close_AMZN: 113.79000091552734, Close_GOOGL: 99.49432373046875, Close_MSFT: 232.57171630859375, Close_NVDA: 11.875227928161621 },
+    { date: "2022-10-18", Close_AAPL: 141.86248779296875, Close_AMZN: 116.36000061035156, Close_GOOGL: 100.29051208496094, Close_MSFT: 233.521484375, Close_NVDA: 11.954144477844238 },
+    { date: "2022-10-19", Close_AAPL: 141.97105407714844, Close_AMZN: 115.06999969482422, Close_GOOGL: 99.15593719482422, Close_MSFT: 231.5436553955078, Close_NVDA: 12.03805160522461 },
+    { date: "2022-10-20", Close_AAPL: 141.50721740722656, Close_AMZN: 115.25, Close_GOOGL: 99.49432373046875, Close_MSFT: 231.22055053710938, Close_NVDA: 12.180900573730469 },
+    { date: "2022-10-21", Close_AAPL: 145.3363037109375, Close_AMZN: 119.31999969482422, Close_GOOGL: 100.6488037109375, Close_MSFT: 237.06593322753906, Close_NVDA: 12.452607154846191 },
+    { date: "2022-10-24", Close_AAPL: 147.48765563964844, Close_AMZN: 119.81999969482422, Close_GOOGL: 102.03218841552734, Close_MSFT: 242.0888214111328, Close_NVDA: 12.585464477539062 },
+    { date: "2022-10-25", Close_AAPL: 150.33969116210938, Close_AMZN: 120.5999984741211, Close_GOOGL: 103.98286437988281, Close_MSFT: 245.42764282226562, Close_NVDA: 13.24675464630127 },
+    { date: "2022-10-26", Close_AAPL: 147.3889923095703, Close_AMZN: 115.66000366210938, Close_GOOGL: 94.47830200195312, Close_MSFT: 226.49136352539062, Close_NVDA: 12.882145881652832 },
+    { date: "2022-10-27", Close_AAPL: 142.89871215820312, Close_AMZN: 110.95999908447266, Close_GOOGL: 91.78120422363281, Close_MSFT: 222.01675415039062, Close_NVDA: 13.161844253540039 },
+    { date: "2022-10-28", Close_AAPL: 153.695068359375, Close_AMZN: 103.41000366210938, Close_GOOGL: 95.83182525634766, Close_MSFT: 230.94638061523438, Close_NVDA: 13.819137573242188 },
+    { date: "2022-10-31", Close_AAPL: 151.3265838623047, Close_AMZN: 102.44000244140625, Close_GOOGL: 94.060302734375, Close_MSFT: 227.28445434570312, Close_NVDA: 13.482499122619629 },
+    { date: "2022-11-01", Close_AAPL: 148.671875, Close_AMZN: 96.79000091552734, Close_GOOGL: 90.0395278930664, Close_MSFT: 223.40711975097656, Close_NVDA: 13.52845287322998 },
+    { date: "2022-11-02", Close_AAPL: 143.12570190429688, Close_AMZN: 92.12000274658203, Close_GOOGL: 86.55618286132812, Close_MSFT: 215.50558471679688, Close_NVDA: 13.20479965209961 },
+    { date: "2022-11-03", Close_AAPL: 137.0564727783203, Close_AMZN: 89.30000305175781, Close_GOOGL: 83.03302001953125, Close_MSFT: 209.77769470214844, Close_NVDA: 13.406580924987793 },
+    { date: "2022-11-04", Close_AAPL: 136.78955078125, Close_AMZN: 90.9800033569336, Close_GOOGL: 86.16803741455078, Close_MSFT: 216.76864624023438, Close_NVDA: 14.14079475402832 },
+    { date: "2022-11-07", Close_AAPL: 137.3233184814453, Close_AMZN: 90.52999877929688, Close_GOOGL: 88.06893920898438, Close_MSFT: 223.11337280273438, Close_NVDA: 14.285635948181152 },
+    { date: "2022-11-08", Close_AAPL: 137.89666748046875, Close_AMZN: 89.9800033569336, Close_GOOGL: 88.47699737548828, Close_MSFT: 224.09251403808594, Close_NVDA: 14.58631420135498 },
+    { date: "2022-11-09", Close_AAPL: 133.3199005126953, Close_AMZN: 86.13999938964844, Close_GOOGL: 86.9045181274414, Close_MSFT: 219.82351684570312, Close_NVDA: 13.761200904846191 },
+    { date: "2022-11-10", Close_AAPL: 145.18197631835938, Close_AMZN: 96.62999725341797, Close_GOOGL: 93.49302673339844, Close_MSFT: 237.90794372558594, Close_NVDA: 15.733081817626953 },
+    { date: "2022-11-11", Close_AAPL: 147.9794464111328, Close_AMZN: 100.79000091552734, Close_GOOGL: 95.95125579833984, Close_MSFT: 241.95176696777344, Close_NVDA: 16.30946159362793 },
+    { date: "2022-11-14", Close_AAPL: 146.57577514648438, Close_AMZN: 98.48999786376953, Close_GOOGL: 95.24463653564453, Close_MSFT: 236.50782775878906, Close_NVDA: 16.27749252319336 },
+    { date: "2022-11-15", Close_AAPL: 148.31553649902344, Close_AMZN: 98.94000244140625, Close_GOOGL: 97.97161102294922, Close_MSFT: 236.91905212402344, Close_NVDA: 16.648094177246094 },
+    { date: "2022-11-16", Close_AAPL: 147.07989501953125, Close_AMZN: 97.12000274658203, Close_GOOGL: 98.37965393066406, Close_MSFT: 237.35107421875, Close_NVDA: 15.89290714263916 },
+    { date: "2022-11-17", Close_AAPL: 148.9877166748047, Close_AMZN: 94.8499984741211, Close_GOOGL: 97.8919906616211, Close_MSFT: 237.30198669433594, Close_NVDA: 15.660158157348633 },
+    { date: "2022-11-18", Close_AAPL: 149.55116271972656, Close_AMZN: 94.13999938964844, Close_GOOGL: 96.9664077758789, Close_MSFT: 236.85031127929688, Close_NVDA: 15.39244556427002 },
+    { date: "2022-11-21", Close_AAPL: 146.308837890625, Close_AMZN: 92.45999908447266, Close_GOOGL: 95.14511108398438, Close_MSFT: 237.66526794433594, Close_NVDA: 15.300545692443848 },
+    { date: "2022-11-22", Close_AAPL: 148.45391845703125, Close_AMZN: 93.19999694824219, Close_GOOGL: 96.58822631835938, Close_MSFT: 240.59130859375, Close_NVDA: 16.02077293395996 },
+    { date: "2022-11-23", Close_AAPL: 149.3336944580078, Close_AMZN: 94.12999725341797, Close_GOOGL: 97.99150848388672, Close_MSFT: 243.09510803222656, Close_NVDA: 16.501253128051758 },
+    { date: "2022-11-25", Close_AAPL: 146.40773010253906, Close_AMZN: 93.41000366210938, Close_GOOGL: 96.99626922607422, Close_MSFT: 243.00674438476562, Close_NVDA: 16.252521514892578 },
+    { date: "2022-11-28", Close_AAPL: 142.56243896484375, Close_AMZN: 93.94999694824219, Close_GOOGL: 95.59297180175781, Close_MSFT: 237.38052368164062, Close_NVDA: 15.809996604919434 },
+    { date: "2022-11-29", Close_AAPL: 139.54750061035156, Close_AMZN: 92.41999816894531, Close_GOOGL: 94.73706817626953, Close_MSFT: 235.97645568847656, Close_NVDA: 15.622200965881348 },
+    { date: "2022-11-30", Close_AAPL: 146.3286590576172, Close_AMZN: 96.54000091552734, Close_GOOGL: 100.50947570800781, Close_MSFT: 250.51817321777344, Close_NVDA: 16.909143447875977 },
+    { date: "2022-12-01", Close_AAPL: 146.60543823242188, Close_AMZN: 95.5, Close_GOOGL: 100.50947570800781, Close_MSFT: 250.07630920410156, Close_NVDA: 17.120969772338867 },
+    { date: "2022-12-02", Close_AAPL: 146.11117553710938, Close_AMZN: 94.12999725341797, Close_GOOGL: 99.96208953857422, Close_MSFT: 250.4003448486328, Close_NVDA: 16.862178802490234 },
+    { date: "2022-12-05", Close_AAPL: 144.94471740722656, Close_AMZN: 91.01000213623047, Close_GOOGL: 99.00665283203125, Close_MSFT: 245.6676483154297, Close_NVDA: 16.596403121948242 },
+    { date: "2022-12-06", Close_AAPL: 141.2675018310547, Close_AMZN: 88.25, Close_GOOGL: 96.5185546875, Close_MSFT: 240.6796417236328, Close_NVDA: 15.97391128540039 },
+    { date: "2022-12-07", Close_AAPL: 139.32012939453125, Close_AMZN: 88.45999908447266, Close_GOOGL: 94.4882583618164, Close_MSFT: 239.94322204589844, Close_NVDA: 16.10680389404297 },
+    { date: "2022-12-08", Close_AAPL: 141.01046752929688, Close_AMZN: 90.3499984741211, Close_GOOGL: 93.26410675048828, Close_MSFT: 242.91836547851562, Close_NVDA: 17.154943466186523 },
+    { date: "2022-12-09", Close_AAPL: 140.52610778808594, Close_AMZN: 89.08999633789062, Close_GOOGL: 92.3883056640625, Close_MSFT: 240.97421264648438, Close_NVDA: 16.987079620361328 },
+    { date: "2022-12-12", Close_AAPL: 142.829345703125, Close_AMZN: 90.55000305175781, Close_GOOGL: 92.86602020263672, Close_MSFT: 247.93577575683594, Close_NVDA: 17.52064323425293 },
+    { date: "2022-12-13", Close_AAPL: 143.79808044433594, Close_AMZN: 92.48999786376953, Close_GOOGL: 95.17497253417969, Close_MSFT: 252.2659149169922, Close_NVDA: 18.057207107543945 },
+    { date: "2022-12-14", Close_AAPL: 141.56402587890625, Close_AMZN: 91.58000183105469, Close_GOOGL: 94.61763763427734, Close_MSFT: 252.5605010986328, Close_NVDA: 17.659530639648438 },
+    { date: "2022-12-15", Close_AAPL: 134.93116760253906, Close_AMZN: 88.44999694824219, Close_GOOGL: 90.42766571044922, Close_MSFT: 244.49920654296875, Close_NVDA: 16.938119888305664 },
+    { date: "2022-12-16", Close_AAPL: 132.96401977539062, Close_AMZN: 87.86000061035156, Close_GOOGL: 89.83052062988281, Close_MSFT: 240.25746154785156, Close_NVDA: 16.557432174682617 },
+    { date: "2022-12-19", Close_AAPL: 130.84860229492188, Close_AMZN: 84.91999816894531, Close_GOOGL: 88.0191879272461, Close_MSFT: 236.09423828125, Close_NVDA: 16.240690231323242 },
+    { date: "2022-12-20", Close_AAPL: 130.77943420410156, Close_AMZN: 85.19000244140625, Close_GOOGL: 88.5964126586914, Close_MSFT: 237.41981506347656, Close_NVDA: 16.07183074951172 },
+    { date: "2022-12-21", Close_AAPL: 133.8932342529297, Close_AMZN: 86.7699966430664, Close_GOOGL: 89.15375518798828, Close_MSFT: 240.0021514892578, Close_NVDA: 16.48748779296875 },
+    { date: "2022-12-22", Close_AAPL: 130.71023559570312, Close_AMZN: 83.79000091552734, Close_GOOGL: 87.34242248535156, Close_MSFT: 233.8751983642578, Close_NVDA: 15.326440811157227 },
+    { date: "2022-12-23", Close_AAPL: 130.344482421875, Close_AMZN: 85.25, Close_GOOGL: 88.80543518066406, Close_MSFT: 234.40541076660156, Close_NVDA: 15.193551063537598 },
+    { date: "2022-12-27", Close_AAPL: 128.5355224609375, Close_AMZN: 83.04000091552734, Close_GOOGL: 86.97418212890625, Close_MSFT: 232.66751098632812, Close_NVDA: 14.109439849853516 },
+    { date: "2022-12-28", Close_AAPL: 124.59137725830078, Close_AMZN: 81.81999969482422, Close_GOOGL: 85.61070251464844, Close_MSFT: 230.28150939941406, Close_NVDA: 14.024508476257324 },
+    { date: "2022-12-29", Close_AAPL: 128.12033081054688, Close_AMZN: 84.18000030517578, Close_GOOGL: 88.02912902832031, Close_MSFT: 236.6441192626953, Close_NVDA: 14.591044425964355 },
+    { date: "2022-12-30", Close_AAPL: 128.4366455078125, Close_AMZN: 84.0, Close_GOOGL: 87.81018829345703, Close_MSFT: 235.47567749023438, Close_NVDA: 14.602035522460938 },
+    { date: "2023-01-03", Close_AAPL: 123.63253784179688, Close_AMZN: 85.81999969482422, Close_GOOGL: 88.6959457397461, Close_MSFT: 235.24002075195312, Close_NVDA: 14.303277969360352 },
+    { date: "2023-01-04", Close_AAPL: 124.90770721435547, Close_AMZN: 85.13999938964844, Close_GOOGL: 87.66090393066406, Close_MSFT: 224.9498748779297, Close_NVDA: 14.736924171447754 },
+    { date: "2023-01-05", Close_AAPL: 123.5831069946289, Close_AMZN: 83.12000274658203, Close_GOOGL: 85.78984832763672, Close_MSFT: 218.28286743164062, Close_NVDA: 14.253320693969727 },
+    { date: "2023-01-06", Close_AAPL: 128.13023376464844, Close_AMZN: 86.08000183105469, Close_GOOGL: 86.9244155883789, Close_MSFT: 220.8553924560547, Close_NVDA: 14.846834182739258 },
+    { date: "2023-01-09", Close_AAPL: 128.65415954589844, Close_AMZN: 87.36000061035156, Close_GOOGL: 87.60118103027344, Close_MSFT: 223.0057373046875, Close_NVDA: 15.615206718444824 },
+    { date: "2023-01-10", Close_AAPL: 129.22747802734375, Close_AMZN: 89.87000274658203, Close_GOOGL: 87.99927520751953, Close_MSFT: 224.7044219970703, Close_NVDA: 15.895975112915039 },
+    { date: "2023-01-11", Close_AAPL: 131.9557342529297, Close_AMZN: 95.08999633789062, Close_GOOGL: 91.08452606201172, Close_MSFT: 231.49905395507812, Close_NVDA: 15.987897872924805 },
+    { date: "2023-01-12", Close_AAPL: 131.8766632080078, Close_AMZN: 95.2699966430664, Close_GOOGL: 90.69638061523438, Close_MSFT: 234.1894073486328, Close_NVDA: 16.497482299804688 },
+    { date: "2023-01-13", Close_AAPL: 133.21115112304688, Close_AMZN: 98.12000274658203, Close_GOOGL: 91.68167877197266, Close_MSFT: 234.8963623046875, Close_NVDA: 16.885162353515625 },
+    { date: "2023-01-17", Close_AAPL: 134.37759399414062, Close_AMZN: 96.05000305175781, Close_GOOGL: 90.85562896728516, Close_MSFT: 235.99606323242188, Close_NVDA: 17.6875057220459 },
+    { date: "2023-01-18", Close_AAPL: 133.65599060058594, Close_AMZN: 95.45999908447266, Close_GOOGL: 90.68643188476562, Close_MSFT: 231.538330078125, Close_NVDA: 17.362775802612305 },
+    { date: "2023-01-19", Close_AAPL: 133.71531677246094, Close_AMZN: 93.68000030517578, Close_GOOGL: 92.60726165771484, Close_MSFT: 227.7285919189453, Close_NVDA: 16.75127410888672 },
+    { date: "2023-01-20", Close_AAPL: 136.2854461669922, Close_AMZN: 97.25, Close_GOOGL: 97.55359649658203, Close_MSFT: 235.8684539794922, Close_NVDA: 17.82439613342285 },
+    { date: "2023-01-23", Close_AAPL: 139.4882049560547, Close_AMZN: 97.5199966430664, Close_GOOGL: 99.315185546875, Close_MSFT: 238.1856689453125, Close_NVDA: 19.177288055419922 },
+    { date: "2023-01-24", Close_AAPL: 140.89186096191406, Close_AMZN: 96.31999969482422, Close_GOOGL: 97.23512268066406, Close_MSFT: 237.6554718017578, Close_NVDA: 19.249225616455078 },
+    { date: "2023-01-25", Close_AAPL: 140.2295379638672, Close_AMZN: 97.18000030517578, Close_GOOGL: 94.76692962646484, Close_MSFT: 236.25135803222656, Close_NVDA: 19.307178497314453 },
+    { date: "2023-01-26", Close_AAPL: 142.30540466308594, Close_AMZN: 99.22000122070312, Close_GOOGL: 97.05597686767578, Close_MSFT: 243.50750732421875, Close_NVDA: 19.78578758239746 },
+    { date: "2023-01-27", Close_AAPL: 144.25279235839844, Close_AMZN: 102.23999786376953, Close_GOOGL: 98.89718627929688, Close_MSFT: 243.6645965576172, Close_NVDA: 20.34832763671875 },
+    { date: "2023-01-30", Close_AAPL: 141.3564453125, Close_AMZN: 100.55000305175781, Close_GOOGL: 96.47874450683594, Close_MSFT: 238.31333923339844, Close_NVDA: 19.146312713623047 },
+    { date: "2023-01-31", Close_AAPL: 142.63160705566406, Close_AMZN: 103.12999725341797, Close_GOOGL: 98.36969757080078, Close_MSFT: 243.32093811035156, Close_NVDA: 19.521005630493164 },
+    { date: "2023-02-01", Close_AAPL: 143.75851440429688, Close_AMZN: 105.1500015258789, Close_GOOGL: 99.95213317871094, Close_MSFT: 248.17144775390625, Close_NVDA: 20.925853729248047 },
+    { date: "2023-02-02", Close_AAPL: 149.08657836914062, Close_AMZN: 112.91000366210938, Close_GOOGL: 107.22734832763672, Close_MSFT: 259.8067932128906, Close_NVDA: 21.691225051879883 },
+    { date: "2023-02-03", Close_AAPL: 152.7242889404297, Close_AMZN: 103.38999938964844, Close_GOOGL: 104.28143310546875, Close_MSFT: 253.6699981689453, Close_NVDA: 21.08272361755371 },
+    { date: "2023-02-06", Close_AAPL: 149.98609924316406, Close_AMZN: 102.18000030517578, Close_GOOGL: 102.41038513183594, Close_MSFT: 252.11859130859375, Close_NVDA: 21.071733474731445 },
+    { date: "2023-02-07", Close_AAPL: 152.87254333496094, Close_AMZN: 102.11000061035156, Close_GOOGL: 107.12782287597656, Close_MSFT: 262.713134765625, Close_NVDA: 22.154848098754883 },
+    { date: "2023-02-08", Close_AAPL: 150.17391967773438, Close_AMZN: 100.05000305175781, Close_GOOGL: 98.89718627929688, Close_MSFT: 261.898193359375, Close_NVDA: 22.186817169189453 },
+    { date: "2023-02-09", Close_AAPL: 149.13600158691406, Close_AMZN: 98.23999786376953, Close_GOOGL: 94.55792236328125, Close_MSFT: 258.8446044921875, Close_NVDA: 22.31871223449707 },
+    { date: "2023-02-10", Close_AAPL: 149.5023193359375, Close_AMZN: 97.61000061035156, Close_GOOGL: 94.12001037597656, Close_MSFT: 258.33392333984375, Close_NVDA: 21.247589111328125 },
+    { date: "2023-02-13", Close_AAPL: 152.31396484375, Close_AMZN: 99.54000091552734, Close_GOOGL: 94.15982055664062, Close_MSFT: 266.4050598144531, Close_NVDA: 21.770158767700195 },
+    { date: "2023-02-14", Close_AAPL: 151.67042541503906, Close_AMZN: 99.69999694824219, Close_GOOGL: 94.2294921875, Close_MSFT: 267.23968505859375, Close_NVDA: 22.952194213867188 },
+    { date: "2023-02-15", Close_AAPL: 153.7791748046875, Close_AMZN: 101.16000366210938, Close_GOOGL: 96.47874450683594, Close_MSFT: 265.1036682128906, Close_NVDA: 22.745359420776367 },
+    { date: "2023-02-16", Close_AAPL: 152.1753387451172, Close_AMZN: 98.1500015258789, Close_GOOGL: 95.0555419921875, Close_MSFT: 258.0458984375, Close_NVDA: 21.98398780822754 },
+    { date: "2023-02-17", Close_AAPL: 151.02691650390625, Close_AMZN: 97.19999694824219, Close_GOOGL: 93.90105438232422, Close_MSFT: 254.01991271972656, Close_NVDA: 21.370492935180664 },
+    { date: "2023-02-21", Close_AAPL: 146.99755859375, Close_AMZN: 94.58000183105469, Close_GOOGL: 91.3532485961914, Close_MSFT: 248.7142791748047, Close_NVDA: 20.63808822631836 },
+    { date: "2023-02-22", Close_AAPL: 147.42327880859375, Close_AMZN: 95.79000091552734, Close_GOOGL: 91.21391296386719, Close_MSFT: 247.57244873046875, Close_NVDA: 20.73700714111328 },
+    { date: "2023-02-23", Close_AAPL: 147.9083709716797, Close_AMZN: 95.81999969482422, Close_GOOGL: 90.45752716064453, Close_MSFT: 250.78143310546875, Close_NVDA: 23.644624710083008 },
+    { date: "2023-02-24", Close_AAPL: 145.24526977539062, Close_AMZN: 93.5, Close_GOOGL: 88.70590209960938, Close_MSFT: 245.31829833984375, Close_NVDA: 23.266935348510742 },
+    { date: "2023-02-27", Close_AAPL: 146.4431610107422, Close_AMZN: 93.76000213623047, Close_GOOGL: 89.4423828125, Close_MSFT: 246.2436065673828, Close_NVDA: 23.48175811767578 },
+    { date: "2023-02-28", Close_AAPL: 145.93826293945312, Close_AMZN: 94.2300033569336, Close_GOOGL: 89.63147735595703, Close_MSFT: 245.51516723632812, Close_NVDA: 23.196990966796875 },
+    { date: "2023-03-01", Close_AAPL: 143.8592071533203, Close_AMZN: 92.16999816894531, Close_GOOGL: 89.93004608154297, Close_MSFT: 242.4145050048828, Close_NVDA: 22.679418563842773 },
+    { date: "2023-03-02", Close_AAPL: 144.45323181152344, Close_AMZN: 92.12999725341797, Close_GOOGL: 91.56224822998047, Close_MSFT: 247.17872619628906, Close_NVDA: 23.294910430908203 },
+    { date: "2023-03-03", Close_AAPL: 149.52210998535156, Close_AMZN: 94.9000015258789, Close_GOOGL: 93.20439910888672, Close_MSFT: 251.29327392578125, Close_NVDA: 23.870441436767578 },
+    { date: "2023-03-06", Close_AAPL: 152.29415893554688, Close_AMZN: 93.75, Close_GOOGL: 94.6773452758789, Close_MSFT: 252.8485565185547, Close_NVDA: 23.534717559814453 },
+    { date: "2023-03-07", Close_AAPL: 150.08642578125, Close_AMZN: 93.55000305175781, Close_GOOGL: 93.41339874267578, Close_MSFT: 250.17111206054688, Close_NVDA: 23.272884368896484 },
+    { date: "2023-03-08", Close_AAPL: 151.34371948242188, Close_AMZN: 93.91999816894531, Close_GOOGL: 93.8015365600586, Close_MSFT: 249.72816467285156, Close_NVDA: 24.165307998657227 },
+    { date: "2023-03-09", Close_AAPL: 149.08651733398438, Close_AMZN: 92.25, Close_GOOGL: 91.88072204589844, Close_MSFT: 248.36978149414062, Close_NVDA: 23.42078971862793 },
+    { date: "2023-03-10", Close_AAPL: 147.01736450195312, Close_AMZN: 90.7300033569336, Close_GOOGL: 90.19876098632812, Close_MSFT: 244.69818115234375, Close_NVDA: 22.95009422302246 },
+    { date: "2023-03-13", Close_AAPL: 148.9676971435547, Close_AMZN: 92.43000030517578, Close_GOOGL: 90.67648315429688, Close_MSFT: 249.94471740722656, Close_NVDA: 22.951093673706055 },
+    { date: "2023-03-14", Close_AAPL: 151.0665283203125, Close_AMZN: 94.87999725341797, Close_GOOGL: 93.52287292480469, Close_MSFT: 256.7071838378906, Close_NVDA: 24.047380447387695 },
+    { date: "2023-03-15", Close_AAPL: 151.46253967285156, Close_AMZN: 96.19999694824219, Close_GOOGL: 95.65267944335938, Close_MSFT: 261.284423828125, Close_NVDA: 24.212276458740234 },
+    { date: "2023-03-16", Close_AAPL: 154.2939910888672, Close_AMZN: 100.04000091552734, Close_GOOGL: 99.84265899658203, Close_MSFT: 271.8759460449219, Close_NVDA: 25.52442169189453 },
+    { date: "2023-03-17", Close_AAPL: 153.45248413085938, Close_AMZN: 98.94999694824219, Close_GOOGL: 101.136474609375, Close_MSFT: 275.05535888671875, Close_NVDA: 25.70830535888672 },
+    { date: "2023-03-20", Close_AAPL: 155.82850646972656, Close_AMZN: 97.70999908447266, Close_GOOGL: 100.73837280273438, Close_MSFT: 267.96807861328125, Close_NVDA: 25.88319206237793 },
+    { date: "2023-03-21", Close_AAPL: 157.68972778320312, Close_AMZN: 100.61000061035156, Close_GOOGL: 104.42076873779297, Close_MSFT: 269.4938049316406, Close_NVDA: 26.181995391845703 },
+    { date: "2023-03-22", Close_AAPL: 156.25424194335938, Close_AMZN: 98.69999694824219, Close_GOOGL: 102.8781509399414, Close_MSFT: 268.0271301269531, Close_NVDA: 26.45081901550293 },
+    { date: "2023-03-23", Close_AAPL: 157.34323120117188, Close_AMZN: 98.70999908447266, Close_GOOGL: 105.0975341796875, Close_MSFT: 273.31304931640625, Close_NVDA: 27.17335319519043 },
+    { date: "2023-03-24", Close_AAPL: 158.6500701904297, Close_AMZN: 98.12999725341797, Close_GOOGL: 104.93830108642578, Close_MSFT: 276.177490234375, Close_NVDA: 26.761619567871094 },
+    { date: "2023-03-27", Close_AAPL: 156.69972229003906, Close_AMZN: 98.04000091552734, Close_GOOGL: 101.97247314453125, Close_MSFT: 272.0531311035156, Close_NVDA: 26.51378059387207 },
+    { date: "2023-03-28", Close_AAPL: 156.07601928710938, Close_AMZN: 97.23999786376953, Close_GOOGL: 100.54928588867188, Close_MSFT: 270.921142578125, Close_NVDA: 26.392860412597656 },
+    { date: "2023-03-29", Close_AAPL: 159.1648712158203, Close_AMZN: 100.25, Close_GOOGL: 100.90756225585938, Close_MSFT: 276.1184387207031, Close_NVDA: 26.966487884521484 },
+    { date: "2023-03-30", Close_AAPL: 160.73899841308594, Close_AMZN: 102.0, Close_GOOGL: 100.40995025634766, Close_MSFT: 279.60302734375, Close_NVDA: 27.36522674560547 },
+    { date: "2023-03-31", Close_AAPL: 163.25364685058594, Close_AMZN: 103.29000091552734, Close_GOOGL: 103.23643493652344, Close_MSFT: 283.7864990234375, Close_NVDA: 27.758974075317383 },
+    { date: "2023-04-03", Close_AAPL: 164.51092529296875, Close_AMZN: 102.41000366210938, Close_GOOGL: 103.86343383789062, Close_MSFT: 282.7332458496094, Close_NVDA: 27.946849822998047 },
+    { date: "2023-04-04", Close_AAPL: 163.97633361816406, Close_AMZN: 103.94999694824219, Close_GOOGL: 104.22171783447266, Close_MSFT: 282.68402099609375, Close_NVDA: 27.4351806640625 },
+    { date: "2023-04-05", Close_AAPL: 162.12501525878906, Close_AMZN: 101.0999984741211, Close_GOOGL: 103.97291564941406, Close_MSFT: 279.888427734375, Close_NVDA: 26.863554000854492 },
+    { date: "2023-04-06", Close_AAPL: 163.01605224609375, Close_AMZN: 102.05999755859375, Close_GOOGL: 107.90411376953125, Close_MSFT: 287.0348205566406, Close_NVDA: 27.019453048706055 },
+    { date: "2023-04-10", Close_AAPL: 160.41229248046875, Close_AMZN: 102.16999816894531, Close_GOOGL: 105.93354034423828, Close_MSFT: 284.8594665527344, Close_NVDA: 27.561098098754883 },
+    { date: "2023-04-11", Close_AAPL: 159.19454956054688, Close_AMZN: 99.91999816894531, Close_GOOGL: 104.84872436523438, Close_MSFT: 278.40216064453125, Close_NVDA: 27.1513671875 },
+    { date: "2023-04-12", Close_AAPL: 158.50157165527344, Close_AMZN: 97.83000183105469, Close_GOOGL: 104.14209747314453, Close_MSFT: 279.0517883300781, Close_NVDA: 26.477802276611328 },
+    { date: "2023-04-13", Close_AAPL: 163.9070281982422, Close_AMZN: 102.4000015258789, Close_GOOGL: 106.91883087158203, Close_MSFT: 285.3023986816406, Close_NVDA: 26.445823669433594 },
+    { date: "2023-04-14", Close_AAPL: 163.560546875, Close_AMZN: 102.51000213623047, Close_GOOGL: 108.35196685791016, Close_MSFT: 281.6603088378906, Close_NVDA: 26.740633010864258 },
+    { date: "2023-04-17", Close_AAPL: 163.580322265625, Close_AMZN: 102.73999786376953, Close_GOOGL: 105.46577453613281, Close_MSFT: 284.2786560058594, Close_NVDA: 26.984474182128906 },
+    { date: "2023-04-18", Close_AAPL: 164.8079376220703, Close_AMZN: 102.30000305175781, Close_GOOGL: 104.00276947021484, Close_MSFT: 283.85540771484375, Close_NVDA: 27.649044036865234 },
+    { date: "2023-04-19", Close_AAPL: 165.95639038085938, Close_AMZN: 104.30000305175781, Close_GOOGL: 103.68429565429688, Close_MSFT: 283.93414306640625, Close_NVDA: 27.912870407104492 },
+    { date: "2023-04-20", Close_AAPL: 164.9861297607422, Close_AMZN: 103.80999755859375, Close_GOOGL: 104.78901672363281, Close_MSFT: 281.6307678222656, Close_NVDA: 27.086408615112305 },
+    { date: "2023-04-21", Close_AAPL: 163.3724365234375, Close_AMZN: 106.95999908447266, Close_GOOGL: 104.908447265625, Close_MSFT: 281.2862854003906, Close_NVDA: 27.101396560668945 },
+    { date: "2023-04-24", Close_AAPL: 163.67935180664062, Close_AMZN: 106.20999908447266, Close_GOOGL: 105.46577453613281, Close_MSFT: 277.3586730957031, Close_NVDA: 27.024450302124023 },
+    { date: "2023-04-25", Close_AAPL: 162.1349334716797, Close_AMZN: 102.56999969482422, Close_GOOGL: 103.3558578491211, Close_MSFT: 271.1081237792969, Close_NVDA: 26.223966598510742 },
+    { date: "2023-04-26", Close_AAPL: 162.12501525878906, Close_AMZN: 104.9800033569336, Close_GOOGL: 103.21652221679688, Close_MSFT: 290.7458190917969, Close_NVDA: 26.938501358032227 },
+    { date: "2023-04-27", Close_AAPL: 166.72857666015625, Close_AMZN: 109.81999969482422, Close_GOOGL: 107.07805633544922, Close_MSFT: 300.0577087402344, Close_NVDA: 27.208330154418945 },
+    { date: "2023-04-28", Close_AAPL: 167.9858856201172, Close_AMZN: 105.44999694824219, Close_GOOGL: 106.8292465209961, Close_MSFT: 302.4496765136719, Close_NVDA: 27.730989456176758 },
+    { date: "2023-05-01", Close_AAPL: 167.8968048095703, Close_AMZN: 102.05000305175781, Close_GOOGL: 106.6899185180664, Close_MSFT: 300.7763366699219, Close_NVDA: 28.8912353515625 },
+    { date: "2023-05-02", Close_AAPL: 166.85728454589844, Close_AMZN: 103.62999725341797, Close_GOOGL: 104.81886291503906, Close_MSFT: 300.628662109375, Close_NVDA: 28.191686630249023 },
+    { date: "2023-05-03", Close_AAPL: 165.7781524658203, Close_AMZN: 103.6500015258789, Close_GOOGL: 104.908447265625, Close_MSFT: 299.6343994140625, Close_NVDA: 27.783954620361328 },
+    { date: "2023-05-04", Close_AAPL: 164.13475036621094, Close_AMZN: 104.0, Close_GOOGL: 104.1918716430664, Close_MSFT: 300.628662109375, Close_NVDA: 27.544111251831055 },
+    { date: "2023-05-05", Close_AAPL: 171.8370819091797, Close_AMZN: 105.66000366210938, Close_GOOGL: 105.06768035888672, Close_MSFT: 305.7865905761719, Close_NVDA: 28.661386489868164 },
+    { date: "2023-05-08", Close_AAPL: 171.7677764892578, Close_AMZN: 105.83000183105469, Close_GOOGL: 107.2572021484375, Close_MSFT: 303.81787109375, Close_NVDA: 29.132076263427734 },
+    { date: "2023-05-09", Close_AAPL: 170.05503845214844, Close_AMZN: 106.62000274658203, Close_GOOGL: 106.8392105102539, Close_MSFT: 302.1937255859375, Close_NVDA: 28.55245590209961 },
+    { date: "2023-05-10", Close_AAPL: 171.8271484375, Close_AMZN: 110.19000244140625, Close_GOOGL: 111.21826934814453, Close_MSFT: 307.42059326171875, Close_NVDA: 28.866252899169922 },
+    { date: "2023-05-11", Close_AAPL: 172.01527404785156, Close_AMZN: 112.18000030517578, Close_GOOGL: 116.01533508300781, Close_MSFT: 305.2550354003906, Close_NVDA: 28.5594482421875 },
+    { date: "2023-05-12", Close_AAPL: 171.08335876464844, Close_AMZN: 110.26000213623047, Close_GOOGL: 116.95087432861328, Close_MSFT: 304.1328430175781, Close_NVDA: 28.321603775024414 },
+    { date: "2023-05-15", Close_AAPL: 170.58767700195312, Close_AMZN: 111.19999694824219, Close_GOOGL: 115.95561981201172, Close_MSFT: 304.61517333984375, Close_NVDA: 28.934207916259766 },
+    { date: "2023-05-16", Close_AAPL: 170.58767700195312, Close_AMZN: 113.4000015258789, Close_GOOGL: 118.94134521484375, Close_MSFT: 306.8594970703125, Close_NVDA: 29.19403839111328 },
+    { date: "2023-05-17", Close_AAPL: 171.20233154296875, Close_AMZN: 115.5, Close_GOOGL: 120.26502227783203, Close_MSFT: 309.7597961425781, Close_NVDA: 30.158414840698242 },
+    { date: "2023-05-18", Close_AAPL: 173.5419921875, Close_AMZN: 118.1500015258789, Close_GOOGL: 122.24555206298828, Close_MSFT: 314.2187805175781, Close_NVDA: 31.657438278198242 },
+    { date: "2023-05-19", Close_AAPL: 173.65106201171875, Close_AMZN: 116.25, Close_GOOGL: 122.17588806152344, Close_MSFT: 314.04119873046875, Close_NVDA: 31.24370574951172 },
+    { date: "2023-05-22", Close_AAPL: 172.6993408203125, Close_AMZN: 115.01000213623047, Close_GOOGL: 124.45499420166016, Close_MSFT: 316.8428649902344, Close_NVDA: 31.15576934814453 },
+    { date: "2023-05-23", Close_AAPL: 170.08206176757812, Close_AMZN: 114.98999786376953, Close_GOOGL: 121.97683715820312, Close_MSFT: 311.0028076171875, Close_NVDA: 30.66808319091797 },
+    { date: "2023-05-24", Close_AAPL: 170.3596649169922, Close_AMZN: 116.75, Close_GOOGL: 120.32473754882812, Close_MSFT: 309.6117858886719, Close_NVDA: 30.518177032470703 },
+    { date: "2023-05-25", Close_AAPL: 171.49974060058594, Close_AMZN: 115.0, Close_GOOGL: 122.89246368408203, Close_MSFT: 321.5188903808594, Close_NVDA: 37.955345153808594 },
+    { date: "2023-05-26", Close_AAPL: 173.91871643066406, Close_AMZN: 120.11000061035156, Close_GOOGL: 124.01708221435547, Close_MSFT: 328.3947448730469, Close_NVDA: 38.92072296142578 },
+    { date: "2023-05-30", Close_AAPL: 175.7726287841797, Close_AMZN: 121.66000366210938, Close_GOOGL: 123.08155059814453, Close_MSFT: 326.7373962402344, Close_NVDA: 40.08496856689453 },
+    { date: "2023-05-31", Close_AAPL: 175.72305297851562, Close_AMZN: 120.58000183105469, Close_GOOGL: 122.28536224365234, Close_MSFT: 323.95550537109375, Close_NVDA: 37.80944061279297 },
+    { date: "2023-06-01", Close_AAPL: 178.53857421875, Close_AMZN: 122.7699966430664, Close_GOOGL: 123.13130950927734, Close_MSFT: 328.0888671875, Close_NVDA: 39.74418640136719 },
+    { date: "2023-06-02", Close_AAPL: 179.3911895751953, Close_AMZN: 124.25, Close_GOOGL: 124.07678985595703, Close_MSFT: 330.870849609375, Close_NVDA: 39.301475524902344 },
+    { date: "2023-06-05", Close_AAPL: 178.03297424316406, Close_AMZN: 125.30000305175781, Close_GOOGL: 125.4104232788086, Close_MSFT: 331.4035949707031, Close_NVDA: 39.14558029174805 },
+    { date: "2023-06-06", Close_AAPL: 177.66616821289062, Close_AMZN: 126.61000061035156, Close_GOOGL: 126.70423889160156, Close_MSFT: 329.1741027832031, Close_NVDA: 38.628910064697266 },
+    { date: "2023-06-07", Close_AAPL: 176.2881622314453, Close_AMZN: 121.2300033569336, Close_GOOGL: 121.91712188720703, Close_MSFT: 319.0131530761719, Close_NVDA: 37.454551696777344 },
+    { date: "2023-06-08", Close_AAPL: 179.0144500732422, Close_AMZN: 124.25, Close_GOOGL: 121.55884552001953, Close_MSFT: 320.86773681640625, Close_NVDA: 38.48899459838867 },
+    { date: "2023-06-09", Close_AAPL: 179.40110778808594, Close_AMZN: 123.43000030517578, Close_GOOGL: 121.64840698242188, Close_MSFT: 322.3771057128906, Close_NVDA: 38.748844146728516 },
+    { date: "2023-06-12", Close_AAPL: 182.2067108154297, Close_AMZN: 126.56999969482422, Close_GOOGL: 123.05168914794922, Close_MSFT: 327.3687744140625, Close_NVDA: 39.46045684814453 },
+    { date: "2023-06-13", Close_AAPL: 181.7308349609375, Close_AMZN: 126.66000366210938, Close_GOOGL: 123.24079895019531, Close_MSFT: 329.77581787109375, Close_NVDA: 40.99961471557617 },
+    { date: "2023-06-14", Close_AAPL: 182.36532592773438, Close_AMZN: 126.41999816894531, Close_GOOGL: 123.08155059814453, Close_MSFT: 332.7846374511719, Close_NVDA: 42.97353744506836 },
+    { date: "2023-06-15", Close_AAPL: 184.40757751464844, Close_AMZN: 127.11000061035156, Close_GOOGL: 124.49479675292969, Close_MSFT: 343.39935302734375, Close_NVDA: 42.629730224609375 },
+    { date: "2023-06-16", Close_AAPL: 183.3269805908203, Close_AMZN: 125.48999786376953, Close_GOOGL: 122.94222259521484, Close_MSFT: 337.7072448730469, Close_NVDA: 42.668704986572266 },
+    { date: "2023-06-20", Close_AAPL: 183.41619873046875, Close_AMZN: 125.77999877929688, Close_GOOGL: 122.51426696777344, Close_MSFT: 333.48504638671875, Close_NVDA: 43.784095764160156 },
+    { date: "2023-06-21", Close_AAPL: 182.37522888183594, Close_AMZN: 124.83000183105469, Close_GOOGL: 119.97639465332031, Close_MSFT: 329.0556945800781, Close_NVDA: 43.02151107788086 },
+    { date: "2023-06-22", Close_AAPL: 185.38905334472656, Close_AMZN: 130.14999389648438, Close_GOOGL: 122.56403350830078, Close_MSFT: 335.1226501464844, Close_NVDA: 43.00152587890625 },
+    { date: "2023-06-23", Close_AAPL: 185.07179260253906, Close_AMZN: 129.3300018310547, Close_GOOGL: 121.75788116455078, Close_MSFT: 330.4959411621094, Close_NVDA: 42.185970306396484 },
+    { date: "2023-06-26", Close_AAPL: 183.67393493652344, Close_AMZN: 127.33000183105469, Close_GOOGL: 117.77691650390625, Close_MSFT: 324.1626281738281, Close_NVDA: 40.60982894897461 },
+    { date: "2023-06-27", Close_AAPL: 186.43992614746094, Close_AMZN: 129.17999267578125, Close_GOOGL: 117.76696014404297, Close_MSFT: 330.05206298828125, Close_NVDA: 41.853145599365234 },
+    { date: "2023-06-28", Close_AAPL: 187.6196746826172, Close_AMZN: 129.0399932861328, Close_GOOGL: 119.60816192626953, Close_MSFT: 331.3147888183594, Close_NVDA: 41.09457015991211 },
+    { date: "2023-06-29", Close_AAPL: 187.95675659179688, Close_AMZN: 127.9000015258789, Close_GOOGL: 118.53329467773438, Close_MSFT: 330.52557373046875, Close_NVDA: 40.79972839355469 },
+    { date: "2023-06-30", Close_AAPL: 192.2990264892578, Close_AMZN: 130.36000061035156, Close_GOOGL: 119.13043212890625, Close_MSFT: 335.9414367675781, Close_NVDA: 42.27891540527344 },
+    { date: "2023-07-03", Close_AAPL: 190.80203247070312, Close_AMZN: 130.22000122070312, Close_GOOGL: 119.3294906616211, Close_MSFT: 333.4258728027344, Close_NVDA: 42.389854431152344 },
+    { date: "2023-07-05", Close_AAPL: 189.6817626953125, Close_AMZN: 130.3800048828125, Close_GOOGL: 121.17068481445312, Close_MSFT: 333.5837097167969, Close_NVDA: 42.29391098022461 },
+    { date: "2023-07-06", Close_AAPL: 190.15762329101562, Close_AMZN: 128.36000061035156, Close_GOOGL: 119.53849029541016, Close_MSFT: 336.6615295410156, Close_NVDA: 42.08002853393555 },
+    { date: "2023-07-07", Close_AAPL: 189.03732299804688, Close_AMZN: 129.77999877929688, Close_GOOGL: 118.9114990234375, Close_MSFT: 332.6662902832031, Close_NVDA: 42.47980880737305 },
+    { date: "2023-07-10", Close_AAPL: 186.98519897460938, Close_AMZN: 127.12999725341797, Close_GOOGL: 115.89591217041016, Close_MSFT: 327.34906005859375, Close_NVDA: 42.156978607177734 },
+    { date: "2023-07-11", Close_AAPL: 186.45974731445312, Close_AMZN: 128.77999877929688, Close_GOOGL: 116.5826187133789, Close_MSFT: 327.98040771484375, Close_NVDA: 42.38186264038086 },
+    { date: "2023-07-12", Close_AAPL: 188.1352081298828, Close_AMZN: 130.8000030517578, Close_GOOGL: 118.36410522460938, Close_MSFT: 332.64654541015625, Close_NVDA: 43.878047943115234 },
+    { date: "2023-07-13", Close_AAPL: 188.8985595703125, Close_AMZN: 134.3000030517578, Close_GOOGL: 123.94741821289062, Close_MSFT: 338.0328369140625, Close_NVDA: 45.9519157409668 },
+    { date: "2023-07-14", Close_AAPL: 189.0472869873047, Close_AMZN: 134.67999267578125, Close_GOOGL: 124.8232192993164, Close_MSFT: 340.5780029296875, Close_NVDA: 45.444190979003906 },
+    { date: "2023-07-17", Close_AAPL: 192.31884765625, Close_AMZN: 133.55999755859375, Close_GOOGL: 124.05689239501953, Close_MSFT: 341.06134033203125, Close_NVDA: 46.43564987182617 },
+    { date: "2023-07-18", Close_AAPL: 192.0610809326172, Close_AMZN: 132.8300018310547, Close_GOOGL: 123.1711196899414, Close_MSFT: 354.63555908203125, Close_NVDA: 47.46808624267578 },
+    { date: "2023-07-19", Close_AAPL: 193.41928100585938, Close_AMZN: 135.36000061035156, Close_GOOGL: 121.44935607910156, Close_MSFT: 350.28509521484375, Close_NVDA: 47.05131149291992 },
+    { date: "2023-07-20", Close_AAPL: 191.4662628173828, Close_AMZN: 129.9600067138672, Close_GOOGL: 118.63282012939453, Close_MSFT: 342.18597412109375, Close_NVDA: 45.49516296386719 },
+    { date: "2023-07-21", Close_AAPL: 190.2864990234375, Close_AMZN: 130.0, Close_GOOGL: 119.44892120361328, Close_MSFT: 339.1277770996094, Close_NVDA: 44.284820556640625 },
+    { date: "2023-07-24", Close_AAPL: 191.0895233154297, Close_AMZN: 128.8000030517578, Close_GOOGL: 120.95173645019531, Close_MSFT: 340.44970703125, Close_NVDA: 44.58766174316406 },
+    { date: "2023-07-25", Close_AAPL: 191.9520263671875, Close_AMZN: 129.1300048828125, Close_GOOGL: 121.62849426269531, Close_MSFT: 346.240478515625, Close_NVDA: 45.65407943725586 },
+    { date: "2023-07-26", Close_AAPL: 192.82443237304688, Close_AMZN: 128.14999389648438, Close_GOOGL: 128.6549072265625, Close_MSFT: 333.2088317871094, Close_NVDA: 45.42719650268555 },
+    { date: "2023-07-27", Close_AAPL: 191.5554962158203, Close_AMZN: 128.25, Close_GOOGL: 128.78428649902344, Close_MSFT: 326.2540283203125, Close_NVDA: 45.87495803833008 },
+    { date: "2023-07-28", Close_AAPL: 194.1429901123047, Close_AMZN: 132.2100067138672, Close_GOOGL: 131.94915771484375, Close_MSFT: 333.8007507324219, Close_NVDA: 46.72449493408203 },
+    { date: "2023-07-31", Close_AAPL: 194.7576446533203, Close_AMZN: 133.67999267578125, Close_GOOGL: 132.08848571777344, Close_MSFT: 331.3838195800781, Close_NVDA: 46.70349884033203 },
+    { date: "2023-08-01", Close_AAPL: 193.92489624023438, Close_AMZN: 131.69000244140625, Close_GOOGL: 130.92404174804688, Close_MSFT: 331.79815673828125, Close_NVDA: 46.481624603271484 },
+    { date: "2023-08-02", Close_AAPL: 190.92098999023438, Close_AMZN: 128.2100067138672, Close_GOOGL: 127.7691421508789, Close_MSFT: 323.0775146484375, Close_NVDA: 44.244850158691406 },
+    { date: "2023-08-03", Close_AAPL: 189.5231170654297, Close_AMZN: 128.91000366210938, Close_GOOGL: 127.83880615234375, Close_MSFT: 322.2488708496094, Close_NVDA: 44.4907112121582 },
+    { date: "2023-08-04", Close_AAPL: 180.42222595214844, Close_AMZN: 139.57000732421875, Close_GOOGL: 127.50042724609375, Close_MSFT: 323.3537292480469, Close_NVDA: 44.65562057495117 },
+    { date: "2023-08-07", Close_AAPL: 177.30926513671875, Close_AMZN: 142.22000122070312, Close_GOOGL: 130.90415954589844, Close_MSFT: 325.6522521972656, Close_NVDA: 45.3922233581543 },
+    { date: "2023-08-08", Close_AAPL: 178.25108337402344, Close_AMZN: 139.94000244140625, Close_GOOGL: 130.77476501464844, Close_MSFT: 321.6471252441406, Close_NVDA: 44.63963317871094 },
+    { date: "2023-08-09", Close_AAPL: 176.6549530029297, Close_AMZN: 137.85000610351562, Close_GOOGL: 129.04306030273438, Close_MSFT: 317.878662109375, Close_NVDA: 42.530784606933594 },
+    { date: "2023-08-10", Close_AAPL: 176.4368438720703, Close_AMZN: 138.55999755859375, Close_GOOGL: 129.0729217529297, Close_MSFT: 318.5692138671875, Close_NVDA: 42.364871978759766 },
+    { date: "2023-08-11", Close_AAPL: 176.4964141845703, Close_AMZN: 138.41000366210938, Close_GOOGL: 128.94351196289062, Close_MSFT: 316.6751403808594, Close_NVDA: 40.832706451416016 },
+    { date: "2023-08-14", Close_AAPL: 178.15426635742188, Close_AMZN: 140.57000732421875, Close_GOOGL: 130.70510864257812, Close_MSFT: 319.66424560546875, Close_NVDA: 43.729122161865234 },
+    { date: "2023-08-15", Close_AAPL: 176.1588897705078, Close_AMZN: 137.6699981689453, Close_GOOGL: 129.16249084472656, Close_MSFT: 317.5137023925781, Close_NVDA: 43.9160270690918 },
+    { date: "2023-08-16", Close_AAPL: 175.28529357910156, Close_AMZN: 135.07000732421875, Close_GOOGL: 128.0876007080078, Close_MSFT: 316.7425537109375, Close_NVDA: 43.46227264404297 },
+    { date: "2023-08-17", Close_AAPL: 172.73399353027344, Close_AMZN: 133.97999572753906, Close_GOOGL: 129.3018035888672, Close_MSFT: 313.2627868652344, Close_NVDA: 43.32034683227539 },
+    { date: "2023-08-18", Close_AAPL: 173.22044372558594, Close_AMZN: 133.22000122070312, Close_GOOGL: 126.853515625, Close_MSFT: 312.8673400878906, Close_NVDA: 43.27537155151367 },
+    { date: "2023-08-21", Close_AAPL: 174.5605926513672, Close_AMZN: 134.67999267578125, Close_GOOGL: 127.75918579101562, Close_MSFT: 318.2057189941406, Close_NVDA: 46.941375732421875 },
+    { date: "2023-08-22", Close_AAPL: 175.94049072265625, Close_AMZN: 134.25, Close_GOOGL: 128.4658203125, Close_MSFT: 318.7790832519531, Close_NVDA: 45.64308547973633 },
+    { date: "2023-08-23", Close_AAPL: 179.8021697998047, Close_AMZN: 135.52000427246094, Close_GOOGL: 131.7401580810547, Close_MSFT: 323.26727294921875, Close_NVDA: 47.09029769897461 },
+    { date: "2023-08-24", Close_AAPL: 175.0966796875, Close_AMZN: 131.83999633789062, Close_GOOGL: 129.16249084472656, Close_MSFT: 316.3174743652344, Close_NVDA: 47.13726806640625 },
+    { date: "2023-08-25", Close_AAPL: 177.31045532226562, Close_AMZN: 133.25999450683594, Close_GOOGL: 129.26199340820312, Close_MSFT: 319.2931213378906, Close_NVDA: 45.99289321899414 },
+    { date: "2023-08-28", Close_AAPL: 178.8789520263672, Close_AMZN: 133.13999938964844, Close_GOOGL: 130.38662719726562, Close_MSFT: 320.0049133300781, Close_NVDA: 46.809444427490234 },
+    { date: "2023-08-29", Close_AAPL: 182.7803497314453, Close_AMZN: 134.91000366210938, Close_GOOGL: 133.92971801757812, Close_MSFT: 324.66119384765625, Close_NVDA: 48.757381439208984 },
+    { date: "2023-08-30", Close_AAPL: 186.28466796875, Close_AMZN: 135.07000732421875, Close_GOOGL: 135.23345947265625, Close_MSFT: 325.03680419921875, Close_NVDA: 49.237117767333984 },
+    { date: "2023-08-31", Close_AAPL: 186.5030517578125, Close_AMZN: 138.00999450683594, Close_GOOGL: 135.52206420898438, Close_MSFT: 324.01861572265625, Close_NVDA: 49.32807159423828 },
+    { date: "2023-09-01", Close_AAPL: 188.0814971923828, Close_AMZN: 138.1199951171875, Close_GOOGL: 135.01451110839844, Close_MSFT: 324.9082946777344, Close_NVDA: 48.4825325012207 },
+    { date: "2023-09-05", Close_AAPL: 188.31976318359375, Close_AMZN: 137.27000427246094, Close_GOOGL: 135.1239776611328, Close_MSFT: 329.74249267578125, Close_NVDA: 48.52151870727539 },
+    { date: "2023-09-06", Close_AAPL: 181.5791778564453, Close_AMZN: 135.36000061035156, Close_GOOGL: 133.82022094726562, Close_MSFT: 329.08013916015625, Close_NVDA: 47.0391960144043 },
+    { date: "2023-09-07", Close_AAPL: 176.26806640625, Close_AMZN: 137.85000610351562, Close_GOOGL: 134.6164093017578, Close_MSFT: 326.14404296875, Close_NVDA: 46.21957778930664 },
+    { date: "2023-09-08", Close_AAPL: 176.88357543945312, Close_AMZN: 138.22999572753906, Close_GOOGL: 135.7310791015625, Close_MSFT: 330.4542541503906, Close_NVDA: 45.55088424682617 },
+    { date: "2023-09-11", Close_AAPL: 178.05499267578125, Close_AMZN: 143.10000610351562, Close_GOOGL: 136.2685089111328, Close_MSFT: 334.0823669433594, Close_NVDA: 45.15707015991211 },
+    { date: "2023-09-12", Close_AAPL: 175.01727294921875, Close_AMZN: 141.22999572753906, Close_GOOGL: 134.69602966308594, Close_MSFT: 327.9827880859375, Close_NVDA: 44.84920883178711 },
+    { date: "2023-09-13", Close_AAPL: 172.94247436523438, Close_AMZN: 144.85000610351562, Close_GOOGL: 136.05950927734375, Close_MSFT: 332.2238464355469, Close_NVDA: 45.46392822265625 },
+    { date: "2023-09-14", Close_AAPL: 174.46133422851562, Close_AMZN: 144.72000122070312, Close_GOOGL: 137.4429168701172, Close_MSFT: 334.8337097167969, Close_NVDA: 45.55988693237305 },
+    { date: "2023-09-15", Close_AAPL: 173.73663330078125, Close_AMZN: 140.38999938964844, Close_GOOGL: 136.7462158203125, Close_MSFT: 326.4505310058594, Close_NVDA: 43.87966537475586 },
+    { date: "2023-09-18", Close_AAPL: 176.6750946044922, Close_AMZN: 139.97999572753906, Close_GOOGL: 137.5523681640625, Close_MSFT: 325.3037414550781, Close_NVDA: 43.94562530517578 },
+    { date: "2023-09-19", Close_AAPL: 177.76710510253906, Close_AMZN: 137.6300048828125, Close_GOOGL: 137.38316345214844, Close_MSFT: 324.8984069824219, Close_NVDA: 43.49983596801758 },
+    { date: "2023-09-20", Close_AAPL: 174.21315002441406, Close_AMZN: 135.2899932861328, Close_GOOGL: 133.10365295410156, Close_MSFT: 317.1083679199219, Close_NVDA: 42.21943283081055 },
+    { date: "2023-09-21", Close_AAPL: 172.66448974609375, Close_AMZN: 129.3300018310547, Close_GOOGL: 129.8193359375, Close_MSFT: 315.88250732421875, Close_NVDA: 40.99799346923828 },
+    { date: "2023-09-22", Close_AAPL: 173.5182342529297, Close_AMZN: 129.1199951171875, Close_GOOGL: 129.6302490234375, Close_MSFT: 313.39129638671875, Close_NVDA: 41.590721130371094 },
+    { date: "2023-09-25", Close_AAPL: 174.79885864257812, Close_AMZN: 131.27000427246094, Close_GOOGL: 130.4861602783203, Close_MSFT: 313.915283203125, Close_NVDA: 42.20243835449219 },
+    { date: "2023-09-26", Close_AAPL: 170.70884704589844, Close_AMZN: 125.9800033569336, Close_GOOGL: 127.958251953125, Close_MSFT: 308.5768737792969, Close_NVDA: 41.89158248901367 },
+    { date: "2023-09-27", Close_AAPL: 169.18995666503906, Close_AMZN: 125.9800033569336, Close_GOOGL: 129.9188690185547, Close_MSFT: 309.2194519042969, Close_NVDA: 42.448326110839844 },
+    { date: "2023-09-28", Close_AAPL: 169.4480743408203, Close_AMZN: 125.9800033569336, Close_GOOGL: 131.68045043945312, Close_MSFT: 310.0597839355469, Close_NVDA: 43.069034576416016 },
+    { date: "2023-09-29", Close_AAPL: 169.9642791748047, Close_AMZN: 127.12000274658203, Close_GOOGL: 130.23733520507812, Close_MSFT: 312.1456298828125, Close_NVDA: 43.47884750366211 },
+    { date: "2023-10-02", Close_AAPL: 172.48580932617188, Close_AMZN: 129.4600067138672, Close_GOOGL: 133.53160095214844, Close_MSFT: 318.1265869140625, Close_NVDA: 44.76124954223633 },
+    { date: "2023-10-03", Close_AAPL: 171.14561462402344, Close_AMZN: 124.72000122070312, Close_GOOGL: 131.79986572265625, Close_MSFT: 309.8126220703125, Close_NVDA: 43.49683380126953 },
+    { date: "2023-10-04", Close_AAPL: 172.39646911621094, Close_AMZN: 127.0, Close_GOOGL: 134.5965118408203, Close_MSFT: 315.3190002441406, Close_NVDA: 44.020599365234375 },
+    { date: "2023-10-05", Close_AAPL: 173.6373748779297, Close_AMZN: 125.95999908447266, Close_GOOGL: 134.42730712890625, Close_MSFT: 315.71441650390625, Close_NVDA: 44.66729736328125 },
+    { date: "2023-10-06", Close_AAPL: 176.19859313964844, Close_AMZN: 127.95999908447266, Close_GOOGL: 136.92538452148438, Close_MSFT: 323.5242919921875, Close_NVDA: 45.74080276489258 },
+    { date: "2023-10-09", Close_AAPL: 177.68768310546875, Close_AMZN: 128.25999450683594, Close_GOOGL: 137.76136779785156, Close_MSFT: 326.0550537109375, Close_NVDA: 45.25202178955078 },
+    { date: "2023-10-10", Close_AAPL: 177.09202575683594, Close_AMZN: 129.47999572753906, Close_GOOGL: 137.40309143066406, Close_MSFT: 324.64141845703125, Close_NVDA: 45.77678298950195 },
+    { date: "2023-10-11", Close_AAPL: 178.49179077148438, Close_AMZN: 131.8300018310547, Close_GOOGL: 139.88125610351562, Close_MSFT: 328.6253967285156, Close_NVDA: 46.78432083129883 },
+    { date: "2023-10-12", Close_AAPL: 179.39520263671875, Close_AMZN: 132.3300018310547, Close_GOOGL: 138.30874633789062, Close_MSFT: 327.3797302246094, Close_NVDA: 46.923248291015625 },
+    { date: "2023-10-13", Close_AAPL: 177.5487060546875, Close_AMZN: 129.7899932861328, Close_GOOGL: 136.70640563964844, Close_MSFT: 323.98895263671875, Close_NVDA: 45.439937591552734 },
+    { date: "2023-10-16", Close_AAPL: 177.4196319580078, Close_AMZN: 132.5500030517578, Close_GOOGL: 138.43814086914062, Close_MSFT: 328.8428649902344, Close_NVDA: 46.07365036010742 },
+    { date: "2023-10-17", Close_AAPL: 175.86106872558594, Close_AMZN: 131.47000122070312, Close_GOOGL: 139.05517578125, Close_MSFT: 328.26947021484375, Close_NVDA: 43.91764831542969 },
+    { date: "2023-10-18", Close_AAPL: 174.5605926513672, Close_AMZN: 128.1300048828125, Close_GOOGL: 137.30355834960938, Close_MSFT: 326.34173583984375, Close_NVDA: 42.17645263671875 },
+    { date: "2023-10-19", Close_AAPL: 174.18336486816406, Close_AMZN: 128.39999389648438, Close_GOOGL: 137.0945587158203, Close_MSFT: 327.5379638671875, Close_NVDA: 42.08149719238281 },
+    { date: "2023-10-20", Close_AAPL: 171.62213134765625, Close_AMZN: 125.16999816894531, Close_GOOGL: 134.9547882080078, Close_MSFT: 322.9410095214844, Close_NVDA: 41.36782455444336 },
+    { date: "2023-10-23", Close_AAPL: 171.7412567138672, Close_AMZN: 126.55999755859375, Close_GOOGL: 135.8505096435547, Close_MSFT: 325.56072998046875, Close_NVDA: 42.95509338378906 },
+    { date: "2023-10-24", Close_AAPL: 172.17807006835938, Close_AMZN: 128.55999755859375, Close_GOOGL: 138.14950561523438, Close_MSFT: 326.7569580078125, Close_NVDA: 43.64276885986328 },
+    { date: "2023-10-25", Close_AAPL: 169.8551025390625, Close_AMZN: 121.38999938964844, Close_GOOGL: 125.01232147216797, Close_MSFT: 336.78118896484375, Close_NVDA: 41.7596435546875 },
+    { date: "2023-10-26", Close_AAPL: 165.67572021484375, Close_AMZN: 119.56999969482422, Close_GOOGL: 121.69816589355469, Close_MSFT: 324.1470947265625, Close_NVDA: 40.30731964111328 },
+    { date: "2023-10-27", Close_AAPL: 166.9960479736328, Close_AMZN: 127.73999786376953, Close_GOOGL: 121.58868408203125, Close_MSFT: 326.0451965332031, Close_NVDA: 40.481239318847656 },
+    { date: "2023-10-30", Close_AAPL: 169.05096435546875, Close_AMZN: 132.7100067138672, Close_GOOGL: 123.8677978515625, Close_MSFT: 333.45953369140625, Close_NVDA: 41.14193344116211 },
+    { date: "2023-10-31", Close_AAPL: 169.52749633789062, Close_AMZN: 133.08999633789062, Close_GOOGL: 123.4896011352539, Close_MSFT: 334.2503662109375, Close_NVDA: 40.7611083984375 },
+    { date: "2023-11-01", Close_AAPL: 172.70420837402344, Close_AMZN: 137.0, Close_GOOGL: 125.84832763671875, Close_MSFT: 342.11956787109375, Close_NVDA: 42.305397033691406 },
+    { date: "2023-11-02", Close_AAPL: 176.2780303955078, Close_AMZN: 138.07000732421875, Close_GOOGL: 126.88337707519531, Close_MSFT: 344.3439025878906, Close_NVDA: 43.485843658447266 },
+    { date: "2023-11-03", Close_AAPL: 175.3647003173828, Close_AMZN: 138.60000610351562, Close_GOOGL: 128.48573303222656, Close_MSFT: 348.772705078125, Close_NVDA: 44.98414993286133 },
+    { date: "2023-11-06", Close_AAPL: 177.92593383789062, Close_AMZN: 139.74000549316406, Close_GOOGL: 129.6302490234375, Close_MSFT: 352.46014404296875, Close_NVDA: 45.72980499267578 },
+    { date: "2023-11-07", Close_AAPL: 180.49710083007812, Close_AMZN: 142.7100067138672, Close_GOOGL: 130.34683227539062, Close_MSFT: 356.4144592285156, Close_NVDA: 45.933712005615234 },
+    { date: "2023-11-08", Close_AAPL: 181.55929565429688, Close_AMZN: 142.0800018310547, Close_GOOGL: 131.21267700195312, Close_MSFT: 359.0540466308594, Close_NVDA: 46.55242156982422 },
+    { date: "2023-11-09", Close_AAPL: 181.08282470703125, Close_AMZN: 140.60000610351562, Close_GOOGL: 129.6202850341797, Close_MSFT: 356.57269287109375, Close_NVDA: 46.928245544433594 },
+    { date: "2023-11-10", Close_AAPL: 185.2875518798828, Close_AMZN: 143.55999755859375, Close_GOOGL: 131.9591064453125, Close_MSFT: 365.4501953125, Close_NVDA: 48.31260299682617 },
+    { date: "2023-11-13", Close_AAPL: 183.6970977783203, Close_AMZN: 142.58999633789062, Close_GOOGL: 131.4615020751953, Close_MSFT: 362.4942932128906, Close_NVDA: 48.59747314453125 },
+    { date: "2023-11-14", Close_AAPL: 186.3213653564453, Close_AMZN: 145.8000030517578, Close_GOOGL: 132.9842071533203, Close_MSFT: 366.0433349609375, Close_NVDA: 49.63299560546875 },
+    { date: "2023-11-15", Close_AAPL: 186.88795471191406, Close_AMZN: 143.1999969482422, Close_GOOGL: 133.9794464111328, Close_MSFT: 366.1919250488281, Close_NVDA: 48.86534881591797 },
+    { date: "2023-11-16", Close_AAPL: 188.5778045654297, Close_AMZN: 142.8300018310547, Close_GOOGL: 136.2784423828125, Close_MSFT: 372.63079833984375, Close_NVDA: 49.45708084106445 },
+    { date: "2023-11-17", Close_AAPL: 188.55792236328125, Close_AMZN: 145.17999267578125, Close_GOOGL: 134.66616821289062, Close_MSFT: 366.3702392578125, Close_NVDA: 49.27516174316406 },
+    { date: "2023-11-20", Close_AAPL: 190.3074188232422, Close_AMZN: 146.1300048828125, Close_GOOGL: 135.6016845703125, Close_MSFT: 373.8887939453125, Close_NVDA: 50.385650634765625 },
+    { date: "2023-11-21", Close_AAPL: 189.50222778320312, Close_AMZN: 143.89999389648438, Close_GOOGL: 136.31826782226562, Close_MSFT: 369.5599670410156, Close_NVDA: 49.920860290527344 },
+    { date: "2023-11-22", Close_AAPL: 190.16824340820312, Close_AMZN: 146.7100067138672, Close_GOOGL: 137.83103942871094, Close_MSFT: 374.2949523925781, Close_NVDA: 48.69342803955078 },
+    { date: "2023-11-24", Close_AAPL: 188.83624267578125, Close_AMZN: 146.74000549316406, Close_GOOGL: 136.0395965576172, Close_MSFT: 373.8788757324219, Close_NVDA: 47.75386428833008 },
+    { date: "2023-11-27", Close_AAPL: 188.6573028564453, Close_AMZN: 147.72999572753906, Close_GOOGL: 135.76092529296875, Close_MSFT: 375.04779052734375, Close_NVDA: 48.21965408325195 },
+    { date: "2023-11-28", Close_AAPL: 189.263671875, Close_AMZN: 147.02999877929688, Close_GOOGL: 136.5471649169922, Close_MSFT: 379.09930419921875, Close_NVDA: 47.79884338378906 },
+    { date: "2023-11-29", Close_AAPL: 188.23983764648438, Close_AMZN: 146.32000732421875, Close_GOOGL: 134.34768676757812, Close_MSFT: 375.2855529785156, Close_NVDA: 48.117698669433594 },
+    { date: "2023-11-30", Close_AAPL: 188.81637573242188, Close_AMZN: 146.08999633789062, Close_GOOGL: 131.89939880371094, Close_MSFT: 375.344970703125, Close_NVDA: 46.74833297729492 },
+    { date: "2023-12-01", Close_AAPL: 190.09866333007812, Close_AMZN: 147.02999877929688, Close_GOOGL: 131.2325897216797, Close_MSFT: 370.98638916015625, Close_NVDA: 46.74333953857422 },
+    { date: "2023-12-04", Close_AAPL: 188.29945373535156, Close_AMZN: 144.83999633789062, Close_GOOGL: 128.6549072265625, Close_MSFT: 365.6669006347656, Close_NVDA: 45.488914489746094 },
+    { date: "2023-12-05", Close_AAPL: 192.2656707763672, Close_AMZN: 146.8800048828125, Close_GOOGL: 130.36672973632812, Close_MSFT: 369.01507568359375, Close_NVDA: 46.548519134521484 },
+    { date: "2023-12-06", Close_AAPL: 191.17222595214844, Close_AMZN: 144.52000427246094, Close_GOOGL: 129.40135192871094, Close_MSFT: 365.330078125, Close_NVDA: 45.48591613769531 },
+    { date: "2023-12-07", Close_AAPL: 193.11058044433594, Close_AMZN: 146.8800048828125, Close_GOOGL: 136.2784423828125, Close_MSFT: 367.45989990234375, Close_NVDA: 46.57851028442383 },
+    { date: "2023-12-08", Close_AAPL: 194.5419921875, Close_AMZN: 147.4199981689453, Close_GOOGL: 134.34768676757812, Close_MSFT: 370.7090148925781, Close_NVDA: 47.48816680908203 },
+    { date: "2023-12-11", Close_AAPL: 192.027099609375, Close_AMZN: 145.88999938964844, Close_GOOGL: 132.65577697753906, Close_MSFT: 367.8065490722656, Close_NVDA: 46.6094970703125 },
+    { date: "2023-12-12", Close_AAPL: 193.5479736328125, Close_AMZN: 147.47999572753906, Close_GOOGL: 131.88943481445312, Close_MSFT: 370.85760498046875, Close_NVDA: 47.63911056518555 },
+    { date: "2023-12-13", Close_AAPL: 196.77857971191406, Close_AMZN: 148.83999633789062, Close_GOOGL: 131.939208984375, Close_MSFT: 370.84765625, Close_NVDA: 48.06995391845703 },
+    { date: "2023-12-14", Close_AAPL: 196.9276580810547, Close_AMZN: 147.4199981689453, Close_GOOGL: 131.3122100830078, Close_MSFT: 362.4870910644531, Close_NVDA: 48.33184814453125 },
+    { date: "2023-12-15", Close_AAPL: 196.39089965820312, Close_AMZN: 149.97000122070312, Close_GOOGL: 131.96905517578125, Close_MSFT: 367.2419738769531, Close_NVDA: 48.87164306640625 },
+    { date: "2023-12-18", Close_AAPL: 194.72091674804688, Close_AMZN: 154.07000732421875, Close_GOOGL: 135.15383911132812, Close_MSFT: 369.14385986328125, Close_NVDA: 50.05820083618164 },
+    { date: "2023-12-19", Close_AAPL: 195.7646484375, Close_AMZN: 153.7899932861328, Close_GOOGL: 135.99978637695312, Close_MSFT: 369.74810791015625, Close_NVDA: 49.58537673950195 },
+    { date: "2023-12-20", Close_AAPL: 193.667236328125, Close_AMZN: 152.1199951171875, Close_GOOGL: 137.68174743652344, Close_MSFT: 367.1329345703125, Close_NVDA: 48.09293746948242 },
+    { date: "2023-12-21", Close_AAPL: 193.51812744140625, Close_AMZN: 153.83999633789062, Close_GOOGL: 139.75186157226562, Close_MSFT: 370.0254821777344, Close_NVDA: 48.97161102294922 },
+    { date: "2023-12-22", Close_AAPL: 192.44459533691406, Close_AMZN: 153.4199981689453, Close_GOOGL: 140.81675720214844, Close_MSFT: 371.05572509765625, Close_NVDA: 48.81167221069336 },
+    { date: "2023-12-26", Close_AAPL: 191.8978729248047, Close_AMZN: 153.41000366210938, Close_GOOGL: 140.8466339111328, Close_MSFT: 371.13494873046875, Close_NVDA: 49.260498046875 },
+    { date: "2023-12-27", Close_AAPL: 191.99725341796875, Close_AMZN: 153.33999633789062, Close_GOOGL: 139.7020721435547, Close_MSFT: 370.5505065917969, Close_NVDA: 49.3984489440918 },
+    { date: "2023-12-28", Close_AAPL: 192.42469787597656, Close_AMZN: 153.3800048828125, Close_GOOGL: 139.56275939941406, Close_MSFT: 371.7491455078125, Close_NVDA: 49.50341033935547 },
+    { date: "2023-12-29", Close_AAPL: 191.38096618652344, Close_AMZN: 151.94000244140625, Close_GOOGL: 139.02532958984375, Close_MSFT: 372.501953125, Close_NVDA: 49.50341033935547 },
+    { date: "2024-01-02", Close_AAPL: 184.53207397460938, Close_AMZN: 149.92999267578125, Close_GOOGL: 137.51255798339844, Close_MSFT: 367.380615234375, Close_NVDA: 48.14991760253906 },
+    { date: "2024-01-03", Close_AAPL: 183.15037536621094, Close_AMZN: 148.47000122070312, Close_GOOGL: 138.2589874267578, Close_MSFT: 367.1131591796875, Close_NVDA: 47.551143646240234 },
+    { date: "2024-01-04", Close_AAPL: 180.82435607910156, Close_AMZN: 144.57000732421875, Close_GOOGL: 135.74102783203125, Close_MSFT: 364.4781494140625, Close_NVDA: 47.979984283447266 },
+    { date: "2024-01-05", Close_AAPL: 180.0987091064453, Close_AMZN: 145.24000549316406, Close_GOOGL: 135.0841522216797, Close_MSFT: 364.2899475097656, Close_NVDA: 49.07856369018555 },
+    { date: "2024-01-08", Close_AAPL: 184.4525604248047, Close_AMZN: 149.10000610351562, Close_GOOGL: 138.1793670654297, Close_MSFT: 371.1646728515625, Close_NVDA: 52.23338317871094 },
+    { date: "2024-01-09", Close_AAPL: 184.03506469726562, Close_AMZN: 151.3699951171875, Close_GOOGL: 140.2793426513672, Close_MSFT: 372.2543029785156, Close_NVDA: 53.120052337646484 },
+    { date: "2024-01-10", Close_AAPL: 185.07879638671875, Close_AMZN: 153.72999572753906, Close_GOOGL: 141.60299682617188, Close_MSFT: 379.1686096191406, Close_NVDA: 54.3296012878418 },
+    { date: "2024-01-11", Close_AAPL: 184.48239135742188, Close_AMZN: 155.17999267578125, Close_GOOGL: 141.40394592285156, Close_MSFT: 381.01116943359375, Close_NVDA: 54.80141830444336 },
+    { date: "2024-01-12", Close_AAPL: 184.81040954589844, Close_AMZN: 154.6199951171875, Close_GOOGL: 141.97125244140625, Close_MSFT: 384.8150329589844, Close_NVDA: 54.68946075439453 },
+    { date: "2024-01-16", Close_AAPL: 182.5341033935547, Close_AMZN: 153.16000366210938, Close_GOOGL: 141.81201171875, Close_MSFT: 386.5980529785156, Close_NVDA: 56.360836029052734 },
+    { date: "2024-01-17", Close_AAPL: 181.58973693847656, Close_AMZN: 151.7100067138672, Close_GOOGL: 140.79685974121094, Close_MSFT: 385.8056335449219, Close_NVDA: 56.031959533691406 },
+    { date: "2024-01-18", Close_AAPL: 187.50425720214844, Close_AMZN: 153.5, Close_GOOGL: 142.79730224609375, Close_MSFT: 390.1641845703125, Close_NVDA: 57.08556365966797 },
+    { date: "2024-01-19", Close_AAPL: 190.41676330566406, Close_AMZN: 155.33999633789062, Close_GOOGL: 145.68348693847656, Close_MSFT: 394.9190368652344, Close_NVDA: 59.46866989135742 },
+    { date: "2024-01-22", Close_AAPL: 192.7328643798828, Close_AMZN: 154.77999877929688, Close_GOOGL: 145.2953643798828, Close_MSFT: 392.7793884277344, Close_NVDA: 59.63161087036133 },
+    { date: "2024-01-23", Close_AAPL: 194.01513671875, Close_AMZN: 156.02000427246094, Close_GOOGL: 146.34034729003906, Close_MSFT: 395.1468505859375, Close_NVDA: 59.85052490234375 },
+    { date: "2024-01-24", Close_AAPL: 193.33921813964844, Close_AMZN: 156.8699951171875, Close_GOOGL: 147.992431640625, Close_MSFT: 398.7724609375, Close_NVDA: 61.338966369628906 },
+    { date: "2024-01-25", Close_AAPL: 193.01116943359375, Close_AMZN: 157.75, Close_GOOGL: 151.14735412597656, Close_MSFT: 401.0606994628906, Close_NVDA: 61.593868255615234 },
+    { date: "2024-01-26", Close_AAPL: 191.2716064453125, Close_AMZN: 159.1199951171875, Close_GOOGL: 151.46583557128906, Close_MSFT: 400.1295471191406, Close_NVDA: 61.00809097290039 },
+    { date: "2024-01-29", Close_AAPL: 190.5857391357422, Close_AMZN: 161.25999450683594, Close_GOOGL: 152.77957153320312, Close_MSFT: 405.86505126953125, Close_NVDA: 62.441551208496094 },
+    { date: "2024-01-30", Close_AAPL: 186.91775512695312, Close_AMZN: 159.0, Close_GOOGL: 150.73931884765625, Close_MSFT: 404.7456970214844, Close_NVDA: 62.75043487548828 },
+    { date: "2024-01-31", Close_AAPL: 183.2994842529297, Close_AMZN: 155.1999969482422, Close_GOOGL: 139.4333953857422, Close_MSFT: 393.8393249511719, Close_NVDA: 61.50390625 },
+    { date: "2024-02-01", Close_AAPL: 185.74481201171875, Close_AMZN: 159.27999877929688, Close_GOOGL: 140.48834228515625, Close_MSFT: 399.9809875488281, Close_NVDA: 63.00333786010742 },
+    { date: "2024-02-02", Close_AAPL: 184.74082946777344, Close_AMZN: 171.80999755859375, Close_GOOGL: 141.70252990722656, Close_MSFT: 407.3509826660156, Close_NVDA: 66.13516235351562 },
+    { date: "2024-02-05", Close_AAPL: 186.55992126464844, Close_AMZN: 170.30999755859375, Close_GOOGL: 142.996337890625, Close_MSFT: 401.8333740234375, Close_NVDA: 69.30597686767578 },
+    { date: "2024-02-06", Close_AAPL: 188.17027282714844, Close_AMZN: 169.14999389648438, Close_GOOGL: 143.41433715820312, Close_MSFT: 401.67486572265625, Close_NVDA: 68.19739532470703 },
+    { date: "2024-02-07", Close_AAPL: 188.27960205078125, Close_AMZN: 170.52999877929688, Close_GOOGL: 144.8474884033203, Close_MSFT: 410.1543273925781, Close_NVDA: 70.07267761230469 },
+    { date: "2024-02-08", Close_AAPL: 187.1960906982422, Close_AMZN: 169.83999633789062, Close_GOOGL: 145.2157440185547, Close_MSFT: 410.2137756347656, Close_NVDA: 69.6148452758789 },
+    { date: "2024-02-09", Close_AAPL: 187.9624786376953, Close_AMZN: 174.4499969482422, Close_GOOGL: 148.29103088378906, Close_MSFT: 416.5931701660156, Close_NVDA: 72.10592651367188 },
+    { date: "2024-02-12", Close_AAPL: 186.27044677734375, Close_AMZN: 172.33999633789062, Close_GOOGL: 146.82803344726562, Close_MSFT: 411.35296630859375, Close_NVDA: 72.22087860107422 },
+    { date: "2024-02-13", Close_AAPL: 184.1703643798828, Close_AMZN: 168.63999938964844, Close_GOOGL: 144.4493865966797, Close_MSFT: 402.4970703125, Close_NVDA: 72.10093688964844 },
+    { date: "2024-02-14", Close_AAPL: 183.2845458984375, Close_AMZN: 170.97999572753906, Close_GOOGL: 145.24559020996094, Close_MSFT: 406.3873596191406, Close_NVDA: 73.87226104736328 },
+    { date: "2024-02-15", Close_AAPL: 182.9959259033203, Close_AMZN: 169.8000030517578, Close_GOOGL: 142.09066772460938, Close_MSFT: 403.4795837402344, Close_NVDA: 72.63072204589844 },
+    { date: "2024-02-16", Close_AAPL: 181.45321655273438, Close_AMZN: 169.50999450683594, Close_GOOGL: 139.85137939453125, Close_MSFT: 400.9985046386719, Close_NVDA: 72.58573913574219 },
+    { date: "2024-02-20", Close_AAPL: 180.70672607421875, Close_AMZN: 167.0800018310547, Close_GOOGL: 140.44851684570312, Close_MSFT: 399.7381591796875, Close_NVDA: 69.42593383789062 },
+    { date: "2024-02-21", Close_AAPL: 181.4631805419922, Close_AMZN: 168.58999633789062, Close_GOOGL: 141.87171936035156, Close_MSFT: 399.1327209472656, Close_NVDA: 67.4466781616211 },
+    { date: "2024-02-22", Close_AAPL: 183.50350952148438, Close_AMZN: 174.5800018310547, Close_GOOGL: 143.40438842773438, Close_MSFT: 408.5309753417969, Close_NVDA: 78.5085220336914 },
+    { date: "2024-02-23", Close_AAPL: 181.66221618652344, Close_AMZN: 174.99000549316406, Close_GOOGL: 143.2750244140625, Close_MSFT: 407.2309265136719, Close_NVDA: 78.78742218017578 },
+    { date: "2024-02-26", Close_AAPL: 180.30860900878906, Close_AMZN: 174.72999572753906, Close_GOOGL: 136.91542053222656, Close_MSFT: 404.4521789550781, Close_NVDA: 79.06231689453125 },
+    { date: "2024-02-27", Close_AAPL: 181.77171325683594, Close_AMZN: 173.5399932861328, Close_GOOGL: 138.21917724609375, Close_MSFT: 404.3926086425781, Close_NVDA: 78.67144775390625 },
+    { date: "2024-02-28", Close_AAPL: 180.5673828125, Close_AMZN: 173.16000366210938, Close_GOOGL: 135.7310791015625, Close_MSFT: 404.6307678222656, Close_NVDA: 77.63385009765625 },
+    { date: "2024-02-29", Close_AAPL: 179.9005584716797, Close_AMZN: 176.75999450683594, Close_GOOGL: 137.8011932373047, Close_MSFT: 410.50592041015625, Close_NVDA: 79.0822982788086 },
+    { date: "2024-03-01", Close_AAPL: 178.81565856933594, Close_AMZN: 178.22000122070312, Close_GOOGL: 136.4874725341797, Close_MSFT: 412.3518371582031, Close_NVDA: 82.24810791015625 },
+    { date: "2024-03-04", Close_AAPL: 174.277099609375, Close_AMZN: 177.5800018310547, Close_GOOGL: 132.7154998779297, Close_MSFT: 411.7762756347656, Close_NVDA: 85.20499420166016 },
+    { date: "2024-03-05", Close_AAPL: 169.32049560546875, Close_AMZN: 174.1199951171875, Close_GOOGL: 132.03872680664062, Close_MSFT: 399.59918212890625, Close_NVDA: 85.93576049804688 },
+    { date: "2024-03-06", Close_AAPL: 168.3251953125, Close_AMZN: 173.50999450683594, Close_GOOGL: 130.77476501464844, Close_MSFT: 399.0434265136719, Close_NVDA: 88.67086029052734 },
+    { date: "2024-03-07", Close_AAPL: 168.20574951171875, Close_AMZN: 176.82000732421875, Close_GOOGL: 133.7406005859375, Close_MSFT: 406.0400695800781, Close_NVDA: 92.6385498046875 },
+    { date: "2024-03-08", Close_AAPL: 169.92762756347656, Close_AMZN: 175.35000610351562, Close_GOOGL: 134.76568603515625, Close_MSFT: 403.14215087890625, Close_NVDA: 87.49925231933594 },
+    { date: "2024-03-11", Close_AAPL: 171.93812561035156, Close_AMZN: 171.9600067138672, Close_GOOGL: 137.0149383544922, Close_MSFT: 401.45501708984375, Close_NVDA: 85.74583435058594 },
+    { date: "2024-03-12", Close_AAPL: 172.41587829589844, Close_AMZN: 175.38999938964844, Close_GOOGL: 137.8409881591797, Close_MSFT: 412.13348388671875, Close_NVDA: 91.8828125 },
+    { date: "2024-03-13", Close_AAPL: 170.3257598876953, Close_AMZN: 176.55999755859375, Close_GOOGL: 139.1248321533203, Close_MSFT: 411.95489501953125, Close_NVDA: 90.85813903808594 },
+    { date: "2024-03-14", Close_AAPL: 172.18695068359375, Close_AMZN: 178.75, Close_GOOGL: 142.4191131591797, Close_MSFT: 421.9981994628906, Close_NVDA: 87.91510772705078 },
+    { date: "2024-03-15", Close_AAPL: 171.80874633789062, Close_AMZN: 174.4199981689453, Close_GOOGL: 140.50823974609375, Close_MSFT: 413.264892578125, Close_NVDA: 87.80813598632812 },
+    { date: "2024-03-18", Close_AAPL: 172.90357971191406, Close_AMZN: 174.47999572753906, Close_GOOGL: 146.97731018066406, Close_MSFT: 414.1580505371094, Close_NVDA: 88.42594909667969 },
+    { date: "2024-03-19", Close_AAPL: 175.25250244140625, Close_AMZN: 175.89999389648438, Close_GOOGL: 146.3303985595703, Close_MSFT: 418.21710205078125, Close_NVDA: 89.36863708496094 },
+    { date: "2024-03-20", Close_AAPL: 177.83030700683594, Close_AMZN: 178.14999389648438, Close_GOOGL: 148.03225708007812, Close_MSFT: 422.00811767578125, Close_NVDA: 90.34231567382812 },
+    { date: "2024-03-21", Close_AAPL: 170.5646209716797, Close_AMZN: 178.14999389648438, Close_GOOGL: 146.897705078125, Close_MSFT: 426.11676025390625, Close_NVDA: 91.40496063232422 },
+    { date: "2024-03-22", Close_AAPL: 171.4703369140625, Close_AMZN: 178.8699951171875, Close_GOOGL: 150.0526123046875, Close_MSFT: 425.4915466308594, Close_NVDA: 94.25802612304688 },
+    { date: "2024-03-25", Close_AAPL: 170.04708862304688, Close_AMZN: 179.7100067138672, Close_GOOGL: 149.35594177246094, Close_MSFT: 419.65606689453125, Close_NVDA: 94.97078704833984 },
+    { date: "2024-03-26", Close_AAPL: 168.91241455078125, Close_AMZN: 178.3000030517578, Close_GOOGL: 149.9530792236328, Close_MSFT: 418.4552307128906, Close_NVDA: 92.53058624267578 },
+    { date: "2024-03-27", Close_AAPL: 172.49549865722656, Close_AMZN: 179.8300018310547, Close_GOOGL: 150.15211486816406, Close_MSFT: 418.23687744140625, Close_NVDA: 90.22034454345703 },
+    { date: "2024-03-28", Close_AAPL: 170.67410278320312, Close_AMZN: 180.3800048828125, Close_GOOGL: 150.2118377685547, Close_MSFT: 417.5323181152344, Close_NVDA: 90.3263168334961 },
+    { date: "2024-04-01", Close_AAPL: 169.2309112548828, Close_AMZN: 180.97000122070312, Close_GOOGL: 154.7501678466797, Close_MSFT: 421.3531188964844, Close_NVDA: 90.33331298828125 },
+    { date: "2024-04-02", Close_AAPL: 168.0465087890625, Close_AMZN: 180.69000244140625, Close_GOOGL: 153.82456970214844, Close_MSFT: 418.2468566894531, Close_NVDA: 89.42261505126953 },
+    { date: "2024-04-03", Close_AAPL: 168.8527069091797, Close_AMZN: 182.41000366210938, Close_GOOGL: 154.18283081054688, Close_MSFT: 417.2643127441406, Close_NVDA: 88.93477630615234 },
+    { date: "2024-04-04", Close_AAPL: 168.026611328125, Close_AMZN: 180.0, Close_GOOGL: 149.81375122070312, Close_MSFT: 414.71380615234375, Close_NVDA: 85.87677001953125 },
+    { date: "2024-04-05", Close_AAPL: 168.7830352783203, Close_AMZN: 185.07000732421875, Close_GOOGL: 151.7743682861328, Close_MSFT: 422.2959289550781, Close_NVDA: 87.97909545898438 },
+    { date: "2024-04-08", Close_AAPL: 167.65835571289062, Close_AMZN: 185.19000244140625, Close_GOOGL: 154.11322021484375, Close_MSFT: 421.3729553222656, Close_NVDA: 87.10437774658203 },
+    { date: "2024-04-09", Close_AAPL: 168.8726043701172, Close_AMZN: 185.6699981689453, Close_GOOGL: 155.85487365722656, Close_MSFT: 423.0501403808594, Close_NVDA: 85.3259506225586 },
+    { date: "2024-04-10", Close_AAPL: 166.99148559570312, Close_AMZN: 185.9499969482422, Close_GOOGL: 155.39706420898438, Close_MSFT: 420.05303955078125, Close_NVDA: 87.01040649414062 },
+    { date: "2024-04-11", Close_AAPL: 174.21737670898438, Close_AMZN: 189.0500030517578, Close_GOOGL: 158.6514892578125, Close_MSFT: 424.6876525878906, Close_NVDA: 90.58623504638672 },
+    { date: "2024-04-12", Close_AAPL: 175.72027587890625, Close_AMZN: 186.1300048828125, Close_GOOGL: 156.9794921875, Close_MSFT: 418.703369140625, Close_NVDA: 88.15703582763672 },
+    { date: "2024-04-15", Close_AAPL: 171.87841796875, Close_AMZN: 183.6199951171875, Close_GOOGL: 154.12315368652344, Close_MSFT: 410.50592041015625, Close_NVDA: 85.97274780273438 },
+    { date: "2024-04-16", Close_AAPL: 168.583984375, Close_AMZN: 183.32000732421875, Close_GOOGL: 153.6653289794922, Close_MSFT: 411.4388122558594, Close_NVDA: 87.38628387451172 },
+    { date: "2024-04-17", Close_AAPL: 167.21046447753906, Close_AMZN: 181.27999877929688, Close_GOOGL: 154.73023986816406, Close_MSFT: 408.7195739746094, Close_NVDA: 84.00739288330078 },
+    { date: "2024-04-18", Close_AAPL: 166.2549591064453, Close_AMZN: 179.22000122070312, Close_GOOGL: 155.26766967773438, Close_MSFT: 401.2069396972656, Close_NVDA: 84.6431884765625 },
+    { date: "2024-04-19", Close_AAPL: 164.2245635986328, Close_AMZN: 174.6300048828125, Close_GOOGL: 153.35679626464844, Close_MSFT: 396.095947265625, Close_NVDA: 76.17496490478516 },
+    { date: "2024-04-22", Close_AAPL: 165.0605926513672, Close_AMZN: 177.22999572753906, Close_GOOGL: 155.53639221191406, Close_MSFT: 397.9219970703125, Close_NVDA: 79.49187469482422 },
+    { date: "2024-04-23", Close_AAPL: 166.11561584472656, Close_AMZN: 179.5399932861328, Close_GOOGL: 157.50697326660156, Close_MSFT: 404.48193359375, Close_NVDA: 82.39591979980469 },
+    { date: "2024-04-24", Close_AAPL: 168.2256622314453, Close_AMZN: 176.58999633789062, Close_GOOGL: 158.37283325195312, Close_MSFT: 405.96063232421875, Close_NVDA: 79.65083312988281 },
+    { date: "2024-04-25", Close_AAPL: 169.09156799316406, Close_AMZN: 173.6699981689453, Close_GOOGL: 155.25772094726562, Close_MSFT: 396.01654052734375, Close_NVDA: 82.6048583984375 },
+    { date: "2024-04-26", Close_AAPL: 168.50436401367188, Close_AMZN: 179.6199951171875, Close_GOOGL: 171.13182067871094, Close_MSFT: 403.2414245605469, Close_NVDA: 87.70618438720703 },
+    { date: "2024-04-29", Close_AAPL: 172.68460083007812, Close_AMZN: 180.9600067138672, Close_GOOGL: 165.3594207763672, Close_MSFT: 399.2022399902344, Close_NVDA: 87.7281723022461 },
+    { date: "2024-04-30", Close_AAPL: 169.52951049804688, Close_AMZN: 175.0, Close_GOOGL: 162.00546264648438, Close_MSFT: 386.3800964355469, Close_NVDA: 86.37361907958984 },
+    { date: "2024-05-01", Close_AAPL: 168.50436401367188, Close_AMZN: 179.0, Close_GOOGL: 163.080322265625, Close_MSFT: 391.9476318359375, Close_NVDA: 83.01371765136719 },
+    { date: "2024-05-02", Close_AAPL: 172.21682739257812, Close_AMZN: 184.72000122070312, Close_GOOGL: 165.82717895507812, Close_MSFT: 394.82562255859375, Close_NVDA: 85.78881072998047 },
+    { date: "2024-05-03", Close_AAPL: 182.5181884765625, Close_AMZN: 186.2100067138672, Close_GOOGL: 166.44424438476562, Close_MSFT: 403.57879638671875, Close_NVDA: 88.75983428955078 },
+    { date: "2024-05-06", Close_AAPL: 180.85604858398438, Close_AMZN: 188.6999969482422, Close_GOOGL: 167.30014038085938, Close_MSFT: 410.4067077636719, Close_NVDA: 92.10972595214844 },
+    { date: "2024-05-07", Close_AAPL: 181.54278564453125, Close_AMZN: 188.75999450683594, Close_GOOGL: 170.43515014648438, Close_MSFT: 406.238525390625, Close_NVDA: 90.52424621582031 },
+    { date: "2024-05-08", Close_AAPL: 181.88121032714844, Close_AMZN: 188.0, Close_GOOGL: 168.57406616210938, Close_MSFT: 407.4294128417969, Close_NVDA: 90.38230895996094 },
+    { date: "2024-05-09", Close_AAPL: 183.7025909423828, Close_AMZN: 189.5, Close_GOOGL: 169.15130615234375, Close_MSFT: 409.1959533691406, Close_NVDA: 88.71784973144531 },
+    { date: "2024-05-10", Close_AAPL: 182.43682861328125, Close_AMZN: 187.47999572753906, Close_GOOGL: 167.84751892089844, Close_MSFT: 411.5975646972656, Close_NVDA: 89.84848022460938 },
+    { date: "2024-05-13", Close_AAPL: 185.65602111816406, Close_AMZN: 186.57000732421875, Close_GOOGL: 168.33517456054688, Close_MSFT: 410.5853271484375, Close_NVDA: 90.36930847167969 },
+    { date: "2024-05-14", Close_AAPL: 186.8021697998047, Close_AMZN: 187.07000732421875, Close_GOOGL: 169.52947998046875, Close_MSFT: 413.40380859375, Close_NVDA: 91.32599639892578 },
+    { date: "2024-05-15", Close_AAPL: 189.08450317382812, Close_AMZN: 185.99000549316406, Close_GOOGL: 171.68914794921875, Close_MSFT: 420.6317443847656, Close_NVDA: 94.59890747070312 },
+    { date: "2024-05-16", Close_AAPL: 189.2041015625, Close_AMZN: 183.6300048828125, Close_GOOGL: 173.35121154785156, Close_MSFT: 418.5538024902344, Close_NVDA: 94.3280029296875 },
+    { date: "2024-05-17", Close_AAPL: 189.2340087890625, Close_AMZN: 184.6999969482422, Close_GOOGL: 175.22227478027344, Close_MSFT: 417.7783203125, Close_NVDA: 92.4486083984375 },
+    { date: "2024-05-20", Close_AAPL: 190.40008544921875, Close_AMZN: 183.5399932861328, Close_GOOGL: 176.0781707763672, Close_MSFT: 422.878662109375, Close_NVDA: 94.74886322021484 },
+    { date: "2024-05-21", Close_AAPL: 191.70570373535156, Close_AMZN: 183.14999389648438, Close_GOOGL: 177.00376892089844, Close_MSFT: 426.5572509765625, Close_NVDA: 95.35466766357422 },
+    { date: "2024-05-22", Close_AAPL: 190.26055908203125, Close_AMZN: 183.1300048828125, Close_GOOGL: 175.54075622558594, Close_MSFT: 428.0286865234375, Close_NVDA: 94.91880798339844 },
+    { date: "2024-05-23", Close_AAPL: 186.25401306152344, Close_AMZN: 181.0500030517578, Close_GOOGL: 172.72421264648438, Close_MSFT: 424.529052734375, Close_NVDA: 103.7649154663086 },
+    { date: "2024-05-24", Close_AAPL: 189.3436279296875, Close_AMZN: 180.75, Close_GOOGL: 174.1573486328125, Close_MSFT: 427.6707763671875, Close_NVDA: 106.43403625488281 },
+    { date: "2024-05-28", Close_AAPL: 189.35360717773438, Close_AMZN: 182.14999389648438, Close_GOOGL: 175.56065368652344, Close_MSFT: 427.8298645019531, Close_NVDA: 113.86358642578125 },
+    { date: "2024-05-29", Close_AAPL: 189.652587890625, Close_AMZN: 182.02000427246094, Close_GOOGL: 175.0630340576172, Close_MSFT: 426.6865234375, Close_NVDA: 114.78727722167969 },
+    { date: "2024-05-30", Close_AAPL: 190.6492462158203, Close_AMZN: 179.32000732421875, Close_GOOGL: 171.2910614013672, Close_MSFT: 412.2704162597656, Close_NVDA: 110.46369934082031 },
+    { date: "2024-05-31", Close_AAPL: 191.6060333251953, Close_AMZN: 176.44000244140625, Close_GOOGL: 171.67919921875, Close_MSFT: 412.7277526855469, Close_NVDA: 109.59698486328125 },
+    { date: "2024-06-03", Close_AAPL: 193.3800506591797, Close_AMZN: 178.33999633789062, Close_GOOGL: 172.3460235595703, Close_MSFT: 411.1270446777344, Close_NVDA: 114.96222686767578 },
+    { date: "2024-06-04", Close_AAPL: 193.69898986816406, Close_AMZN: 179.33999633789062, Close_GOOGL: 172.9630584716797, Close_MSFT: 413.6623229980469, Close_NVDA: 116.39875030517578 },
+    { date: "2024-06-05", Close_AAPL: 195.21389770507812, Close_AMZN: 181.27999877929688, Close_GOOGL: 174.57537841796875, Close_MSFT: 421.5563659667969, Close_NVDA: 122.39978790283203 },
+    { date: "2024-06-06", Close_AAPL: 193.82855224609375, Close_AMZN: 185.0, Close_GOOGL: 175.8890838623047, Close_MSFT: 422.0633850097656, Close_NVDA: 120.95825958251953 },
+    { date: "2024-06-07", Close_AAPL: 196.23048400878906, Close_AMZN: 184.3000030517578, Close_GOOGL: 173.6298828125, Close_MSFT: 421.3973083496094, Close_NVDA: 120.84829711914062 },
+    { date: "2024-06-10", Close_AAPL: 192.4730987548828, Close_AMZN: 187.05999755859375, Close_GOOGL: 174.37716674804688, Close_MSFT: 425.3940124511719, Close_NVDA: 121.74999237060547 },
+    { date: "2024-06-11", Close_AAPL: 206.45611572265625, Close_AMZN: 187.22999572753906, Close_GOOGL: 175.98135375976562, Close_MSFT: 430.1761779785156, Close_NVDA: 120.88021087646484 },
+    { date: "2024-06-12", Close_AAPL: 212.35630798339844, Close_AMZN: 186.88999938964844, Close_GOOGL: 177.14710998535156, Close_MSFT: 438.5076904296875, Close_NVDA: 125.16915130615234 },
+    { date: "2024-06-13", Close_AAPL: 213.52236938476562, Close_AMZN: 183.8300018310547, Close_GOOGL: 174.52662658691406, Close_MSFT: 439.0246887207031, Close_NVDA: 129.5780792236328 },
+    { date: "2024-06-14", Close_AAPL: 211.77822875976562, Close_AMZN: 183.66000366210938, Close_GOOGL: 176.15072631835938, Close_MSFT: 440.00897216796875, Close_NVDA: 131.84751892089844 },
+    { date: "2024-06-17", Close_AAPL: 215.94422912597656, Close_AMZN: 184.05999755859375, Close_GOOGL: 176.59912109375, Close_MSFT: 445.775390625, Close_NVDA: 130.94773864746094 },
+    { date: "2024-06-18", Close_AAPL: 213.5721893310547, Close_AMZN: 182.80999755859375, Close_GOOGL: 174.45687866210938, Close_MSFT: 443.75714111328125, Close_NVDA: 135.54660034179688 },
+    { date: "2024-06-20", Close_AAPL: 208.97764587402344, Close_AMZN: 186.10000610351562, Close_GOOGL: 175.66250610351562, Close_MSFT: 443.120849609375, Close_NVDA: 130.74778747558594 },
+    { date: "2024-06-21", Close_AAPL: 206.79498291015625, Close_AMZN: 189.0800018310547, Close_GOOGL: 178.98048400878906, Close_MSFT: 447.17724609375, Close_NVDA: 126.53881072998047 },
+    { date: "2024-06-24", Close_AAPL: 207.4427947998047, Close_AMZN: 185.57000732421875, Close_GOOGL: 178.5719451904297, Close_MSFT: 445.0794677734375, Close_NVDA: 118.08090209960938 },
+    { date: "2024-06-25", Close_AAPL: 208.36968994140625, Close_AMZN: 186.33999633789062, Close_GOOGL: 183.36456298828125, Close_MSFT: 448.3404541015625, Close_NVDA: 126.05892944335938 },
+    { date: "2024-06-26", Close_AAPL: 212.5356903076172, Close_AMZN: 193.61000061035156, Close_GOOGL: 183.21510314941406, Close_MSFT: 449.54345703125, Close_NVDA: 126.36885833740234 },
+    { date: "2024-06-27", Close_AAPL: 213.3828582763672, Close_AMZN: 197.85000610351562, Close_GOOGL: 184.73956298828125, Close_MSFT: 450.2294921875, Close_NVDA: 123.95944213867188 },
+    { date: "2024-06-28", Close_AAPL: 209.9144744873047, Close_AMZN: 193.25, Close_GOOGL: 181.49134826660156, Close_MSFT: 444.3636474609375, Close_NVDA: 123.50955963134766 },
+    { date: "2024-07-01", Close_AAPL: 216.02395629882812, Close_AMZN: 197.1999969482422, Close_GOOGL: 182.32830810546875, Close_MSFT: 454.0870361328125, Close_NVDA: 124.2693862915039 },
+    { date: "2024-07-02", Close_AAPL: 219.53216552734375, Close_AMZN: 200.0, Close_GOOGL: 184.5701904296875, Close_MSFT: 456.62225341796875, Close_NVDA: 122.6397705078125 },
+    { date: "2024-07-03", Close_AAPL: 220.80789184570312, Close_AMZN: 197.58999633789062, Close_GOOGL: 185.14810180664062, Close_MSFT: 458.1036376953125, Close_NVDA: 128.24839782714844 },
+    { date: "2024-07-05", Close_AAPL: 225.5818328857422, Close_AMZN: 200.0, Close_GOOGL: 189.9108123779297, Close_MSFT: 464.8543395996094, Close_NVDA: 125.79899597167969 },
+    { date: "2024-07-08", Close_AAPL: 227.056884765625, Close_AMZN: 199.2899932861328, Close_GOOGL: 188.34646606445312, Close_MSFT: 463.5419921875, Close_NVDA: 128.16839599609375 },
+    { date: "2024-07-09", Close_AAPL: 227.9139862060547, Close_AMZN: 199.33999633789062, Close_GOOGL: 188.29664611816406, Close_MSFT: 456.8807678222656, Close_NVDA: 131.34764099121094 },
+    { date: "2024-07-10", Close_AAPL: 232.1995849609375, Close_AMZN: 199.7899932861328, Close_GOOGL: 190.48870849609375, Close_MSFT: 463.55194091796875, Close_NVDA: 134.87677001953125 },
+    { date: "2024-07-11", Close_AAPL: 226.80772399902344, Close_AMZN: 195.0500030517578, Close_GOOGL: 184.89898681640625, Close_MSFT: 452.06878662109375, Close_NVDA: 127.36861419677734 },
+    { date: "2024-07-12", Close_AAPL: 229.76776123046875, Close_AMZN: 194.49000549316406, Close_GOOGL: 184.4008026123047, Close_MSFT: 450.9254150390625, Close_NVDA: 129.2081756591797 },
+    { date: "2024-07-15", Close_AAPL: 233.61483764648438, Close_AMZN: 192.72000122070312, Close_GOOGL: 185.8555145263672, Close_MSFT: 451.3330383300781, Close_NVDA: 128.40835571289062 },
+    { date: "2024-07-16", Close_AAPL: 234.033447265625, Close_AMZN: 193.02000427246094, Close_GOOGL: 183.25494384765625, Close_MSFT: 446.9187316894531, Close_NVDA: 126.32887268066406 },
+    { date: "2024-07-17", Close_AAPL: 228.1133270263672, Close_AMZN: 187.92999267578125, Close_GOOGL: 180.36544799804688, Close_MSFT: 440.9534606933594, Close_NVDA: 117.96092987060547 },
+    { date: "2024-07-18", Close_AAPL: 223.42906188964844, Close_AMZN: 183.75, Close_GOOGL: 177.0474853515625, Close_MSFT: 437.8216857910156, Close_NVDA: 121.06016540527344 },
+    { date: "2024-07-19", Close_AAPL: 223.55862426757812, Close_AMZN: 183.1300048828125, Close_GOOGL: 177.017578125, Close_MSFT: 434.5805358886719, Close_NVDA: 117.90093994140625 },
+    { date: "2024-07-22", Close_AAPL: 223.20980834960938, Close_AMZN: 182.5500030517578, Close_GOOGL: 181.01309204101562, Close_MSFT: 440.3768615722656, Close_NVDA: 123.50955963134766 },
+    { date: "2024-07-23", Close_AAPL: 224.25628662109375, Close_AMZN: 186.41000366210938, Close_GOOGL: 181.1326446533203, Close_MSFT: 442.2757873535156, Close_NVDA: 122.5597915649414 },
+    { date: "2024-07-24", Close_AAPL: 217.80795288085938, Close_AMZN: 180.8300018310547, Close_GOOGL: 172.0057830810547, Close_MSFT: 426.4180908203125, Close_NVDA: 114.22184753417969 },
+    { date: "2024-07-25", Close_AAPL: 216.76148986816406, Close_AMZN: 179.85000610351562, Close_GOOGL: 166.6751251220703, Close_MSFT: 415.97882080078125, Close_NVDA: 112.25232696533203 },
+    { date: "2024-07-26", Close_AAPL: 217.2299041748047, Close_AMZN: 182.5, Close_GOOGL: 166.39613342285156, Close_MSFT: 422.8090515136719, Close_NVDA: 113.03214263916016 },
+    { date: "2024-07-29", Close_AAPL: 217.50897216796875, Close_AMZN: 183.1999969482422, Close_GOOGL: 168.9169921875, Close_MSFT: 424.2606201171875, Close_NVDA: 111.5625 },
+    { date: "2024-07-30", Close_AAPL: 218.0670928955078, Close_AMZN: 181.7100067138672, Close_GOOGL: 169.6742401123047, Close_MSFT: 420.4726867675781, Close_NVDA: 103.7044448852539 },
+    { date: "2024-07-31", Close_AAPL: 221.3361053466797, Close_AMZN: 186.97999572753906, Close_GOOGL: 170.91969299316406, Close_MSFT: 415.9291076660156, Close_NVDA: 116.99115753173828 },
+    { date: "2024-08-01", Close_AAPL: 217.62857055664062, Close_AMZN: 184.07000732421875, Close_GOOGL: 170.1425323486328, Close_MSFT: 414.6962585449219, Close_NVDA: 109.18309783935547 },
+    { date: "2024-08-02", Close_AAPL: 219.12353515625, Close_AMZN: 167.89999389648438, Close_GOOGL: 166.057373046875, Close_MSFT: 406.1261901855469, Close_NVDA: 107.24356842041016 },
+    { date: "2024-08-05", Close_AAPL: 208.5690155029297, Close_AMZN: 161.02000427246094, Close_GOOGL: 158.6741485595703, Close_MSFT: 392.86334228515625, Close_NVDA: 100.42524719238281 },
+    { date: "2024-08-06", Close_AAPL: 206.5358428955078, Close_AMZN: 161.92999267578125, Close_GOOGL: 157.71762084960938, Close_MSFT: 397.29754638671875, Close_NVDA: 104.22431182861328 },
+    { date: "2024-08-07", Close_AAPL: 209.1171875, Close_AMZN: 162.77000427246094, Close_GOOGL: 158.36526489257812, Close_MSFT: 396.1243591308594, Close_NVDA: 98.88563537597656 },
+    { date: "2024-08-08", Close_AAPL: 212.59547424316406, Close_AMZN: 165.8000030517578, Close_GOOGL: 161.444091796875, Close_MSFT: 400.3597412109375, Close_NVDA: 104.94413757324219 },
+    { date: "2024-08-09", Close_AAPL: 215.51568603515625, Close_AMZN: 166.94000244140625, Close_GOOGL: 163.0781707763672, Close_MSFT: 403.6704406738281, Close_NVDA: 104.72418975830078 },
+    { date: "2024-08-12", Close_AAPL: 217.0522918701172, Close_AMZN: 166.8000030517578, Close_GOOGL: 161.7031707763672, Close_MSFT: 404.4559020996094, Close_NVDA: 108.9931411743164 },
+    { date: "2024-08-13", Close_AAPL: 220.78407287597656, Close_AMZN: 170.22999572753906, Close_GOOGL: 163.56640625, Close_MSFT: 411.6142272949219, Close_NVDA: 116.11138153076172 },
+    { date: "2024-08-14", Close_AAPL: 221.23309326171875, Close_AMZN: 170.10000610351562, Close_GOOGL: 159.79010009765625, Close_MSFT: 414.4477233886719, Close_NVDA: 118.05091094970703 },
+    { date: "2024-08-15", Close_AAPL: 224.22650146484375, Close_AMZN: 177.58999633789062, Close_GOOGL: 160.7167510986328, Close_MSFT: 419.34808349609375, Close_NVDA: 122.8297348022461 },
+    { date: "2024-08-16", Close_AAPL: 225.5535888671875, Close_AMZN: 177.05999755859375, Close_GOOGL: 162.37074279785156, Close_MSFT: 416.7983093261719, Close_NVDA: 124.54930114746094 },
+    { date: "2024-08-19", Close_AAPL: 225.39393615722656, Close_AMZN: 178.22000122070312, Close_GOOGL: 166.0673370361328, Close_MSFT: 419.8460998535156, Close_NVDA: 129.96795654296875 },
+    { date: "2024-08-20", Close_AAPL: 226.0125732421875, Close_AMZN: 178.8800048828125, Close_GOOGL: 166.5754852294922, Close_MSFT: 423.10302734375, Close_NVDA: 127.2186508178711 },
+    { date: "2024-08-21", Close_AAPL: 225.90280151367188, Close_AMZN: 180.11000061035156, Close_GOOGL: 165.2502899169922, Close_MSFT: 422.4456787109375, Close_NVDA: 128.4683380126953 },
+    { date: "2024-08-22", Close_AAPL: 224.03692626953125, Close_AMZN: 176.1300048828125, Close_GOOGL: 163.2077178955078, Close_MSFT: 413.8899841308594, Close_NVDA: 123.70951080322266 },
+    { date: "2024-08-23", Close_AAPL: 226.3418426513672, Close_AMZN: 177.0399932861328, Close_GOOGL: 165.0211181640625, Close_MSFT: 415.1250305175781, Close_NVDA: 129.33811950683594 },
+    { date: "2024-08-26", Close_AAPL: 226.68109130859375, Close_AMZN: 175.5, Close_GOOGL: 165.55917358398438, Close_MSFT: 411.83819580078125, Close_NVDA: 126.42884063720703 },
+    { date: "2024-08-27", Close_AAPL: 227.5292205810547, Close_AMZN: 173.1199951171875, Close_GOOGL: 164.0845184326172, Close_MSFT: 412.1867980957031, Close_NVDA: 128.26840209960938 },
+    { date: "2024-08-28", Close_AAPL: 225.99261474609375, Close_AMZN: 170.8000030517578, Close_GOOGL: 162.2611541748047, Close_MSFT: 408.95977783203125, Close_NVDA: 125.57905578613281 },
+    { date: "2024-08-29", Close_AAPL: 229.28536987304688, Close_AMZN: 172.1199951171875, Close_GOOGL: 161.19500732421875, Close_MSFT: 411.4696960449219, Close_NVDA: 117.56101989746094 },
+    { date: "2024-08-30", Close_AAPL: 228.49710083007812, Close_AMZN: 178.5, Close_GOOGL: 162.7892303466797, Close_MSFT: 415.4736328125, Close_NVDA: 119.34059143066406 },
+    { date: "2024-09-03", Close_AAPL: 222.28077697753906, Close_AMZN: 176.25, Close_GOOGL: 156.79100036621094, Close_MSFT: 407.80438232421875, Close_NVDA: 107.973388671875 },
+    { date: "2024-09-04", Close_AAPL: 220.36500549316406, Close_AMZN: 173.3300018310547, Close_GOOGL: 155.88427734375, Close_MSFT: 407.26654052734375, Close_NVDA: 106.18383026123047 },
+    { date: "2024-09-05", Close_AAPL: 221.89163208007812, Close_AMZN: 177.88999938964844, Close_GOOGL: 156.6714324951172, Close_MSFT: 406.7585754394531, Close_NVDA: 107.18358612060547 },
+    { date: "2024-09-06", Close_AAPL: 220.3350830078125, Close_AMZN: 171.38999938964844, Close_GOOGL: 150.374267578125, Close_MSFT: 400.0953063964844, Close_NVDA: 102.80465698242188 },
+    { date: "2024-09-09", Close_AAPL: 220.42486572265625, Close_AMZN: 175.39999389648438, Close_GOOGL: 148.368896484375, Close_MSFT: 404.0992431640625, Close_NVDA: 106.44377136230469 },
+    { date: "2024-09-10", Close_AAPL: 219.6266326904297, Close_AMZN: 179.5500030517578, Close_GOOGL: 148.31900024414062, Close_MSFT: 412.5453796386719, Close_NVDA: 108.0733642578125 },
+    { date: "2024-09-11", Close_AAPL: 222.1710205078125, Close_AMZN: 184.52000427246094, Close_GOOGL: 150.8132781982422, Close_MSFT: 421.3500671386719, Close_NVDA: 116.88119506835938 },
+    { date: "2024-09-12", Close_AAPL: 222.28077697753906, Close_AMZN: 187.0, Close_GOOGL: 154.33517456054688, Close_MSFT: 425.29425048828125, Close_NVDA: 119.12083435058594 },
+    { date: "2024-09-13", Close_AAPL: 222.01138305664062, Close_AMZN: 186.49000549316406, Close_GOOGL: 157.09881591796875, Close_MSFT: 428.8699035644531, Close_NVDA: 119.0808334350586 },
+    { date: "2024-09-16", Close_AAPL: 215.84495544433594, Close_AMZN: 184.88999938964844, Close_GOOGL: 157.6974334716797, Close_MSFT: 429.6169128417969, Close_NVDA: 116.7612075805664 },
+    { date: "2024-09-17", Close_AAPL: 216.31390380859375, Close_AMZN: 186.8800048828125, Close_GOOGL: 158.95455932617188, Close_MSFT: 433.41168212890625, Close_NVDA: 115.57140350341797 },
+    { date: "2024-09-18", Close_AAPL: 220.20535278320312, Close_AMZN: 186.42999267578125, Close_GOOGL: 159.44342041015625, Close_MSFT: 429.0890197753906, Close_NVDA: 113.35176086425781 },
+    { date: "2024-09-19", Close_AAPL: 228.3673858642578, Close_AMZN: 189.8699951171875, Close_GOOGL: 161.76808166503906, Close_MSFT: 436.93756103515625, Close_NVDA: 117.85104370117188 },
+    { date: "2024-09-20", Close_AAPL: 227.6988525390625, Close_AMZN: 191.60000610351562, Close_GOOGL: 163.21475219726562, Close_MSFT: 433.53118896484375, Close_NVDA: 115.98133850097656 },
+    { date: "2024-09-23", Close_AAPL: 225.97265625, Close_AMZN: 193.8800048828125, Close_GOOGL: 161.47874450683594, Close_MSFT: 431.77825927734375, Close_NVDA: 116.24130249023438 },
+    { date: "2024-09-24", Close_AAPL: 226.8706817626953, Close_AMZN: 193.9600067138672, Close_GOOGL: 161.917724609375, Close_MSFT: 427.4555969238281, Close_NVDA: 120.85055541992188 },
+    { date: "2024-09-25", Close_AAPL: 225.8728790283203, Close_AMZN: 192.52999877929688, Close_GOOGL: 161.11956787109375, Close_MSFT: 430.3838195800781, Close_NVDA: 123.4901351928711 },
+    { date: "2024-09-26", Close_AAPL: 227.02035522460938, Close_AMZN: 191.16000366210938, Close_GOOGL: 162.35671997070312, Close_MSFT: 429.5870361328125, Close_NVDA: 124.02005004882812 },
+    { date: "2024-09-27", Close_AAPL: 227.2897491455078, Close_AMZN: 187.97000122070312, Close_GOOGL: 163.5739288330078, Close_MSFT: 426.3101501464844, Close_NVDA: 121.38047790527344 },
+    { date: "2024-09-30", Close_AAPL: 232.4883270263672, Close_AMZN: 186.3300018310547, Close_GOOGL: 165.46957397460938, Close_MSFT: 428.5810546875, Close_NVDA: 121.42046356201172 },
+    { date: "2024-10-01", Close_AAPL: 225.71324157714844, Close_AMZN: 185.1300048828125, Close_GOOGL: 166.60696411132812, Close_MSFT: 419.00946044921875, Close_NVDA: 116.9811782836914 },
+    { date: "2024-10-02", Close_AAPL: 226.281982421875, Close_AMZN: 184.75999450683594, Close_GOOGL: 165.47955322265625, Close_MSFT: 415.4636535644531, Close_NVDA: 118.83087921142578 },
+    { date: "2024-10-03", Close_AAPL: 225.17440795898438, Close_AMZN: 181.9600067138672, Close_GOOGL: 165.47955322265625, Close_MSFT: 414.87603759765625, Close_NVDA: 122.83023834228516 },
+    { date: "2024-10-04", Close_AAPL: 226.30194091796875, Close_AMZN: 186.50999450683594, Close_GOOGL: 166.67678833007812, Close_MSFT: 414.39794921875, Close_NVDA: 124.89990234375 },
+    { date: "2024-10-07", Close_AAPL: 221.20315551757812, Close_AMZN: 180.8000030517578, Close_GOOGL: 162.6061553955078, Close_MSFT: 407.90399169921875, Close_NVDA: 127.69945526123047 },
+    { date: "2024-10-08", Close_AAPL: 225.27420043945312, Close_AMZN: 182.72000122070312, Close_GOOGL: 164.00294494628906, Close_MSFT: 413.0533447265625, Close_NVDA: 132.86862182617188 },
+    { date: "2024-10-09", Close_AAPL: 229.03591918945312, Close_AMZN: 185.1699981689453, Close_GOOGL: 161.4887237548828, Close_MSFT: 415.7923278808594, Close_NVDA: 132.62864685058594 },
+    { date: "2024-10-10", Close_AAPL: 228.53701782226562, Close_AMZN: 186.64999389648438, Close_GOOGL: 161.70822143554688, Close_MSFT: 414.1788330078125, Close_NVDA: 134.78829956054688 },
+    { date: "2024-10-11", Close_AAPL: 227.05029296875, Close_AMZN: 188.82000732421875, Close_GOOGL: 162.8655548095703, Close_MSFT: 414.6568908691406, Close_NVDA: 134.7783203125 },
+    { date: "2024-10-14", Close_AAPL: 230.79205322265625, Close_AMZN: 187.5399932861328, Close_GOOGL: 164.5816192626953, Close_MSFT: 417.4656677246094, Close_NVDA: 138.0478057861328 },
+    { date: "2024-10-15", Close_AAPL: 233.33645629882812, Close_AMZN: 187.69000244140625, Close_GOOGL: 165.08047485351562, Close_MSFT: 417.0672302246094, Close_NVDA: 131.57884216308594 },
+    { date: "2024-10-16", Close_AAPL: 231.27099609375, Close_AMZN: 186.88999938964844, Close_GOOGL: 164.78114318847656, Close_MSFT: 414.45770263671875, Close_NVDA: 135.6981658935547 },
+    { date: "2024-10-17", Close_AAPL: 231.6401824951172, Close_AMZN: 187.52999877929688, Close_GOOGL: 162.55625915527344, Close_MSFT: 415.0552978515625, Close_NVDA: 136.90797424316406 },
+    { date: "2024-10-18", Close_AAPL: 234.48391723632812, Close_AMZN: 188.99000549316406, Close_GOOGL: 163.04515075683594, Close_MSFT: 416.48956298828125, Close_NVDA: 137.97779846191406 },
+    { date: "2024-10-21", Close_AAPL: 235.96067810058594, Close_AMZN: 189.07000732421875, Close_GOOGL: 163.69366455078125, Close_MSFT: 417.1070861816406, Close_NVDA: 143.6868896484375 },
+    { date: "2024-10-22", Close_AAPL: 235.342041015625, Close_AMZN: 189.6999969482422, Close_GOOGL: 164.76119995117188, Close_MSFT: 425.8022155761719, Close_NVDA: 143.56690979003906 },
+    { date: "2024-10-23", Close_AAPL: 230.25323486328125, Close_AMZN: 184.7100067138672, Close_GOOGL: 162.4066162109375, Close_MSFT: 422.9038391113281, Close_NVDA: 139.5375518798828 },
+    { date: "2024-10-24", Close_AAPL: 230.0636749267578, Close_AMZN: 186.3800048828125, Close_GOOGL: 162.34674072265625, Close_MSFT: 423.0333251953125, Close_NVDA: 140.38742065429688 },
+    { date: "2024-10-25", Close_AAPL: 230.9018096923828, Close_AMZN: 187.8300018310547, Close_GOOGL: 164.89089965820312, Close_MSFT: 426.43963623046875, Close_NVDA: 141.51722717285156 },
+    { date: "2024-10-28", Close_AAPL: 232.88743591308594, Close_AMZN: 188.38999938964844, Close_GOOGL: 166.3375701904297, Close_MSFT: 424.8858642578125, Close_NVDA: 140.49740600585938 },
+    { date: "2024-10-29", Close_AAPL: 233.15684509277344, Close_AMZN: 190.8300018310547, Close_GOOGL: 169.29078674316406, Close_MSFT: 430.2244873046875, Close_NVDA: 141.22727966308594 },
+    { date: "2024-10-30", Close_AAPL: 229.5946807861328, Close_AMZN: 192.72999572753906, Close_GOOGL: 174.059814453125, Close_MSFT: 430.8021545410156, Close_NVDA: 139.3175811767578 },
+    { date: "2024-10-31", Close_AAPL: 225.4138946533203, Close_AMZN: 186.39999389648438, Close_GOOGL: 170.71751403808594, Close_MSFT: 404.72674560546875, Close_NVDA: 132.7386474609375 },
+    { date: "2024-11-01", Close_AAPL: 222.42047119140625, Close_AMZN: 197.92999267578125, Close_GOOGL: 170.89707946777344, Close_MSFT: 408.7306823730469, Close_NVDA: 135.3782196044922 },
+    { date: "2024-11-04", Close_AAPL: 221.52244567871094, Close_AMZN: 195.77999877929688, Close_GOOGL: 168.851806640625, Close_MSFT: 406.82830810546875, Close_NVDA: 136.0281219482422 },
+    { date: "2024-11-05", Close_AAPL: 222.95928955078125, Close_AMZN: 199.5, Close_GOOGL: 169.35064697265625, Close_MSFT: 409.8163146972656, Close_NVDA: 139.8874969482422 },
+    { date: "2024-11-06", Close_AAPL: 222.23089599609375, Close_AMZN: 207.08999633789062, Close_GOOGL: 176.10511779785156, Close_MSFT: 418.50146484375, Close_NVDA: 145.58657836914062 },
+    { date: "2024-11-07", Close_AAPL: 226.98043823242188, Close_AMZN: 210.0500030517578, Close_GOOGL: 180.33538818359375, Close_MSFT: 423.7304992675781, Close_NVDA: 148.85606384277344 },
+    { date: "2024-11-08", Close_AAPL: 226.7107391357422, Close_AMZN: 208.17999267578125, Close_GOOGL: 177.94090270996094, Close_MSFT: 420.85205078125, Close_NVDA: 147.6062469482422 },
+    { date: "2024-11-11", Close_AAPL: 223.98373413085938, Close_AMZN: 206.83999633789062, Close_GOOGL: 179.93630981445312, Close_MSFT: 416.34014892578125, Close_NVDA: 145.2366180419922 },
+    { date: "2024-11-12", Close_AAPL: 223.98373413085938, Close_AMZN: 208.91000366210938, Close_GOOGL: 181.20339965820312, Close_MSFT: 421.340087890625, Close_NVDA: 148.26612854003906 },
+    { date: "2024-11-13", Close_AAPL: 224.8727569580078, Close_AMZN: 214.10000610351562, Close_GOOGL: 178.4696807861328, Close_MSFT: 423.5014343261719, Close_NVDA: 146.24647521972656 },
+    { date: "2024-11-14", Close_AAPL: 227.9693603515625, Close_AMZN: 211.47999572753906, Close_GOOGL: 175.17726135253906, Close_MSFT: 425.1846923828125, Close_NVDA: 146.7363739013672 },
+    { date: "2024-11-15", Close_AAPL: 224.7528839111328, Close_AMZN: 202.61000061035156, Close_GOOGL: 172.09434509277344, Close_MSFT: 413.3421936035156, Close_NVDA: 141.9571533203125 },
+    { date: "2024-11-18", Close_AAPL: 227.7695770263672, Close_AMZN: 201.6999969482422, Close_GOOGL: 174.8979034423828, Close_MSFT: 414.0991516113281, Close_NVDA: 140.12744140625 },
+    { date: "2024-11-19", Close_AAPL: 228.02928161621094, Close_AMZN: 204.61000061035156, Close_GOOGL: 177.71141052246094, Close_MSFT: 416.12103271484375, Close_NVDA: 146.98634338378906 },
+    { date: "2024-11-20", Close_AAPL: 228.7484893798828, Close_AMZN: 202.8800048828125, Close_GOOGL: 175.5763397216797, Close_MSFT: 413.8302001953125, Close_NVDA: 145.8665313720703 },
+    { date: "2024-11-21", Close_AAPL: 228.26902770996094, Close_AMZN: 198.3800048828125, Close_GOOGL: 167.2454833984375, Close_MSFT: 412.0437927246094, Close_NVDA: 146.6464080810547 },
+    { date: "2024-11-22", Close_AAPL: 229.61753845214844, Close_AMZN: 197.1199951171875, Close_GOOGL: 164.38206481933594, Close_MSFT: 416.16552734375, Close_NVDA: 141.92715454101562 },
+    { date: "2024-11-25", Close_AAPL: 232.61424255371094, Close_AMZN: 201.4499969482422, Close_GOOGL: 167.26544189453125, Close_MSFT: 417.95196533203125, Close_NVDA: 135.9981231689453 },
+    { date: "2024-11-26", Close_AAPL: 234.8018341064453, Close_AMZN: 207.86000061035156, Close_GOOGL: 168.73207092285156, Close_MSFT: 427.133544921875, Close_NVDA: 136.89797973632812 },
+    { date: "2024-11-27", Close_AAPL: 234.67198181152344, Close_AMZN: 205.74000549316406, Close_GOOGL: 168.84181213378906, Close_MSFT: 422.1435546875, Close_NVDA: 135.31822204589844 },
+    { date: "2024-11-29", Close_AAPL: 237.06935119628906, Close_AMZN: 207.88999938964844, Close_GOOGL: 168.5624542236328, Close_MSFT: 422.61260986328125, Close_NVDA: 138.22776794433594 },
+    { date: "2024-12-02", Close_AAPL: 239.3268585205078, Close_AMZN: 210.7100067138672, Close_GOOGL: 171.0966339111328, Close_MSFT: 430.1175842285156, Close_NVDA: 138.60769653320312 },
+    { date: "2024-12-03", Close_AAPL: 242.3834991455078, Close_AMZN: 213.44000244140625, Close_GOOGL: 170.9469757080078, Close_MSFT: 430.3371276855469, Close_NVDA: 140.23744201660156 },
+    { date: "2024-12-04", Close_AAPL: 242.74310302734375, Close_AMZN: 218.16000366210938, Close_GOOGL: 173.9700164794922, Close_MSFT: 436.544677734375, Close_NVDA: 145.1166534423828 },
+    { date: "2024-12-05", Close_AAPL: 242.7730712890625, Close_AMZN: 220.5500030517578, Close_GOOGL: 172.24400329589844, Close_MSFT: 441.7342529296875, Close_NVDA: 145.04666137695312 },
+    { date: "2024-12-06", Close_AAPL: 242.5732879638672, Close_AMZN: 227.02999877929688, Close_GOOGL: 174.30926513671875, Close_MSFT: 442.682373046875, Close_NVDA: 142.42689514160156 },
+    { date: "2024-12-09", Close_AAPL: 246.47900390625, Close_AMZN: 226.08999633789062, Close_GOOGL: 175.1682586669922, Close_MSFT: 445.12744140625, Close_NVDA: 138.79722595214844 },
+    { date: "2024-12-10", Close_AAPL: 247.4978790283203, Close_AMZN: 225.0399932861328, Close_GOOGL: 184.9569854736328, Close_MSFT: 442.4428405761719, Close_NVDA: 135.05758666992188 },
+    { date: "2024-12-11", Close_AAPL: 246.2192840576172, Close_AMZN: 230.25999450683594, Close_GOOGL: 195.1752166748047, Close_MSFT: 448.0915222167969, Close_NVDA: 139.29718017578125 },
+    { date: "2024-12-12", Close_AAPL: 247.68768310546875, Close_AMZN: 228.97000122070312, Close_GOOGL: 191.7391815185547, Close_MSFT: 448.6603698730469, Close_NVDA: 137.32736206054688 },
+    { date: "2024-12-13", Close_AAPL: 247.85748291015625, Close_AMZN: 227.4600067138672, Close_GOOGL: 189.6016387939453, Close_MSFT: 446.37493896484375, Close_NVDA: 134.23765563964844 },
+    { date: "2024-12-16", Close_AAPL: 250.7642822265625, Close_AMZN: 232.92999267578125, Close_GOOGL: 196.43377685546875, Close_MSFT: 450.6863098144531, Close_NVDA: 131.98785400390625 },
+    { date: "2024-12-17", Close_AAPL: 253.20159912109375, Close_AMZN: 231.14999389648438, Close_GOOGL: 195.1951904296875, Close_MSFT: 453.5505676269531, Close_NVDA: 130.3780059814453 },
+    { date: "2024-12-18", Close_AAPL: 247.77757263183594, Close_AMZN: 220.52000427246094, Close_GOOGL: 188.18325805664062, Close_MSFT: 436.5147399902344, Close_NVDA: 128.8981475830078 },
+    { date: "2024-12-19", Close_AAPL: 249.51565551757812, Close_AMZN: 223.2899932861328, Close_GOOGL: 188.2931365966797, Close_MSFT: 436.15545654296875, Close_NVDA: 130.66796875 },
+    { date: "2024-12-20", Close_AAPL: 254.21051025390625, Close_AMZN: 224.9199981689453, Close_GOOGL: 191.18980407714844, Close_MSFT: 435.726318359375, Close_NVDA: 134.68760681152344 },
+    { date: "2024-12-23", Close_AAPL: 254.98965454101562, Close_AMZN: 225.05999755859375, Close_GOOGL: 194.40611267089844, Close_MSFT: 434.3790283203125, Close_NVDA: 139.6571502685547 },
+    { date: "2024-12-24", Close_AAPL: 257.91644287109375, Close_AMZN: 229.0500030517578, Close_GOOGL: 195.8843994140625, Close_MSFT: 438.4508361816406, Close_NVDA: 140.2071075439453 },
+    { date: "2024-12-26", Close_AAPL: 258.7355041503906, Close_AMZN: 227.0500030517578, Close_GOOGL: 195.375, Close_MSFT: 437.2332763671875, Close_NVDA: 139.91712951660156 },
+    { date: "2024-12-27", Close_AAPL: 255.30929565429688, Close_AMZN: 223.75, Close_GOOGL: 192.5382537841797, Close_MSFT: 429.66845703125, Close_NVDA: 136.9973907470703 },
+    { date: "2024-12-30", Close_AAPL: 251.9230194091797, Close_AMZN: 221.3000030517578, Close_GOOGL: 191.02000427246094, Close_MSFT: 423.9798583984375, Close_NVDA: 137.47735595703125 },
+    { date: "2024-12-31", Close_AAPL: 250.1449737548828, Close_AMZN: 219.38999938964844, Close_GOOGL: 189.08224487304688, Close_MSFT: 420.6565246582031, Close_NVDA: 134.27764892578125 },
   ],
-  "columns": [
-    "date",
-    "company",
-    "market_cap",
-    "revenue"
-  ],
-  "recommendedTemplate": "bar-chart"
+  columns: ['date','Close_AAPL','Close_AMZN','Close_GOOGL','Close_MSFT','Close_NVDA']
 };

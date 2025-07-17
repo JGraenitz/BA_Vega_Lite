@@ -11,8 +11,10 @@
   font-size: 2rem;
 }
 .tutorials-page ul {
-  margin: 16px 0 24px 24px;
-  padding-left: 16px;
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 1.5em;
+  margin: 16px 0 24px 0;
 }
 .tutorials-page a {
   color: #3366cc;
@@ -28,27 +30,32 @@
   color: #888;
 }
 .tutorials-back-btn {
-  background: #1976d2;
+  background: #4f6d9a;
   color: #fff;
   border: none;
   border-radius: 6px;
   padding: 8px 18px;
-  font-size: 1rem;
+  font-size: 1.08rem;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
   margin-bottom: 18px;
   margin-top: 10px;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background 0.2s, box-shadow 0.2s;
 }
-.tutorials-back-btn:hover {
-  background: #1565c0;
+.tutorials-back-btn:hover, .tutorials-back-btn:focus {
+  background: #3d5a7a;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .App.dark-mode .tutorials-back-btn {
-  background: #333b4a;
-  color: #ffd700;
+  background: #2d3748;
+  color: #e2e8f0;
   box-shadow: 0 2px 8px rgba(30, 30, 30, 0.15);
 }
-.App.dark-mode .tutorials-back-btn:hover {
-  background: #22262e;
+.App.dark-mode .tutorials-back-btn:hover, .App.dark-mode .tutorials-back-btn:focus {
+  background: #4a5568;
+  color: #ffd700;
+  box-shadow: 0 4px 8px rgba(30, 30, 30, 0.18);
 } 

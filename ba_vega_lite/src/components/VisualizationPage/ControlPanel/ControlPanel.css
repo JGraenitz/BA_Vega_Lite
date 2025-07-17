@@ -231,7 +231,9 @@
 @media (max-width: 700px) {
   .controlpanel-root {
     padding: min(4vw, 16px);
-    max-width: 100vw;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   .controlpanel-section {
     padding-bottom: 10px;
@@ -248,12 +250,14 @@
     margin-right: 0;
     margin-bottom: 8px;
   }
+  /* Buttons und Inputs auf kleine Breite begrenzen */
+  .controlpanel-btn,
   .controlpanel-select,
   .controlpanel-input,
   .controlpanel-datefilter-input {
     width: 100%;
     min-width: 0;
-    margin-bottom: 8px;
+    box-sizing: border-box;
   }
   .controlpanel-btn,
   .controlpanel-add-layer-btn {

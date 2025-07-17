@@ -1,4 +1,5 @@
-import { testDatasets, TestDataSelectorProps } from '../../../utils/interfaces/VisualizationPage/TestDataSelector/TestDataSelectorProps';
+import { TestDataSelectorProps } from '../../../utils/interfaces/VisualizationPage/TestDataSelector/TestDataSelectorProps';
+import { testDatasets } from '../../../utils/constants/VisualizationPage/TestDataSelector/TestDataConst';
 import './TestDataSelector.css';
 
 
