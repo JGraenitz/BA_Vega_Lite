@@ -1,11 +1,10 @@
-// Bekannte Ordinalskalen für automatische Typ-Erkennung
-const knownOrdinals = [
-  ["sehr schlecht", "schlecht", "mittel", "gut", "sehr gut"],
-  ["klein", "mittel", "groß"],
-  ["niedrig", "mittel", "hoch"],
-  ["unzufrieden", "neutral", "zufrieden"],
-  ["stark", "mittel", "schwach"],
-];
+import { VEGA_SCHEMA_URL, LEGEND_ERROR_SPEC } from "../constants/VegaLiteUtilsConst";
+
+import {DEFAULT_AXIS_LABEL_FONT_SIZE, DEFAULT_AXIS_TITLE_FONT_SIZE,DEFAULT_HEIGHT, DEFAULT_VIEW_STROKE, DEFAULT_WIDTH, DEFAULT_X_TYPE, DEFAULT_Y_LABEL,
+  DEFAULT_Y_TYPE, DEFAULT_LAYER_TEMPLATE } from "../constants/VegaLiteUtilsConst";  
+
+import { knownOrdinals } from "../constants/VegaLiteUtilsConst"; 
+
 
 /**
  * Prüft, ob ein Array von Werten einer bekannten Ordinalskala entspricht.
@@ -56,7 +55,7 @@ export function analyzeColumns(data: any, columns: any): any {
     }
   }
   return result;
-} 
+}
 
 /**
  * Baut ein Encoding-Objekt für Vega-Lite für eine Achse oder ein Feld.
@@ -98,142 +97,206 @@ export function buildMark(plotType: any, opacity: any = 1, markSize: any = 30, m
 }
 
 /**
- * Erzeugt eine vollständige Vega-Lite-Spezifikation (Spec) basierend auf den aktuellen Steuerelementen und Spalteninformationen.
- * Unterstützt Layering und Legendenmodus.
- * @param controls Steuerobjekt mit Layern, Achsen, etc.
- * @param columnInfo Typinformationen zu den Spalten
- * @returns Vega-Lite-Spezifikationsobjekt
+ * Erzeugt das Tooltip-Array für einen Legenden-Layer.
+ * @param xField Name des X-Datenfelds
+ * @param xType Vega-Lite Typ der X-Achse
+ * @param yType Vega-Lite Typ der Y-Achse (meist quantitativ)
+ * @param aggregation (optional) Aggregationsfunktion (z.B. 'sum')
+ * @returns Tooltip-Array für Vega-Lite
+ */
+function buildLegendTooltip(xField: string, xType: string, yType: string, aggregation?: string) {
+  return [
+    { field: xField, type: xType },
+    { field: 'Legend', type: 'nominal' },
+    {
+      field: 'value',
+      type: yType,
+      ...(aggregation ? { aggregate: aggregation, title: `${aggregation}(value)` } : {})
+    }
+  ];
+}
+
+/**
+ * Erzeugt das Tooltip-Array für einen Standard-Layer.
+ * @param xField Name des X-Datenfelds
+ * @param xType Vega-Lite Typ der X-Achse
+ * @param yField Name des Y-Datenfelds
+ * @param yType Vega-Lite Typ der Y-Achse
+ * @param aggregation (optional) Aggregationsfunktion (z.B. 'sum')
+ * @returns Tooltip-Array für Vega-Lite
+ */
+function buildStandardTooltip(xField: string, xType: string, yField: string, yType: string, aggregation?: string) {
+  return [
+    { field: xField, type: xType },
+    {
+      field: yField,
+      type: yType,
+      ...(aggregation && yType === DEFAULT_Y_TYPE ? {
+        aggregate: aggregation,
+        title: `${aggregation}(${yField})`
+      } : {})
+    }
+  ];
+}
+
+/**
+ * Baut das vollständige encoding-Objekt für einen Legenden-Layer.
+ * @param xField Name des X-Datenfelds
+ * @param xType Vega-Lite Typ der X-Achse
+ * @param xTitle Achsentitel X
+ * @param yType Vega-Lite Typ der Y-Achse
+ * @param yTitle Achsentitel Y
+ * @param aggregation (optional) Aggregationsfunktion
+ * @param colorObj Color-Encoding-Objekt
+ * @param tooltip Tooltip-Array
+ * @returns encoding-Objekt für Vega-Lite (Legende)
+ */
+function buildLegendEncoding(xField: string, xType: string, xTitle: string, yType: string, yTitle: string, aggregation: any, colorObj: any) {
+  return {
+    x: buildEncoding(xField, xType, xTitle),
+    y: buildEncoding('value', yType, yTitle, aggregation),
+    color: colorObj,
+    tooltip: buildLegendTooltip(xField, xType, yType, aggregation)
+  };
+}
+
+/**
+ * Baut das vollständige encoding-Objekt für einen Standard-Layer.
+ * @param xField Name des X-Datenfelds
+ * @param xType Vega-Lite Typ der X-Achse
+ * @param xTitle Achsentitel X
+ * @param yField Name des Y-Datenfelds
+ * @param yType Vega-Lite Typ der Y-Achse
+ * @param yTitle Achsentitel Y
+ * @param aggregation (optional) Aggregationsfunktion
+ * @param colorObj Color-Encoding-Objekt
+ * @param tooltip Tooltip-Array
+ * @returns encoding-Objekt für Vega-Lite (Standard)
+ */
+function buildStandardEncoding(xField: string, xType: string, xTitle: string, yField: string, yType: string, yTitle: string, aggregation: any, colorObj: any) {
+  return {
+    x: buildEncoding(xField, xType, xTitle),
+    y: buildEncoding(yField, yType, yTitle, aggregation),
+    color: colorObj,
+    tooltip: buildStandardTooltip(xField, xType, yField, yType, aggregation)
+  };
+}
+
+/**
+ * Baut ein Vega-Lite-Layer-Objekt für einen Legenden-Layer.
+ * @param layer Layer-Konfiguration
+ * @param i Index des Layers
+ * @param controls Steuerungsobjekt (z.B. Achsentitel)
+ * @param columnInfo Spalten-Typinformationen
+ * @param legendNames Namen für die Legende
+ * @param legendDomain Domain für die Farblegende
+ * @param legendRange Range für die Farblegende
+ * @param xField Name des X-Datenfelds
+ * @param xType Vega-Lite Typ der X-Achse
+ * @returns Vega-Lite Layer-Objekt mit Legende
+ */
+function buildLegendLayer(layer: any, i: number, controls: any, columnInfo: any, legendNames: string[], legendDomain: string[], legendRange: string[], xField: string, xType: string) {
+  const legendName = legendNames[i];
+  const yType = DEFAULT_Y_TYPE;
+  return {
+    mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
+    encoding: buildLegendEncoding(xField, xType, controls.xLabel, yType, controls.yLabel || DEFAULT_Y_LABEL, layer.aggregation,
+      {
+        field: 'Legend',
+        type: 'nominal',
+        scale: { domain: legendDomain, range: legendRange },
+        legend: { title: 'Legende' }
+      }
+    ),
+    transform: [
+      { filter: `datum.Legend === '${legendName}'` }
+    ]
+  };
+}
+
+/**
+ * Baut alle Vega-Lite-Layer-Objekte für die Legenden-Darstellung.
+ * @param controls Steuerungsobjekt
+ * @param columnInfo Spalten-Typinformationen
+ * @returns Array von Vega-Lite Layer-Objekten mit Legende
+ */
+function buildLegendLayers(controls: any, columnInfo: any) {
+  const { legendNames, legendDomain, legendRange } = getLegendMeta(controls);
+  const xField = controls.layers[0]?.xAxis || '';
+  const xType = columnInfo[xField]?.type || DEFAULT_X_TYPE;
+  return controls.layers.map((layer: any, i: number) =>
+    buildLegendLayer(layer, i, controls, columnInfo, legendNames, legendDomain, legendRange, xField, xType)
+  );
+}
+
+/**
+ * Baut ein Vega-Lite-Layer-Objekt für einen Standard-Layer (ohne Legende).
+ * @param layer Layer-Konfiguration
+ * @param controls Steuerungsobjekt
+ * @param columnInfo Spalten-Typinformationen
+ * @returns Vega-Lite Layer-Objekt ohne Legende
+ */
+function buildStandardLayer(layer: any, controls: any, columnInfo: any) {
+  const xType = columnInfo[layer.xAxis]?.type || DEFAULT_X_TYPE;
+  const yType = columnInfo[layer.yAxis]?.type || DEFAULT_Y_TYPE;
+  return {
+    mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
+    encoding: buildStandardEncoding(layer.xAxis, xType, controls.xLabel, layer.yAxis, yType, controls.yLabel || layer.yAxis, layer.aggregation,
+      { value: layer.color }
+    )
+  };
+}
+
+/**
+ * Baut alle Vega-Lite-Layer-Objekte für die Standarddarstellung (ohne Legende).
+ * @param controls Steuerungsobjekt
+ * @param columnInfo Spalten-Typinformationen
+ * @returns Array von Vega-Lite Layer-Objekten ohne Legende
+ */
+function buildStandardLayers(controls: any, columnInfo: any) {
+  return controls.layers.map((layer: any) => buildStandardLayer(layer, controls, columnInfo));
+}
+
+/**
+ * Erzeugt Metadaten für die Legende (Namen, Domain, Range) basierend auf den Layern.
+ * @param controls Steuerungsobjekt mit Layer-Informationen
+ * @returns Objekt mit legendNames, legendDomain und legendRange
+ */
+function getLegendMeta(controls: any) {
+  const legendNames: string[] = controls.layers.map((layer: any, i: number) => `${layer.yAxis} (Layer ${i + 1})`);
+  const legendDomain: string[] = legendNames;
+  const legendRange: string[] = controls.layers.map((layer: any) => layer.color);
+  return { legendNames, legendDomain, legendRange };
+}
+
+/**
+ * Generiert ein vollständiges Vega-Lite-Spec-Objekt basierend auf den Steuerelementen und Spalteninfos.
+ * Behandelt sowohl Standard-Layer als auch Legenden-Layer und prüft auf Fehlerfälle.
+ * @param controls Steuerungsobjekt (z.B. Layer, Achsentitel, Breite/Höhe, Legenden-Option)
+ * @param columnInfo Spalten-Typinformationen (z.B. von analyzeColumns)
+ * @returns Vega-Lite-Spec-Objekt oder LEGEND_ERROR_SPEC bei Fehler
  */
 export function generateVegaLiteSpec(controls: any, columnInfo: any): any {
+  if (!controls.layers || controls.layers.length === 0) return null;
 
-  if (!controls.layers || controls.layers.length === 0) return null; 
-
-  // Wenn Legende aktiv, kombiniere alle Layer zu einer Serie mit 'Legend'-Feld
-  if (controls.showLegend) {
-    // Prüfe, ob ein temporales Feld auf der Y-Achse liegt (nicht unterstützt)
-    const hasTemporalYAxis = controls.layers.some((layer: any) => {
-      const yType = columnInfo[layer.yAxis]?.type;
-      return yType === 'temporal';
-    });
-    // Fehlerfall: Legende mit Zeitfeld auf Y-Achse nicht möglich
-    if (hasTemporalYAxis) {
-      // Gib eine Fehlermeldung als Text-Chart zurück
-      return {
-        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-        description: 'Legende kann nicht angezeigt werden, wenn ein Datumsfeld auf der Y-Achse liegt.',
-        width: 500,
-        height: 500,
-        data: { name: 'table' },
-        mark: { type: 'text', fontSize: 32, align: 'left', baseline: 'middle' },
-        encoding: {
-          text: { value: 'Legende ist deaktiviert: Datumsfeld auf Y-Achse nicht unterstützt.' },
-          x: { value: 30 },
-          y: { value: 250 },
-          color: { value: 'red' }
-        },
-        config: {
-          axis: { labelFontSize: 30, titleFontSize: 30 },
-          view: { stroke: 'transparent' },
-        },
-      };
-    }
-    // Eindeutige Legend-Namen erzeugen (z.B. 'Umsatz (Layer 1)')
-    const legendNames: string[] = controls.layers.map((layer: any, i: number) => `${layer.yAxis} (Layer ${i + 1})`);
-    const legendDomain: string[] = legendNames;
-    const legendRange: string[] = controls.layers.map((layer: any) => layer.color);
-    // Nutze das x-Feld des ersten Layers als Standard
-    const xField = controls.layers[0]?.xAxis || '';
-    const xType = columnInfo[xField]?.type || 'nominal';
-    return {
-      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-      description: 'Auto-generated chart with legend',
-      width: controls.width,
-      height: controls.height,
-      data: { name: 'table' },
-      config: {
-        axis: { labelFontSize: 13, titleFontSize: 15 },
-        view: { stroke: 'transparent' },
-      },
-      layer: controls.layers.map((layer: any, i: number) => {
-        const legendName = legendNames[i];
-        // Im Legendenmodus ist y immer quantitativ (value)
-        const yType = 'quantitative';
-        // Aggregation berücksichtigen
-        const yEncoding: any = {
-          field: 'value',
-          type: yType,
-          axis: { title: controls.yLabel || 'Wert' }
-        };
-        if (layer.aggregation) {
-          yEncoding.aggregate = layer.aggregation;
-        }
-        return {
-          mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
-          encoding: {
-            x: { field: xField, type: xType, axis: { title: controls.xLabel } },
-            y: yEncoding,
-            color: {
-              field: 'Legend',
-              type: 'nominal',
-              scale: { domain: legendDomain, range: legendRange },
-              legend: { title: 'Legende' }
-            },
-            tooltip: [
-              { field: xField, type: xType },
-              { field: 'Legend', type: 'nominal' },
-              {
-                field: 'value',
-                type: yType,
-                ...(layer.aggregation ? { aggregate: layer.aggregation, title: `${layer.aggregation}(value)` } : {})
-              }
-            ]
-          },
-          // Filter: Zeige pro Layer nur die passenden Werte (Legend)
-          transform: [
-            { filter: `datum.Legend === '${legendName}'` }
-          ]
-        };
-      })
-    };
+  if (controls.showLegend && controls.layers.some((layer: any) => columnInfo[layer.yAxis]?.type === 'temporal')) {
+    return LEGEND_ERROR_SPEC;
   }
-
-  // Standardfall ohne Legende (Layering wie bisher)
   const spec: any = {
-    $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-    description: 'Auto-generated chart with layers',
+    $schema: VEGA_SCHEMA_URL,
+    description: `Diagramm erstellt mit ${controls.showLegend ? 'Legende' : 'Standartlayern'}`,
     width: controls.width,
     height: controls.height,
     data: { name: 'table' },
     config: {
-      axis: { labelFontSize: 13, titleFontSize: 15 },
-      view: { stroke: 'transparent' },
+      axis: { labelFontSize: DEFAULT_AXIS_LABEL_FONT_SIZE, titleFontSize: DEFAULT_AXIS_TITLE_FONT_SIZE },
+      view: { stroke: DEFAULT_VIEW_STROKE },
     },
+    layer: controls.showLegend
+      ? buildLegendLayers(controls, columnInfo)
+      : buildStandardLayers(controls, columnInfo),
   };
-  
-  // Erzeuge für jeden Layer ein eigenes Vega-Lite-Layer-Objekt
-  spec.layer = controls.layers.map((layer: any) => {
-    const xType = columnInfo[layer.xAxis]?.type || 'nominal';
-    const yType = columnInfo[layer.yAxis]?.type || 'quantitative';
-    return {
-      mark: buildMark(layer.plotType, layer.opacity, layer.markSize, layer.markShape),
-      encoding: {
-        x: buildEncoding(layer.xAxis, xType, controls.xLabel),
-        y: buildEncoding(layer.yAxis, yType, controls.yLabel || layer.yAxis, layer.aggregation),
-        color: { value: layer.color },
-        tooltip: [
-          { field: layer.xAxis, type: xType },
-          {
-            field: layer.yAxis,
-            type: yType,
-            ...(layer.aggregation && yType === 'quantitative' && {
-              aggregate: layer.aggregation,
-              title: `${layer.aggregation}(${layer.yAxis})`
-            })
-          }
-        ],
-      },
-    };
-  });
+
   return spec;
 }
 
@@ -262,22 +325,17 @@ export function handleCsvData(
   setColumnInfo(info);
   // Erstelle Standard-Layer
   const defaultLayer = {
+    ...DEFAULT_LAYER_TEMPLATE,
     id: Date.now(),
     xAxis: cols[0] || '',
-    yAxis: cols[1] || cols[0] || '',
-    aggregation: '',
-    plotType: 'bar',
-    color: '#4f6d9a',
-    opacity: 0.8,
-    markSize: 30,
-    markShape: 'circle'
+    yAxis: cols[1] || cols[0] || ''
   };
   // Setze Standard-Steuerung
   setControls((prev: any) => ({
     ...prev,
     layers: [defaultLayer],
-    width: prev.width && prev.width > 0 ? prev.width : 900,
-    height: prev.height && prev.height > 0 ? prev.height : 500
+    width: prev.width && prev.width > 0 ? prev.width : DEFAULT_WIDTH,
+    height: prev.height && prev.height > 0 ? prev.height : DEFAULT_HEIGHT
   }));
   setVegaSpecError(null);
 } 

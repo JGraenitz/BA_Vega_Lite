@@ -83,8 +83,6 @@ function VisualizationPage({
   };
 
 
-
-
   return (
     <>
       {!csvData && showTestData && (

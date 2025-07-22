@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ControlPanelProps } from '../../../utils/interfaces/VisualizationPage/ControlPanel/ControlPanelProps';
 import { aggregations, plotTypes, markShapes } from '../../../utils/constants/VisualizationPage/ControlPanel/ControlPanelConst';
 import { Tooltip } from 'react-tooltip';
 import './ControlPanel.css';
-
-
 
 /**
  * ControlPanel Komponente
@@ -29,7 +27,7 @@ function ControlPanel({columns, columnInfo, layers: initialLayers = [], markSize
   xLabel: initialXLabel, yLabel: initialYLabel, width: initialWidth, height: initialHeight, dateFilter: initialDateFilter, onApply,
   darkMode = false, showLegend: initialShowLegend = false}: ControlPanelProps) {
 
-  // Lokaler State für alle Steuerelemente
+  // Lokaler State für alle Steuerelemente (Initialisierung nur beim ersten Rendern)
   const [layers, setLayers] = useState(initialLayers);
   const [markSize, setMarkSize] = useState(initialMarkSize);
   const [markShape, setMarkShape] = useState(initialMarkShape);
@@ -38,35 +36,40 @@ function ControlPanel({columns, columnInfo, layers: initialLayers = [], markSize
   const [width, setWidth] = useState(initialWidth);
   const [height, setHeight] = useState(initialHeight);
   const [dateFilter, setDateFilter] = useState(initialDateFilter);
+  const [showLegend, setShowLegend] = useState(initialShowLegend);
+  const [animatingLayer, setAnimatingLayer] = useState<{id: any, direction: string} | null>(null);
+
+  // DateField dynamisch anpassen, wenn sich Spalten oder Typen ändern
   const [dateField, setDateField] = useState(() => {
     const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
     return temporalFields[0] || '';
   });
-  const [showLegend, setShowLegend] = useState(initialShowLegend);
-  const [animatingLayer, setAnimatingLayer] = useState<{id: any, direction: string} | null>(null);
 
-  // Lokalen State aktualisieren, wenn Initialwerte sich ändern
-  useEffect(() => { setLayers(initialLayers); }, [initialLayers]);
-  useEffect(() => { setMarkSize(initialMarkSize); }, [initialMarkSize]);
-  useEffect(() => { setMarkShape(initialMarkShape); }, [initialMarkShape]);
-  useEffect(() => { setXLabel(initialXLabel); }, [initialXLabel]);
-  useEffect(() => { setYLabel(initialYLabel); }, [initialYLabel]);
-  useEffect(() => { setWidth(initialWidth); }, [initialWidth]);
-  useEffect(() => { setHeight(initialHeight); }, [initialHeight]);
-  useEffect(() => { setDateFilter(initialDateFilter); }, [initialDateFilter]);
-  useEffect(() => { setShowLegend(initialShowLegend); }, [initialShowLegend]);
+  const [isApplyDisabled, setIsApplyDisabled] = useState(false);
+  const applyCooldownTimer = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (initialDateFilter !== dateFilter) {
+      setIsApplyDisabled(true);
+      const timer = setTimeout(() => {
+        setIsApplyDisabled(false);
+      }, 1000); 
+      return () => clearTimeout(timer);
+    }
+  }, [dateFilter]);
+  
   useEffect(() => {
     const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
     if (temporalFields.length > 0 && !temporalFields.includes(dateField)) {
       setDateField(temporalFields[0]);
     }
-  }, [columns, columnInfo]);
+  }, [columns, columnInfo, dateField, dateFilter]);
 
   const temporalFields = columns.filter(col => columnInfo[col]?.type === 'temporal');
   const showDateFilter = temporalFields.length > 0;
 
   const handleApply = () => {
-    onApply && onApply({ 
+    onApply?.({  // Callback nur aufrufen, wenn onApply als Prop übergeben wurde
       layers,
       markSize,
       markShape,
@@ -383,7 +386,7 @@ function ControlPanel({columns, columnInfo, layers: initialLayers = [], markSize
       )}
 
       <div className="controlpanel-apply-btn-row">
-        <button className="controlpanel-btn" onClick={handleApply} data-tooltip-id="apply-tooltip" data-tooltip-content="Einstellungen übernehmen und Diagramm aktualisieren">
+        <button className="controlpanel-btn" onClick={handleApply} disabled={isApplyDisabled} data-tooltip-id="apply-tooltip" data-tooltip-content="Einstellungen übernehmen und Diagramm aktualisieren">
           Übernehmen
         </button>
         <Tooltip id="apply-tooltip" place="top" />
