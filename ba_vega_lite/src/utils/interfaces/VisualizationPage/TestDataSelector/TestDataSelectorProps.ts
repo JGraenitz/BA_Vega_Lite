@@ -8,6 +8,6 @@ export interface TestDataset {
 }
 
 export interface TestDataSelectorProps {
-  onDatasetSelect: (dataset: TestDataset) => void;
+  onTestDataSelect: (dataset: TestDataset) => void;
 }
 

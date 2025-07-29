@@ -7,7 +7,7 @@
   transition: background 0.3s, color 0.3s;
 }
 
-.App.dark-mode {
+body.dark-mode .App {
   background: #181a1b;
   color: #ffffff;
 }
@@ -64,13 +64,13 @@ button:hover, .data-chart button:hover {
   background: #1565c0;
 }
 
-.App.dark-mode button, .App.dark-mode .data-chart button {
+body.dark-mode button, body.dark-mode .data-chart button {
   background: #333b4a;
   color: #ffd700;
   box-shadow: 0 2px 8px rgba(30, 30, 30, 0.15);
 }
 
-.App.dark-mode button:hover, .App.dark-mode .data-chart button:hover {
+body.dark-mode button:hover, body.dark-mode .data-chart button:hover {
   background: #22262e;
 }
 
@@ -90,13 +90,13 @@ select:focus, input[type="number"]:focus, input[type="date"]:focus {
   outline: none;
 }
 
-.App.dark-mode select, .App.dark-mode .data-chart select, .App.dark-mode input[type="number"], .App.dark-mode input[type="date"] {
+body.dark-mode select, body.dark-mode .data-chart select, body.dark-mode input[type="number"], body.dark-mode input[type="date"] {
   background: #23272b;
   color: #f1f1f1;
   border: 1px solid #444;
 }
 
-.App.dark-mode select:focus, .App.dark-mode input[type="number"]:focus, .App.dark-mode input[type="date"]:focus {
+body.dark-mode select:focus, body.dark-mode input[type="number"]:focus, body.dark-mode input[type="date"]:focus {
   border-color: #ffd700;
 }
 
@@ -113,7 +113,7 @@ select:focus, input[type="number"]:focus, input[type="date"]:focus {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);*/
 }
 
-.App.dark-mode .card {
+body.dark-mode .card {
   border: none;
   background: #181a1b;
   color: #f4f7fb;

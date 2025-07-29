@@ -49,12 +49,12 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-.App.dark-mode .tutorials-back-btn {
+body.dark-mode .tutorials-back-btn {
   background: #2d3748;
   color: #e2e8f0;
   box-shadow: 0 2px 8px rgba(30, 30, 30, 0.15);
 }
-.App.dark-mode .tutorials-back-btn:hover, .App.dark-mode .tutorials-back-btn:focus {
+body.dark-mode .tutorials-back-btn:hover, body.dark-mode .tutorials-back-btn:focus {
   background: #4a5568;
   color: #ffd700;
   box-shadow: 0 4px 8px rgba(30, 30, 30, 0.18);

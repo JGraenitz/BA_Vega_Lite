@@ -1,6 +1,6 @@
 
 
-.App.dark-mode .vega-lite-chart-container {
+body.dark-mode .vega-lite-chart-container {
   background: var(--color-bg-dark);
   color: var(--color-text-dark);
 }

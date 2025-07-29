@@ -54,4 +54,15 @@ export const DEFAULT_LAYER_TEMPLATE = {
     markShape: 'circle'
   };
 
+export const DEFAULT_VEGA_TEMPLATE = {
+  layers: [],
+  markSize: 30,
+  markShape: 'circle',
+  xLabel: '',
+  yLabel: '',
+  width: 1000,
+  height: 400,
+  dateFilter: { start: '', end: '' },
+}  
+
 

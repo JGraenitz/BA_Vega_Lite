@@ -60,12 +60,6 @@
   background: #a8a8a8;
 }
 
-@media (max-width: 900px) {
-  .data-table-scroll {
-    height: 50vh;
-    max-height: 500px;
-  }
-}
 
 @media (max-width: 600px) {
   .data-table-container {
@@ -99,35 +93,35 @@
   }
 }
 
-.App.dark-mode .data-table-container {
+body.dark-mode .data-table-container {
   background: var(--color-bg-panel-dark);
 }
-.App.dark-mode .data-table {
+body.dark-mode .data-table {
   background: var(--color-bg-panel-dark);
   color: var(--color-text-dark);
 }
-.App.dark-mode .data-table th {
+body.dark-mode .data-table th {
   background: var(--color-bg-panel-dark);
   color: var(--color-accent-dark);
 }
-.App.dark-mode .data-table td {
+body.dark-mode .data-table td {
   background: var(--color-bg-panel-dark);
   color: var(--color-text-dark);
   border-color: #374151;
 }
-.App.dark-mode .data-table tr:nth-child(even) {
+body.dark-mode .data-table tr:nth-child(even) {
   background: #263040;
 }
-.App.dark-mode .data-table-scroll {
+body.dark-mode .data-table-scroll {
   background: var(--color-bg-panel-dark);
   box-shadow: 0 2px 8px rgba(100,255,218,0.04);
 }
-.App.dark-mode .data-table-scroll::-webkit-scrollbar-track {
+body.dark-mode .data-table-scroll::-webkit-scrollbar-track {
   background: #23272b;
 }
-.App.dark-mode .data-table-scroll::-webkit-scrollbar-thumb {
+body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb {
   background: #374151;
 }
-.App.dark-mode .data-table-scroll::-webkit-scrollbar-thumb:hover {
+body.dark-mode .data-table-scroll::-webkit-scrollbar-thumb:hover {
   background: #64ffda;
 } 

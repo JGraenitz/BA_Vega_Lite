@@ -38,29 +38,7 @@ code {
     monospace;
 }
 
-/* ========== Utility-Klassen ========== */
-.flex-col-gap-2 { display: flex; flex-direction: column; gap: 2px; }
-.flex-col-gap-4 { display: flex; flex-direction: column; gap: 4px; }
-.flex-row-gap-8 { display: flex; align-items: center; gap: 8px; }
-.flex-row-gap-12 { display: flex; gap: 12px; }
-.mt-8 { margin-top: 8px; }
-.align-end { align-self: flex-end; }
-.align-right { margin-left: auto; }
-.grid-span-all { grid-column: 1 / -1; }
-.minw-100 { min-width: 100px; }
-.minw-80 { min-width: 80px; }
-.w-60 { width: 60px; }
-.w-80 { width: 80px; }
-.minw-120 { min-width: 120px; }
-.gap-12 { gap: 12px; }
-.size-display { font-size: 0.75rem; color: #6c757d; text-align: center; min-width: 30px; }
 
-/* ========== Darkmode Utilities ========== */
-.dark-mode-bg { background: var(--color-bg-dark) !important; color: var(--color-text-dark) !important; }
-.dark-mode-panel { background: var(--color-bg-panel-dark) !important; color: var(--color-text-dark) !important; }
-.dark-mode-accent { color: var(--color-accent-dark) !important; }
-
-/* ========== Einheitliche Scrollbar ========== */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

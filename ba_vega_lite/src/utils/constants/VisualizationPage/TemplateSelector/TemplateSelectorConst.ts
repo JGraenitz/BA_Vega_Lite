@@ -1,4 +1,5 @@
 import { VisualizationTemplate } from '../../../interfaces/VisualizationPage/TemplateSelector/TemplateSelectorProps';
+import { v4 as uuidv4 } from 'uuid';
 
 export const visualizationTemplates: VisualizationTemplate[] = [
   {
@@ -8,9 +9,9 @@ export const visualizationTemplates: VisualizationTemplate[] = [
     icon: 'B',
     layers: [
       {
-        id: Date.now(),
+        id: uuidv4(),
         xAxis: '',
-        yAxis: '',
+        yAxis: 'value1',
         aggregation: '',
         plotType: 'bar',
         color: '#4f6d9a',
@@ -34,9 +35,9 @@ export const visualizationTemplates: VisualizationTemplate[] = [
     icon: 'L',
     layers: [
       {
-        id: Date.now(),
+        id: uuidv4(),
         xAxis: '',
-        yAxis: '',
+        yAxis: 'value1',
         aggregation: '',
         plotType: 'line',
         color: '#4f6d9a',
@@ -60,9 +61,9 @@ export const visualizationTemplates: VisualizationTemplate[] = [
     icon: 'S',
     layers: [
       {
-        id: Date.now(),
+        id: uuidv4(),
         xAxis: '',
-        yAxis: '',
+        yAxis: 'value1',
         aggregation: '',
         plotType: 'point',
         color: '#4f6d9a',
@@ -87,9 +88,9 @@ export const visualizationTemplates: VisualizationTemplate[] = [
     icon: 'ML',
     layers: [
       {
-        id: Date.now(),
+        id: uuidv4(),
         xAxis: '',
-        yAxis: '',
+        yAxis: 'value1', 
         aggregation: '',
         plotType: 'line',
         color: '#4f6d9a',
@@ -98,9 +99,9 @@ export const visualizationTemplates: VisualizationTemplate[] = [
         markShape: 'circle'
       },
       {
-        id: Date.now() + 1,
+        id: uuidv4(),
         xAxis: '',
-        yAxis: '',
+        yAxis: 'value2',  
         aggregation: '',
         plotType: 'line',
         color: '#e74c3c',
@@ -138,19 +139,25 @@ export const getTemplateById = (id: string): VisualizationTemplate | undefined =
 export const applyTemplateToControls = (template: VisualizationTemplate, columns: string[]): any => {
   const controls = { ...template };
   
-  // Automatisch erste Spalten zuweisen, falls verfügbar
-  if (columns.length > 0) {
-    controls.layers = controls.layers.map((layer: any, index: number) => ({
-      ...layer,
-      id: Date.now() + index,
-      xAxis: columns[0] || '',
-      yAxis: columns[1] || columns[0] || ''
-    }));
+  if (columns.length > 0) {   
+    controls.layers = controls.layers.map((layer: any, index: number) => {
+      let yAxisValue = layer.yAxis;
+      
+      if (yAxisValue === 'value1') {
+        yAxisValue = columns[1] || '';
+      } else if (yAxisValue === 'value2') {
+        yAxisValue = columns[2] || columns[0] || '';
+      }
+      
+      return {
+        ...layer,
+        id: uuidv4(),
+        xAxis: columns[0] || '',
+        yAxis: yAxisValue
+      };
+    });
   } else {
-    // IDs für alle Layer generieren, auch wenn keine Spalten verfügbar sind
-    controls.layers = controls.layers.map((layer: any, index: number) => ({
-      ...layer,
-      id: Date.now() + index
+    controls.layers = controls.layers.map((layer: any, index: number) => ({     
     }));
   }
   

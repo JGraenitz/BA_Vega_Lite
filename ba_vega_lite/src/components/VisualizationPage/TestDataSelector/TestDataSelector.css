@@ -8,7 +8,7 @@
   max-width: 1200px;
 }
 
-.App.dark-mode .testdata-selector {
+body.dark-mode .testdata-selector {
   background: #2d3748;
   border-color: #4a5568;
   color: #e2e8f0;
@@ -21,7 +21,7 @@
   color: #2d3748;
 }
 
-.App.dark-mode .testdata-selector-title {
+body.dark-mode .testdata-selector-title {
   color: #e2e8f0;
 }
 
@@ -31,7 +31,7 @@
   font-size: 0.9rem;
 }
 
-.App.dark-mode .testdata-selector-description {
+body.dark-mode .testdata-selector-description {
   color: #a0aec0;
 }
 
@@ -65,13 +65,13 @@
   box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
 }
 
-.App.dark-mode .testdata-card {
+body.dark-mode .testdata-card {
   background: #1a202c;
   border-color: #4a5568;
   color: #e2e8f0;
 }
 
-.App.dark-mode .testdata-card:hover {
+body.dark-mode .testdata-card:hover {
   border-color: #4f6d9a;
   background: #2d3748;
 }
@@ -94,7 +94,7 @@
   color: #2d3748;
 }
 
-.App.dark-mode .testdata-name {
+body.dark-mode .testdata-name {
   color: #e2e8f0;
 }
 
@@ -105,7 +105,7 @@
   line-height: 1.4;
 }
 
-.App.dark-mode .testdata-description {
+body.dark-mode .testdata-description {
   color: #a0aec0;
 }
 
@@ -117,7 +117,7 @@
   font-weight: 500;
 }
 
-.App.dark-mode .testdata-info {
+body.dark-mode .testdata-info {
   color: #90cdf4;
 }
 
@@ -128,8 +128,8 @@
   border-radius: 4px;
 }
 
-.App.dark-mode .testdata-card .testdata-rows,
-.App.dark-mode .testdata-card .testdata-columns {
+body.dark-mode .testdata-card .testdata-rows,
+body.dark-mode .testdata-card .testdata-columns {
   background: rgba(144, 205, 244, 0.2);
 }
 

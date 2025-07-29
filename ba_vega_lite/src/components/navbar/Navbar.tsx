@@ -28,7 +28,16 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
         <span className="bar"></span>
       </button>
       
-      <h1 className="navbar-title">VegaViz</h1>
+      <h1 
+        className="navbar-title" 
+        onClick={() => {
+          navigate('/');
+          window.location.reload();
+        }}
+        style={{ cursor: 'pointer' }}
+      >
+        VegaViz
+      </h1>
       <div className="navbar-actions">
         <button
           className="tutorials-btn"

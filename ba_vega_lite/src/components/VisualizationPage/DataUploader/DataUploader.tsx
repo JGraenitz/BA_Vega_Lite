@@ -21,7 +21,31 @@ function DataUploader({onData, onError, fileName, isCollapsed = false, onToggleC
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Datei-Handling
+
+  const handleParseComplete = (results: Papa.ParseResult<any>, currentFileName: string) => {
+    if (results.errors.length > 0) {
+      onError('CSV-Parsing-Fehler: ' + results.errors[0].message);
+      return;
+    }
+    if (!results.data || results.data.length === 0) {
+      onError('CSV-Datei ist leer oder ungueltig.');
+      return;
+    }
+    const columns = results.meta.fields as string[];
+    onData(results.data, columns, currentFileName);
+  };
+
+  const handleFileRead = (event: ProgressEvent<FileReader>, file: File) => {
+    Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+      dynamicTyping: false,
+      complete: (results) => handleParseComplete(results, file.name),
+      error: (err) => onError('CSV-Parsing-Fehler: ' + err.message),
+    });
+  };
+  
+
   const handleFile = (file: File) => {
     if (!file) return;
     if (!file.name.match(/\.csv$/i)) {
@@ -30,36 +54,8 @@ function DataUploader({onData, onError, fileName, isCollapsed = false, onToggleC
     }
     
     const reader = new FileReader();
-    reader.onload = (e) => {
-      const text = (e.target?.result as string) || '';
-      if (text.trim().length === 0) {
-        onError('CSV-Datei ist leer.');
-        return;
-      }
-      Papa.parse(file as any, {
-        header: true,
-        skipEmptyLines: true,
-        dynamicTyping: false,
-        complete: (results) => {
-          if (results.errors.length > 0) {
-            onError('CSV-Parsing-Fehler: ' + results.errors[0].message);
-            return;
-          }
-          if (!results.data || results.data.length === 0) {
-            onError('CSV-Datei ist leer oder ungueltig.');
-            return;
-          }
-          const columns = results.meta.fields;
-          onData(results.data, columns, file.name); 
-        },
-        error: (err) => {
-          onError('CSV-Parsing-Fehler: ' + err.message);
-        },
-      });
-    };
-    reader.onerror = () => {
-      onError('Fehler beim Lesen der Datei.');
-    };
+    reader.onload = (e) => handleFileRead(e, file);
+    reader.onerror = () => onError('Fehler beim Lesen der Datei.');
     reader.readAsText(file);
   };
 

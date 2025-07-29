@@ -50,25 +50,25 @@
   margin-top: 8px;
 }
 
-.App.dark-mode .data-summary {
+body.dark-mode .data-summary {
   color: #e2e8f0;
 }
 
-.App.dark-mode .data-summary-list-item {
+body.dark-mode .data-summary-list-item {
   background: #2d3748;
   border-color: #4a5568;
 }
 
-.App.dark-mode .data-summary-col-name {
+body.dark-mode .data-summary-col-name {
   color: #4f6d9a;
 }
 
-.App.dark-mode .data-summary-type-select {
+body.dark-mode .data-summary-type-select {
   background: #1a202c;
   border-color: #4a5568;
   color: #e2e8f0;
 }
 
-.App.dark-mode .data-summary-saved {
+body.dark-mode .data-summary-saved {
   color: #7CFC00;
 } 

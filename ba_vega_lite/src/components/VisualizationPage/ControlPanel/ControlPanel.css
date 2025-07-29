@@ -1,42 +1,59 @@
+/*  CONTROLPANEL ROOT  */
 .controlpanel-root {
   background: #f8f9fa;
   color: #2d3748;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  padding: 24px 28px 20px 28px;
-  max-width: 900px;
+  padding: 40px 44px 36px 44px;
+  max-width: 1400px;
   margin: 0 auto;
   flex-direction: column;
   gap: 28px;
   transition: background 0.3s, color 0.3s;
 }
-.controlpanel-root.dark-mode {
-  background: #2d3748;
-  color: #e2e8f0;
+
+/*  LAYOUT */
+.controlpanel-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
 }
 
+.controlpanel-left-column {
+  flex: 2;
+  min-width: 0;
+}
+
+.controlpanel-right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/*  SECTIONS  */
 .controlpanel-section {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 2px solid #aaa7a7;
 }
-.controlpanel-section.dark-mode {
-  border-bottom: 2px solid #37404e;
+
+.controlpanel-section.no-border {
+  border-bottom: none;
 }
+
 .controlpanel-section-title {
   margin: 0 0 16px 0;
   font-size: 1.15rem;
   font-weight: 600;
   color: #4f6d9a;
 }
-.dark-mode .controlpanel-section-title {
-  color: #e2e8f0;
-}
 
+/*  LAYERS  */
 .controlpanel-layers-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  max-height: 56vh;
+  overflow-y: auto;
 }
 
 .controlpanel-layer-row {
@@ -50,25 +67,32 @@
   position: relative;
   transition: box-shadow 0.2s, background 0.2s;
 }
-.controlpanel-root.dark-mode .controlpanel-layer-row {
-  background: #1a202c;
-}
 
 .controlpanel-layer-row.moving-up {
   animation: moveUp 0.3s;
 }
+
 .controlpanel-layer-row.moving-down {
   animation: moveDown 0.3s;
 }
+
 @keyframes moveUp {
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
+
 @keyframes moveDown {
   0% { transform: translateY(0); }
   50% { transform: translateY(12px); }
   100% { transform: translateY(0); }
+}
+
+.controlpanel-layer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 18px;
+  align-items: center;
 }
 
 .controlpanel-layer-fields {
@@ -81,7 +105,17 @@
   position: relative;
 }
 
+.controlpanel-layer-move-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: 10px;
+  align-self: center;
+  justify-content: center;
+}
+
 .controlpanel-layer-remove-btn {
+  background: #4f6d9a;
   align-self: center;
   margin-left: auto;
   display: flex;
@@ -98,26 +132,8 @@
   border-top: none;
   margin: 18px 0 0 0;
 }
-.controlpanel-root.dark-mode .controlpanel-layer-separator {
-  border-top: 1.5px solid #4a5568;
-}
 
-.controlpanel-layer-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px 18px;
-  align-items: center;
-}
-
-.controlpanel-layer-move-group {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-right: 10px;
-  align-self: center;
-  justify-content: center;
-}
-
+/* LABELS  */
 .controlpanel-label {
   font-size: 0.97rem;
   font-weight: 500;
@@ -125,11 +141,11 @@
   display: block;
   color: #2d3748;
 }
-.dark-mode .controlpanel-label {
-  color: #e2e8f0;
-}
 
-.controlpanel-select, .controlpanel-input, .controlpanel-datefilter-input {
+/* INPUTS & SELECTS */
+.controlpanel-select, 
+.controlpanel-input, 
+.controlpanel-datefilter-input {
   font-size: 1rem;
   padding: 6px 10px;
   border-radius: 6px;
@@ -140,20 +156,10 @@
   transition: border 0.2s, box-shadow 0.2s;
   min-width: 90px;
 }
-.controlpanel-select:focus, .controlpanel-input:focus, .controlpanel-datefilter-input:focus {
-  border-color: #4f6d9a;
-  box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
-}
-.controlpanel-root.dark-mode .controlpanel-select,
-.controlpanel-root.dark-mode .controlpanel-input,
-.controlpanel-root.dark-mode .controlpanel-datefilter-input {
-  background: #1a202c;
-  color: #e2e8f0;
-  border: 1px solid #4a5568;
-}
-.controlpanel-root.dark-mode .controlpanel-select:focus,
-.controlpanel-root.dark-mode .controlpanel-input:focus,
-.controlpanel-root.dark-mode .controlpanel-datefilter-input:focus {
+
+.controlpanel-select:focus, 
+.controlpanel-input:focus, 
+.controlpanel-datefilter-input:focus {
   border-color: #4f6d9a;
   box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
 }
@@ -172,33 +178,11 @@
   accent-color: #4f6d9a;
 }
 
-.controlpanel-layer-move-btn {
-  background: #4f6d9a;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  width: 28px;
-  height: 28px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  margin-bottom: 2px;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-.controlpanel-layer-move-btn:hover {
-  background: #3d5a7a;
-}
-.controlpanel-layer-move-btn:disabled {
-  background: #6c757d;
-  color: #fff;
-  cursor: not-allowed;
-  opacity: 0.6;
+.controlpanel-datefilter-input {
+  min-width: 130px;
 }
 
+/* BUTTONS */
 .controlpanel-btn {
   background: #4f6d9a;
   color: #fff;
@@ -220,26 +204,267 @@
   box-shadow: none;     
 }
 
-.controlpanel-btn:hover, .controlpanel-btn:focus {
+.controlpanel-btn:hover, 
+.controlpanel-btn:focus {
   background: #3d5a7a;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-.controlpanel-datefilter-row {
+.controlpanel-layer-move-btn {
+  background: #4f6d9a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: center;
+  padding: 0;
+}
+
+.controlpanel-layer-move-btn:hover {
+  background: #3d5a7a;
+}
+
+.controlpanel-layer-move-btn:disabled {
+  background: #6c757d;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.controlpanel-add-layer-btn {
+  background: #4f6d9a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.controlpanel-add-layer-btn:hover {
+  background: #3d5a7a;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.controlpanel-add-layer-btn:active {
+  background: #4f6d9a;
+  color: #fff;
+}
+
+
+
+
+.controlpanel-chart-settings-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.controlpanel-chart-size-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.controlpanel-chart-size-row > div {
+  flex: 1 1 0;
+  min-width: 100px;
+}
+
+.controlpanel-apply-btn-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.controlpanel-datefilter-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
   margin-top: 8px;
 }
 
 
-
-.controlpanel-datefilter-input {
-  min-width: 130px;
+.controlpanel-checkbox-row {
+  margin-top: 10px;
 }
 
+.controlpanel-checkbox-input {
+  margin-right: 8px;
+}
+
+
+.controlpanel-value-display {
+  min-width: 30px;
+  display: inline-block;
+  text-align: right;
+}
+
+.controlpanel-value-mark-size {
+  min-width: 30px;
+  display: inline-block;
+  text-align: right;
+}
+
+.controlpanel-value-opacity {
+  min-width: 40px;
+  display: inline-block;
+  text-align: right;
+}
+
+.controlpanel-point-settings {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+#height, #width {
+  display: flex; 
+  align-items: left;
+  text-align: left;
+}
+
+.controlpanel-section .controlpanel-label,
+.controlpanel-section input[type="text"] {
+  text-align: left;
+  margin: 0;
+  display: block;
+}
+
+
+
+/*  DARK MODE STYLES  */
+body.dark-mode .controlpanel-root {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark-mode .controlpanel-section {
+  border-bottom: 1px solid #4a5568;
+}
+
+body.dark-mode .controlpanel-section.no-border {
+  border-bottom: none;
+}
+
+body.dark-mode .controlpanel-section-title {
+  color: #e2e8f0;
+}
+
+body.dark-mode .controlpanel-layer-row {
+  background: #1a202c;
+}
+
+body.dark-mode .controlpanel-label {
+  color: #e2e8f0;
+}
+
+body.dark-mode .controlpanel-select,
+body.dark-mode .controlpanel-input,
+body.dark-mode .controlpanel-datefilter-input {
+  background: #1a202c;
+  color: #e2e8f0;
+  border: 1px solid #4a5568;
+}
+
+body.dark-mode .controlpanel-select:focus,
+body.dark-mode .controlpanel-input:focus,
+body.dark-mode .controlpanel-datefilter-input:focus {
+  border-color: #4f6d9a;
+  box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
+}
+
+body.dark-mode .controlpanel-layer-separator {
+  border-top: 1.5px solid #4a5568;
+}
+
+/*  RESPONSIVE STYLES  */
 @media (max-width: 700px) {
+  .controlpanel-root {
+    padding: min(4vw, 16px);
+    width: 90%;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .controlpanel-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .controlpanel-left-column,
+  .controlpanel-right-column {
+    flex: none;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .controlpanel-section {
+    padding-bottom: 10px;
+  }
+
+  .controlpanel-layers-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    width: 85% !important;
+    margin: 0 auto;
+  }
+
+  .controlpanel-layer-controls,
+  .controlpanel-layer-fields {
+    flex-direction: column;
+    gap: 10px 0;
+    align-items: stretch;
+  }
+
+  .controlpanel-layer-move-group {
+    flex-direction: row;
+    gap: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .controlpanel-chart-settings-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controlpanel-chart-settings-row > div {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .controlpanel-chart-size-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .controlpanel-chart-size-row > div {
+    margin-bottom: 8px;
+  }
 
   .controlpanel-datefilter-row {
     display: flex;
@@ -253,32 +478,10 @@
     display: flex;
   }
 
-  .controlpanel-datefilter-end{
+  .controlpanel-datefilter-end {
     display: flex;
   }
-  
-  .controlpanel-root {
-    padding: min(4vw, 16px);
-    max-width: 96vw;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  .controlpanel-section {
-    padding-bottom: 10px;
-  }
-  .controlpanel-layer-controls,
-  .controlpanel-layer-fields {
-    flex-direction: column;
-    gap: 10px 0;
-    align-items: stretch;
-  }
-  .controlpanel-layer-move-group {
-    flex-direction: row;
-    gap: 8px;
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-  /* Buttons und Inputs auf kleine Breite begrenzen */
+
   .controlpanel-btn,
   .controlpanel-select,
   .controlpanel-input,
@@ -287,187 +490,19 @@
     min-width: 0;
     box-sizing: border-box;
   }
+
   .controlpanel-btn,
   .controlpanel-add-layer-btn {
     width: 100%;
+    max-width: 100%;
     min-height: 44px;
     font-size: 1.1rem;
     margin-top: 10px;
+    box-sizing: border-box;
   }
+
   .controlpanel-apply-btn-row {
     justify-content: stretch;
     margin-top: 10px;
   }
-  .controlpanel-layers-list {
-    max-height: 60vh;
-    overflow-y: auto;
-  }
-  .controlpanel-chart-settings-row,
-  .controlpanel-chart-size-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .controlpanel-chart-settings-row > div,
-  .controlpanel-chart-size-row > div {
-    margin-bottom: 8px;
-  }
-}
-
-#x-label, #y-label, .controlpanel-label[for="x-label"], .controlpanel-label[for="y-label"] {
-  text-align: left;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.controlpanel-input {
-  text-align: left;
-}
-.controlpanel-section .controlpanel-label,
-.controlpanel-section input[type="text"] {
-  text-align: left;
-  margin: 0;
-  display: block;
-}
-
-.controlpanel-chart-settings-row {
-  display: flex;
-  flex-direction: row !important;
-  gap: 24px;
-  margin-bottom: 12px;
-}
-.controlpanel-chart-size-row {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  margin-bottom: 8px;
-}
-.controlpanel-chart-size-row > div {
-  flex: 1 1 0;
-  min-width: 100px;
-}
-.controlpanel-apply-btn-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 0px;
-}
-@media (max-width: 700px) {
-  .controlpanel-chart-settings-row {
-    flex-direction: column !important;
-    gap: 14px !important;
-    align-items: stretch;
-  }
-  .controlpanel-chart-settings-row > div {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-  .controlpanel-select,
-  .controlpanel-input,
-  .controlpanel-datefilter-input {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-  }
-  .controlpanel-btn,
-  .controlpanel-add-layer-btn {
-    width: 100%;
-    max-width: 100%;
-    min-height: 44px;
-    font-size: 1.1rem;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
-  .controlpanel-apply-btn-row {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-    margin-top: 10px;
-  }
-
-  .controlpanel-layer-controls,
-  .controlpanel-layer-fields {
-    flex-direction: row;
-    gap: 16px 18px;
-    align-items: center;
-  }
-}
-
-.controlpanel-add-layer-btn {
-  background: #4f6d9a;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 18px;
-  font-size: 1.08rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: background 0.2s, box-shadow 0.2s;
-}
-.controlpanel-add-layer-btn:hover {
-  background: #3d5a7a;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-.controlpanel-add-layer-btn:active {
-  background: #4f6d9a;
-  color: #fff;
-}
-
-.controlpanel-point-settings {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.controlpanel-checkbox-row {
-  margin-top: 10px;
-}
-
-.controlpanel-checkbox-input {
-  margin-right: 8px;
-}
-
-.App.dark-mode .controlpanel-root {
-  background: #2d3748;
-  color: #e2e8f0;
-}
-
-.App.dark-mode .controlpanel-section {
-  border-bottom: 1px solid #4a5568;
-}
-
-.App.dark-mode .controlpanel-section-title {
-  color: #e2e8f0;
-}
-
-.App.dark-mode .controlpanel-layer-row {
-  background: #1a202c;
-}
-
-.App.dark-mode .controlpanel-label {
-  color: #e2e8f0;
-}
-
-.App.dark-mode .controlpanel-select,
-.App.dark-mode .controlpanel-input,
-.App.dark-mode .controlpanel-datefilter-input {
-  background: #1a202c;
-  color: #e2e8f0;
-  border: 1px solid #4a5568;
-}
-
-.App.dark-mode .controlpanel-select:focus,
-.App.dark-mode .controlpanel-input:focus,
-.App.dark-mode .controlpanel-datefilter-input:focus {
-  border-color: #4f6d9a;
-  box-shadow: 0 0 0 3px rgba(79, 109, 154, 0.2);
-}
-
-.App.dark-mode .controlpanel-layer-separator {
-  border-top: 1.5px solid #4a5568;
 }

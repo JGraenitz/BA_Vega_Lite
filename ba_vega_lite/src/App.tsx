@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import TutorialsPage from './components/TutorialsPage/TutorialsPage';
 import { generateVegaLiteSpec, handleCsvData } from './utils/scripts/VegaLiteUtils';
+import { DEFAULT_VEGA_TEMPLATE } from './utils/constants/VegaLiteUtilsConst';
 import './App.css';
 
 /**
@@ -45,6 +46,10 @@ function App() {
 
   const [vegaSpecError, setVegaSpecError] = useState<any>(null);
 
+  const closeModal = () => setError(null);
+
+  const [filteredData, setFilteredData] = useState<any[]>([]);   
+
   // Parsen der Vega-Lite-Spezifikation
   const parsedSpec = useMemo(() => {
     try {
@@ -53,8 +58,6 @@ function App() {
       return null;
     }
   }, [vegaSpec]);
-
-  const [filteredData, setFilteredData] = useState<any[]>([]);   
 
   const handleControlsApply = (newControls: any) => {    
     setControls(newControls);
@@ -85,50 +88,67 @@ function App() {
     });
   };
 
-  const closeModal = () => setError(null);
+  const filterDataByDate = (data: any[], controls: any) => {
+    if (!controls.dateField || (!controls.dateFilter.start && !controls.dateFilter.end)) {
+      return data;
+    }
+  
+    return data.filter((row: any) => {
+      const val = row[controls.dateField];
+      if (val) {
+        const d = new Date(val);
+        if (controls.dateFilter.start && d < new Date(controls.dateFilter.start)) return false;
+        if (controls.dateFilter.end && d > new Date(controls.dateFilter.end)) return false;
+      }
+      return true;
+    });
+  };
+  
+  const transformDataForLegend = (data: any[], layers: any[]) => {
+    let legendData: any[] = [];
+    layers.forEach((layer: any, i: number) => {
+      const yField = layer.yAxis;
+      const legendName = `${yField} (Layer ${i + 1})`;
+      data.forEach((row: any) => {
+        if (row[yField] !== undefined && row[yField] !== null && row[yField] !== '') {
+          legendData.push({
+            ...row,
+            Legend: legendName,
+            value: row[yField],
+            _color: layer.color
+          });
+        }
+      });
+    });
+    return legendData;
+  };
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      sessionStorage.removeItem('uploadedFileName');
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
 
   useEffect(() => {
     if (!csvData || !controls.layers || controls.layers.length === 0) {
       setFilteredData([]);
       return;
     }
-    let data = csvData;
-    // Datumsfilter nach gewähltem Feld
-    if (controls.dateField && (controls.dateFilter.start || controls.dateFilter.end)) {
-      data = data.filter((row: any) => {
-        const val = row[controls.dateField];
-        if (val) {
-          const d = new Date(val);
-          if (controls.dateFilter.start && d < new Date(controls.dateFilter.start)) return false;
-          if (controls.dateFilter.end && d > new Date(controls.dateFilter.end)) return false;
-        }
-        return true;
-      });
-    }
-    // Legendenansicht: Daten transformieren 
+
+    let data = filterDataByDate(csvData, controls);
+
     if (controls.showLegend) {
-      let legendData: any[] = [];
-      controls.layers.forEach((layer: any, i: number) => {
-        //const xField = layer.xAxis;
-        const yField = layer.yAxis;
-        // Eindeutigen Legend-Namen wie in der Spec erzeugen
-        const legendName = `${yField} (Layer ${i + 1})`;
-        data.forEach((row: any) => {
-          if (row[yField] !== undefined && row[yField] !== null && row[yField] !== '') {
-            legendData.push({
-              ...row,
-              Legend: legendName,
-              value: row[yField],
-              _color: layer.color // optional, falls für Tooltip/Farbe gebraucht
-            });
-          }
-        });
-      });
-      setFilteredData(legendData);
-      return;
+      data = transformDataForLegend(data, controls.layers);
     }
     setFilteredData(data);
-  }, [csvData, controls.layers, controls.dateFilter, controls.dateField, columnInfo, controls.showLegend]);
+  }, [csvData, controls]);
+
+
 
 
   useEffect(() => {
@@ -161,7 +181,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={`App${darkMode ? ' dark-mode' : ''}`}>
+      <div className={`App`}>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="main-content">
           <Routes>

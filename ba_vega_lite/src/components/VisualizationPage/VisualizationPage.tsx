@@ -37,11 +37,14 @@ function VisualizationPage({
   
   const [showTestData, setShowTestData] = useState(true);
 
-  const [uploadPanelCollapsed, setUploadPanelCollapsed] = useState(false);
+  const [uploadPanelCollapsed, setUploadPanelCollapsed] = useState(true);
 
-  const [uploadedFileName, setUploadedFileName] = useState<string>('');
+  const [uploadedFileName, setUploadedFileName] = useState<string>(() => {
+    return sessionStorage.getItem('uploadedFileName') || '';
+  });
 
   const navigate = useNavigate();
+
 
   /**
    * Wird aufgerufen, wenn eine Vorlage ausgewählt wird.
@@ -65,6 +68,7 @@ function VisualizationPage({
 
   /**
    * Hilfsfunktion, um CSV-Daten zusammen mit dem Dateinamen zu verarbeiten.
+   * Speichert den fileName in sessionStorage
    * Setzt den Dateinamen und klappt das Upload-Panel ein.
    */
   const handleCsvDataWithFileName = (data: any, columns: any, fileName?: string) => {
@@ -72,7 +76,9 @@ function VisualizationPage({
     if (fileName) {
       setUploadedFileName(fileName);
       setUploadPanelCollapsed(true);
+      sessionStorage.setItem('uploadedFileName', fileName); 
     }
+    
   };
 
   /**
@@ -87,7 +93,7 @@ function VisualizationPage({
     <>
       {!csvData && showTestData && (
         <div className="card" id="testdata-panel">
-          <TestDataSelector onDatasetSelect={handleTestDataSelect} />
+          <TestDataSelector onTestDataSelect={handleTestDataSelect} />
         </div>
       )}
 
@@ -105,7 +111,16 @@ function VisualizationPage({
             </div>
           )}
         </div>
-
+        <div className="flex-row" id="visualizationpage-flex-row">
+            <div className="viz-edit-col" id="visualizationpage-viz-edit-col">
+              <VegaLiteChart
+                spec={parsedSpec}
+                data={filteredData}
+                width={controls.width}
+                height={controls.height}
+              />
+            </div>
+          </div>
       {csvData && (
         <>
           <div className="template-section">
@@ -134,7 +149,6 @@ function VisualizationPage({
               </div>
             )}
           </div>
-
           <div className="controls-panel-rect" id="visualizationpage-controls-panel-rect">
             <ControlPanel
               columns={columns}
@@ -150,18 +164,6 @@ function VisualizationPage({
               showLegend={controls.showLegend}
               onApply={handleControlsApply}
             />
-          </div>
-          <div className="flex-row" id="visualizationpage-flex-row">
-            <div className="viz-edit-col" id="visualizationpage-viz-edit-col">
-              <VegaLiteChart
-                spec={parsedSpec}
-                data={filteredData}
-                columns={columns}
-                columnInfo={columnInfo}
-                width={controls.width}
-                height={controls.height}
-              />
-            </div>
           </div>
         </>
       )}

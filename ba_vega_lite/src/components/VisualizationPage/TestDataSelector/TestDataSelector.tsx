@@ -9,7 +9,7 @@ import './TestDataSelector.css';
  *
  * @param {Function} onDatasetSelect - Callback, der beim Auswählen eines Testdatensatzes aufgerufen wird
  */
-function TestDataSelector({ onDatasetSelect }: TestDataSelectorProps) {
+function TestDataSelector({ onTestDataSelect }: TestDataSelectorProps) {
   return (
     <div className="testdata-selector">
       <h3 className="testdata-selector-title">Testdaten auswählen</h3>
@@ -22,13 +22,13 @@ function TestDataSelector({ onDatasetSelect }: TestDataSelectorProps) {
           <div
             key={dataset.id}
             className="testdata-card"
-            onClick={() => onDatasetSelect(dataset)}
+            onClick={() => onTestDataSelect(dataset)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
-                onDatasetSelect(dataset);
+                onTestDataSelect(dataset);
               }
             }}
             aria-label={`Testdaten ${dataset.name} auswählen`}
